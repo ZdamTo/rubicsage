@@ -1,0 +1,8 @@
+node_modules/
+.next/
+.env
+.env.local
+*.tsbuildinfo
+next-env.d.ts
+references/cke_2025/*.pdf
+references/cke_2025/*.zip

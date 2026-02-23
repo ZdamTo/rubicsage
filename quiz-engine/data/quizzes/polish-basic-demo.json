@@ -1,0 +1,38 @@
+{
+  "id": "polish-basic-demo-2025",
+  "title": "Matura 2025 — Język Polski (Podstawowy) Demo",
+  "subject": "Język Polski (Podstawowy)",
+  "subjectSlug": "polish",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "pl-q1",
+      "type": "short_text",
+      "promptMarkdown": "## Tekst\n\nPrzeczytaj uważnie poniższy fragment.\n\n> Poszukiwanie drugiej Ziemi to jedno z największych wyzwań współczesnej astronomii. Choć teleskopy nowej generacji — takie jak James Webb Space Telescope — pozwalają wykrywać planety w tzw. ekosferze, czyli strefie nadającej się do życia, warunki na większości z nich są skrajnie nieprzyjazne. Atmosfera wielu egzoplanet składa się głównie z wodoru i helu, a temperatura powierzchni przekracza 400°C.\n>\n> Nawet jeśli znajdziemy planetę o odpowiedniej temperaturze i atmosferze, pozostaje problem odległości. Najbliższy układ z potencjalnie nadającą się do zamieszkania planetą — Proxima Centauri b — znajduje się 4,24 roku świetlnego od Ziemi. Przy obecnej technologii napędowej podróż trwałaby dziesiątki tysięcy lat.\n\n---\n\n**Pytanie:** Podaj **dwa powody** (wynikające z tekstu), dla których znalezienie innego nadającego się do zamieszkania miejsca jest trudne.",
+      "maxScore": 2,
+      "grading": { "mode": "ai" },
+      "expectedKeyPoints": [
+        "Warunki na większości egzoplanet są nieprzyjazne (np. skład atmosfery, wysoka temperatura)",
+        "Ogromna odległość do potencjalnych planet — podróż przy obecnej technologii trwałaby dziesiątki tysięcy lat"
+      ],
+      "rubric": "Award 1 point per correctly identified reason (max 2). The student must refer to information from the text, not general knowledge. Accept paraphrases.",
+      "metadata": {
+        "tags": ["reading-comprehension", "short-text"],
+        "source": "synthetic"
+      }
+    },
+    {
+      "id": "pl-q2",
+      "type": "polish_essay",
+      "promptMarkdown": "## Wypracowanie\n\n**Temat:** Gdzie człowiek może odnaleźć nadzieję w trudnych chwilach?\n\nNapisz rozprawkę, w której rozważysz powyższy problem. W argumentacji odwołaj się do:\n\n1. **wybranej lektury obowiązkowej** (np. *Lalka* B. Prusa, *Wesele* S. Wyspiańskiego, *Pan Tadeusz* A. Mickiewicza, *Dżuma* A. Camusa itp.),\n2. **innego utworu literackiego**,\n3. **co najmniej jednego kontekstu** (np. historycznego, filozoficznego, biograficznego).\n\nTwoja praca powinna liczyć co najmniej **300 wyrazów**.",
+      "maxScore": 35,
+      "grading": { "mode": "ai" },
+      "minWords": 300,
+      "rubricFile": "rubrics/polish_essay_cke_2025.md",
+      "metadata": {
+        "tags": ["essay", "argumentative"],
+        "source": "synthetic-cke-style"
+      }
+    }
+  ]
+}
