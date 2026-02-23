@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* KaTeX stylesheet import */
+@import "katex/dist/katex.min.css";
+
+:root {
+  --foreground: #111827;
+  --background: #ffffff;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --secondary: #f3f4f6;
+  --accent: #10b981;
+  --danger: #ef4444;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --card-bg: #ffffff;
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Markdown content styling */
+.prose h2 {
+  @apply text-xl font-bold mt-4 mb-2;
+}
+.prose h3 {
+  @apply text-lg font-semibold mt-3 mb-1;
+}
+.prose p {
+  @apply mb-2 leading-relaxed;
+}
+.prose blockquote {
+  @apply border-l-4 border-blue-300 pl-4 py-1 my-2 bg-blue-50 rounded-r;
+}
+.prose ul,
+.prose ol {
+  @apply ml-4 mb-2;
+}
+.prose li {
+  @apply mb-1;
+}
+.prose strong {
+  @apply font-bold;
+}
+.prose code {
+  @apply bg-gray-100 px-1 py-0.5 rounded text-sm font-mono;
+}
+.prose pre {
+  @apply bg-gray-900 text-gray-100 p-3 rounded-lg overflow-x-auto my-2;
+}
+.prose pre code {
+  @apply bg-transparent text-inherit p-0;
+}
+.prose hr {
+  @apply my-4 border-gray-300;
+}

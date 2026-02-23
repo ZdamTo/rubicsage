@@ -1,0 +1,40 @@
+{
+  "id": "math-basic-demo-2025",
+  "title": "Matura 2025 — Matematyka (Podstawowy) Demo",
+  "subject": "Matematyka (Podstawowy)",
+  "subjectSlug": "math",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "math-q1",
+      "type": "single_choice",
+      "promptMarkdown": "Oblicz wartość wyrażenia:\n\n$$\\left(\\sqrt{50} - \\sqrt{2}\\right)^2$$",
+      "maxScore": 1,
+      "grading": { "mode": "hybrid" },
+      "choices": [
+        { "id": "A", "text": "$16$" },
+        { "id": "B", "text": "$32$" },
+        { "id": "C", "text": "$48$" },
+        { "id": "D", "text": "$64$" }
+      ],
+      "correctAnswer": "B",
+      "metadata": {
+        "tags": ["algebra", "radicals"],
+        "source": "synthetic-cke-style"
+      }
+    },
+    {
+      "id": "math-q2",
+      "type": "math_open_with_work",
+      "promptMarkdown": "## Zadanie otwarte\n\nFirma rozdzieliła **900 000 zł** między dwa zespoły: A i B.\n\nW pierwszym półroczu wydano łącznie **126 000 zł**.\n- Zespół A wydał **16%** swojego przydziału.\n- Zespół B wydał **12%** swojego przydziału.\n\n**Oblicz kwotę przydzieloną zespołowi A.** Zapisz pełne rozwiązanie.",
+      "maxScore": 3,
+      "grading": { "mode": "ai" },
+      "correctAnswer": "450000",
+      "rubric": "Award up to 3 points:\n- 1 pt: Correct equation setup (e.g., 0.16x + 0.12(900000 - x) = 126000)\n- 1 pt: Correct algebraic manipulation / solving\n- 1 pt: Correct final answer: 450 000 zł\n\nPartial credit: If the equation is set up correctly but arithmetic is wrong, award 1–2 pts depending on how far the student got. If only the answer is given without work, award max 1 pt.",
+      "metadata": {
+        "tags": ["word-problem", "algebra", "percentages"],
+        "source": "synthetic-cke-style"
+      }
+    }
+  ]
+}

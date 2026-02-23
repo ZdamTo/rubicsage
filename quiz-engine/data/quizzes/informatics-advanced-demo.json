@@ -1,0 +1,57 @@
+{
+  "id": "informatics-advanced-demo-2025",
+  "title": "Matura 2025 — Informatyka (Rozszerzony) Demo",
+  "subject": "Informatyka (Rozszerzony)",
+  "subjectSlug": "informatics",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "inf-q1",
+      "type": "code_python",
+      "promptMarkdown": "## Zadanie 1: Najdłuższy blok identycznych znaków\n\nDany jest ciąg znaków `s` (jeden wiersz ze standardowego wejścia). Wypisz długość **najdłuższego spójnego bloku identycznych znaków**.\n\n### Przykład\n\n**Wejście:**\n```\naabbbcccc\n```\n\n**Wyjście:**\n```\n4\n```\n\n*(bo najdłuższy blok to `cccc` — 4 znaki)*",
+      "maxScore": 3,
+      "grading": { "mode": "hybrid" },
+      "starterCode": "# Read the input string and find the longest block\ns = input()\n\n# Your code here\n",
+      "tests": [
+        { "name": "basic", "stdin": "aabbbcccc", "expectedStdout": "4" },
+        { "name": "single_char", "stdin": "aaaaa", "expectedStdout": "5" },
+        { "name": "all_different", "stdin": "abcdef", "expectedStdout": "1" }
+      ],
+      "hiddenTests": [
+        { "name": "empty_single", "stdin": "x", "expectedStdout": "1" },
+        { "name": "alternating", "stdin": "ababab", "expectedStdout": "1" },
+        { "name": "long_middle", "stdin": "aabbbbbbcc", "expectedStdout": "6" },
+        { "name": "end_block", "stdin": "abcdddd", "expectedStdout": "4" },
+        { "name": "spaces", "stdin": "aa   bb", "expectedStdout": "3" }
+      ],
+      "metadata": {
+        "tags": ["strings", "iteration"],
+        "source": "synthetic-cke-style"
+      }
+    },
+    {
+      "id": "inf-q2",
+      "type": "code_python",
+      "promptMarkdown": "## Zadanie 2: Pary z GCD > 1\n\nNa wejściu podana jest liczba $N$, a następnie $N$ wierszy, z których każdy zawiera dwie liczby całkowite $A$ i $B$ (mogą być ujemne lub zerowe).\n\nWypisz liczbę par $(A, B)$, dla których $\\gcd(|A|, |B|) > 1$.\n\n**Uwaga:** $\\gcd(0, x) = |x|$ dla $x \\neq 0$, oraz $\\gcd(0, 0) = 0$.\n\n### Przykład\n\n**Wejście:**\n```\n4\n6 4\n3 7\n-12 8\n0 5\n```\n\n**Wyjście:**\n```\n3\n```\n\n*(pary: (6,4) → gcd=2, (3,7) → gcd=1, (-12,8) → gcd=4, (0,5) → gcd=5; trzy mają gcd > 1)*",
+      "maxScore": 4,
+      "grading": { "mode": "hybrid" },
+      "starterCode": "from math import gcd\n\nn = int(input())\ncount = 0\n\n# Your code here\n\nprint(count)\n",
+      "tests": [
+        { "name": "example", "stdin": "4\n6 4\n3 7\n-12 8\n0 5", "expectedStdout": "3" },
+        { "name": "all_coprime", "stdin": "2\n3 5\n7 11", "expectedStdout": "0" },
+        { "name": "all_share", "stdin": "3\n4 6\n8 12\n100 50", "expectedStdout": "3" }
+      ],
+      "hiddenTests": [
+        { "name": "negatives", "stdin": "2\n-6 -4\n-3 -7", "expectedStdout": "1" },
+        { "name": "zeros", "stdin": "3\n0 0\n0 6\n0 1", "expectedStdout": "1" },
+        { "name": "large", "stdin": "5\n1000000 500000\n7 13\n12 18\n1 1\n99 33", "expectedStdout": "3" },
+        { "name": "single", "stdin": "1\n2 4", "expectedStdout": "1" },
+        { "name": "mixed_zero", "stdin": "4\n0 0\n0 1\n1 0\n2 3", "expectedStdout": "0" }
+      ],
+      "metadata": {
+        "tags": ["number-theory", "gcd", "loops"],
+        "source": "synthetic-cke-style"
+      }
+    }
+  ]
+}
