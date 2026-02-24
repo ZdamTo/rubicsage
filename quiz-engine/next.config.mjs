@@ -5,5 +5,7 @@ const nextConfig = {
     config.resolve.fallback = { ...config.resolve.fallback, fs: false };
     return config;
   },
+  // Ensure server-only env vars are never bundled into the client
+  serverExternalPackages: [],
 };
 export default nextConfig;
