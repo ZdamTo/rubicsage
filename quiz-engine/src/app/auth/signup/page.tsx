@@ -26,6 +26,9 @@ export default function SignUpPage() {
       password,
       options: {
         data: { display_name: displayName },
+        // Use the current browser origin so the confirmation link works
+        // on localhost AND on Vercel/any custom domain without extra config.
+        emailRedirectTo: `${window.location.origin}/auth/callback`,
       },
     });
 
