@@ -1,0 +1,30 @@
+# ── Build artefacts ───────────────────────────────────────────────────────────
+.next
+out
+build
+
+# ── Dependencies (reinstalled inside Docker) ──────────────────────────────────
+node_modules
+
+# ── Local secrets – NEVER copy into the image ─────────────────────────────────
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# ── Dev / editor files ────────────────────────────────────────────────────────
+.git
+.gitignore
+.vscode
+.idea
+*.log
+npm-debug.log*
+
+# ── Test files ────────────────────────────────────────────────────────────────
+src/__tests__
+vitest.config.ts
+coverage
+
+# ── Docs ──────────────────────────────────────────────────────────────────────
+README.md
