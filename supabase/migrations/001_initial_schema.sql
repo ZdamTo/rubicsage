@@ -3,23 +3,15 @@
 -- Apply via: Supabase SQL Editor or supabase db push
 -- ============================================================
 
--- ── Helpers ──────────────────────────────────────────────────────────────────
+-- ── Shared trigger helper (no table dependency) ───────────────────────────────
 
--- Returns true when the calling user's role in profiles is 'super_admin'
-CREATE OR REPLACE FUNCTION public.is_super_admin(uid uuid DEFAULT auth.uid())
-RETURNS boolean
-LANGUAGE sql STABLE SECURITY DEFINER
-SET search_path = public
-AS $$
-  SELECT EXISTS (
-    SELECT 1 FROM public.profiles
-    WHERE id = uid
-      AND role = 'super_admin'
-      AND status = 'active'
-  );
+CREATE OR REPLACE FUNCTION public.set_updated_at()
+RETURNS trigger LANGUAGE plpgsql AS $$
+BEGIN NEW.updated_at = now(); RETURN NEW; END;
 $$;
 
 -- ── A) profiles ───────────────────────────────────────────────────────────────
+-- Must be created BEFORE is_super_admin(), which references it.
 
 CREATE TABLE IF NOT EXISTS public.profiles (
   id            uuid PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
@@ -36,17 +28,27 @@ CREATE TABLE IF NOT EXISTS public.profiles (
 
 ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
 
--- Trigger: keep updated_at fresh
-CREATE OR REPLACE FUNCTION public.set_updated_at()
-RETURNS trigger LANGUAGE plpgsql AS $$
-BEGIN NEW.updated_at = now(); RETURN NEW; END;
-$$;
-
 CREATE TRIGGER trg_profiles_updated_at
   BEFORE UPDATE ON public.profiles
   FOR EACH ROW EXECUTE FUNCTION public.set_updated_at();
 
--- RLS policies
+-- ── Helper: is_super_admin (requires profiles to exist) ──────────────────────
+-- Returns true when the calling user's role in profiles is 'super_admin'
+
+CREATE OR REPLACE FUNCTION public.is_super_admin(uid uuid DEFAULT auth.uid())
+RETURNS boolean
+LANGUAGE sql STABLE SECURITY DEFINER
+SET search_path = public
+AS $$
+  SELECT EXISTS (
+    SELECT 1 FROM public.profiles
+    WHERE id = uid
+      AND role = 'super_admin'
+      AND status = 'active'
+  );
+$$;
+
+-- RLS policies for profiles (now is_super_admin exists)
 CREATE POLICY "profiles_select_own" ON public.profiles
   FOR SELECT USING (id = auth.uid() OR public.is_super_admin());
 
