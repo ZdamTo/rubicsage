@@ -15,6 +15,8 @@ export interface GradePayload {
     stderr?: string;
     testReport?: unknown;
   };
+  /** DB-sourced system prompt override (from grading_criteria table) */
+  systemPromptOverride?: string;
 }
 
 export interface LLMClient {

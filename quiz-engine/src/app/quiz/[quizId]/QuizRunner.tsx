@@ -87,6 +87,7 @@ export default function QuizRunner({ quiz, quizId, attemptId }: Props) {
           userAnswer,
           attachments,
           aiSettings: settings,
+          quizSubject: quiz.subjectSlug,
           attemptId,
         }),
       });
