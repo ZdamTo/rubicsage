@@ -38,7 +38,7 @@ export class AnthropicClient implements LLMClient {
     const params: any = {
       model,
       max_tokens: 4096,
-      system: buildSystemPrompt(),
+      system: payload.systemPromptOverride ?? buildSystemPrompt(),
       messages: [{ role: "user", content }],
       temperature: 0.1,
     };

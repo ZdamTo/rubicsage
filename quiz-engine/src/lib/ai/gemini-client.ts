@@ -33,7 +33,7 @@ export class GeminiClient implements LLMClient {
     // Build config
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const config: any = {
-      systemInstruction: buildSystemPrompt(),
+      systemInstruction: payload.systemPromptOverride ?? buildSystemPrompt(),
       responseMimeType: "application/json",
     };
 

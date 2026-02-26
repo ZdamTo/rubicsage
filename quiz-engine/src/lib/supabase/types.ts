@@ -281,6 +281,47 @@ export interface Database {
           }
         ];
       };
+      grading_criteria: {
+        Row: {
+          id: string;
+          subject: "polish" | "math" | "informatics" | "global";
+          question_type: string | null;
+          name: string;
+          system_prompt: string | null;
+          rubric_template: string | null;
+          grading_instructions: string | null;
+          is_active: boolean;
+          created_by: string | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          subject: "polish" | "math" | "informatics" | "global";
+          question_type?: string | null;
+          name: string;
+          system_prompt?: string | null;
+          rubric_template?: string | null;
+          grading_instructions?: string | null;
+          is_active?: boolean;
+          created_by?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          subject?: "polish" | "math" | "informatics" | "global";
+          question_type?: string | null;
+          name?: string;
+          system_prompt?: string | null;
+          rubric_template?: string | null;
+          grading_instructions?: string | null;
+          is_active?: boolean;
+          created_by?: string | null;
+          updated_at?: string;
+        };
+        Relationships: [];
+      };
       admin_audit_log: {
         Row: {
           id: string;

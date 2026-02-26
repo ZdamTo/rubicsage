@@ -7,17 +7,16 @@ import {
   scoreNumeric,
   scoreCodeTests,
 } from "@/lib/ai/deterministic-scorer";
-import { buildObjectiveFeedbackPrompt } from "@/lib/ai/prompts";
 import type { GradePayload } from "@/lib/ai/types";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { createServiceRoleClient } from "@/lib/supabase/server";
 import fs from "fs";
 import path from "path";
 
-// Basic in-memory per-user rate limiter (resets on cold start; good enough for prototype)
+// ── In-memory per-user rate limiter ──────────────────────────────────────────
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
-const RATE_LIMIT_WINDOW_MS = 60_000; // 1 minute
-const RATE_LIMIT_MAX = 30; // 30 grading calls per minute per user
+const RATE_LIMIT_WINDOW_MS = 60_000;
+const RATE_LIMIT_MAX = 30;
 
 function checkRateLimit(userId: string): boolean {
   const now = Date.now();
@@ -31,8 +30,41 @@ function checkRateLimit(userId: string): boolean {
   return true;
 }
 
+// ── Fetch grading criteria from DB ────────────────────────────────────────────
+// Priority: (subject + question_type) > (subject + null) > ('global' + null)
+interface GradingCriteria {
+  system_prompt: string | null;
+  rubric_template: string | null;
+  grading_instructions: string | null;
+}
+
+async function fetchGradingCriteria(
+  subject: string,
+  questionType: string
+): Promise<GradingCriteria> {
+  const service = createServiceRoleClient();
+  const { data } = await service
+    .from("grading_criteria")
+    .select("subject, question_type, system_prompt, rubric_template, grading_instructions")
+    .eq("is_active", true)
+    .in("subject", [subject, "global"] as Array<"polish" | "math" | "informatics" | "global">)
+    .or(`question_type.is.null,question_type.eq.${questionType}`)
+    .order("subject", { ascending: false })   // subject-specific before 'global'
+    .order("question_type", { ascending: false, nullsFirst: false }); // typed before null
+
+  // data is ordered: (subject+type) > (subject+null) > (global+null)
+  const row = data?.[0] ?? null;
+  return {
+    system_prompt: row?.system_prompt ?? null,
+    rubric_template: row?.rubric_template ?? null,
+    grading_instructions: row?.grading_instructions ?? null,
+  };
+}
+
+// ── Main handler ──────────────────────────────────────────────────────────────
+
 export async function POST(req: NextRequest) {
-  // ── Auth check ────────────────────────────────────────────────────────────
+  // ── Auth ──────────────────────────────────────────────────────────────────
   const supabase = await createServerSupabaseClient();
   const { data: { user } } = await supabase.auth.getUser();
 
@@ -40,7 +72,6 @@ export async function POST(req: NextRequest) {
   let attemptId: string | null = null;
 
   if (user) {
-    // Check banned status
     const { data: profile } = await supabase
       .from("profiles")
       .select("status")
@@ -66,20 +97,38 @@ export async function POST(req: NextRequest) {
     const parsed = GradeRequest.parse(body);
     const { question, userAnswer, attachments, aiSettings } = parsed;
 
-    // Optional: persist answer if attemptId provided
     attemptId = body.attemptId ?? null;
+    // Subject passed from the client (quiz metadata); falls back to 'global'
+    const quizSubject: string = body.quizSubject ?? "global";
 
     const q = question;
 
-    // Load rubric file if referenced
-    let rubricText = q.rubric || "";
-    if (q.rubricFile) {
+    // ── Load rubric: question-level first, then DB, then filesystem ──────────
+    let rubricText: string = (q as { rubric?: string }).rubric ?? "";
+
+    if (!rubricText && (q as { rubricFile?: string }).rubricFile) {
+      // Legacy filesystem rubric (local dev / old quizzes)
       try {
-        const rubricPath = path.join(process.cwd(), q.rubricFile);
+        const rubricPath = path.join(process.cwd(), (q as { rubricFile: string }).rubricFile);
         rubricText = fs.readFileSync(rubricPath, "utf-8");
       } catch {
-        // Rubric file not found – use inline rubric
+        // File not found – will fall through to DB criteria below
       }
+    }
+
+    // ── Fetch DB grading criteria for this subject + question type ───────────
+    const criteria = await fetchGradingCriteria(quizSubject, q.type);
+
+    // DB rubric_template fills in when question has no inline rubric
+    if (!rubricText && criteria.rubric_template) {
+      rubricText = criteria.rubric_template;
+    }
+
+    // Append subject-level grading instructions to the rubric
+    if (criteria.grading_instructions) {
+      rubricText = rubricText
+        ? `${rubricText}\n\n---\n${criteria.grading_instructions}`
+        : criteria.grading_instructions;
     }
 
     const payload: GradePayload = {
@@ -91,6 +140,8 @@ export async function POST(req: NextRequest) {
       expectedKeyPoints: (q as { expectedKeyPoints?: string[] }).expectedKeyPoints,
       correctAnswer: (q as { correctAnswer?: string | number }).correctAnswer?.toString(),
       attachments,
+      // Pass DB system prompt so AI clients can use it
+      systemPromptOverride: criteria.system_prompt ?? undefined,
     };
 
     let result: GradeResult;
@@ -173,7 +224,7 @@ export async function POST(req: NextRequest) {
         );
     }
 
-    // ── Persist answer to DB if user is authenticated and attemptId provided ──
+    // ── Persist to DB ─────────────────────────────────────────────────────────
     if (userId && attemptId) {
       const service = createServiceRoleClient();
 
@@ -191,7 +242,6 @@ export async function POST(req: NextRequest) {
         { onConflict: "attempt_id,question_id" }
       );
 
-      // Log practice after successful answer
       await service.rpc("log_practice_and_update_streak", {
         p_user_id: userId,
         p_source: "answer_submit",

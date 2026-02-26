@@ -17,7 +17,7 @@ export class OpenAIClient implements LLMClient {
 
     // Build messages
     const messages: OpenAI.Chat.ChatCompletionMessageParam[] = [
-      { role: "system", content: buildSystemPrompt() },
+      { role: "system", content: payload.systemPromptOverride ?? buildSystemPrompt() },
     ];
 
     // If there's an image attachment, include it as multimodal content
