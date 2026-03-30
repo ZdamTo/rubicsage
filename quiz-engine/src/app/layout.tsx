@@ -3,8 +3,8 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "RubicSage — AI Exam Engine",
-  description: "AI-graded quiz engine for Polish Matura exams",
+  title: "ZdamTo.io — AI Exam Engine",
+  description: "Platforma do nauki i przygotowania do egzaminów — Matura, Prawo Jazdy i więcej.",
 };
 
 export default function RootLayout({
