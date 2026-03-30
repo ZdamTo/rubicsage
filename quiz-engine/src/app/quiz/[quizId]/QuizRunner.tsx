@@ -8,6 +8,7 @@ import { EssayInput } from "@/components/questions/EssayInput";
 import { MathOpenInput } from "@/components/questions/MathOpenInput";
 import { CodePythonInput } from "@/components/questions/CodePythonInput";
 import { FeedbackPanel } from "@/components/FeedbackPanel";
+import { AskAIPanel } from "@/components/AskAIPanel";
 import { useSettings } from "@/hooks/useSettings";
 import type { GradeResult, Question, Quiz } from "@/lib/quiz/schemas";
 import type { TestResult } from "@/hooks/usePyodide";
@@ -38,6 +39,7 @@ export default function QuizRunner({ quiz, quizId, attemptId }: Props) {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [states, setStates] = useState<Record<string, QuestionState>>({});
   const [attemptSubmitted, setAttemptSubmitted] = useState(false);
+  const [askAIOpen, setAskAIOpen] = useState(false);
 
   useEffect(() => {
     const initial: Record<string, QuestionState> = {};
@@ -158,13 +160,22 @@ export default function QuizRunner({ quiz, quizId, attemptId }: Props) {
             Previous
           </button>
 
-          <button
-            onClick={handleGrade}
-            disabled={state.grading || state.submitted}
-            className="px-6 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 disabled:opacity-50 transition-colors"
-          >
-            {state.grading ? "Grading…" : state.submitted ? "Submitted" : "Submit"}
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={handleGrade}
+              disabled={state.grading || state.submitted}
+              className="px-6 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 disabled:opacity-50 transition-colors"
+            >
+              {state.grading ? "Grading…" : state.submitted ? "Submitted" : "Submit"}
+            </button>
+            <button
+              onClick={() => setAskAIOpen(true)}
+              className="px-4 py-2 bg-purple-100 text-purple-700 rounded-lg text-sm font-medium hover:bg-purple-200 transition-colors flex items-center gap-1.5"
+              title="Zapytaj AI o to zadanie"
+            >
+              🤖 Ask AI
+            </button>
+          </div>
 
           <button
             onClick={() => setCurrentIdx((i) => Math.min(quiz.questions.length - 1, i + 1))}
@@ -204,6 +215,15 @@ export default function QuizRunner({ quiz, quizId, attemptId }: Props) {
           </div>
         )}
       </div>
+
+      {/* Ask AI panel — fixed side drawer */}
+      <AskAIPanel
+        question={question}
+        userAnswer={buildUserAnswer(question, state)}
+        aiSettings={settings}
+        isOpen={askAIOpen}
+        onClose={() => setAskAIOpen(false)}
+      />
     </div>
   );
 }
