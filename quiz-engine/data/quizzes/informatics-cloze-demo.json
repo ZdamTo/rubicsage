@@ -1,0 +1,102 @@
+{
+  "id": "informatics-cloze-demo-2025",
+  "title": "Informatyka — Uzupełnianie luk (Matura poziom rozszerzony) Demo",
+  "subject": "Informatyka",
+  "subjectSlug": "informatics",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "cloze-q1",
+      "type": "cloze_text",
+      "promptMarkdown": "## Zadanie 1 — Uzupełnij zapytanie SQL\n\nUzupełnij poniższe zapytanie SQL, które wyświetla **nazwę produktu i średnią cenę** dla produktów, których średnia cena jest **wyższa niż 100 zł**. Wyniki mają być posortowane malejąco.\n\nWpisz odpowiednie słowa kluczowe lub wyrażenia w wyznaczone miejsca.",
+      "maxScore": 5,
+      "grading": { "mode": "hybrid" },
+      "template": "SELECT nazwa, {{agg_func}}(cena) AS srednia_cena\nFROM Produkty\n{{group_clause}} nazwa\n{{filter_clause}} {{agg_func}}(cena) {{operator}} 100\n{{sort_clause}} srednia_cena {{direction}};",
+      "blanks": [
+        {
+          "id": "agg_func",
+          "correctAnswer": "AVG",
+          "acceptedAnswers": ["avg", "Avg"],
+          "caseSensitive": false,
+          "points": 1
+        },
+        {
+          "id": "group_clause",
+          "correctAnswer": "GROUP BY",
+          "acceptedAnswers": ["group by"],
+          "caseSensitive": false,
+          "points": 1
+        },
+        {
+          "id": "filter_clause",
+          "correctAnswer": "HAVING",
+          "acceptedAnswers": ["having"],
+          "caseSensitive": false,
+          "points": 1
+        },
+        {
+          "id": "operator",
+          "correctAnswer": ">",
+          "points": 1
+        },
+        {
+          "id": "sort_clause",
+          "correctAnswer": "ORDER BY",
+          "acceptedAnswers": ["order by"],
+          "caseSensitive": false,
+          "points": 1
+        },
+        {
+          "id": "direction",
+          "correctAnswer": "DESC",
+          "acceptedAnswers": ["desc"],
+          "caseSensitive": false,
+          "points": 0
+        }
+      ],
+      "metadata": { "tags": ["sql", "cloze", "avg", "group-by", "having"], "source": "synthetic-matura-style" }
+    },
+    {
+      "id": "cloze-q2",
+      "type": "cloze_text",
+      "promptMarkdown": "## Zadanie 2 — Uzupełnij algorytm wyszukiwania binarnego\n\nPoniżej przedstawiono pseudokod algorytmu **wyszukiwania binarnego** (binary search) w tablicy posortowanej rosnąco. Uzupełnij brakujące elementy.\n\n> Tablica jest indeksowana od 0. Szukamy wartości `x`.",
+      "maxScore": 4,
+      "grading": { "mode": "hybrid" },
+      "template": "lewy := 0\nPrawy := n - 1\nDopóki lewy {{cmp_op}} prawy:\n    srodek := (lewy + prawy) {{div_op}} 2\n    Jeśli tab[srodek] = x:\n        Zwróć srodek\n    Jeśli tab[srodek] {{lt_op}} x:\n        lewy := srodek + {{one}}\n    W przeciwnym razie:\n        prawy := srodek - 1\nZwróć {{not_found}}",
+      "blanks": [
+        {
+          "id": "cmp_op",
+          "correctAnswer": "<=",
+          "acceptedAnswers": ["≤", "=<"],
+          "caseSensitive": false,
+          "points": 1
+        },
+        {
+          "id": "div_op",
+          "correctAnswer": "div",
+          "acceptedAnswers": ["//", "/"],
+          "caseSensitive": false,
+          "points": 1
+        },
+        {
+          "id": "lt_op",
+          "correctAnswer": "<",
+          "points": 1
+        },
+        {
+          "id": "one",
+          "correctAnswer": "1",
+          "points": 1
+        },
+        {
+          "id": "not_found",
+          "correctAnswer": "-1",
+          "acceptedAnswers": ["-1", "brak", "null", "None", "false"],
+          "caseSensitive": false,
+          "points": 0
+        }
+      ],
+      "metadata": { "tags": ["algorithm", "binary-search", "cloze"], "source": "synthetic-matura-style" }
+    }
+  ]
+}

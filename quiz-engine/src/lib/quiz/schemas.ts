@@ -10,6 +10,9 @@ export const QuestionType = z.enum([
   "math_open_with_work",
   "polish_essay",
   "code_python",
+  "sql_query",
+  "spreadsheet_task",
+  "cloze_text",
 ]);
 export type QuestionType = z.infer<typeof QuestionType>;
 
@@ -81,6 +84,79 @@ export const CodePythonQuestion = QuestionBase.extend({
   hiddenTests: z.array(CodePythonTest).optional(),
 });
 
+// ── sql_query ────────────────────────────────────────────────────────────────
+
+const SqlTable = z.object({
+  name: z.string(),
+  columns: z.array(z.object({ name: z.string(), type: z.string() })),
+  sampleRows: z.array(z.record(z.unknown())).optional(),
+});
+
+export const SqlQueryQuestion = QuestionBase.extend({
+  type: z.literal("sql_query"),
+  /** Markdown block describing the DB schema (shown to student). */
+  schemaMarkdown: z.string().optional(),
+  /** Structured table definitions (alternative / supplement to schemaMarkdown). */
+  tables: z.array(SqlTable).optional(),
+  /** Example correct result set — shown in grading prompt. */
+  expectedResult: z.array(z.record(z.unknown())).optional(),
+  /** Keywords or sub-expressions the query must contain (e.g. "JOIN", "GROUP BY"). */
+  expectedQueryPatterns: z.array(z.string()).optional(),
+  dialect: z.enum(["sql", "mysql", "postgresql", "sqlite"]).default("sql"),
+  /** INSERT / CREATE statements shown to student as context. */
+  seedData: z.string().optional(),
+  rubric: z.string().optional(),
+});
+export type SqlQueryQuestion = z.infer<typeof SqlQueryQuestion>;
+
+// ── spreadsheet_task ──────────────────────────────────────────────────────────
+
+const ExpectedOutputType = z.enum(["formula", "value", "range", "chart", "summary"]);
+
+const ExpectedOutput = z.object({
+  id: z.string(),
+  label: z.string(),
+  description: z.string(),
+  type: ExpectedOutputType,
+});
+export type ExpectedOutput = z.infer<typeof ExpectedOutput>;
+
+export const SpreadsheetTaskQuestion = QuestionBase.extend({
+  type: z.literal("spreadsheet_task"),
+  /** Markdown table or description of the source data given to the student. */
+  sourceDataDescription: z.string(),
+  /** Each output the student must produce (formula, value, chart, etc.). */
+  expectedOutputs: z.array(ExpectedOutput),
+  /** Optional chart requirement. */
+  requiredChart: z
+    .object({ type: z.string(), description: z.string() })
+    .optional(),
+  rubric: z.string().optional(),
+});
+export type SpreadsheetTaskQuestion = z.infer<typeof SpreadsheetTaskQuestion>;
+
+// ── cloze_text ────────────────────────────────────────────────────────────────
+
+export const ClozeBlank = z.object({
+  id: z.string(),
+  correctAnswer: z.string(),
+  /** Alternative accepted answers (case handling applied). */
+  acceptedAnswers: z.array(z.string()).optional(),
+  /** Default: false — comparison is case-insensitive by default. */
+  caseSensitive: z.boolean().default(false),
+  /** Points awarded for this blank. Default: 1. */
+  points: z.number().default(1),
+});
+export type ClozeBlank = z.infer<typeof ClozeBlank>;
+
+export const ClozeTextQuestion = QuestionBase.extend({
+  type: z.literal("cloze_text"),
+  /** Text with {{blankId}} placeholders, e.g. "SELECT {{col}} FROM {{tbl}}". */
+  template: z.string(),
+  blanks: z.array(ClozeBlank),
+});
+export type ClozeTextQuestion = z.infer<typeof ClozeTextQuestion>;
+
 // ── Union ───────────────────────────────────────────────────────────────────
 
 export const Question = z.discriminatedUnion("type", [
@@ -91,6 +167,9 @@ export const Question = z.discriminatedUnion("type", [
   MathOpenQuestion,
   PolishEssayQuestion,
   CodePythonQuestion,
+  SqlQueryQuestion,
+  SpreadsheetTaskQuestion,
+  ClozeTextQuestion,
 ]);
 export type Question = z.infer<typeof Question>;
 

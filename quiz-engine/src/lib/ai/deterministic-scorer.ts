@@ -1,6 +1,7 @@
 /**
  * Deterministic scoring for question types that don't need AI.
  */
+import type { ClozeBlank } from "@/lib/quiz/schemas";
 
 export interface DeterministicResult {
   score: number;
@@ -72,4 +73,66 @@ export function scoreCodeTests(
   const passed = testResults.filter((t) => t.passed).length;
   const score = Math.round((passed / testResults.length) * maxScore);
   return { score, maxScore, isCorrect: passed === testResults.length };
+}
+
+// ── cloze_text scoring ────────────────────────────────────────────────────────
+
+export interface ClozeBlankResult {
+  blankId: string;
+  userAnswer: string;
+  correctAnswer: string;
+  isCorrect: boolean;
+  points: number;
+  earnedPoints: number;
+}
+
+/**
+ * Score a cloze_text question by checking each blank independently.
+ * Supports multiple accepted answers and optional case sensitivity.
+ * The raw earned points are scaled to maxScore.
+ */
+export function scoreClozeText(
+  userAnswers: Record<string, string>,
+  blanks: ClozeBlank[],
+  maxScore: number
+): DeterministicResult & { blankResults: ClozeBlankResult[] } {
+  let totalPoints = 0;
+  let earnedPoints = 0;
+
+  const blankResults: ClozeBlankResult[] = blanks.map((blank) => {
+    const points = blank.points ?? 1;
+    totalPoints += points;
+
+    const raw = (userAnswers[blank.id] ?? "").trim();
+    const caseSensitive = blank.caseSensitive ?? false;
+
+    const normalize = (s: string) => (caseSensitive ? s.trim() : s.trim().toLowerCase());
+
+    const allAccepted = [blank.correctAnswer, ...(blank.acceptedAnswers ?? [])];
+    const isCorrect = allAccepted.some((a) => normalize(raw) === normalize(a));
+
+    if (isCorrect) earnedPoints += points;
+
+    return {
+      blankId: blank.id,
+      userAnswer: raw,
+      correctAnswer: blank.correctAnswer,
+      isCorrect,
+      points,
+      earnedPoints: isCorrect ? points : 0,
+    };
+  });
+
+  // Scale earned/total to maxScore
+  const score =
+    totalPoints === 0
+      ? 0
+      : Math.round((earnedPoints / totalPoints) * maxScore * 10) / 10;
+
+  return {
+    score: Math.min(score, maxScore),
+    maxScore,
+    isCorrect: earnedPoints === totalPoints,
+    blankResults,
+  };
 }

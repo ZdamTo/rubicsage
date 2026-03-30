@@ -9,8 +9,12 @@ import { MathOpenInput } from "@/components/questions/MathOpenInput";
 import { CodePythonInput } from "@/components/questions/CodePythonInput";
 import { FeedbackPanel } from "@/components/FeedbackPanel";
 import { AskAIPanel } from "@/components/AskAIPanel";
+import { SqlQueryInput } from "@/components/questions/SqlQueryInput";
+import { SpreadsheetTaskInput } from "@/components/questions/SpreadsheetTaskInput";
+import { ClozeTextInput } from "@/components/questions/ClozeTextInput";
 import { useSettings } from "@/hooks/useSettings";
-import type { GradeResult, Question, Quiz } from "@/lib/quiz/schemas";
+import type { GradeResult, Question, Quiz, SqlQueryQuestion, SpreadsheetTaskQuestion, ClozeTextQuestion } from "@/lib/quiz/schemas";
+import type { ClozeBlankResult } from "@/lib/ai/deterministic-scorer";
 import type { TestResult } from "@/hooks/usePyodide";
 
 interface QuestionState {
@@ -23,6 +27,12 @@ interface QuestionState {
   codeTestResults?: TestResult[];
   codeStdout?: string;
   codeStderr?: string;
+  /** spreadsheet_task: keyed by output id */
+  spreadsheetOutputs?: Record<string, string>;
+  /** cloze_text: keyed by blank id */
+  clozeAnswers?: Record<string, string>;
+  /** cloze_text: per-blank results injected from gradeResult for UI feedback */
+  clozeBlankResults?: ClozeBlankResult[];
   gradeResult?: GradeResult | null;
   grading?: boolean;
   submitted?: boolean;
@@ -94,7 +104,19 @@ export default function QuizRunner({ quiz, quizId, attemptId }: Props) {
         }),
       });
       const result: GradeResult = await res.json();
-      updateState(question.id, { gradeResult: result, grading: false });
+
+      // For cloze_text: compute blank results client-side for inline UI feedback
+      let clozeBlankResults: ClozeBlankResult[] | undefined;
+      if (question.type === "cloze_text") {
+        const { scoreClozeText } = await import("@/lib/ai/deterministic-scorer");
+        const ct = question as ClozeTextQuestion;
+        const parsed = (() => {
+          try { return JSON.parse(userAnswer) as Record<string, string>; } catch { return {}; }
+        })();
+        clozeBlankResults = scoreClozeText(parsed, ct.blanks, question.maxScore).blankResults;
+      }
+
+      updateState(question.id, { gradeResult: result, grading: false, clozeBlankResults });
     } catch (err) {
       updateState(question.id, {
         grading: false,
@@ -301,6 +323,50 @@ function QuestionInput({
           disabled={disabled}
         />
       );
+    case "sql_query": {
+      const sq = question as SqlQueryQuestion;
+      return (
+        <SqlQueryInput
+          query={state.answer}
+          onQueryChange={(v) => onUpdate({ answer: v })}
+          schemaMarkdown={(sq as { schemaMarkdown?: string }).schemaMarkdown}
+          seedData={(sq as { seedData?: string }).seedData}
+          dialect={(sq as { dialect?: string }).dialect}
+          disabled={disabled}
+        />
+      );
+    }
+    case "spreadsheet_task": {
+      const ss = question as SpreadsheetTaskQuestion;
+      return (
+        <SpreadsheetTaskInput
+          sourceDataDescription={ss.sourceDataDescription}
+          expectedOutputs={ss.expectedOutputs}
+          requiredChart={(ss as { requiredChart?: { type: string; description: string } }).requiredChart}
+          values={state.spreadsheetOutputs ?? {}}
+          onChange={(id, val) =>
+            onUpdate({ spreadsheetOutputs: { ...(state.spreadsheetOutputs ?? {}), [id]: val } })
+          }
+          disabled={disabled}
+        />
+      );
+    }
+    case "cloze_text": {
+      const ct = question as ClozeTextQuestion;
+      return (
+        <ClozeTextInput
+          template={ct.template}
+          blanks={ct.blanks}
+          values={state.clozeAnswers ?? {}}
+          onChange={(id, val) =>
+            onUpdate({ clozeAnswers: { ...(state.clozeAnswers ?? {}), [id]: val } })
+          }
+          disabled={disabled}
+          submitted={state.submitted}
+          blankResults={state.clozeBlankResults}
+        />
+      );
+    }
     default:
       return (
         <ShortTextInput
@@ -322,6 +388,10 @@ function buildUserAnswer(question: Question, state: QuestionState): string {
       });
     case "code_python":
       return state.code || "";
+    case "spreadsheet_task":
+      return JSON.stringify(state.spreadsheetOutputs ?? {});
+    case "cloze_text":
+      return JSON.stringify(state.clozeAnswers ?? {});
     default:
       return state.answer;
   }

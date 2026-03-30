@@ -1,0 +1,79 @@
+{
+  "id": "informatics-spreadsheet-demo-2025",
+  "title": "Informatyka — Arkusz kalkulacyjny (Matura poziom rozszerzony) Demo",
+  "subject": "Informatyka",
+  "subjectSlug": "informatics",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "ss-q1",
+      "type": "spreadsheet_task",
+      "promptMarkdown": "## Zadanie 1 — Analiza sprzedaży\n\nOtrzymałeś arkusz kalkulacyjny z danymi dotyczącymi sprzedaży produktów w 3 miesiącach. Dane są zorganizowane jak w tabeli poniżej.\n\nWykonaj obliczenia opisane w poleceniach.",
+      "maxScore": 6,
+      "grading": { "mode": "ai" },
+      "sourceDataDescription": "| A — Produkt | B — Styczeń | C — Luty | D — Marzec |\n|---|---|---|---|\n| Laptop | 12 | 8 | 15 |\n| Mysz | 45 | 52 | 38 |\n| Klawiatura | 30 | 27 | 41 |\n| Monitor | 9 | 11 | 7 |\n| Słuchawki | 22 | 18 | 30 |\n\nWiersze 2–6 zawierają dane. Wiersz 1 to nagłówki.",
+      "expectedOutputs": [
+        {
+          "id": "total_per_product",
+          "label": "Suma sprzedaży każdego produktu",
+          "description": "Podaj formułę (dla wiersza 2, kolumna E) obliczającą łączną sprzedaż produktu ze wszystkich 3 miesięcy.",
+          "type": "formula"
+        },
+        {
+          "id": "best_month",
+          "label": "Najlepszy miesiąc",
+          "description": "Napisz formułę lub opisz metodę wyznaczenia, który miesiąc miał największą łączną sprzedaż wszystkich produktów (suma kolumny B, C lub D).",
+          "type": "formula"
+        },
+        {
+          "id": "products_above_30_jan",
+          "label": "Produkty ze sprzedażą > 30 w styczniu",
+          "description": "Podaj formułę zliczającą ile produktów miało sprzedaż powyżej 30 sztuk w styczniu (kolumna B).",
+          "type": "formula"
+        }
+      ],
+      "requiredChart": {
+        "type": "Wykres kolumnowy (słupkowy)",
+        "description": "Opisz jak stworzysz wykres kolumnowy pokazujący sprzedaż każdego produktu w poszczególnych miesiącach. Wymień: typ wykresu, zakres danych, tytuł, etykiety osi."
+      },
+      "rubric": "6 pkt:\n- 2 pkt za poprawną formułę sumy (=SUMA(B2:D2) lub =B2+C2+D2)\n- 1 pkt za metodę znalezienia najlepszego miesiąca (MAKS + porównanie sum kolumn)\n- 1 pkt za LICZ.JEŻELI(B2:B6,\">30\")\n- 2 pkt za opis wykresu (1 pkt za typ i zakres, 1 pkt za tytuł i osie)",
+      "metadata": { "tags": ["spreadsheet", "formula", "chart"], "source": "synthetic-matura-style" }
+    },
+    {
+      "id": "ss-q2",
+      "type": "spreadsheet_task",
+      "promptMarkdown": "## Zadanie 2 — Oceny uczniów\n\nArkusz zawiera oceny 5 uczniów z 4 przedmiotów. Oblicz wymagane wartości.",
+      "maxScore": 4,
+      "grading": { "mode": "ai" },
+      "sourceDataDescription": "| A — Uczeń | B — Matematyka | C — Fizyka | D — Informatyka | E — Język Polski |\n|---|---|---|---|---|\n| Alicja | 5 | 4 | 6 | 5 |\n| Bartek | 3 | 3 | 4 | 4 |\n| Celina | 6 | 5 | 5 | 6 |\n| Darek | 2 | 3 | 3 | 2 |\n| Ewa | 4 | 5 | 6 | 4 |\n\nWiersze 2–6 to dane. Wiersz 1 to nagłówki.",
+      "expectedOutputs": [
+        {
+          "id": "avg_per_student",
+          "label": "Średnia ocen ucznia",
+          "description": "Podaj formułę obliczającą średnią ocen Alicji (wiersz 2, kolumny B–E). Umieść wynik w kolumnie F.",
+          "type": "formula"
+        },
+        {
+          "id": "class_avg_math",
+          "label": "Średnia klasy z matematyki",
+          "description": "Podaj formułę obliczającą średnią ocen całej klasy z matematyki (kolumna B).",
+          "type": "formula"
+        },
+        {
+          "id": "best_student_name",
+          "label": "Imię najlepszego ucznia",
+          "description": "Opisz lub podaj formułę (np. INDEX/PODAJ.POZYCJĘ) która zwróci imię ucznia z najwyższą średnią.",
+          "type": "formula"
+        },
+        {
+          "id": "failing_students",
+          "label": "Uczniowie ze średnią < 3",
+          "description": "Podaj formułę zliczającą uczniów których średnia jest poniżej 3. Możesz założyć że średnie są już w kolumnie F.",
+          "type": "value"
+        }
+      ],
+      "rubric": "4 pkt — 1 pkt za każdą poprawną formułę/odpowiedź",
+      "metadata": { "tags": ["spreadsheet", "average", "countif"], "source": "synthetic-matura-style" }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "informatics-sql-demo-2025",
+  "title": "Informatyka — SQL (Matura poziom rozszerzony) Demo",
+  "subject": "Informatyka",
+  "subjectSlug": "informatics",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "sql-q1",
+      "type": "sql_query",
+      "promptMarkdown": "## Zadanie 1\n\nW bazie danych sklepu internetowego istnieją tabele `Klienci` i `Zamowienia`.\n\nNapisz zapytanie SQL, które zwróci **imię, nazwisko i łączną wartość zamówień** dla każdego klienta, który złożył **co najmniej 2 zamówienia**. Wyniki posortuj malejąco według łącznej wartości.\n\nSkorzystaj ze schematu bazy danych po lewej stronie.",
+      "maxScore": 4,
+      "grading": { "mode": "ai" },
+      "dialect": "sql",
+      "schemaMarkdown": "### Tabela `Klienci`\n| Kolumna | Typ | Opis |\n|---|---|---|\n| `id_klienta` | INT (PK) | Unikalny identyfikator klienta |\n| `imie` | VARCHAR(50) | Imię klienta |\n| `nazwisko` | VARCHAR(50) | Nazwisko klienta |\n| `email` | VARCHAR(100) | Adres e-mail |\n\n### Tabela `Zamowienia`\n| Kolumna | Typ | Opis |\n|---|---|---|\n| `id_zamowienia` | INT (PK) | Unikalny identyfikator zamówienia |\n| `id_klienta` | INT (FK → Klienci) | Klient który złożył zamówienie |\n| `data_zamowienia` | DATE | Data złożenia zamówienia |\n| `wartosc` | DECIMAL(10,2) | Wartość zamówienia w PLN |",
+      "seedData": "INSERT INTO Klienci VALUES (1,'Anna','Kowalska','anna@example.com');\nINSERT INTO Klienci VALUES (2,'Jan','Nowak','jan@example.com');\nINSERT INTO Klienci VALUES (3,'Maria','Wiśniewska','maria@example.com');\nINSERT INTO Zamowienia VALUES (1,1,'2024-01-10',250.00);\nINSERT INTO Zamowienia VALUES (2,1,'2024-02-15',180.50);\nINSERT INTO Zamowienia VALUES (3,1,'2024-03-20',320.00);\nINSERT INTO Zamowienia VALUES (4,2,'2024-01-25',99.99);\nINSERT INTO Zamowienia VALUES (5,3,'2024-02-05',450.00);\nINSERT INTO Zamowienia VALUES (6,3,'2024-03-11',200.00);",
+      "expectedResult": [
+        { "imie": "Anna", "nazwisko": "Kowalska", "laczna_wartosc": 750.50 },
+        { "imie": "Maria", "nazwisko": "Wiśniewska", "laczna_wartosc": 650.00 }
+      ],
+      "expectedQueryPatterns": ["JOIN", "GROUP BY", "HAVING", "SUM", "ORDER BY"],
+      "rubric": "4 pkt:\n- 1 pkt za poprawny JOIN tabel Klienci i Zamowienia\n- 1 pkt za użycie GROUP BY po id_klienta (lub imieniu i nazwisku)\n- 1 pkt za warunek HAVING COUNT(*) >= 2\n- 1 pkt za SUM(wartosc) i poprawny ORDER BY DESC",
+      "metadata": { "tags": ["sql", "join", "group-by", "having"], "source": "synthetic-matura-style" }
+    },
+    {
+      "id": "sql-q2",
+      "type": "sql_query",
+      "promptMarkdown": "## Zadanie 2\n\nKorzystając z tej samej bazy danych, napisz zapytanie SQL które zwróci **datę i wartość** najdroższego zamówienia złożonego przez klienta o nazwisku **'Kowalska'**.",
+      "maxScore": 3,
+      "grading": { "mode": "ai" },
+      "dialect": "sql",
+      "schemaMarkdown": "### Tabela `Klienci`\n| Kolumna | Typ |\n|---|---|\n| `id_klienta` | INT (PK) |\n| `imie` | VARCHAR(50) |\n| `nazwisko` | VARCHAR(50) |\n| `email` | VARCHAR(100) |\n\n### Tabela `Zamowienia`\n| Kolumna | Typ |\n|---|---|\n| `id_zamowienia` | INT (PK) |\n| `id_klienta` | INT (FK) |\n| `data_zamowienia` | DATE |\n| `wartosc` | DECIMAL(10,2) |",
+      "expectedResult": [
+        { "data_zamowienia": "2024-03-20", "wartosc": 320.00 }
+      ],
+      "expectedQueryPatterns": ["JOIN", "WHERE", "MAX"],
+      "rubric": "3 pkt:\n- 1 pkt za poprawny JOIN\n- 1 pkt za filtr WHERE nazwisko = 'Kowalska'\n- 1 pkt za wybór maksymalnej wartości (MAX lub ORDER BY + LIMIT 1)",
+      "metadata": { "tags": ["sql", "join", "where", "max"], "source": "synthetic-matura-style" }
+    }
+  ]
+}
