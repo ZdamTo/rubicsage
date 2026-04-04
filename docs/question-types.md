@@ -340,21 +340,42 @@ AI receives: source data + expected output descriptions + student's filled text 
 
 **Grading:** `hybrid` — deterministic per-blank scoring + AI qualitative feedback
 
-**When to use:** Fill-in-the-blank tasks: SQL keywords, algorithm steps, formula components.
+**When to use:** Fill-in-the-blank tasks rendered as inline inputs inside a code/text block.
+
+### Good use cases ✅
+
+| Pattern | Example template |
+|---|---|
+| SQL keyword completion | `SELECT {{col}}\nFROM {{tbl}}\nGROUP BY {{col}}\nHAVING {{agg}}(x) > {{n}};` |
+| Algorithm tracing | `krok 1: lewy=0, prawy=6, środek={{m1}}, T[środek]={{v1}}` |
+| Formula/expression fill | `P(A∪B) = P(A) {{op}} P(B) {{op2}} P(A∩B)` |
+| Pseudocode keyword | `Dopóki lewy {{cmp}} prawy:\n    środek := (lewy+prawy) {{div}} 2` |
+| Short structured lines | `wejście: {{val}} → wynik: {{result}}, wywołania: {{calls}}` |
+
+### Bad use cases ❌ — use a different type
+
+| Pattern | Correct type |
+|---|---|
+| Markdown table cells with `\|` | Future `table_fill` type |
+| Long prose paragraphs | `short_text` |
+| Full essay with blanks | `polish_essay` |
+| Multiple independent textareas | `spreadsheet_task` |
+
+> **Rule:** If your template contains lines matching `| cell | cell |`, the component will display an author warning. Use `table_fill` (planned) for tabular fill-in tasks.
 
 ### Schema
 
 ```json
 {
   "type": "cloze_text",
-  "template": "SELECT nazwa, {{agg}}(cena)\nFROM Produkty\n{{group}} nazwa\n{{filter}} {{agg}}(cena) > 100;",
+  "template": "SELECT {{col}}, {{agg}}(cena) AS wynik\nFROM Produkty\n{{group}} {{col}}\n{{filter}} {{agg}}(cena) {{op}} 100\n{{sort}} wynik {{dir}};",
   "blanks": [
     {
       "id": "agg",
       "correctAnswer": "AVG",
       "acceptedAnswers": ["avg"],
       "caseSensitive": false,
-      "points": 2
+      "points": 1
     },
     {
       "id": "group",
@@ -369,38 +390,88 @@ AI receives: source data + expected output descriptions + student's filled text 
       "acceptedAnswers": ["having"],
       "caseSensitive": false,
       "points": 1
+    },
+    {
+      "id": "op",
+      "correctAnswer": ">",
+      "points": 1
+    },
+    {
+      "id": "sort",
+      "correctAnswer": "ORDER BY",
+      "acceptedAnswers": ["order by"],
+      "caseSensitive": false,
+      "points": 1
     }
+  ]
+}
+```
+
+**Algorithm tracing example** (the recommended compact style):
+
+```json
+{
+  "type": "cloze_text",
+  "template": "-- Szukamy x=23 w T=[2,5,8,12,16,23,38]\nkrok 1: lewy=0, prawy=6, środek={{m1}}, T[środek]={{v1}} → za mało\nkrok 2: lewy={{l2}}, prawy=6, środek={{m2}}, T[środek]={{v2}} → znaleziono!\nWynik: indeks = {{r1}}",
+  "blanks": [
+    { "id": "m1", "correctAnswer": "3", "points": 1 },
+    { "id": "v1", "correctAnswer": "12", "points": 1 },
+    { "id": "l2", "correctAnswer": "4", "points": 1 },
+    { "id": "m2", "correctAnswer": "5", "points": 1 },
+    { "id": "v2", "correctAnswer": "23", "points": 1 },
+    { "id": "r1", "correctAnswer": "5", "points": 1 }
   ]
 }
 ```
 
 | Field | Type | Required | Notes |
 |---|---|---|---|
-| `template` | `string` | ✅ | Use `{{blankId}}` placeholders |
-| `blanks` | `ClozeBlank[]` | ✅ | Order doesn't matter — matched by `id` |
+| `template` | `string` | ✅ | `{{blankId}}` placeholders; `\n` = new line; leading spaces preserved |
+| `blanks` | `ClozeBlank[]` | ✅ | Matched by `id` — order in array doesn't matter |
 
 **`ClozeBlank`:**
 
 | Field | Type | Required | Notes |
 |---|---|---|---|
-| `id` | `string` | ✅ | Must match placeholder in template |
-| `correctAnswer` | `string` | ✅ | The canonical correct answer |
-| `acceptedAnswers` | `string[]` | optional | Alternative spellings/casing |
-| `caseSensitive` | `boolean` | optional | Default: `false` |
-| `points` | `number` | optional | Default: `1`. Points for this blank. |
+| `id` | `string` | ✅ | Must match a `{{id}}` in `template` |
+| `correctAnswer` | `string` | ✅ | Canonical correct answer |
+| `acceptedAnswers` | `string[]` | optional | Alternative spellings, e.g. `["//", "/"]` for integer division |
+| `caseSensitive` | `boolean` | optional | Default: `false` (comparison lowercases both sides) |
+| `points` | `number` | optional | Default: `1`. Enables partial credit per blank. |
 
 ### Scoring
-Each blank is checked independently:
-- User answer compared against `correctAnswer` and all `acceptedAnswers`
-- `caseSensitive: false` → both sides lowercased before comparison
-- Earned points summed, then scaled proportionally to `maxScore`
 
-Formula: `score = round((earnedPoints / totalPoints) × maxScore, 1)`
+Each blank is checked independently:
+
+```
+isCorrect = normalize(userAnswer) ∈ {normalize(correctAnswer)} ∪ {normalize(acceptedAnswers…)}
+  where normalize(s) = caseSensitive ? s.trim() : s.trim().toLowerCase()
+
+earnedPoints = Σ blank.points where isCorrect
+totalPoints  = Σ blank.points (all blanks)
+score        = round((earnedPoints / totalPoints) × maxScore, 1)
+```
+
+Blanks with `points: 0` are scored but contribute 0 to the total (useful for "bonus" or "style" blanks).
 
 ### UI
-The template is rendered inline with text segments and `<input>` elements. Input widths auto-fit based on the correct answer length. After submission:
-- Green border + no label = correct
-- Red border + correct answer shown below = wrong
+
+- Template is rendered line-by-line in a dark code block
+- Each `{{blankId}}` becomes an `<input>` sized to `max(5, correctAnswer.length + 2)` characters
+- Leading whitespace in each line is preserved (pseudocode indentation works)
+- Empty lines in the template render as vertical spacers
+- After submission:
+  - **Correct blank** → green border + green text
+  - **Wrong blank** → red border + correct answer revealed below in green
+- A summary strip below the block lists each blank id with ✓ / ✗
+
+### Table-like template detection
+
+If any line of `template` matches `/^\s*\|.+\|\s*$/`, a yellow author warning is shown:
+
+> ⚠️ Ten szablon zawiera składnię tabelaryczną Markdown. Użyj przyszłego typu `table_fill`.
+
+The component still renders but layout may be suboptimal. Plan to migrate such questions to `table_fill` when that type is implemented.
 
 ---
 
