@@ -1,12 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
 import { GradeRequest, GradeResult } from "@/lib/quiz/schemas";
+import type { SqlQueryQuestion, SpreadsheetTaskQuestion, ClozeTextQuestion } from "@/lib/quiz/schemas";
 import { getClient } from "@/lib/ai/provider-factory";
 import {
   scoreSingleChoice,
   scoreMultiChoice,
   scoreNumeric,
   scoreCodeTests,
+  scoreClozeText,
 } from "@/lib/ai/deterministic-scorer";
+import {
+  buildSqlContextAddendum,
+  buildSpreadsheetContextAddendum,
+  buildClozeResultSummary,
+} from "@/lib/ai/prompts";
 import type { GradePayload } from "@/lib/ai/types";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { createServiceRoleClient } from "@/lib/supabase/server";
@@ -214,6 +221,61 @@ export async function POST(req: NextRequest) {
       case "polish_essay": {
         const client = getClient(aiSettings.provider);
         result = await client.grade(payload, aiSettings);
+        break;
+      }
+
+      case "sql_query": {
+        const sq = q as SqlQueryQuestion;
+        const sqlContext = buildSqlContextAddendum(sq);
+        const sqlRubric = rubricText
+          ? `${rubricText}\n\n---\n${sqlContext}`
+          : sqlContext;
+        const client = getClient(aiSettings.provider);
+        result = await client.grade({ ...payload, rubric: sqlRubric }, aiSettings);
+        break;
+      }
+
+      case "spreadsheet_task": {
+        const ss = q as SpreadsheetTaskQuestion;
+        const ssContext = buildSpreadsheetContextAddendum(ss);
+        const ssRubric = rubricText
+          ? `${rubricText}\n\n---\n${ssContext}`
+          : ssContext;
+        const client = getClient(aiSettings.provider);
+        result = await client.grade({ ...payload, rubric: ssRubric }, aiSettings);
+        break;
+      }
+
+      case "cloze_text": {
+        const ct = q as ClozeTextQuestion;
+        let userAnswersParsed: Record<string, string> = {};
+        try {
+          userAnswersParsed = JSON.parse(
+            typeof userAnswer === "string" ? userAnswer : JSON.stringify(userAnswer)
+          );
+        } catch {
+          // fallback to empty answers
+        }
+        const det = scoreClozeText(userAnswersParsed, ct.blanks, q.maxScore);
+        const clozeContext = buildClozeResultSummary(ct.blanks, det.blankResults);
+        const clozeRubric = rubricText
+          ? `${rubricText}\n\n---\n${clozeContext}`
+          : clozeContext;
+        const client = getClient(aiSettings.provider);
+        const aiResult = await client.grade(
+          {
+            ...payload,
+            rubric: clozeRubric,
+            correctAnswer: ct.blanks.map((b) => `${b.id}=${b.correctAnswer}`).join(", "),
+          },
+          aiSettings
+        );
+        result = {
+          ...aiResult,
+          score: det.score,
+          maxScore: det.maxScore,
+          confidence: 1.0,
+        };
         break;
       }
 

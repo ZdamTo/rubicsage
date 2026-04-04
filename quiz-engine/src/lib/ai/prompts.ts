@@ -1,5 +1,7 @@
 import { GRADE_JSON_SCHEMA } from "./types";
 import type { GradePayload } from "./types";
+import type { SqlQueryQuestion, SpreadsheetTaskQuestion, ClozeBlank } from "@/lib/quiz/schemas";
+import type { ClozeBlankResult } from "./deterministic-scorer";
 
 /**
  * Prompt A: Objective feedback for deterministic-scored questions.
@@ -95,4 +97,123 @@ Do NOT include any text outside the JSON object. No markdown code fences. Just t
  */
 export function buildSystemPrompt(): string {
   return `You are an expert exam grader certified by CKE (Centralna Komisja Egzaminacyjna) in Poland. You grade exam answers with strict adherence to official rubrics. You always respond with valid JSON only — no explanatory text, no markdown fences, just the JSON object.`;
+}
+
+// ── sql_query context ─────────────────────────────────────────────────────────
+
+/**
+ * Builds a rubric addendum string for sql_query questions.
+ * Inject this into GradePayload.rubric before calling the AI client.
+ */
+export function buildSqlContextAddendum(question: SqlQueryQuestion): string {
+  const parts: string[] = [];
+
+  if (question.schemaMarkdown) {
+    parts.push(`DATABASE SCHEMA:\n${question.schemaMarkdown}`);
+  }
+
+  if (question.tables && question.tables.length > 0) {
+    const tableDesc = question.tables
+      .map(
+        (t) =>
+          `Table "${t.name}": ${t.columns.map((c) => `${c.name} (${c.type})`).join(", ")}` +
+          (t.sampleRows && t.sampleRows.length > 0
+            ? `\n  Sample rows: ${JSON.stringify(t.sampleRows)}`
+            : "")
+      )
+      .join("\n");
+    parts.push(`TABLES:\n${tableDesc}`);
+  }
+
+  if (question.seedData) {
+    parts.push(`SEED DATA (context for the student):\n${question.seedData}`);
+  }
+
+  if (question.expectedResult && question.expectedResult.length > 0) {
+    parts.push(`EXPECTED RESULT SET:\n${JSON.stringify(question.expectedResult, null, 2)}`);
+  }
+
+  if (question.expectedQueryPatterns && question.expectedQueryPatterns.length > 0) {
+    parts.push(
+      `REQUIRED QUERY PATTERNS (the student's query must use all of these):\n` +
+        question.expectedQueryPatterns.map((p) => `- ${p}`).join("\n")
+    );
+  }
+
+  const dialect = question.dialect ?? "sql";
+  parts.push(`SQL DIALECT: ${dialect.toUpperCase()}`);
+
+  parts.push(
+    `GRADING GUIDANCE:
+- Check syntax correctness for ${dialect.toUpperCase()}.
+- Verify all required patterns are used (if specified).
+- Compare the logical result with expectedResult (if provided); minor column-alias differences are acceptable.
+- Award partial credit for queries that are structurally correct but have minor errors.
+- Give clear, specific feedback in English.`
+  );
+
+  return parts.join("\n\n");
+}
+
+// ── spreadsheet_task context ──────────────────────────────────────────────────
+
+/**
+ * Builds a rubric addendum for spreadsheet_task questions.
+ */
+export function buildSpreadsheetContextAddendum(
+  question: SpreadsheetTaskQuestion
+): string {
+  const parts: string[] = [];
+
+  parts.push(`SOURCE DATA:\n${question.sourceDataDescription}`);
+
+  if (question.expectedOutputs.length > 0) {
+    const outputDesc = question.expectedOutputs
+      .map(
+        (o) =>
+          `[${o.type.toUpperCase()}] "${o.label}" (id: ${o.id}): ${o.description}`
+      )
+      .join("\n");
+    parts.push(`EXPECTED OUTPUTS:\n${outputDesc}`);
+  }
+
+  if (question.requiredChart) {
+    parts.push(
+      `REQUIRED CHART: ${question.requiredChart.type} — ${question.requiredChart.description}`
+    );
+  }
+
+  parts.push(
+    `GRADING GUIDANCE:
+- For formula outputs: check correctness of the formula logic, not just the cell reference style.
+- For value outputs: accept reasonable rounding (±1 unit unless stated otherwise).
+- For chart outputs: check that the student described the correct chart type, data range, and axis labels.
+- Award partial credit where partial work is shown.
+- Write feedback in Polish.`
+  );
+
+  return parts.join("\n\n");
+}
+
+// ── cloze_text result context ─────────────────────────────────────────────────
+
+/**
+ * Builds a rubric addendum for cloze_text questions.
+ * Includes per-blank correctness so the AI can focus feedback on wrong blanks.
+ */
+export function buildClozeResultSummary(
+  blanks: ClozeBlank[],
+  blankResults: ClozeBlankResult[]
+): string {
+  const lines = blankResults.map((r) => {
+    const blank = blanks.find((b) => b.id === r.blankId);
+    const accepted = blank?.acceptedAnswers?.length
+      ? ` (also accepted: ${blank.acceptedAnswers.join(", ")})`
+      : "";
+    return `  {{${r.blankId}}}: student wrote "${r.userAnswer}" — ${
+      r.isCorrect ? "CORRECT" : `WRONG (correct: "${r.correctAnswer}"${accepted})`
+    } [${r.earnedPoints}/${r.points} pt]`;
+  });
+
+  return `PER-BLANK SCORING RESULTS (already computed — do NOT change scores):\n${lines.join("\n")}\n\nProvide qualitative feedback: explain why wrong blanks are incorrect and give a tip for each. Do not re-score.`;
 }
