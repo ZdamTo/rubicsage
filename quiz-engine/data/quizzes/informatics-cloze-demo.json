@@ -8,46 +8,46 @@
     {
       "id": "cloze-q1",
       "type": "cloze_text",
-      "promptMarkdown": "## Zadanie 1 — Uzupełnij zapytanie SQL\n\nUzupełnij poniższe zapytanie SQL, które wyświetla **nazwę produktu i średnią cenę** dla produktów, których średnia cena jest **wyższa niż 100 zł**. Wyniki mają być posortowane malejąco.\n\nWpisz odpowiednie słowa kluczowe lub wyrażenia w wyznaczone miejsca.",
+      "promptMarkdown": "## Zadanie 1 — Uzupełnij zapytanie SQL\n\nUzupełnij poniższe zapytanie SQL, które wyświetla **nazwę produktu i średnią cenę** dla produktów, których średnia cena jest **wyższa niż 100 zł**. Wyniki posortuj malejąco.\n\nWpisz odpowiednie słowa kluczowe SQL w wyznaczone miejsca.",
       "maxScore": 5,
       "grading": { "mode": "hybrid" },
-      "template": "SELECT nazwa, {{agg_func}}(cena) AS srednia_cena\nFROM Produkty\n{{group_clause}} nazwa\n{{filter_clause}} {{agg_func}}(cena) {{operator}} 100\n{{sort_clause}} srednia_cena {{direction}};",
+      "template": "SELECT nazwa, {{agg}}(cena) AS srednia_cena\nFROM Produkty\n{{group}} nazwa\n{{filter}} {{agg}}(cena) {{op}} 100\n{{sort}} srednia_cena {{dir}};",
       "blanks": [
         {
-          "id": "agg_func",
+          "id": "agg",
           "correctAnswer": "AVG",
-          "acceptedAnswers": ["avg", "Avg"],
+          "acceptedAnswers": ["avg"],
           "caseSensitive": false,
           "points": 1
         },
         {
-          "id": "group_clause",
+          "id": "group",
           "correctAnswer": "GROUP BY",
           "acceptedAnswers": ["group by"],
           "caseSensitive": false,
           "points": 1
         },
         {
-          "id": "filter_clause",
+          "id": "filter",
           "correctAnswer": "HAVING",
           "acceptedAnswers": ["having"],
           "caseSensitive": false,
           "points": 1
         },
         {
-          "id": "operator",
+          "id": "op",
           "correctAnswer": ">",
           "points": 1
         },
         {
-          "id": "sort_clause",
+          "id": "sort",
           "correctAnswer": "ORDER BY",
           "acceptedAnswers": ["order by"],
           "caseSensitive": false,
           "points": 1
         },
         {
-          "id": "direction",
+          "id": "dir",
           "correctAnswer": "DESC",
           "acceptedAnswers": ["desc"],
           "caseSensitive": false,
@@ -59,44 +59,63 @@
     {
       "id": "cloze-q2",
       "type": "cloze_text",
-      "promptMarkdown": "## Zadanie 2 — Uzupełnij algorytm wyszukiwania binarnego\n\nPoniżej przedstawiono pseudokod algorytmu **wyszukiwania binarnego** (binary search) w tablicy posortowanej rosnąco. Uzupełnij brakujące elementy.\n\n> Tablica jest indeksowana od 0. Szukamy wartości `x`.",
-      "maxScore": 4,
+      "promptMarkdown": "## Zadanie 2 — Śledzenie algorytmu wyszukiwania binarnego\n\nDana jest posortowana tablica:\n\n```\nT = [2, 5, 8, 12, 16, 23, 38]   (indeksy 0–6)\n```\n\nPrześledzono działanie algorytmu **binary search** dla dwóch wartości szukanej. Uzupełnij brakujące wartości na podstawie definicji algorytmu:\n`środek = (lewy + prawy) div 2`.",
+      "maxScore": 6,
       "grading": { "mode": "hybrid" },
-      "template": "lewy := 0\nPrawy := n - 1\nDopóki lewy {{cmp_op}} prawy:\n    srodek := (lewy + prawy) {{div_op}} 2\n    Jeśli tab[srodek] = x:\n        Zwróć srodek\n    Jeśli tab[srodek] {{lt_op}} x:\n        lewy := srodek + {{one}}\n    W przeciwnym razie:\n        prawy := srodek - 1\nZwróć {{not_found}}",
+      "template": "-- Szukamy x = 23\nkrok 1:  lewy=0, prawy=6,  środek={{m1}},  T[środek]={{v1}}  → za mało\nkrok 2:  lewy={{l2}},  prawy=6,  środek={{m2}},  T[środek]={{v2}}  → znaleziono!\nWynik:   indeks = {{r1}}\n\n-- Szukamy x = 5\nkrok 1:  lewy=0, prawy=6,  środek=3,  T[środek]=12  → za dużo\nkrok 2:  lewy=0,  prawy={{p2}},  środek={{m3}},  T[środek]={{v3}}  → znaleziono!\nWynik:   indeks = {{r2}}",
       "blanks": [
         {
-          "id": "cmp_op",
-          "correctAnswer": "<=",
-          "acceptedAnswers": ["≤", "=<"],
-          "caseSensitive": false,
+          "id": "m1",
+          "correctAnswer": "3",
           "points": 1
         },
         {
-          "id": "div_op",
-          "correctAnswer": "div",
-          "acceptedAnswers": ["//", "/"],
-          "caseSensitive": false,
+          "id": "v1",
+          "correctAnswer": "12",
           "points": 1
         },
         {
-          "id": "lt_op",
-          "correctAnswer": "<",
+          "id": "l2",
+          "correctAnswer": "4",
           "points": 1
         },
         {
-          "id": "one",
+          "id": "m2",
+          "correctAnswer": "5",
+          "points": 1
+        },
+        {
+          "id": "v2",
+          "correctAnswer": "23",
+          "points": 1
+        },
+        {
+          "id": "r1",
+          "correctAnswer": "5",
+          "points": 1
+        },
+        {
+          "id": "p2",
+          "correctAnswer": "2",
+          "points": 1
+        },
+        {
+          "id": "m3",
           "correctAnswer": "1",
           "points": 1
         },
         {
-          "id": "not_found",
-          "correctAnswer": "-1",
-          "acceptedAnswers": ["-1", "brak", "null", "None", "false"],
-          "caseSensitive": false,
-          "points": 0
+          "id": "v3",
+          "correctAnswer": "5",
+          "points": 1
+        },
+        {
+          "id": "r2",
+          "correctAnswer": "1",
+          "points": 1
         }
       ],
-      "metadata": { "tags": ["algorithm", "binary-search", "cloze"], "source": "synthetic-matura-style" }
+      "metadata": { "tags": ["algorithm", "binary-search", "tracing", "cloze"], "source": "synthetic-matura-style" }
     }
   ]
 }
