@@ -1,7 +1,7 @@
 /**
  * Deterministic scoring for question types that don't need AI.
  */
-import type { ClozeBlank } from "@/lib/quiz/schemas";
+import type { ClozeBlank, TableFillInputDef, TrueFalseStatement } from "@/lib/quiz/schemas";
 
 export interface DeterministicResult {
   score: number;
@@ -134,5 +134,128 @@ export function scoreClozeText(
     maxScore,
     isCorrect: earnedPoints === totalPoints,
     blankResults,
+  };
+}
+
+// ── table_fill scoring ────────────────────────────────────────────────────────
+
+export interface TableFillInputResult {
+  inputId: string;
+  userAnswer: string;
+  correctAnswer: string;
+  isCorrect: boolean;
+  points: number;
+  earnedPoints: number;
+}
+
+/**
+ * Score a table_fill question by checking each editable input cell.
+ * Supports text and numeric answer types with tolerance.
+ */
+export function scoreTableFill(
+  userAnswers: Record<string, string>,
+  inputs: TableFillInputDef[],
+  maxScore: number
+): DeterministicResult & { inputResults: TableFillInputResult[] } {
+  let totalPoints = 0;
+  let earnedPoints = 0;
+
+  const inputResults: TableFillInputResult[] = inputs.map((inp) => {
+    const points = inp.points ?? 1;
+    totalPoints += points;
+
+    const raw = (userAnswers[inp.id] ?? "").trim();
+    const caseSensitive = inp.caseSensitive ?? false;
+    let isCorrect = false;
+
+    if (inp.answerType === "numeric") {
+      const parsed = parseFloat(raw.replace(",", "."));
+      const expected = parseFloat(inp.correctAnswer.replace(",", "."));
+      const tol = inp.tolerance ?? 0;
+      isCorrect = !isNaN(parsed) && Math.abs(parsed - expected) <= tol;
+    } else {
+      const normalize = (s: string) =>
+        caseSensitive ? s.trim() : s.trim().toLowerCase();
+      const allAccepted = [inp.correctAnswer, ...(inp.acceptedAnswers ?? [])];
+      isCorrect = allAccepted.some((a) => normalize(raw) === normalize(a));
+    }
+
+    if (isCorrect) earnedPoints += points;
+
+    return {
+      inputId: inp.id,
+      userAnswer: raw,
+      correctAnswer: inp.correctAnswer,
+      isCorrect,
+      points,
+      earnedPoints: isCorrect ? points : 0,
+    };
+  });
+
+  const score =
+    totalPoints === 0
+      ? 0
+      : Math.round((earnedPoints / totalPoints) * maxScore * 10) / 10;
+
+  return {
+    score: Math.min(score, maxScore),
+    maxScore,
+    isCorrect: earnedPoints === totalPoints,
+    inputResults,
+  };
+}
+
+// ── true_false_group scoring ──────────────────────────────────────────────────
+
+export interface TrueFalseStatementResult {
+  statementId: string;
+  userAnswer: string;
+  correctAnswer: string;
+  isCorrect: boolean;
+  points: number;
+  earnedPoints: number;
+}
+
+/**
+ * Score a true_false_group question — one point per correct statement.
+ */
+export function scoreTrueFalseGroup(
+  userAnswers: Record<string, string>,
+  statements: TrueFalseStatement[],
+  maxScore: number
+): DeterministicResult & { statementResults: TrueFalseStatementResult[] } {
+  let totalPoints = 0;
+  let earnedPoints = 0;
+
+  const statementResults: TrueFalseStatementResult[] = statements.map((stmt) => {
+    const points = stmt.points ?? 1;
+    totalPoints += points;
+
+    const userVal = (userAnswers[stmt.id] ?? "").trim().toLowerCase();
+    const correct = stmt.correctAnswer.toLowerCase();
+    const isCorrect = userVal === correct;
+
+    if (isCorrect) earnedPoints += points;
+
+    return {
+      statementId: stmt.id,
+      userAnswer: userVal,
+      correctAnswer: correct,
+      isCorrect,
+      points,
+      earnedPoints: isCorrect ? points : 0,
+    };
+  });
+
+  const score =
+    totalPoints === 0
+      ? 0
+      : Math.round((earnedPoints / totalPoints) * maxScore * 10) / 10;
+
+  return {
+    score: Math.min(score, maxScore),
+    maxScore,
+    isCorrect: earnedPoints === totalPoints,
+    statementResults,
   };
 }

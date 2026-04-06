@@ -1,7 +1,7 @@
 import { GRADE_JSON_SCHEMA } from "./types";
 import type { GradePayload } from "./types";
-import type { SqlQueryQuestion, SpreadsheetTaskQuestion, ClozeBlank } from "@/lib/quiz/schemas";
-import type { ClozeBlankResult } from "./deterministic-scorer";
+import type { SqlQueryQuestion, SpreadsheetTaskQuestion, ClozeBlank, TableFillInputDef, TrueFalseStatement } from "@/lib/quiz/schemas";
+import type { ClozeBlankResult, TableFillInputResult, TrueFalseStatementResult } from "./deterministic-scorer";
 
 /**
  * Prompt A: Objective feedback for deterministic-scored questions.
@@ -201,6 +201,51 @@ export function buildSpreadsheetContextAddendum(
  * Builds a rubric addendum for cloze_text questions.
  * Includes per-blank correctness so the AI can focus feedback on wrong blanks.
  */
+// ── table_fill result context ─────────────────────────────────────────────────
+
+/**
+ * Builds a rubric addendum for table_fill questions.
+ * Includes per-cell correctness so AI focuses feedback on wrong inputs.
+ */
+export function buildTableFillResultSummary(
+  inputs: TableFillInputDef[],
+  inputResults: TableFillInputResult[]
+): string {
+  const lines = inputResults.map((r) => {
+    const def = inputs.find((i) => i.id === r.inputId);
+    const accepted = def?.acceptedAnswers?.length
+      ? ` (also accepted: ${def.acceptedAnswers.join(", ")})`
+      : "";
+    return `  [${r.inputId}]: student wrote "${r.userAnswer}" — ${
+      r.isCorrect ? "CORRECT" : `WRONG (correct: "${r.correctAnswer}"${accepted})`
+    } [${r.earnedPoints}/${r.points} pt]`;
+  });
+
+  return `PER-CELL SCORING RESULTS (already computed — do NOT change scores):\n${lines.join("\n")}\n\nProvide qualitative feedback: explain why incorrect cells are wrong and give a tip for each. Do not re-score.`;
+}
+
+// ── true_false_group result context ──────────────────────────────────────────
+
+/**
+ * Builds a rubric addendum for true_false_group questions.
+ */
+export function buildTrueFalseResultSummary(
+  statements: TrueFalseStatement[],
+  statementResults: TrueFalseStatementResult[]
+): string {
+  const lines = statementResults.map((r) => {
+    const stmt = statements.find((s) => s.id === r.statementId);
+    const text = stmt ? `"${stmt.text.slice(0, 60)}${stmt.text.length > 60 ? "…" : ""}"` : r.statementId;
+    return `  [${r.statementId}] ${text}: student chose "${r.userAnswer.toUpperCase()}" — ${
+      r.isCorrect ? "CORRECT" : `WRONG (correct: "${r.correctAnswer.toUpperCase()}")`
+    } [${r.earnedPoints}/${r.points} pt]`;
+  });
+
+  return `PER-STATEMENT SCORING RESULTS (already computed — do NOT change scores):\n${lines.join("\n")}\n\nExplain why each incorrect statement is true/false. Do not re-score.`;
+}
+
+// ── cloze_text result context ─────────────────────────────────────────────────
+
 export function buildClozeResultSummary(
   blanks: ClozeBlank[],
   blankResults: ClozeBlankResult[]

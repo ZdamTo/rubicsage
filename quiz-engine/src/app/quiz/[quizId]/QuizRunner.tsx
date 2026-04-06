@@ -12,9 +12,11 @@ import { AskAIPanel } from "@/components/AskAIPanel";
 import { SqlQueryInput } from "@/components/questions/SqlQueryInput";
 import { SpreadsheetTaskInput } from "@/components/questions/SpreadsheetTaskInput";
 import { ClozeTextInput } from "@/components/questions/ClozeTextInput";
+import { TableFillInput } from "@/components/questions/TableFillInput";
+import { TrueFalseGroupInput } from "@/components/questions/TrueFalseGroupInput";
 import { useSettings } from "@/hooks/useSettings";
-import type { GradeResult, Question, Quiz, SqlQueryQuestion, SpreadsheetTaskQuestion, ClozeTextQuestion } from "@/lib/quiz/schemas";
-import type { ClozeBlankResult } from "@/lib/ai/deterministic-scorer";
+import type { GradeResult, Question, Quiz, SqlQueryQuestion, SpreadsheetTaskQuestion, ClozeTextQuestion, TableFillQuestion, TrueFalseGroupQuestion } from "@/lib/quiz/schemas";
+import type { ClozeBlankResult, TableFillInputResult, TrueFalseStatementResult } from "@/lib/ai/deterministic-scorer";
 import type { TestResult } from "@/hooks/usePyodide";
 
 interface QuestionState {
@@ -33,6 +35,14 @@ interface QuestionState {
   clozeAnswers?: Record<string, string>;
   /** cloze_text: per-blank results injected from gradeResult for UI feedback */
   clozeBlankResults?: ClozeBlankResult[];
+  /** table_fill: keyed by input id */
+  tableFillAnswers?: Record<string, string>;
+  /** table_fill: per-cell results for UI feedback */
+  tableFillInputResults?: TableFillInputResult[];
+  /** true_false_group: keyed by statement id ("true" | "false") */
+  trueFalseAnswers?: Record<string, string>;
+  /** true_false_group: per-statement results for UI feedback */
+  trueFalseStatementResults?: TrueFalseStatementResult[];
   gradeResult?: GradeResult | null;
   grading?: boolean;
   submitted?: boolean;
@@ -105,18 +115,44 @@ export default function QuizRunner({ quiz, quizId, attemptId }: Props) {
       });
       const result: GradeResult = await res.json();
 
-      // For cloze_text: compute blank results client-side for inline UI feedback
+      // Compute per-item results client-side for inline UI feedback
       let clozeBlankResults: ClozeBlankResult[] | undefined;
+      let tableFillInputResults: TableFillInputResult[] | undefined;
+      let trueFalseStatementResults: TrueFalseStatementResult[] | undefined;
+
+      const scorer = await import("@/lib/ai/deterministic-scorer");
+
       if (question.type === "cloze_text") {
-        const { scoreClozeText } = await import("@/lib/ai/deterministic-scorer");
         const ct = question as ClozeTextQuestion;
         const parsed = (() => {
           try { return JSON.parse(userAnswer) as Record<string, string>; } catch { return {}; }
         })();
-        clozeBlankResults = scoreClozeText(parsed, ct.blanks, question.maxScore).blankResults;
+        clozeBlankResults = scorer.scoreClozeText(parsed, ct.blanks, question.maxScore).blankResults;
       }
 
-      updateState(question.id, { gradeResult: result, grading: false, clozeBlankResults });
+      if (question.type === "table_fill") {
+        const tf = question as TableFillQuestion;
+        const parsed = (() => {
+          try { return JSON.parse(userAnswer) as Record<string, string>; } catch { return {}; }
+        })();
+        tableFillInputResults = scorer.scoreTableFill(parsed, tf.inputs, question.maxScore).inputResults;
+      }
+
+      if (question.type === "true_false_group") {
+        const tfg = question as TrueFalseGroupQuestion;
+        const parsed = (() => {
+          try { return JSON.parse(userAnswer) as Record<string, string>; } catch { return {}; }
+        })();
+        trueFalseStatementResults = scorer.scoreTrueFalseGroup(parsed, tfg.statements, question.maxScore).statementResults;
+      }
+
+      updateState(question.id, {
+        gradeResult: result,
+        grading: false,
+        clozeBlankResults,
+        tableFillInputResults,
+        trueFalseStatementResults,
+      });
     } catch (err) {
       updateState(question.id, {
         grading: false,
@@ -367,6 +403,39 @@ function QuestionInput({
         />
       );
     }
+    case "table_fill": {
+      const tf = question as TableFillQuestion;
+      return (
+        <TableFillInput
+          columns={tf.columns}
+          rows={tf.rows}
+          inputs={tf.inputs}
+          values={state.tableFillAnswers ?? {}}
+          onChange={(id, val) =>
+            onUpdate({ tableFillAnswers: { ...(state.tableFillAnswers ?? {}), [id]: val } })
+          }
+          disabled={disabled}
+          submitted={state.submitted}
+          inputResults={state.tableFillInputResults}
+        />
+      );
+    }
+    case "true_false_group": {
+      const tfg = question as TrueFalseGroupQuestion;
+      return (
+        <TrueFalseGroupInput
+          statements={tfg.statements}
+          labels={tfg.labels}
+          values={state.trueFalseAnswers ?? {}}
+          onChange={(id, val) =>
+            onUpdate({ trueFalseAnswers: { ...(state.trueFalseAnswers ?? {}), [id]: val } })
+          }
+          disabled={disabled}
+          submitted={state.submitted}
+          statementResults={state.trueFalseStatementResults}
+        />
+      );
+    }
     default:
       return (
         <ShortTextInput
@@ -392,6 +461,10 @@ function buildUserAnswer(question: Question, state: QuestionState): string {
       return JSON.stringify(state.spreadsheetOutputs ?? {});
     case "cloze_text":
       return JSON.stringify(state.clozeAnswers ?? {});
+    case "table_fill":
+      return JSON.stringify(state.tableFillAnswers ?? {});
+    case "true_false_group":
+      return JSON.stringify(state.trueFalseAnswers ?? {});
     default:
       return state.answer;
   }

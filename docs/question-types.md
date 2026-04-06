@@ -471,7 +471,115 @@ If any line of `template` matches `/^\s*\|.+\|\s*$/`, a yellow author warning is
 
 > ⚠️ Ten szablon zawiera składnię tabelaryczną Markdown. Użyj przyszłego typu `table_fill`.
 
-The component still renders but layout may be suboptimal. Plan to migrate such questions to `table_fill` when that type is implemented.
+The component still renders but layout may be suboptimal. Use `table_fill` for table-structured tasks.
+
+---
+
+## 11. `table_fill`
+
+Fill in the blank cells of a structured table — ideal for algorithm traces, conversion tables, and step-by-step computations.
+
+### Schema
+
+```typescript
+{
+  type: "table_fill",
+  columns: [
+    { id: string, label: string, width?: string }
+  ],
+  rows: [
+    {
+      id: string,
+      cells: {
+        [colId]: { kind: "static", value: string }
+               | { kind: "input", inputId: string }
+      }
+    }
+  ],
+  inputs: [
+    {
+      id: string,
+      answerType?: "text" | "numeric",   // default "text"
+      correctAnswer: string,
+      acceptedAnswers?: string[],
+      tolerance?: number,                // numeric only
+      caseSensitive?: boolean,           // default false
+      points?: number,                   // default 1
+      placeholder?: string
+    }
+  ]
+}
+```
+
+### Good use cases ✅
+- Algorithm trace tables (binary search variables per iteration, spf steps)
+- Truth tables with some entries pre-filled
+- Conversion tables (hex/dec/bin)
+- Step-by-step arithmetic (GCD, sorting passes)
+
+### Bad use cases ❌
+- Long prose answers → use `short_text`
+- Inline code fill-in → use `cloze_text`
+- Complex open-ended computation → use `math_open_with_work`
+
+### Scoring
+
+Deterministic: each `input` cell is scored independently.
+
+```
+score = Σ(earned_points) / Σ(total_points) × maxScore
+```
+
+Per-cell: check `correctAnswer` ∪ `acceptedAnswers`; numeric cells use `tolerance`.
+
+### UI
+
+Real `<table>` with zebra striping. Static cells are read-only. Input cells have a blue tint before submission, turning green/red per-cell after grading. Correct answer appears below each wrong cell.
+
+---
+
+## 12. `true_false_group`
+
+A set of statements each marked True (P) or False (F) — radio button per row, partial credit per statement.
+
+### Schema
+
+```typescript
+{
+  type: "true_false_group",
+  labels?: { true: string, false: string },  // default: { true: "P", false: "F" }
+  statements: [
+    {
+      id: string,
+      text: string,
+      correctAnswer: "true" | "false",
+      points?: number                        // default 1
+    }
+  ]
+}
+```
+
+### Good use cases ✅
+- Evaluating correctness of algorithm properties
+- Checking understanding of complexity statements
+- Syntax / language fact checks
+- Multiple related propositions about one text passage
+
+### Bad use cases ❌
+- Single binary question → use `single_choice`
+- Questions requiring an explanation → use `short_text`
+
+### Scoring
+
+Deterministic: each statement scored independently.
+
+```
+score = Σ(earned_points) / Σ(total_points) × maxScore
+```
+
+### UI
+
+One table row per statement with radio buttons. After grading rows turn green/red; wrong rows show the correct label inline as `→ P` or `→ F`. A summary strip at the bottom shows ✓/✗ per statement ID.
 
 ---
 
@@ -484,6 +592,8 @@ The component still renders but layout may be suboptimal. Plan to migrate such q
 | `numeric` | deterministic | Within tolerance | Feedback |
 | `code_python` | hybrid | Test pass rate | Code quality feedback |
 | `cloze_text` | hybrid | Per-blank points | Feedback on wrong blanks |
+| `table_fill` | hybrid | Per-cell points | Feedback on wrong cells |
+| `true_false_group` | hybrid | Per-statement points | Feedback on wrong statements |
 | `short_text` | ai | AI rubric | Full scoring + feedback |
 | `math_open_with_work` | ai | AI rubric | Full scoring + feedback |
 | `polish_essay` | ai | CKE rubric | Full scoring + feedback |

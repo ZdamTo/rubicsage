@@ -1,0 +1,217 @@
+{
+  "id": "informatics-exam-demo",
+  "title": "Informatyka – Algorytmy i Dane (demo)",
+  "subject": "Informatyka rozszerzona",
+  "subjectSlug": "informatics",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "ied-q1",
+      "type": "table_fill",
+      "promptMarkdown": "## Śledzenie algorytmu: najmniejszy dzielnik pierwszy (spf)\n\nDana jest funkcja `spf(n)`, która zwraca najmniejszy dzielnik pierwszy liczby `n`:\n\n```python\ndef spf(n):\n    if n < 2:\n        return None\n    d = 2\n    while d * d <= n:\n        if n % d == 0:\n            return d\n        d += 1\n    return n\n```\n\nUzupełnij tabelę śladową dla dwóch wywołań: `spf(97)` i `spf(121)`.",
+      "maxScore": 4,
+      "grading": { "mode": "deterministic" },
+      "columns": [
+        { "id": "wywolanie", "label": "Wywołanie", "width": "120px" },
+        { "id": "n",         "label": "n",          "width": "60px" },
+        { "id": "iteracje",  "label": "Liczba iteracji pętli", "width": "160px" },
+        { "id": "wynik",     "label": "Wynik spf(n)", "width": "120px" }
+      ],
+      "rows": [
+        {
+          "id": "row1",
+          "cells": {
+            "wywolanie": { "kind": "static", "value": "spf(97)" },
+            "n":         { "kind": "static", "value": "97" },
+            "iteracje":  { "kind": "input",  "inputId": "spf97_iter" },
+            "wynik":     { "kind": "input",  "inputId": "spf97_wynik" }
+          }
+        },
+        {
+          "id": "row2",
+          "cells": {
+            "wywolanie": { "kind": "static", "value": "spf(121)" },
+            "n":         { "kind": "static", "value": "121" },
+            "iteracje":  { "kind": "input",  "inputId": "spf121_iter" },
+            "wynik":     { "kind": "input",  "inputId": "spf121_wynik" }
+          }
+        }
+      ],
+      "inputs": [
+        {
+          "id": "spf97_iter",
+          "answerType": "numeric",
+          "correctAnswer": "8",
+          "tolerance": 0,
+          "points": 1,
+          "placeholder": "liczba"
+        },
+        {
+          "id": "spf97_wynik",
+          "answerType": "numeric",
+          "correctAnswer": "97",
+          "tolerance": 0,
+          "points": 1,
+          "placeholder": "wynik"
+        },
+        {
+          "id": "spf121_iter",
+          "answerType": "numeric",
+          "correctAnswer": "10",
+          "tolerance": 0,
+          "points": 1,
+          "placeholder": "liczba"
+        },
+        {
+          "id": "spf121_wynik",
+          "answerType": "numeric",
+          "correctAnswer": "11",
+          "tolerance": 0,
+          "points": 1,
+          "placeholder": "wynik"
+        }
+      ],
+      "metadata": {
+        "tags": ["algorytmy", "ślad", "dzielniki"],
+        "source": "ZdamTo.io demo – spf trace"
+      }
+    },
+
+    {
+      "id": "ied-q2",
+      "type": "true_false_group",
+      "promptMarkdown": "## Własności funkcji `spf`\n\nOceń prawdziwość poniższych stwierdzeń dotyczących funkcji `spf(n)` z poprzedniego zadania.",
+      "maxScore": 4,
+      "grading": { "mode": "deterministic" },
+      "labels": { "true": "P", "false": "F" },
+      "statements": [
+        {
+          "id": "s1",
+          "text": "Dla każdej liczby pierwszej p zachodzi spf(p) = p.",
+          "correctAnswer": "true",
+          "points": 1
+        },
+        {
+          "id": "s2",
+          "text": "Funkcja spf zawsze kończy działanie w czasie O(√n).",
+          "correctAnswer": "true",
+          "points": 1
+        },
+        {
+          "id": "s3",
+          "text": "spf(1) zwraca 1.",
+          "correctAnswer": "false",
+          "points": 1
+        },
+        {
+          "id": "s4",
+          "text": "Dla n = p² (kwadrat liczby pierwszej p) funkcja spf zwraca p².",
+          "correctAnswer": "false",
+          "points": 1
+        }
+      ],
+      "metadata": {
+        "tags": ["algorytmy", "prawda-fałsz", "złożoność"],
+        "source": "ZdamTo.io demo – spf P/F"
+      }
+    },
+
+    {
+      "id": "ied-q3",
+      "type": "cloze_text",
+      "promptMarkdown": "## Algorytm NWD (Euklidesa) – uzupełnij pseudokod\n\nPseudokod obliczania największego wspólnego dzielnika metodą Euklidesa:\n\n```\ngcd(a, b):\n  dopóki b {{neq}} 0:\n    t ← b\n    b ← a {{mod}} b\n    a ← {{t}}\n  zwróć {{a}}\n```\n\nWpisz brakujące symbole/wyrażenia w kolejności ich wystąpienia.",
+      "maxScore": 4,
+      "grading": { "mode": "hybrid" },
+      "template": "dopóki b {{neq}} 0:\n  t ← b\n  b ← a {{mod}} b\n  a ← {{t}}\nzwróć {{a}}",
+      "blanks": [
+        {
+          "id": "neq",
+          "correctAnswer": "≠",
+          "acceptedAnswers": ["!=", "<>", "≠ 0"],
+          "caseSensitive": false,
+          "points": 1
+        },
+        {
+          "id": "mod",
+          "correctAnswer": "mod",
+          "acceptedAnswers": ["%"],
+          "caseSensitive": false,
+          "points": 1
+        },
+        {
+          "id": "t",
+          "correctAnswer": "t",
+          "caseSensitive": true,
+          "points": 1
+        },
+        {
+          "id": "a",
+          "correctAnswer": "a",
+          "caseSensitive": true,
+          "points": 1
+        }
+      ],
+      "metadata": {
+        "tags": ["algorytmy", "NWD", "pseudokod"],
+        "source": "ZdamTo.io demo – Euclid GCD"
+      }
+    },
+
+    {
+      "id": "ied-q4",
+      "type": "spreadsheet_task",
+      "promptMarkdown": "## Analiza danych w arkuszu kalkulacyjnym\n\nW arkuszu kalkulacyjnym w kolumnach A i B umieszczono pary liczb `(n, spf(n))` dla n od 2 do 100. Kolumna A zawiera wartości n, kolumna B zawiera spf(n).\n\nWykonaj następujące zadania:",
+      "maxScore": 3,
+      "grading": { "mode": "ai" },
+      "sourceDataDescription": "| Kolumna A | Kolumna B |\n|-----------|----------|\n| n (2..100) | spf(n) |\n\nDane: A2=2, B2=2; A3=3, B3=3; A4=4, B4=2; ... A101=100, B101=2",
+      "expectedOutputs": [
+        {
+          "id": "count_primes",
+          "label": "Liczba liczb pierwszych w zakresie 2–100",
+          "description": "Formuła zliczająca wiersze, gdzie A=B (tzn. n jest pierwsze, bo spf(n)=n).",
+          "type": "formula"
+        },
+        {
+          "id": "max_spf",
+          "label": "Maksymalna wartość spf w kolumnie B",
+          "description": "Wzór MAX na kolumnie B (B2:B101). Wynik: 97.",
+          "type": "value"
+        },
+        {
+          "id": "chart_desc",
+          "label": "Opis wykresu rozkładu spf",
+          "description": "Opisz jaki typ wykresu i z jakich danych go tworzysz, aby pokazać rozkład wartości spf(n) dla n=2..100.",
+          "type": "chart"
+        }
+      ],
+      "rubric": "1p za poprawną formułę COUNTIF/SUMPRODUCT zliczającą liczby pierwsze. 1p za wartość 97 jako MAX(B2:B101). 1p za sensowny opis wykresu (np. histogram / kolumnowy, dane z kolumny B).",
+      "metadata": {
+        "tags": ["arkusz", "formuły", "wykres"],
+        "source": "ZdamTo.io demo – spf spreadsheet"
+      }
+    },
+
+    {
+      "id": "ied-q5",
+      "type": "sql_query",
+      "promptMarkdown": "## Zapytanie SQL – liczby pierwsze\n\nW bazie danych istnieje tabela `liczby` z kolumnami `n` (INT) i `wynik` (INT), gdzie `wynik = spf(n)`. Dane zawierają liczby od 2 do 1000.\n\nNapisz zapytanie SELECT, które zwraca **tylko liczby pierwsze** z tabeli, posortowane rosnąco po `n`. Liczba pierwsza to taka, dla której `wynik = n`.",
+      "maxScore": 3,
+      "grading": { "mode": "ai" },
+      "dialect": "sql",
+      "schemaMarkdown": "```sql\nCREATE TABLE liczby (\n  n      INT PRIMARY KEY,\n  wynik  INT NOT NULL\n);\n```",
+      "seedData": "INSERT INTO liczby VALUES (2,2),(3,3),(4,2),(5,5),(6,2),(7,7),(8,2),(9,3),(10,2),...",
+      "expectedResult": [
+        { "n": 2, "wynik": 2 },
+        { "n": 3, "wynik": 3 },
+        { "n": 5, "wynik": 5 },
+        { "n": 7, "wynik": 7 }
+      ],
+      "expectedQueryPatterns": ["WHERE", "ORDER BY"],
+      "rubric": "1p za poprawny SELECT z warunkiem wynik = n. 1p za ORDER BY n ASC. 1p za brak zbędnych kolumn / poprawną składnię.",
+      "metadata": {
+        "tags": ["SQL", "liczby pierwsze", "SELECT"],
+        "source": "ZdamTo.io demo – spf SQL"
+      }
+    }
+  ]
+}
