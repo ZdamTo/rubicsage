@@ -13,6 +13,8 @@ export const QuestionType = z.enum([
   "sql_query",
   "spreadsheet_task",
   "cloze_text",
+  "table_fill",
+  "true_false_group",
 ]);
 export type QuestionType = z.infer<typeof QuestionType>;
 
@@ -157,6 +159,70 @@ export const ClozeTextQuestion = QuestionBase.extend({
 });
 export type ClozeTextQuestion = z.infer<typeof ClozeTextQuestion>;
 
+// ── table_fill ────────────────────────────────────────────────────────────────
+
+export const TableFillCell = z.discriminatedUnion("kind", [
+  z.object({ kind: z.literal("static"), value: z.string() }),
+  z.object({ kind: z.literal("input"), inputId: z.string() }),
+]);
+export type TableFillCell = z.infer<typeof TableFillCell>;
+
+export const TableFillColumn = z.object({
+  id: z.string(),
+  label: z.string(),
+  width: z.string().optional(),
+});
+export type TableFillColumn = z.infer<typeof TableFillColumn>;
+
+export const TableFillRow = z.object({
+  id: z.string(),
+  /** Maps column id → cell definition. */
+  cells: z.record(TableFillCell),
+});
+export type TableFillRow = z.infer<typeof TableFillRow>;
+
+export const TableFillInputDef = z.object({
+  id: z.string(),
+  answerType: z.enum(["text", "numeric"]).default("text"),
+  correctAnswer: z.string(),
+  acceptedAnswers: z.array(z.string()).optional(),
+  /** Numeric tolerance (only used when answerType = "numeric"). */
+  tolerance: z.number().optional(),
+  caseSensitive: z.boolean().default(false),
+  points: z.number().default(1),
+  placeholder: z.string().optional(),
+});
+export type TableFillInputDef = z.infer<typeof TableFillInputDef>;
+
+export const TableFillQuestion = QuestionBase.extend({
+  type: z.literal("table_fill"),
+  columns: z.array(TableFillColumn),
+  rows: z.array(TableFillRow),
+  inputs: z.array(TableFillInputDef),
+});
+export type TableFillQuestion = z.infer<typeof TableFillQuestion>;
+
+// ── true_false_group ──────────────────────────────────────────────────────────
+
+export const TrueFalseStatement = z.object({
+  id: z.string(),
+  text: z.string(),
+  /** "true" | "false" — the correct P/F verdict. */
+  correctAnswer: z.enum(["true", "false"]),
+  points: z.number().default(1),
+});
+export type TrueFalseStatement = z.infer<typeof TrueFalseStatement>;
+
+export const TrueFalseGroupQuestion = QuestionBase.extend({
+  type: z.literal("true_false_group"),
+  /** Labels shown on radio buttons. Defaults: { true: "P", false: "F" }. */
+  labels: z
+    .object({ true: z.string(), false: z.string() })
+    .default({ true: "P", false: "F" }),
+  statements: z.array(TrueFalseStatement),
+});
+export type TrueFalseGroupQuestion = z.infer<typeof TrueFalseGroupQuestion>;
+
 // ── Union ───────────────────────────────────────────────────────────────────
 
 export const Question = z.discriminatedUnion("type", [
@@ -170,6 +236,8 @@ export const Question = z.discriminatedUnion("type", [
   SqlQueryQuestion,
   SpreadsheetTaskQuestion,
   ClozeTextQuestion,
+  TableFillQuestion,
+  TrueFalseGroupQuestion,
 ]);
 export type Question = z.infer<typeof Question>;
 

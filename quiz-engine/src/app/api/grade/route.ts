@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { GradeRequest, GradeResult } from "@/lib/quiz/schemas";
-import type { SqlQueryQuestion, SpreadsheetTaskQuestion, ClozeTextQuestion } from "@/lib/quiz/schemas";
+import type { SqlQueryQuestion, SpreadsheetTaskQuestion, ClozeTextQuestion, TableFillQuestion, TrueFalseGroupQuestion } from "@/lib/quiz/schemas";
 import { getClient } from "@/lib/ai/provider-factory";
 import {
   scoreSingleChoice,
@@ -8,11 +8,15 @@ import {
   scoreNumeric,
   scoreCodeTests,
   scoreClozeText,
+  scoreTableFill,
+  scoreTrueFalseGroup,
 } from "@/lib/ai/deterministic-scorer";
 import {
   buildSqlContextAddendum,
   buildSpreadsheetContextAddendum,
   buildClozeResultSummary,
+  buildTableFillResultSummary,
+  buildTrueFalseResultSummary,
 } from "@/lib/ai/prompts";
 import type { GradePayload } from "@/lib/ai/types";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
@@ -276,6 +280,44 @@ export async function POST(req: NextRequest) {
           maxScore: det.maxScore,
           confidence: 1.0,
         };
+        break;
+      }
+
+      case "table_fill": {
+        const tf = q as TableFillQuestion;
+        let userAnswersParsed: Record<string, string> = {};
+        try {
+          userAnswersParsed = JSON.parse(
+            typeof userAnswer === "string" ? userAnswer : JSON.stringify(userAnswer)
+          );
+        } catch {
+          // fallback to empty
+        }
+        const det = scoreTableFill(userAnswersParsed, tf.inputs, q.maxScore);
+        const tfContext = buildTableFillResultSummary(tf.inputs, det.inputResults);
+        const tfRubric = rubricText ? `${rubricText}\n\n---\n${tfContext}` : tfContext;
+        const client = getClient(aiSettings.provider);
+        const aiResult = await client.grade({ ...payload, rubric: tfRubric }, aiSettings);
+        result = { ...aiResult, score: det.score, maxScore: det.maxScore, confidence: 1.0 };
+        break;
+      }
+
+      case "true_false_group": {
+        const tfg = q as TrueFalseGroupQuestion;
+        let userAnswersParsed: Record<string, string> = {};
+        try {
+          userAnswersParsed = JSON.parse(
+            typeof userAnswer === "string" ? userAnswer : JSON.stringify(userAnswer)
+          );
+        } catch {
+          // fallback to empty
+        }
+        const det = scoreTrueFalseGroup(userAnswersParsed, tfg.statements, q.maxScore);
+        const tfgContext = buildTrueFalseResultSummary(tfg.statements, det.statementResults);
+        const tfgRubric = rubricText ? `${rubricText}\n\n---\n${tfgContext}` : tfgContext;
+        const client = getClient(aiSettings.provider);
+        const aiResult = await client.grade({ ...payload, rubric: tfgRubric }, aiSettings);
+        result = { ...aiResult, score: det.score, maxScore: det.maxScore, confidence: 1.0 };
         break;
       }
 

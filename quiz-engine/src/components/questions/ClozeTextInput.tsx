@@ -76,7 +76,7 @@ export function ClozeTextInput({
       )}
 
       {/* ── Template body ───────────────────────────────────────────────── */}
-      <div className="font-mono text-sm bg-gray-900 text-gray-100 rounded-xl px-5 py-4 leading-[1.9] overflow-x-auto select-none">
+      <div className="font-mono text-sm bg-gray-900 text-gray-100 rounded-xl px-5 py-4 leading-[1.9] overflow-x-auto cursor-text">
         {lines.map((line, lineIdx) => {
           const segments = parseLine(line);
 
@@ -118,17 +118,17 @@ export function ClozeTextInput({
                 // Colour states
                 let wrapClass = "";
                 let inputClass =
-                  "border-b-2 border-blue-400 text-blue-200 placeholder-blue-800 " +
-                  "focus:border-blue-300 focus:ring-0 focus:outline-none";
+                  "border-b-2 border-blue-400 text-blue-100 bg-white/10 placeholder-blue-700 " +
+                  "focus:border-blue-300 focus:bg-white/15 focus:ring-0 focus:outline-none cursor-text";
                 if (submitted && result) {
                   if (result.isCorrect) {
                     wrapClass = "";
                     inputClass =
-                      "border-b-2 border-green-400 text-green-300 bg-green-950/40";
+                      "border-b-2 border-green-400 text-green-300 bg-green-950/40 cursor-not-allowed";
                   } else {
                     wrapClass = "";
                     inputClass =
-                      "border-b-2 border-red-400 text-red-300 bg-red-950/40";
+                      "border-b-2 border-red-400 text-red-300 bg-red-950/40 cursor-not-allowed";
                   }
                 }
 
