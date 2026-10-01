@@ -121,7 +121,12 @@ export default function AdminQuizzesClient({ initialQuizzes }: Props) {
 
     const data = await res.json();
     if (!res.ok) {
-      setVersionError(JSON.stringify(data.error ?? data.details, null, 2));
+      // Show the message AND the field-level details (previously only the headline).
+      setVersionError(
+        [typeof data.error === "string" ? data.error : JSON.stringify(data.error), data.details ? JSON.stringify(data.details, null, 2) : ""]
+          .filter(Boolean)
+          .join("\n\n")
+      );
       setSaving(false);
       return;
     }

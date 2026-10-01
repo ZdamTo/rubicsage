@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { createServiceRoleClient } from "@/lib/supabase/server";
 import { requireSuperAdmin, writeAuditLog } from "@/lib/auth";
 import { Quiz } from "@/lib/quiz/schemas";
-import { CkeExamContentSchema, formatZodIssues } from "@/lib/cke/schema";
+import { BOOKLET_ID_RE, CkeExamContentSchema, formatZodIssues } from "@/lib/cke/schema";
 import { quizRowFor } from "@/lib/cke/import";
 import type { CkeExamContent } from "@/lib/cke/types";
 import type { Json } from "@/lib/supabase/types";
@@ -37,6 +37,24 @@ export async function POST(
     const row = quizRowFor(ckeParsed.data as unknown as CkeExamContent);
     await service.from("quizzes").update({ meta: row.meta as unknown as Json }).eq("id", params.id);
   } else {
+    // A CKE booklet pasted into a regular quiz: say where it belongs instead
+    // of dumping a schema error about promptMarkdown/maxScore.
+    const c = body.content as { id?: unknown; questions?: Array<{ type?: unknown }> } | null;
+    const looksLikeBooklet =
+      typeof c?.id === "string" && BOOKLET_ID_RE.test(c.id) &&
+      Array.isArray(c.questions) && c.questions.some((q) => typeof q?.type === "string" && q.type.startsWith("P-"));
+    if (looksLikeBooklet) {
+      return NextResponse.json(
+        {
+          error:
+            `To jest arkusz CKE (${c!.id}), a nie zwykły quiz. Nie wklejaj go w „+ Version”. ` +
+            "Użyj panelu „Import arkuszy CKE — Język polski” na górze tej strony (wybierz plik JSON albo cały folder) — " +
+            "arkusz zostanie utworzony automatycznie. Ten quiz demo możesz usunąć.",
+        },
+        { status: 400 }
+      );
+    }
+
     // Validate quiz content against the canonical Quiz schema
     const contentParsed = Quiz.safeParse(body.content);
     if (!contentParsed.success) {
