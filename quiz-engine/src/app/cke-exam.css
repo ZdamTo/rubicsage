@@ -1,0 +1,854 @@
+/*
+ * CKE exam sheet styles (Język polski) — ported from the zdamto.io prototype
+ * (exam-styles.css, generated there by tools/web-renderer). Colours and sizes
+ * were measured off the printed arkusz; see the comments before changing them.
+ *
+ * Removed from the original: the renderer harness (global body/button rules,
+ * debug panel, page layout), which would otherwise restyle the whole site.
+ * Everything here is either a CSS custom property or a q-/sc-/tf-/topic-
+ * prefixed class used only by the CKE components.
+ */
+
+/* ============================================================
+   Design tokens
+   ============================================================ */
+:root {
+  --q-gap: 24px;
+  --q-radius: 12px;
+  --q-pad: 24px 28px;
+  --q-border: #e4e4e7;
+  --q-accent: #d7b5ef;
+  --q-accent-strong: #b984de;
+  --q-muted: #666;
+  --q-ink: #1c1c1e;
+  --q-bg: #f3f3f3;
+  --q-card-bg: #ffffff;
+  --q-shadow: 0 1px 3px rgba(0, 0, 0, .08), 0 1px 2px rgba(0, 0, 0, .04);
+  --font: system-ui, -apple-system, Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* The CKE form's own colours. They started life scoped to .scorecard, but the
+     question cards now borrow them so the sheet and the marking table look like
+     one document — which only works if they are inherited from the root. */
+  --sc-purple: #7030a0;
+  --sc-purple-dark: #4c2168;
+  --sc-lav: #e7ddf3;
+  --sc-lav-line: #c9b6e4;
+  --sc-red: #c00000;
+  /* The arkusz prints a deeper lavender than the zasady table does — sampled
+     off the rendered page, the question bar is #d4b8ea where the scorecard is
+     #e7ddf3. Two documents, two tints; don't collapse them into one. */
+  --sc-lav-deep: #d4b8ea;
+  /* Scoring-stack gutter: 55px of stack + 30px clear, both measured. */
+  --q-gutter: 85px;
+}
+
+/* ============================================================
+   Question card
+   ============================================================ */
+.q-card {
+  position: relative;                 /* the scoring stack is placed against it */
+  border: 1px solid var(--q-border);
+  border-radius: var(--q-radius);
+  padding: var(--q-pad);
+  /* A left margin down the whole card, the way the paper runs one down the
+     page. The stack sits in it; everything else clears it. Putting the gutter
+     on the header alone is not enough — the stack is 121px tall and the header
+     is 28px, so it would land on the question text. */
+  padding-left: calc(28px + var(--q-gutter));
+  background: var(--q-card-bg);
+}
+/* A card with no scoring stack gives the gutter back — indenting the text past
+   an empty margin only looks like a mistake. Set by the shell on a sheet whose
+   single question is the whole paper (the rozszerzony wypracowanie). */
+.q-card-plain { padding-left: 28px; }
+
+/* Inside the continuous sheet the questions are one document, not a stack of
+   panels. The sheet (.exam-sheet) already draws the outer border and the
+   rounded corners, so a card drawing its own puts 1px against 1px at every
+   join — a 2px rule with a rounded notch at each end of it. One hairline
+   between questions instead, and none above the first.
+   The harness is deliberately different: its #questions container is a flex
+   column with a 24px gap, where the cards really are separate panels and their
+   own border and radius are right. Scope this to .exam-sheet only. */
+.exam-sheet .q-card {
+  border: 0;
+  border-top: 1px solid var(--q-border);
+  border-radius: 0;
+}
+.exam-sheet .q-card:first-child { border-top: 0; }
+
+/* The header copies the printed arkusz rather than inventing a layout.
+   On paper each zadanie opens with a lavender bar reading "Zadanie 3. (0–2)"
+   across the text column, and out in the right margin the examiner gets a
+   three-cell stack: the question number on solid purple, every attainable
+   score below it on lavender, and an empty bordered box to write the mark in.
+   Colours are sampled from the rendered page images (exams/<id>/img/arkusz),
+   not guessed: bar and range #d4b8ea, number cell #6f2f9f.
+
+   The stack overhangs into the right margin the way it does on paper. Below
+   640px there is no margin to overhang into, so it tucks back inside. */
+.q-header {
+  margin-bottom: 14px;
+}
+.q-head-bar {
+  display: flex;            /* so the harness's type badge can sit right */
+  align-items: center;
+  gap: 8px;
+  min-height: 28px;
+  box-sizing: border-box;
+  background: var(--sc-lav-deep);
+  color: var(--q-ink);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 4px 12px 4px 4px;   /* flush left with the prompt, as on paper */
+}
+
+/* The examiner's stack: number / attainable scores / empty box.
+   Cell heights hold the printed proportions — measured off p007.png at 200 dpi,
+   the bar is 42 px and the three cells 41 / 53 / 83, i.e. 1 : 1.3 : 2 against
+   the bar. The box is the tall one because that is where a mark is written. */
+.q-score-stack {
+  position: absolute;
+  top: 24px;                /* level with the bar: the card's padding-top */
+  left: 28px;
+  width: 55px;
+  border: 1.5px solid var(--sc-purple);
+  border-radius: 2px;
+  overflow: hidden;
+  line-height: 1;
+  text-align: center;
+}
+.q-score-num,
+.q-score-range,
+.q-score-box {
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+}
+.q-score-num {
+  height: 28px;
+  background: var(--sc-purple);
+  color: #fff;
+  font-weight: 800;
+  font-size: 13px;
+}
+.q-score-range {
+  height: 36px;
+  background: var(--sc-lav-deep);
+  color: var(--sc-purple-dark, var(--sc-purple));
+  font-weight: 600;
+  border-top: 1.5px solid var(--sc-purple);
+  /* "0–1–2–3–4–5" on a 52 px cell: shrink rather than wrap or spill. */
+  font-size: 11px;
+  letter-spacing: -.02em;
+  white-space: nowrap;
+  padding: 0 2px;
+}
+/* On paper this box is left empty for the examiner to write the score in.
+   Here it is the marker: the button lives in it, and the score it produces
+   replaces the button, so the mark appears exactly where it was asked for.
+
+   Three states — the mark (idle), progress (busy), the score (filled). */
+.q-score-box {
+  height: 57px;
+  background: #fff;
+  border-top: 1.5px solid var(--sc-purple);
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--sc-purple);
+  /* button reset: it must look like a box on a form, not a browser control */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-radius: 0;
+  font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
+}
+button.q-score-box {
+  cursor: pointer;
+  transition: background-color .12s ease, color .12s ease;
+}
+button.q-score-box:hover:not(:disabled) { background: var(--sc-purple); color: #fff; }
+button.q-score-box:active:not(:disabled) { background: var(--sc-purple-dark); }
+button.q-score-box:focus-visible {
+  outline: 2px solid var(--sc-purple);
+  outline-offset: 2px;
+}
+/* Graded, or disabled in exam mode: a box with a number in it is not a button. */
+button.q-score-box:disabled { cursor: default; }
+button.q-score-box.q-score-box-filled { background: #fff; color: var(--sc-purple); }
+
+/* The mark. Two words stacked: what does the grading, and by whose authority.
+   Sized to the 55px box — see exam.js GRADE_MARK for why there are two. */
+.q-mark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  line-height: 1;
+}
+.q-mark-top {
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: lowercase;
+  opacity: .75;
+}
+.q-mark-bot {
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: -.03em;
+}
+.q-mark-bot sup { font-size: 6px; font-weight: 700; vertical-align: super; }
+
+/* Waiting on the model: "3/8". Not a spinner — the count is the useful part. */
+.q-score-box-busy {
+  font-size: 13px;
+  font-weight: 700;
+  animation: q-score-pulse 1.1s ease-in-out infinite;
+}
+@keyframes q-score-pulse { 50% { opacity: .45; } }
+@media (prefers-reduced-motion: reduce) {
+  .q-score-box-busy { animation: none; }
+}
+
+/* Under ~640 px there is no margin to hang the stack in, so it lies flat. */
+@media (max-width: 640px) {
+  .q-card { padding-left: 28px; }
+  .q-score-stack { position: static; width: 100%; display: flex; margin-top: 6px; }
+  .q-score-stack > * { flex: 1; height: 30px; border-top: 0; border-left: 1.5px solid var(--sc-purple); }
+  .q-score-stack > :first-child { border-left: 0; }
+}
+
+/* Action buttons, in the same purple. */
+.q-actions button,
+.q-sheet-foot button {
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--sc-purple);
+  background: #fff;
+  border: 1.5px solid var(--sc-purple);
+  border-radius: 4px;
+  padding: 7px 14px;
+  cursor: pointer;
+  transition: background .12s, color .12s;
+}
+.q-actions button:hover:not(:disabled),
+.q-sheet-foot button:hover:not(:disabled) {
+  background: var(--sc-lav);
+}
+
+/* Foot of the sheet: check everything, or finish. */
+.q-sheet-foot {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: var(--q-gap);
+  padding-top: 20px;
+  border-top: 2px solid var(--sc-lav-line);
+}
+.q-sheet-foot button:first-child {
+  background: var(--sc-purple);
+  color: #fff;
+}
+.q-sheet-foot button:first-child:hover:not(:disabled) {
+  background: var(--sc-purple-dark);
+}
+.q-sheet-foot-note {
+  font-size: 12px;
+  color: var(--q-muted);
+}
+.q-type {
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--q-accent-strong);
+  border: 1px solid var(--q-accent);
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+/* The stem: a bold lead line, then the polecenie as a list (renderStem).
+   A one-line stem is still one bold line, so nothing else moved. The bullet
+   body is NOT bold -- CKE prints it upright and bolds single phrases inside
+   it, and a wall of bold is further from the paper than none at all.
+   `list-style` is spelled out because the site loads Tailwind, whose preflight
+   strips markers off every <ul>; without it the bullets vanish there while
+   still showing in this harness. */
+.q-prompt { line-height: 1.5; margin: 14px 0; }
+.q-lead { font-weight: 700; margin: 0 0 6px; }
+.q-bullets { list-style: disc outside; margin: 0 0 6px; padding-left: 22px; }
+.q-bullets li { margin: 3px 0; }
+.q-bullets + .q-lead { margin-top: 10px; }
+
+/* reference materials */
+.q-reference { margin: 6px 0 4px; }
+.q-reference-multi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  align-items: start;
+}
+.q-reference-multi .q-reference-item { margin: 0; }
+.q-reference-item {
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  background: #fafafa;
+  border-left: 3px solid var(--q-accent);
+  border-radius: 0 8px 8px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.ref-author { color: var(--q-muted); font-size: 13px; }
+.ref-title { font-weight: 700; font-style: italic; margin-bottom: 8px; }
+/* One <p> per source paragraph (renderProse). Indented and justified the way
+   the paper sets a text, with the attribution line set apart at the end.
+   This replaced `white-space: pre-wrap`, which ran all six paragraphs of a
+   CKE text together into one slab. */
+.ref-content p { margin: 0 0 6px; text-indent: 1.6em; text-align: justify; hyphens: auto; }
+.ref-content p:last-child { margin-bottom: 0; }
+.ref-content sup { font-size: 0.7em; line-height: 0; }
+.ref-source {
+  text-indent: 0;
+  text-align: right;
+  font-size: 12px;
+  color: var(--q-muted);
+  margin-top: 10px !important;
+}
+/* Przypisy, set the way CKE prints them: small, tight, under a hairline rule,
+   the number raised to match the superscript in the text above. `list-style`
+   is spelled out because the site loads Tailwind, whose preflight strips list
+   markers — and here the numbers are our own, so the marker must stay off. */
+.ref-footnotes {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px solid #e2e2e2;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--q-muted);
+}
+.footnote-item { margin: 0 0 3px; padding-left: 1.2em; text-indent: -1.2em; }
+.footnote-item:last-child { margin-bottom: 0; }
+.footnote-n { vertical-align: super; font-size: 0.8em; margin-right: 2px; }
+
+.ref-image { max-width: 100%; border-radius: 6px; }
+.ref-audio { width: 100%; }
+.ref-missing {
+  font-size: 13px;
+  color: var(--q-muted);
+  background: #f0f0f0;
+  border: 1px dashed #bbb;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-top: 6px;
+}
+
+.q-actions { margin-top: 16px; display: flex; gap: 8px; flex-wrap: wrap; }
+
+.q-unsupported {
+  color: #a00;
+  border: 1px solid #a00;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+/* ============================================================
+   Answer widgets
+   ============================================================ */
+.student-input {
+  font-family: var(--font);
+  font-size: 15px;
+  outline: none;
+}
+textarea.student-input {
+  width: 100%;
+  min-height: 76px;
+  border: 0;
+  border-bottom: 2px dotted #777;
+  resize: vertical;
+  background: transparent;
+  padding: 4px 0;
+}
+input.student-input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px dotted #777;
+  padding: 4px;
+  background: transparent;
+}
+select.student-input {
+  min-width: 80px;
+  padding: 6px;
+  border: 1px solid #777;
+  border-radius: 6px;
+  background: white;
+}
+.student-input:focus { border-color: var(--q-accent-strong); }
+
+.answer-row { margin: 12px 0; }
+.answer-label { font-weight: 600; display: block; margin-bottom: 4px; }
+
+/* tables (P-TABLE-TEXT / P-TABLE-MATCH) */
+table.task-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 14px 0;
+  font-size: 14px;
+}
+table.task-table th,
+table.task-table td {
+  border: 1px solid #555;
+  padding: 9px;
+  vertical-align: top;
+}
+table.task-table th { text-align: center; font-weight: 700; background: #fafafa; }
+.row-label { width: 34px; text-align: center; font-weight: 700; }
+.cell-content { white-space: pre-wrap; }
+
+/* options legend */
+.q-options { margin: 16px 0; }
+.q-options-title { font-weight: 700; margin-bottom: 8px; }
+.option-list { margin: 0; padding-left: 0; list-style: none; }
+.option-item { margin: 8px 0; white-space: pre-wrap; }
+.option-value { font-weight: 700; }
+
+/* P-TF */
+.tf-list { display: flex; flex-direction: column; gap: 8px; }
+.tf-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 12px;
+  border: 1px solid var(--q-border);
+  border-radius: 8px;
+}
+.tf-num { font-weight: 700; color: var(--q-muted); }
+.tf-statement { line-height: 1.4; }
+.tf-choices { display: flex; gap: 8px; }
+
+/* clickable P/F boxes (hidden radio + styled face) */
+.tf-box { cursor: pointer; }
+.tf-box input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.tf-box-face {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #bbb;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--q-ink);
+  background: #fff;
+  transition: background .12s ease, border-color .12s ease, color .12s ease;
+  user-select: none;
+}
+.tf-box:hover .tf-box-face { border-color: var(--q-accent-strong); }
+.tf-box-p input:checked + .tf-box-face { background: #1a7f37; border-color: #1a7f37; color: #fff; }
+.tf-box-f input:checked + .tf-box-face { background: #b3261e; border-color: #b3261e; color: #fff; }
+.tf-box input:focus-visible + .tf-box-face { outline: 2px solid var(--q-accent-strong); outline-offset: 2px; }
+
+/* P-CHOICE */
+.choice-list { display: flex; flex-direction: column; gap: 8px; }
+.choice-row {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: baseline;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid var(--q-border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.choice-row:hover { background: #fafafa; }
+.choice-selected { border-color: var(--q-accent-strong); background: #faf5ff; }
+.choice-label { font-weight: 700; }
+.choice-content { white-space: pre-wrap; }
+
+/* P-ESSAY */
+.essay { display: flex; flex-direction: column; gap: 16px; }
+.topic-picker { display: grid; gap: 12px; }
+.topic-card {
+  display: block;
+  padding: 14px 16px;
+  border: 1px solid var(--q-border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.topic-card:hover { background: #fafafa; }
+.topic-selected { border-color: var(--q-accent-strong); background: #faf5ff; }
+.topic-head { display: flex; align-items: center; gap: 8px; }
+.topic-num { font-weight: 600; }
+.topic-title { font-weight: 700; font-size: 15px; margin: 8px 0; }
+/* A temat that opens with a cytat: the quotation upright-italic, the
+   attribution small and right-aligned under it, exactly as the paper sets it. */
+.topic-quote { font-style: italic; margin: 8px 0 2px; }
+.topic-source { font-size: 12px; text-align: right; color: var(--q-muted); margin: 0 0 8px; }
+.topic-req-intro { font-weight: 600; margin-bottom: 4px; }
+/* list-style spelled out: Tailwind's preflight removes markers on the site. */
+.topic-req { list-style: disc outside; margin: 0; padding-left: 22px; font-size: 14px; color: #333; }
+.topic-req li { margin: 2px 0; }
+
+.essay-heading { text-align: center; margin-top: 4px; }
+.essay-heading-title { font-weight: 700; letter-spacing: 1px; }
+.essay-heading-sub { margin-top: 2px; }
+.essay-heading-sub span { font-weight: 700; }
+
+/* lined writing area, evoking the exam sheet */
+.essay-content {
+  width: 100%;
+  min-height: 340px;
+  box-sizing: border-box;
+  border: 1px solid var(--q-border);
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 32px;
+  resize: vertical;
+  outline: none;
+  background-color: #fff;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 31px,
+    #dcdcdc 31px,
+    #dcdcdc 32px
+  );
+  background-attachment: local;
+}
+.essay-content:focus { border-color: var(--q-accent-strong); }
+.essay-meta { font-size: 13px; color: var(--q-muted); }
+.count-ok { color: #1a7f37; font-weight: 700; }
+.count-low { color: #b35900; font-weight: 700; }
+
+/* grading result area (under the answer widget) */
+.q-result:not(:empty) { margin-top: 12px; }
+.q-result-box {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.result-ok { background: #e7f6ec; color: #1a7f37; border: 1px solid #9bd6ad; }
+.result-bad { background: #fdeceb; color: #b3261e; border: 1px solid #f0aca7; }
+.result-ai { background: #f5f2fb; border: 1px solid #d9cbe9; }
+.result-points { font-weight: 700; color: #4a2c73; }
+.result-expl { font-weight: 400; margin-top: 6px; line-height: 1.4; color: #333; }
+/* The AI answers in paragraphs; flat, they ran together. No indent here --
+   this is the grader talking, not the paper. */
+.result-expl p { margin: 0 0 6px; text-indent: 0; }
+.result-expl p:last-child { margin-bottom: 0; }
+
+/* ============================================================
+   Essay scorecard (examiner table) — matches the printed CKE sheet
+   ============================================================ */
+.scorecard {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--q-border);
+}
+/* one criterion = one horizontal band: [number][label][cells], like the form */
+.sc-row {
+  display: flex;
+  align-items: stretch;
+  min-height: 44px;
+}
+
+/* greyed-out criterion: assessed diagnostically but excluded from the score
+   (e.g. by a gating rule such as błąd kardynalny) */
+.sc-row-greyed .sc-num { opacity: .45; }
+.sc-row-greyed .sc-cells { opacity: .45; filter: grayscale(0.85); }
+.sc-row-greyed .sc-label { background: #ededed; color: #8a8a8a; }
+.sc-excluded {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--sc-red);
+}
+
+/* solid purple number cell with white text, like the form */
+.sc-num {
+  display: grid;
+  place-items: center;
+  min-width: 46px;
+  padding: 0 6px;
+  font-weight: 800;
+  font-size: 19px;
+  background: var(--sc-purple);
+  color: #fff;
+}
+
+/* lavender label cell right after the number */
+.sc-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 165px;
+  flex: none;
+  background: var(--sc-lav);
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.25;
+  color: #1c1c1e;
+  padding: 4px 10px;
+}
+
+/* cells attach flush to the label — one continuous band, like the form */
+.sc-cells {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: auto;
+  min-width: 0;
+}
+
+/* point boxes — joined strips with shared borders, like the paper form.
+   Everything in a band attaches flush: label | red cell | boxes, no gaps. */
+.sc-boxrow { display: flex; align-items: center; gap: 0; flex-wrap: nowrap; }
+.sc-attach { gap: 0; } /* criterion 1: reasons table attaches flush to the boxes */
+.sc-boxline + .sc-boxline { margin-top: -1.5px; }
+.sc-c2-boxes { display: inline-flex; flex-direction: column; }
+.sc-boxstrip { display: inline-flex; }
+.sc-box {
+  display: grid;
+  place-items: center;
+  width: 33px;
+  height: 33px;
+  border: 2px solid var(--sc-purple);
+  margin-left: -2px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #1c1c1e;
+  background: #fff;
+  flex: none;
+}
+.sc-boxstrip .sc-box:first-child { margin-left: 0; }
+.sc-box-on { background: var(--sc-purple); color: #fff; }
+.sc-box[data-tip] { cursor: help; }
+
+/* criterion 2's dense 0–16 grid */
+.sc-boxstrip-sm .sc-box {
+  width: 30px;
+  height: 29px;
+  border-width: 1.5px;
+  margin-left: -1.5px;
+  font-size: 14px;
+}
+.sc-boxstrip-sm .sc-box:first-child { margin-left: 0; }
+/* the blank solid-purple cell after "16", as printed on the form */
+.sc-box-filler { background: var(--sc-purple); }
+
+/* wider boxes for 3a and 4a */
+.sc-boxstrip-wide .sc-box {
+  width: 48px;
+  height: 36px;
+  margin-left: -2px;
+  font-size: 16px;
+}
+.sc-boxstrip-wide .sc-box:first-child { margin-left: 0; }
+
+/* red error-count cells: two-line red italic header, white value box below */
+.sc-redbox {
+  border: 1.5px solid var(--sc-red);
+  overflow: hidden;
+  text-align: center;
+  width: 96px;
+  flex: none;
+}
+.sc-redbox-head {
+  background: var(--sc-red);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  font-style: italic;
+  padding: 2px 4px;
+  line-height: 1.25;
+}
+.sc-redbox-val { padding: 4px; font-weight: 800; font-size: 14px; color: #1c1c1e; }
+
+/* criterion 2 layout + OGÓŁEM box (red header, like the form) */
+.sc-c2 { display: flex; align-items: center; gap: 0; flex-wrap: nowrap; }
+.sc-ogolem {
+  border: 1.5px solid var(--sc-purple);
+  overflow: hidden;
+  text-align: center;
+  width: 88px;
+  flex: none;
+}
+.sc-ogolem-head {
+  background: var(--sc-red);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  font-style: italic;
+  padding: 2px 4px;
+  line-height: 1.25;
+}
+.sc-ogolem-val { padding: 4px; font-weight: 800; font-size: 14px; color: #1c1c1e; }
+
+/* classification letters (3a) — thin joined cells directly under the boxes */
+.sc-clsrow { display: inline-flex; margin-top: -2px; }
+.sc-cls {
+  display: grid;
+  place-items: center;
+  width: 21px;
+  height: 19px;
+  border: 1px solid #333;
+  margin-left: -1px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #1c1c1e;
+  background: #fff;
+}
+.sc-clsrow .sc-cls:first-child { margin-left: 0; }
+.sc-cls { cursor: help; }
+.sc-cls-on { background: var(--sc-purple); color: #fff; border-color: var(--sc-purple); font-weight: 700; }
+
+/* 4a classification matrix: point boxes sized by their code group, codes below */
+.sc-4a-matrix { display: inline-flex; }
+.sc-4a-col { display: inline-flex; flex-direction: column; margin-left: -2px; }
+.sc-4a-col:first-child { margin-left: 0; }
+.sc-4a-pt { width: 100%; min-width: 22px; height: 34px; }
+.sc-4a-codes { display: inline-flex; }
+.sc-4a-code {
+  display: grid;
+  place-items: center;
+  min-width: 14px;
+  height: 26px;
+  padding: 0;
+  border: 1px solid #333;
+  margin-left: -1px;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1.15;
+  color: #1c1c1e;
+  background: #fff;
+  cursor: help;
+  flex: 1;
+}
+.sc-4a-code span { display: block; text-align: center; }
+.sc-4a-code:first-child { margin-left: 0; }
+.sc-4a-code-on { background: var(--sc-purple); color: #fff; border-color: var(--sc-purple); font-weight: 700; }
+
+/* zero-reasons (criterion 1): purple header spanning 4 italic cells */
+.sc-reasons { border: 1.5px solid var(--sc-purple); overflow: hidden; flex: 1; min-width: 280px; }
+.sc-reasons-head {
+  background: var(--sc-purple);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  padding: 2px 5px;
+}
+.sc-reasons-list { display: flex; }
+.sc-reason {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  font-style: italic;
+  color: var(--sc-purple);
+  padding: 4px 6px;
+  border-right: 1px solid var(--sc-lav-line);
+  text-align: center;
+  background: #fff;
+  line-height: 1.3;
+}
+.sc-reason:last-child { border-right: 0; }
+.sc-reason-on { background: #f6d9dc; color: var(--sc-red); font-weight: 700; font-style: normal; }
+.sc-reason { cursor: help; }
+
+/* custom tooltip (replaces native title) */
+.sc-tooltip {
+  position: fixed;
+  z-index: 9999;
+  max-width: 340px;
+  background: #2a1f3d;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.45;
+  padding: 9px 11px;
+  border-radius: 7px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .28);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .12s ease;
+}
+.sc-tooltip-on { opacity: 1; visibility: visible; }
+.sc-tooltip::after {
+  content: "";
+  position: absolute;
+  left: var(--sc-arrow, 50%);
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+}
+.sc-tooltip[data-place="top"]::after { top: 100%; border-top-color: #2a1f3d; }
+.sc-tooltip[data-place="bottom"]::after { bottom: 100%; border-bottom-color: #2a1f3d; }
+
+.sc-caption { font-size: 12px; color: var(--q-muted); margin-top: 6px; }
+.sc-expl { font-size: 12px; color: var(--q-muted); margin-top: 8px; line-height: 1.35; }
+
+.sc-total {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 16px;
+  margin-top: 4px;
+}
+.sc-total-val { color: var(--sc-purple-dark); font-size: 18px; }
+
+/* overall feedback under the table */
+.sc-feedback { font-size: 13px; color: #333; line-height: 1.45; }
+.sc-fb-summary { font-weight: 600; margin-bottom: 8px; }
+.sc-fb-note {
+  background: #f6f0fb;
+  border-left: 3px solid var(--sc-purple);
+  padding: 8px 12px;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  color: #4a2c73;
+  margin-bottom: 8px;
+}
+.sc-fb-block { margin-top: 8px; }
+.sc-fb-title {
+  font-weight: 700;
+  color: var(--sc-purple-dark);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.sc-feedback ul { margin: 4px 0 0; padding-left: 20px; }
+.sc-feedback li { margin: 2px 0; }
+
+/* Additions for the Next.js port */
+.exam-sheet .q-card { scroll-margin-top: 80px; }
+.q-score-box:disabled:not(.q-score-box-filled) { opacity: .55; }
+.essay-sld { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--q-muted); }
+.q-note { padding: 10px 14px; border-radius: 8px; font-size: 14px; background: #f5f5f7; border: 1px solid var(--q-border); }
+.q-note-bad { background: #fdeceb; color: #b3261e; border-color: #f0aca7; }
+.student-input:disabled, .essay-content:disabled { opacity: .75; cursor: not-allowed; }

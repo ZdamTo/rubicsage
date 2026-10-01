@@ -1,0 +1,853 @@
+{
+  "id": "MPOP-P1-100-2405",
+  "name": "Matura z języka polskiego",
+  "questions": [
+    {
+      "id": "MPOP-P1-100-2405-1",
+      "type": "P-TF",
+      "number": "1",
+      "question": "Oceń prawdziwość podanych stwierdzeń odnoszących się do tekstu Richarda Lueckego oraz do tekstu Hanny Gadomskiej. Zaznacz P, jeśli stwierdzenie jest prawdziwe, albo F – jeśli jest fałszywe.",
+      "tf_questions": [
+        {
+          "id": "tf-1",
+          "question": "W każdym z tekstów omówiono zagadnienie czasu zarówno z perspektywy dzieci, jak i z perspektywy dorosłych."
+        },
+        {
+          "id": "tf-2",
+          "question": "Z każdego z tekstów wynika, że współcześnie ludzie stosują dokładniejsze miary czasu niż dawniej."
+        }
+      ],
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Richard Luecke",
+          "title": "Zarządzanie czasem",
+          "content": "Czas to zdumiewająca i cenna rzecz, którą po równo obdzielono królewiczów\ni żebraków. Każdy dzień ma dwadzieścia cztery godziny – nie mniej, nie więcej. I niezależnie\nod tego, jak bardzo go cenimy, w żaden sposób nie możemy czasu zaoszczędzić, zwolnić\nlub przełączyć na jałowy bieg w trakcie przygotowań do jego wykorzystania. Mówi się, że\nczas nie czeka. Porównać go można także do środków zużywalnych. Nieustannie go ubywa\ni nie ma żadnej możliwości uzupełnienia zapasów. Jedyne, co można zrobić, to wykorzystać\ngo jak najlepiej. Jak zauważył Benjamin Franklin1: „Czy kochasz życie? Nie trwoń więc\nczasu, jako że z niego właśnie życie się składa”.\nJesteśmy przewrażliwieni na punkcie czasu, otoczyliśmy się więc urządzeniami tenże\nczas oszczędzającymi. W rzeczywistości znaczna część ludzkich działań poświęcona jest\nznajdowaniu sposobów szybszego wykonania różnych czynności. I tak udało nam się skrócić\nczas podróży z Bostonu do Londynu z kilku tygodni, których wymagał rejs żaglowcem, do\nośmiu godzin lotu odrzutowcem. Korzystamy w pracy z szybkich komputerów i oszałamiająco\nszybkich linii montażowych, staramy się skracać czas wykonywania prawie wszystkiego,\nczym się zajmujemy. W domu używamy kuchenek mikrofalowych i gotowych dań do\npodgrzania, korzystamy z poczty elektronicznej i z komunikatorów internetowych.\nAle pomimo wysiłków, aby wszystko przyśpieszyć, wielu z nas odkrywa, że stale\ndziałamy pod presją czasu. A na ironię zakrawa fakt, że poświęcamy znaczącą część\nnaszego czasu, aby zarobić na liczne urządzenia tenże czas oszczędzające, chociażby\nna samochody zdolne rozwijać dużą prędkość, którymi jednak przeważnie wleczemy się\nw korkach.\nJeszcze do niedawna czas liczył się tylko w szerokiej perspektywie. Miarami czasu\nzwracającymi uwagę ludzi były pory roku oraz skrajne punkty cyklu słonecznego –\nprzesilenia i równonoce. Pomiar czasu w ciągu jednego dnia był niedokładny i zbędny.\nW swej książce The Discoverers2 historyk Daniel Boorstin opisuje, że to Rzymianie\nw IV wieku p.n.e. podzielili dzień na dwie części: przed południem i po południu. Ten prosty\npodział, który wykorzystujemy do dziś, najwyraźniej wystarczał przy ówczesnym tempie\nżycia. Dopiero później zaczęto stosować zegary słoneczne i wodne do wyznaczania godzin.\nZegary mechaniczne wynalezione w Europie w średniowieczu nie były o wiele\ndokładniejsze. Aż do XV wieku wybijały jedynie godziny. Ta wiedza w zupełności wystarczała\nwiększości ludzi. Nikt nie mówił: „Muszę dostarczyć krupy do młyna jutro rano na 10:45”.\nMinuty i sekundy nie miały większego znaczenia, tempo życia nie wymagało tak\nskrupulatnego pomiaru.\nCzasy się zmieniły. W dobie terminarzy i cyfrowych asystentów nasze życie zawodowe\ncoraz bardziej przypomina zlepek 15-minutowych bloków czasowych. Mamy tylko tyle czasu\nna to, a tyle – na tamto, i niewiele więcej w zapasie.\nNa podstawie: Richard Luecke, Zarządzanie czasem. Zwiększ własną produktywność i efektywność,\ntłum. Dorota Strumińska, Warszawa 2006.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Benjamin Franklin (1706–1790) – amerykański polityk."
+            },
+            {
+              "n": 2,
+              "text": "The Discoverers – Odkrywcy."
+            }
+          ]
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "",
+          "author": "Hanna Gadomska",
+          "title": "Masz wrażenie, że czas płynie za szybko?",
+          "content": "Kto nie pamięta, jak w dzieciństwie podróż samochodem wydawała się niekończącą się\nhistorią, a lekcja matematyki trwała wieczność. Dziś babie lato jest jak zapowiedź\nnadchodzących mrozów, pytanie: „Kiedy to zleciało?”, brzmi jak mantra, a urodziny i święta\nprzychodzą każdego roku o wiele za wcześnie. Brzmi znajomo?\n– Wcale nie musi tak być. To, jak doświadczamy upływu czasu, różni się w różnych\nsytuacjach – mówi Steve Taylor, psycholog.\nBadania Taylora zdają się potwierdzać istnienie dwóch podstawowych praw. Po\npierwsze – czas zdaje się przyśpieszać wraz z wiekiem, po drugie – czas wydaje się\nzwalniać, gdy jesteśmy wystawieni na nowe wrażenia, doświadczenia, trafiamy w nieznane\nśrodowisko.\nW obu przypadkach kluczowym czynnikiem jest związek między naszym postrzeganiem\nczasu a ilością informacji (bodźców, emocji, myśli), które przetwarzamy. Im więcej nowych\ninformacji, tym czas wydaje się upływać wolniej (czy raczej: mamy wrażenie, że upłynęło go\nwięcej, bo nasz umysł przetworzył więcej danych).\nWyjaśnia to, dlaczego w dzieciństwie czas tak się dłuży – świat jest dla dzieci\nfascynującym miejscem, pełnym nowych wrażeń i pierwszych doświadczeń. Wraz z wiekiem\notoczenie staje się coraz bardziej znajome, a my – coraz mniej wrażliwi na codzienne\ndoświadczenia (przetwarzamy mniej informacji, więcej przyjmujemy za pewnik).\nZdaniem Taylora, tę wiedzę możemy wykorzystać, by świadomie zmienić sposób\npostrzegania czasu. Po pierwsze – w spowolnieniu czasu pomoże wystawienie się na nowe\ndoświadczenia, jak np. podróż w nieznane, wyzwania zawodowe, kurs i zdobywanie nowych\numiejętności wśród dopiero co poznanych ludzi. Gdy zwiedzasz nowe miejsce, z pewnością\njesteś bardziej wrażliwy na otoczenie, wszystko okazuje się nieznane i nowe, poświęcasz\nwięc sporo uwagi, by przetworzyć bodźce. Czas się nie dłuży, ale masz wrażenie, że\nupłynęło go więcej, niż gdybyś pozostał przy biurku i wykonywał rutynowe czynności.\nDrugi sposób, i – jak się zdaje – bardziej skuteczny, to podejmowanie wysiłku, żeby być\nbardziej świadomym codziennych doświadczeń. To tak zwana uważność, która oznacza\nzwrócenie uwagi na to, co widzimy, słyszymy, poznajemy dotykiem, smakujemy lub\nwąchamy – nie zaś na nasze myśli. Oznacza przeżywanie trwającej chwili wszystkimi\nzmysłami, nie w sposób czysto intelektualny, ale poprzez skanowanie ciała, obserwowanie\notaczających nas przedmiotów i zjawisk. Jest to więc nie tyle poszukiwanie nowych\ndoświadczeń, ile zmiana podejścia do doświadczeń już znanych.\n– Ten otwarty i uważny stosunek do swoich doświadczeń sprawia, że zwiększamy ilość\nprzetwarzanych informacji i dzięki temu mamy większą kontrolę nad tym, jak postrzegamy\nczas – podsumowuje Taylor.\nNie musimy więc myśleć o czasie jako o wrogu – w pewnym stopniu mamy nad nim\nkontrolę. I chociaż nie mamy możliwości zatrzymywania chwil, możemy je po prostu uważniej\nprzeżywać. A to chyba najlepsze, co możemy zrobić ze swoim czasem.\nNa podstawie: Hanna Gadomska, Masz wrażenie, że czas płynie za szybko?, www.focusnauka.pl",
+          "path": ""
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "zaznaczenie dwóch poprawnych odpowiedzi.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "",
+        "correct_answers": "FF"
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania […] tekstów kultury […].\n8. Kształcenie umiejętności świadomego odbioru […] tekstów kultury na różnych poziomach […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Zdający:\n1) przetwarza i hierarchizuje informacje z tekstów […];\n3) […] odczytuje informacje i przekazy jawne i ukryte […].\n\nSP\nI. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Uczeń:\n3) wyszukuje w tekście potrzebne informacje [...];\n5) wyszukuje w tekście informacje wyrażone wprost i pośrednio (ukryte)."
+      },
+      "user_answer": {
+        "tf-1": "",
+        "tf-2": ""
+      }
+    },
+    {
+      "id": "MPOP-P1-100-2405-2",
+      "type": "P-TEXT",
+      "number": "2",
+      "question": "Na podstawie tekstu Richarda Lueckego wyjaśnij, na czym polega paradoks ludzkich starań o spowolnienie upływu czasu.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "Zarządzanie czasem",
+          "author": "Richard Luecke",
+          "title": "",
+          "content": "Czas to zdumiewająca i cenna rzecz, którą po równo obdzielono królewiczów i żebraków. Każdy dzień ma dwadzieścia cztery godziny – nie mniej, nie więcej. I niezależnie od tego, jak bardzo go cenimy, w żaden sposób nie możemy czasu zaoszczędzić, zwolnić lub przełączyć na jałowy bieg w trakcie przygotowań do jego wykorzystania. Mówi się, że czas nie czeka. Porównać go można także do środków zużywalnych. Nieustannie go ubywa i nie ma żadnej możliwości uzupełnienia zapasów. Jedyne, co można zrobić, to wykorzystać go jak najlepiej. Jak zauważył Benjamin Franklin1: „Czy kochasz życie? Nie trwoń więc czasu, jako że z niego właśnie życie się składa”.\nJesteśmy przewrażliwieni na punkcie czasu, otoczyliśmy się więc urządzeniami tenże czas oszczędzającymi. W rzeczywistości znaczna część ludzkich działań poświęcona jest znajdowaniu sposobów szybszego wykonania różnych czynności. I tak udało nam się skrócić czas podróży z Bostonu do Londynu z kilku tygodni, których wymagał rejs żaglowcem, do ośmiu godzin lotu odrzutowcem. Korzystamy w pracy z szybkich komputerów i oszałamiająco szybkich linii montażowych, staramy się skracać czas wykonywania prawie wszystkiego, czym się zajmujemy. W domu używamy kuchenek mikrofalowych i gotowych dań do podgrzania, korzystamy z poczty elektronicznej i z komunikatorów internetowych.\nAle pomimo wysiłków, aby wszystko przyśpieszyć, wielu z nas odkrywa, że stale działamy pod presją czasu. A na ironię zakrawa fakt, że poświęcamy znaczącą część naszego czasu, aby zarobić na liczne urządzenia tenże czas oszczędzające, chociażby na samochody zdolne rozwijać dużą prędkość, którymi jednak przeważnie wleczemy się w korkach.\nJeszcze do niedawna czas liczył się tylko w szerokiej perspektywie. Miarami czasu zwracającymi uwagę ludzi były pory roku oraz skrajne punkty cyklu słonecznego – przesilenia i równonoce. Pomiar czasu w ciągu jednego dnia był niedokładny i zbędny. W swej książce The Discoverers2 historyk Daniel Boorstin opisuje, że to Rzymianie w IV wieku p.n.e. podzielili dzień na dwie części: przed południem i po południu. Ten prosty podział, który wykorzystujemy do dziś, najwyraźniej wystarczał przy ówczesnym tempie życia. Dopiero później zaczęto stosować zegary słoneczne i wodne do wyznaczania godzin. Zegary mechaniczne wynalezione w Europie w średniowieczu nie były o wiele dokładniejsze. Aż do XV wieku wybijały jedynie godziny. Ta wiedza w zupełności wystarczała większości ludzi. Nikt nie mówił: „Muszę dostarczyć krupy do młyna jutro rano na 10:45”. Minuty i sekundy nie miały większego znaczenia, tempo życia nie wymagało tak skrupulatnego pomiaru.\nCzasy się zmieniły. W dobie terminarzy i cyfrowych asystentów nasze życie zawodowe coraz bardziej przypomina zlepek 15-minutowych bloków czasowych. Mamy tylko tyle czasu na to, a tyle – na tamto, i niewiele więcej w zapasie.\n\nNa podstawie: Richard Luecke, Zarządzanie czasem. Zwiększ własną produktywność i efektywność, tłum. Dorota Strumińska, Warszawa 2006.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Benjamin Franklin (1706–1790) – amerykański polityk."
+            },
+            {
+              "n": 2,
+              "text": "The Discoverers – Odkrywcy."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne wyjaśnienie paradoksu na podstawie tekstu 1.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "• Ludzie tracą czas, aby go zaoszczędzić.\n• Paradoksalność ludzkich starań o zaoszczędzenie czasu można wyjaśnić, wskazując na liczne zabiegi człowieka mające na celu zaoszczędzenie czasu, a równocześnie na coraz większy odczuwany przez niego brak czasu.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania […] tekstów kultury […].\n8. Kształcenie umiejętności świadomego odbioru […] tekstów kultury na różnych poziomach […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Zdający:\n1) przetwarza i hierarchizuje informacje z tekstów […];\n3) […] odczytuje informacje i przekazy jawne i ukryte […].\n\nSP\nI. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Uczeń:\n3) wyszukuje w tekście potrzebne informacje [...];\n5) wyszukuje w tekście informacje wyrażone wprost i pośrednio (ukryte).\nII. Kształcenie językowe.\n3. Funkcjonalne wykorzystanie wiedzy o języku w odczytaniu sensów zawartych w strukturze głębokiej tekstów […] nieliterackich.\nII. Kształcenie językowe.\n3. Komunikacja językowa i kultura języka. Zdający:\n2) rozpoznaje zjawiska powodujące niejednoznaczność wypowiedzi ([…] paradoksy) […]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2405-3",
+      "type": "P-TEXT",
+      "number": "3",
+      "question": "Podaj dwa uwarunkowania wpływające na sposób postrzegania czasu przez człowieka, o których mowa w tekście Hanny Gadomskiej.",
+      "reference_data": [
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "",
+          "author": "Hanna Gadomska",
+          "title": "Masz wrażenie, że czas płynie za szybko?",
+          "content": "Kto nie pamięta, jak w dzieciństwie podróż samochodem wydawała się niekończącą się historią, a lekcja matematyki trwała wieczność. Dziś babie lato jest jak zapowiedź nadchodzących mrozów, pytanie: „Kiedy to zleciało?”, brzmi jak mantra, a urodziny i święta przychodzą każdego roku o wiele za wcześnie. Brzmi znajomo?\n– Wcale nie musi tak być. To, jak doświadczamy upływu czasu, różni się w różnych sytuacjach – mówi Steve Taylor, psycholog.\nBadania Taylora zdają się potwierdzać istnienie dwóch podstawowych praw. Po pierwsze – czas zdaje się przyśpieszać wraz z wiekiem, po drugie – czas wydaje się zwalniać, gdy jesteśmy wystawieni na nowe wrażenia, doświadczenia, trafiamy w nieznane środowisko.\nW obu przypadkach kluczowym czynnikiem jest związek między naszym postrzeganiem czasu a ilością informacji (bodźców, emocji, myśli), które przetwarzamy. Im więcej nowych informacji, tym czas wydaje się upływać wolniej (czy raczej: mamy wrażenie, że upłynęło go więcej, bo nasz umysł przetworzył więcej danych).\nWyjaśnia to, dlaczego w dzieciństwie czas tak się dłuży – świat jest dla dzieci fascynującym miejscem, pełnym nowych wrażeń i pierwszych doświadczeń. Wraz z wiekiem otoczenie staje się coraz bardziej znajome, a my – coraz mniej wrażliwi na codzienne doświadczenia (przetwarzamy mniej informacji, więcej przyjmujemy za pewnik).\nZdaniem Taylora, tę wiedzę możemy wykorzystać, by świadomie zmienić sposób postrzegania czasu. Po pierwsze – w spowolnieniu czasu pomoże wystawienie się na nowe doświadczenia, jak np. podróż w nieznane, wyzwania zawodowe, kurs i zdobywanie nowych umiejętności wśród dopiero co poznanych ludzi. Gdy zwiedzasz nowe miejsce, z pewnością jesteś bardziej wrażliwy na otoczenie, wszystko okazuje się nieznane i nowe, poświęcasz więc sporo uwagi, by przetworzyć bodźce. Czas się nie dłuży, ale masz wrażenie, że upłynęło go więcej, niż gdybyś pozostał przy biurku i wykonywał rutynowe czynności.\nDrugi sposób, i – jak się zdaje – bardziej skuteczny, to podejmowanie wysiłku, żeby być bardziej świadomym codziennych doświadczeń. To tak zwana uważność, która oznacza zwrócenie uwagi na to, co widzimy, słyszymy, poznajemy dotykiem, smakujemy lub wąchamy – nie zaś na nasze myśli. Oznacza przeżywanie trwającej chwili wszystkimi zmysłami, nie w sposób czysto intelektualny, ale poprzez skanowanie ciała, obserwowanie otaczających nas przedmiotów i zjawisk. Jest to więc nie tyle poszukiwanie nowych doświadczeń, ile zmiana podejścia do doświadczeń już znanych.\n– Ten otwarty i uważny stosunek do swoich doświadczeń sprawia, że zwiększamy ilość przetwarzanych informacji i dzięki temu mamy większą kontrolę nad tym, jak postrzegamy czas – podsumowuje Taylor.\nNie musimy więc myśleć o czasie jako o wrogu – w pewnym stopniu mamy nad nim kontrolę. I chociaż nie mamy możliwości zatrzymywania chwil, możemy je po prostu uważniej przeżywać. A to chyba najlepsze, co możemy zrobić ze swoim czasem.",
+          "path": ""
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne podanie dwóch uwarunkowań, o których mowa w tekście 2.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi. Jeżeli zdający wymieni więcej niż dwa uwarunkowania, a wśród nich pojawi się odpowiedź błędna, to za rozwiązanie zadania otrzyma 0 pkt."
+        },
+        "exemplary_answers": "wiek\nnowe doświadczenia\nnowe wrażenia\nnowe sytuacje\nilość informacji/bodźców\nuważność\nIm człowiek jest starszy, tym bardziej ma wrażenie, że czas płynie szybciej. Gdy człowiek jest nastawiony na nowe przeżycia, wydaje się mu, że czas zwalnia.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania […] tekstów kultury […].\n8. Kształcenie umiejętności świadomego odbioru […] tekstów kultury na różnych poziomach […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Zdający:\n1) przetwarza i hierarchizuje informacje z tekstów […];\n3) […] odczytuje informacje i przekazy jawne i ukryte […].\nSP\nI.ształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Uczeń:\n3) wyszukuje w tekście potrzebne informacje [...];\n5) wyszukuje w tekście informacje wyrażone wprost i pośrednio (ukryte)."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        },
+        {
+          "input-field-id": "input-field-id-2",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2405-4",
+      "type": "P-TEXT",
+      "number": "4",
+      "question": "Na podstawie tekstu Hanny Gadomskiej wyjaśnij, na czym polega rola uważności w kontrolowaniu czasu. Czy o takim samym sposobie kontrolowania czasu jest mowa w tekście Richarda Lueckego? Uzasadnij odpowiedź.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Richard Luecke",
+          "title": "Zarządzanie czasem",
+          "content": "Czas to zdumiewająca i cenna rzecz, którą po równo obdzielono królewiczów i żebraków. Każdy dzień ma dwadzieścia cztery godziny – nie mniej, nie więcej. I niezależnie od tego, jak bardzo go cenimy, w żaden sposób nie możemy czasu zaoszczędzić, zwolnić lub przełączyć na jałowy bieg w trakcie przygotowań do jego wykorzystania. Mówi się, że czas nie czeka. Porównać go można także do środków zużywalnych. Nieustannie go ubywa i nie ma żadnej możliwości uzupełnienia zapasów. Jedyne, co można zrobić, to wykorzystać go jak najlepiej. Jak zauważył Benjamin Franklin1: „Czy kochasz życie? Nie trwoń więc czasu, jako że z niego właśnie życie się składa”.\nJesteśmy przewrażliwieni na punkcie czasu, otoczyliśmy się więc urządzeniami tenże czas oszczędzającymi. W rzeczywistości znaczna część ludzkich działań poświęcona jest znajdowaniu sposobów szybszego wykonania różnych czynności. I tak udało nam się skrócić czas podróży z Bostonu do Londynu z kilku tygodni, których wymagał rejs żaglowcem, do ośmiu godzin lotu odrzutowcem. Korzystamy w pracy z szybkich komputerów i oszałamiająco szybkich linii montażowych, staramy się skracać czas wykonywania prawie wszystkiego, czym się zajmujemy. W domu używamy kuchenek mikrofalowych i gotowych dań do podgrzania, korzystamy z poczty elektronicznej i z komunikatorów internetowych.\nAle pomimo wysiłków, aby wszystko przyśpieszyć, wielu z nas odkrywa, że stale działamy pod presją czasu. A na ironię zakrawa fakt, że poświęcamy znaczącą część naszego czasu, aby zarobić na liczne urządzenia tenże czas oszczędzające, chociażby na samochody zdolne rozwijać dużą prędkość, którymi jednak przeważnie wleczemy się w korkach.\nJeszcze do niedawna czas liczył się tylko w szerokiej perspektywie. Miarami czasu zwracającymi uwagę ludzi były pory roku oraz skrajne punkty cyklu słonecznego – przesilenia i równonoce. Pomiar czasu w ciągu jednego dnia był niedokładny i zbędny. W swej książce The Discoverers2 historyk Daniel Boorstin opisuje, że to Rzymianie w IV wieku p.n.e. podzielili dzień na dwie części: przed południem i po południu. Ten prosty podział, który wykorzystujemy do dziś, najwyraźniej wystarczał przy ówczesnym tempie życia. Dopiero później zaczęto stosować zegary słoneczne i wodne do wyznaczania godzin. Zegary mechaniczne wynalezione w Europie w średniowieczu nie były o wiele dokładniejsze. Aż do XV wieku wybijały jedynie godziny. Ta wiedza w zupełności wystarczała większości ludzi. Nikt nie mówił: „Muszę dostarczyć krupy do młyna jutro rano na 10:45”. Minuty i sekundy nie miały większego znaczenia, tempo życia nie wymagało tak skrupulatnego pomiaru.\nCzasy się zmieniły. W dobie terminarzy i cyfrowych asystentów nasze życie zawodowe coraz bardziej przypomina zlepek 15-minutowych bloków czasowych. Mamy tylko tyle czasu na to, a tyle – na tamto, i niewiele więcej w zapasie.\nNa podstawie: Richard Luecke, Zarządzanie czasem. Zwiększ własną produktywność i efektywność, tłum. Dorota Strumińska, Warszawa 2006.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Benjamin Franklin (1706–1790) – amerykański polityk."
+            },
+            {
+              "n": 2,
+              "text": "The Discoverers – Odkrywcy."
+            }
+          ]
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "",
+          "author": "Hanna Gadomska",
+          "title": "Masz wrażenie, że czas płynie za szybko?",
+          "content": "Kto nie pamięta, jak w dzieciństwie podróż samochodem wydawała się niekończącą się historią, a lekcja matematyki trwała wieczność. Dziś babie lato jest jak zapowiedź nadchodzących mrozów, pytanie: „Kiedy to zleciało?”, brzmi jak mantra, a urodziny i święta przychodzą każdego roku o wiele za wcześnie. Brzmi znajomo?\n– Wcale nie musi tak być. To, jak doświadczamy upływu czasu, różni się w różnych sytuacjach – mówi Steve Taylor, psycholog.\nBadania Taylora zdają się potwierdzać istnienie dwóch podstawowych praw. Po pierwsze – czas zdaje się przyśpieszać wraz z wiekiem, po drugie – czas wydaje się zwalniać, gdy jesteśmy wystawieni na nowe wrażenia, doświadczenia, trafiamy w nieznane środowisko.\nW obu przypadkach kluczowym czynnikiem jest związek między naszym postrzeganiem czasu a ilością informacji (bodźców, emocji, myśli), które przetwarzamy. Im więcej nowych informacji, tym czas wydaje się upływać wolniej (czy raczej: mamy wrażenie, że upłynęło go więcej, bo nasz umysł przetworzył więcej danych).\nWyjaśnia to, dlaczego w dzieciństwie czas tak się dłuży – świat jest dla dzieci fascynującym miejscem, pełnym nowych wrażeń i pierwszych doświadczeń. Wraz z wiekiem otoczenie staje się coraz bardziej znajome, a my – coraz mniej wrażliwi na codzienne doświadczenia (przetwarzamy mniej informacji, więcej przyjmujemy za pewnik).\nZdaniem Taylora, tę wiedzę możemy wykorzystać, by świadomie zmienić sposób postrzegania czasu. Po pierwsze – w spowolnieniu czasu pomoże wystawienie się na nowe doświadczenia, jak np. podróż w nieznane, wyzwania zawodowe, kurs i zdobywanie nowych umiejętności wśród dopiero co poznanych ludzi. Gdy zwiedzasz nowe miejsce, z pewnością jesteś bardziej wrażliwy na otoczenie, wszystko okazuje się nieznane i nowe, poświęcasz więc sporo uwagi, by przetworzyć bodźce. Czas się nie dłuży, ale masz wrażenie, że upłynęło go więcej, niż gdybyś pozostał przy biurku i wykonywał rutynowe czynności.\nDrugi sposób, i – jak się zdaje – bardziej skuteczny, to podejmowanie wysiłku, żeby być bardziej świadomym codziennych doświadczeń. To tak zwana uważność, która oznacza zwrócenie uwagi na to, co widzimy, słyszymy, poznajemy dotykiem, smakujemy lub wąchamy – nie zaś na nasze myśli. Oznacza przeżywanie trwającej chwili wszystkimi zmysłami, nie w sposób czysto intelektualny, ale poprzez skanowanie ciała, obserwowanie otaczających nas przedmiotów i zjawisk. Jest to więc nie tyle poszukiwanie nowych doświadczeń, ile zmiana podejścia do doświadczeń już znanych.\n– Ten otwarty i uważny stosunek do swoich doświadczeń sprawia, że zwiększamy ilość przetwarzanych informacji i dzięki temu mamy większą kontrolę nad tym, jak postrzegamy czas – podsumowuje Taylor.\nNie musimy więc myśleć o czasie jako o wrogu – w pewnym stopniu mamy nad nim kontrolę. I chociaż nie mamy możliwości zatrzymywania chwil, możemy je po prostu uważniej przeżywać. A to chyba najlepsze, co możemy zrobić ze swoim czasem.\nNa podstawie: Hanna Gadomska, Masz wrażenie, że czas płynie za szybko?, www.focusnauka.pl",
+          "path": ""
+        }
+      ],
+      "scoring": {
+        "max_points": 2,
+        "scoring_criteria": {
+          "2": "poprawne wyjaśnienie, na czym polega rola uważności w kontrolowaniu czasu w tekście 2. ORAZ rozstrzygnięcie i poprawne uzasadnienie w odniesieniu do tekstu 1.",
+          "1": "poprawne wyjaśnienie, na czym polega rola uważności w kontrolowaniu czasu w tekście 2. ALBO – poprawne wyjaśnienie, czym jest uważność ORAZ rozstrzygnięcie i poprawne uzasadnienie w odniesieniu do tekstu 1.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "Według Gadomskiej dzięki dokładnemu / bardziej świadomemu / z wykorzystaniem zmysłów przeżywaniu chwili ma się wrażenie, że trwa ona dłużej. Richard Luecke nie pisze o uważności w kontrolowaniu czasu, ale o próbach zaoszczędzenia czasu za pomocą technicznych udogodnień.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania […] tekstów kultury […].\n8. Kształcenie umiejętności świadomego odbioru […] tekstów kultury na różnych poziomach […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Zdający:\n1) przetwarza i hierarchizuje informacje z tekstów […];\n3) […] odczytuje informacje i przekazy jawne i ukryte […].\n\nSP\nI. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Uczeń:\n3) wyszukuje w tekście potrzebne informacje [...];\n5) wyszukuje w tekście informacje wyrażone wprost i pośrednio (ukryte);\n7) wyciąga wnioski wynikające z przesłanek zawartych w tekście […]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2405-5",
+      "type": "P-TF",
+      "number": "5",
+      "question": "Oceń prawdziwość podanych stwierdzeń odnoszących się do ostatniego akapitu tekstu Hanny Gadomskiej. Zaznacz P, jeśli stwierdzenie jest prawdziwe, albo F – jeśli jest fałszywe.",
+      "tf_questions": [
+        {
+          "id": "tf-1",
+          "question": "Funkcję impresywną w ostatnim akapicie potwierdza obecność powtarzających się czasowników w pierwszej osobie liczby mnogiej."
+        },
+        {
+          "id": "tf-2",
+          "question": "W ostatnim akapicie tekstu wykorzystano tylko wypowiedzenia złożone."
+        }
+      ],
+      "reference_data": [
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "",
+          "author": "Hanna Gadomska",
+          "title": "Masz wrażenie, że czas płynie za szybko?",
+          "content": "Kto nie pamięta, jak w dzieciństwie podróż samochodem wydawała się niekończącą się historią, a lekcja matematyki trwała wieczność. Dziś babie lato jest jak zapowiedź nadchodzących mrozów, pytanie: „Kiedy to zleciało?”, brzmi jak mantra, a urodziny i święta przychodzą każdego roku o wiele za wcześnie. Brzmi znajomo?\n– Wcale nie musi tak być. To, jak doświadczamy upływu czasu, różni się w różnych sytuacjach – mówi Steve Taylor, psycholog.\nBadania Taylora zdają się potwierdzać istnienie dwóch podstawowych praw. Po pierwsze – czas zdaje się przyśpieszać wraz z wiekiem, po drugie – czas wydaje się zwalniać, gdy jesteśmy wystawieni na nowe wrażenia, doświadczenia, trafiamy w nieznane środowisko.\nW obu przypadkach kluczowym czynnikiem jest związek między naszym postrzeganiem czasu a ilością informacji (bodźców, emocji, myśli), które przetwarzamy. Im więcej nowych informacji, tym czas wydaje się upływać wolniej (czy raczej: mamy wrażenie, że upłynęło go więcej, bo nasz umysł przetworzył więcej danych).\nWyjaśnia to, dlaczego w dzieciństwie czas tak się dłuży – świat jest dla dzieci fascynującym miejscem, pełnym nowych wrażeń i pierwszych doświadczeń. Wraz z wiekiem otoczenie staje się coraz bardziej znajome, a my – coraz mniej wrażliwi na codzienne doświadczenia (przetwarzamy mniej informacji, więcej przyjmujemy za pewnik).\nZdaniem Taylora, tę wiedzę możemy wykorzystać, by świadomie zmienić sposób postrzegania czasu. Po pierwsze – w spowolnieniu czasu pomoże wystawienie się na nowe doświadczenia, jak np. podróż w nieznane, wyzwania zawodowe, kurs i zdobywanie nowych umiejętności wśród dopiero co poznanych ludzi. Gdy zwiedzasz nowe miejsce, z pewnością jesteś bardziej wrażliwy na otoczenie, wszystko okazuje się nieznane i nowe, poświęcasz więc sporo uwagi, by przetworzyć bodźce. Czas się nie dłuży, ale masz wrażenie, że upłynęło go więcej, niż gdybyś pozostał przy biurku i wykonywał rutynowe czynności.\nDrugi sposób, i – jak się zdaje – bardziej skuteczny, to podejmowanie wysiłku, żeby być bardziej świadomym codziennych doświadczeń. To tak zwana uważność, która oznacza zwrócenie uwagi na to, co widzimy, słyszymy, poznajemy dotykiem, smakujemy lub wąchamy – nie zaś na nasze myśli. Oznacza przeżywanie trwającej chwili wszystkimi zmysłami, nie w sposób czysto intelektualny, ale poprzez skanowanie ciała, obserwowanie otaczających nas przedmiotów i zjawisk. Jest to więc nie tyle poszukiwanie nowych doświadczeń, ile zmiana podejścia do doświadczeń już znanych.\n– Ten otwarty i uważny stosunek do swoich doświadczeń sprawia, że zwiększamy ilość przetwarzanych informacji i dzięki temu mamy większą kontrolę nad tym, jak postrzegamy czas – podsumowuje Taylor.\nNie musimy więc myśleć o czasie jako o wrogu – w pewnym stopniu mamy nad nim kontrolę. I chociaż nie mamy możliwości zatrzymywania chwil, możemy je po prostu uważniej przeżywać. A to chyba najlepsze, co możemy zrobić ze swoim czasem."
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "dwie poprawne odpowiedzi.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "",
+        "correct_answers": "PP"
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n8. Kształcenie umiejętności świadomego odbioru [...] tekstów kultury na różnych poziomach [...].\nII. Kształcenie językowe.\n3. Funkcjonalne wykorzystanie wiedzy o języku w odczytaniu sensów zawartych w strukturze głębokiej tekstów [...] nieliterackich.",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Zdający:\n3) [...] rozpoznaje środki językowe i ich funkcje zastosowane w tekstach [...].\nII. Kształcenie językowe.\n1. Gramatyka języka polskiego. Zdający:\n2) rozumie zróżnicowanie składniowe zdań wielokrotnie złożonych.\n3. Komunikacja językowa i kultura języka. Zdający:\n1) rozpoznaje [...] funkcje tekstu ([...] impresywną [...]).\nSP\nII. Kształcenie językowe.\n1. Gramatyka języka polskiego. Uczeń:\n10) rozpoznaje w tekście zdania [...] złożone [...]."
+      },
+      "user_answer": {
+        "tf-1": "",
+        "tf-2": ""
+      }
+    },
+    {
+      "id": "MPOP-P1-100-2405-6",
+      "type": "P-TEXT",
+      "number": "6",
+      "question": "Na podstawie obu tekstów napisz notatkę syntetyzującą na temat: człowiek wobec upływu czasu. Twoja wypowiedź powinna liczyć 60–90 wyrazów.\n\nUwaga: w ocenie wypowiedzi będzie brana pod uwagę poprawność językowa, ortograficzna i interpunkcyjna.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Richard Luecke",
+          "title": "Zarządzanie czasem",
+          "content": "Czas to zdumiewająca i cenna rzecz, którą po równo obdzielono królewiczów i żebraków. Każdy dzień ma dwadzieścia cztery godziny – nie mniej, nie więcej. I niezależnie od tego, jak bardzo go cenimy, w żaden sposób nie możemy czasu zaoszczędzić, zwolnić lub przełączyć na jałowy bieg w trakcie przygotowań do jego wykorzystania. Mówi się, że czas nie czeka. Porównać go można także do środków zużywalnych. Nieustannie go ubywa i nie ma żadnej możliwości uzupełnienia zapasów. Jedyne, co można zrobić, to wykorzystać go jak najlepiej. Jak zauważył Benjamin Franklin1: „Czy kochasz życie? Nie trwoń więc czasu, jako że z niego właśnie życie się składa”.\nJesteśmy przewrażliwieni na punkcie czasu, otoczyliśmy się więc urządzeniami tenże czas oszczędzającymi. W rzeczywistości znaczna część ludzkich działań poświęcona jest znajdowaniu sposobów szybszego wykonania różnych czynności. I tak udało nam się skrócić czas podróży z Bostonu do Londynu z kilku tygodni, których wymagał rejs żaglowcem, do ośmiu godzin lotu odrzutowcem. Korzystamy w pracy z szybkich komputerów i oszałamiająco szybkich linii montażowych, staramy się skracać czas wykonywania prawie wszystkiego, czym się zajmujemy. W domu używamy kuchenek mikrofalowych i gotowych dań do podgrzania, korzystamy z poczty elektronicznej i z komunikatorów internetowych.\nAle pomimo wysiłków, aby wszystko przyśpieszyć, wielu z nas odkrywa, że stale działamy pod presją czasu. A na ironię zakrawa fakt, że poświęcamy znaczącą część naszego czasu, aby zarobić na liczne urządzenia tenże czas oszczędzające, chociażby na samochody zdolne rozwijać dużą prędkość, którymi jednak przeważnie wleczemy się w korkach.\nJeszcze do niedawna czas liczył się tylko w szerokiej perspektywie. Miarami czasu zwracającymi uwagę ludzi były pory roku oraz skrajne punkty cyklu słonecznego – przesilenia i równonoce. Pomiar czasu w ciągu jednego dnia był niedokładny i zbędny. W swej książce The Discoverers2 historyk Daniel Boorstin opisuje, że to Rzymianie w IV wieku p.n.e. podzielili dzień na dwie części: przed południem i po południu. Ten prosty podział, który wykorzystujemy do dziś, najwyraźniej wystarczał przy ówczesnym tempie życia. Dopiero później zaczęto stosować zegary słoneczne i wodne do wyznaczania godzin. Zegary mechaniczne wynalezione w Europie w średniowieczu nie były o wiele dokładniejsze. Aż do XV wieku wybijały jedynie godziny. Ta wiedza w zupełności wystarczała większości ludzi. Nikt nie mówił: „Muszę dostarczyć krupy do młyna jutro rano na 10:45”. Minuty i sekundy nie miały większego znaczenia, tempo życia nie wymagało tak skrupulatnego pomiaru.\nCzasy się zmieniły. W dobie terminarzy i cyfrowych asystentów nasze życie zawodowe coraz bardziej przypomina zlepek 15-minutowych bloków czasowych. Mamy tylko tyle czasu na to, a tyle – na tamto, i niewiele więcej w zapasie.\nNa podstawie: Richard Luecke, Zarządzanie czasem. Zwiększ własną produktywność i efektywność, tłum. Dorota Strumińska, Warszawa 2006.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Benjamin Franklin (1706–1790) – amerykański polityk."
+            },
+            {
+              "n": 2,
+              "text": "The Discoverers – Odkrywcy."
+            }
+          ]
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "",
+          "author": "Hanna Gadomska",
+          "title": "Masz wrażenie, że czas płynie za szybko?",
+          "content": "Kto nie pamięta, jak w dzieciństwie podróż samochodem wydawała się niekończącą się historią, a lekcja matematyki trwała wieczność. Dziś babie lato jest jak zapowiedź nadchodzących mrozów, pytanie: „Kiedy to zleciało?”, brzmi jak mantra, a urodziny i święta przychodzą każdego roku o wiele za wcześnie. Brzmi znajomo?\n– Wcale nie musi tak być. To, jak doświadczamy upływu czasu, różni się w różnych sytuacjach – mówi Steve Taylor, psycholog.\nBadania Taylora zdają się potwierdzać istnienie dwóch podstawowych praw. Po pierwsze – czas zdaje się przyśpieszać wraz z wiekiem, po drugie – czas wydaje się zwalniać, gdy jesteśmy wystawieni na nowe wrażenia, doświadczenia, trafiamy w nieznane środowisko.\nW obu przypadkach kluczowym czynnikiem jest związek między naszym postrzeganiem czasu a ilością informacji (bodźców, emocji, myśli), które przetwarzamy. Im więcej nowych informacji, tym czas wydaje się upływać wolniej (czy raczej: mamy wrażenie, że upłynęło go więcej, bo nasz umysł przetworzył więcej danych).\nWyjaśnia to, dlaczego w dzieciństwie czas tak się dłuży – świat jest dla dzieci fascynującym miejscem, pełnym nowych wrażeń i pierwszych doświadczeń. Wraz z wiekiem otoczenie staje się coraz bardziej znajome, a my – coraz mniej wrażliwi na codzienne doświadczenia (przetwarzamy mniej informacji, więcej przyjmujemy za pewnik).\nZdaniem Taylora, tę wiedzę możemy wykorzystać, by świadomie zmienić sposób postrzegania czasu. Po pierwsze – w spowolnieniu czasu pomoże wystawienie się na nowe doświadczenia, jak np. podróż w nieznane, wyzwania zawodowe, kurs i zdobywanie nowych umiejętności wśród dopiero co poznanych ludzi. Gdy zwiedzasz nowe miejsce, z pewnością jesteś bardziej wrażliwy na otoczenie, wszystko okazuje się nieznane i nowe, poświęcasz więc sporo uwagi, by przetworzyć bodźce. Czas się nie dłuży, ale masz wrażenie, że upłynęło go więcej, niż gdybyś pozostał przy biurku i wykonywał rutynowe czynności.\nDrugi sposób, i – jak się zdaje – bardziej skuteczny, to podejmowanie wysiłku, żeby być bardziej świadomym codziennych doświadczeń. To tak zwana uważność, która oznacza zwrócenie uwagi na to, co widzimy, słyszymy, poznajemy dotykiem, smakujemy lub wąchamy – nie zaś na nasze myśli. Oznacza przeżywanie trwającej chwili wszystkimi zmysłami, nie w sposób czysto intelektualny, ale poprzez skanowanie ciała, obserwowanie otaczających nas przedmiotów i zjawisk. Jest to więc nie tyle poszukiwanie nowych doświadczeń, ile zmiana podejścia do doświadczeń już znanych.\n– Ten otwarty i uważny stosunek do swoich doświadczeń sprawia, że zwiększamy ilość przetwarzanych informacji i dzięki temu mamy większą kontrolę nad tym, jak postrzegamy czas – podsumowuje Taylor.\nNie musimy więc myśleć o czasie jako o wrogu – w pewnym stopniu mamy nad nim kontrolę. I chociaż nie mamy możliwości zatrzymywania chwil, możemy je po prostu uważniej przeżywać. A to chyba najlepsze, co możemy zrobić ze swoim czasem.\nNa podstawie: Hanna Gadomska, Masz wrażenie, że czas płynie za szybko?, www.focusnauka.pl",
+          "path": ""
+        }
+      ],
+      "scoring": {
+        "max_points": 4,
+        "scoring_criteria": {
+          "4": "Notatka spełnia wszystkie kryteria treści (A, B, C) określone dla 3 punktów: przedstawia stanowisko każdego autora na odpowiednim poziomie uogólnienia, poprawnie zestawia stanowiska obu autorów (np. punkty wspólne/rozbieżne lub różnorodność aspektów zagadnienia) i stanowi logiczną oraz zorganizowaną całość. Ponadto, notatka jest poprawna językowo, ortograficznie i interpunkcyjnie (dopuszczalne maksymalnie dwa błędy łącznie) i jej długość mieści się w zakresie 60–90 wyrazów.",
+          "3": "Notatka otrzymuje 3 punkty, jeżeli spełnia jeden z poniższych warunków:\n1. Notatka spełnia wszystkie kryteria treści (A, B, C) określone dla 3 punktów oraz jej długość mieści się w zakresie 60–90 wyrazów, ale poprawność językowa, ortograficzna i interpunkcyjna jest niewystarczająca (trzy i więcej błędów łącznie).\n2. Notatka spełnia kryteria treści (A, B, C) określone dla 2 punktów: przedstawia stanowisko każdego autora z zaburzonym poziomem uogólnienia, poprawnie zestawia stanowiska obu autorów i stanowi logiczną całość (ew. z usterkami w spójności). Ponadto, notatka jest poprawna językowo, ortograficznie i interpunkcyjnie (dopuszczalne maksymalnie dwa błędy łącznie) i jej długość mieści się w zakresie 60–90 wyrazów.\n3. Notatka spełnia wszystkie kryteria treści (A, B, C) określone dla 3 punktów oraz jest poprawna językowo, ortograficznie i interpunkcyjnie (dopuszczalne maksymalnie dwa błędy łącznie), ale jej długość NIE mieści się w zakresie 60–90 wyrazów.",
+          "2": "Notatka otrzymuje 2 punkty, jeżeli spełnia jeden z poniższych warunków:\n1. Notatka spełnia kryteria treści (A, B, C) określone dla 2 punktów oraz jej długość mieści się w zakresie 60–90 wyrazów, ale poprawność językowa, ortograficzna i interpunkcyjna jest niewystarczająca (trzy i więcej błędów łącznie).\n2. Notatka spełnia kryteria treści (A, B, C) określone dla 1 punktu: przedstawia stanowisko każdego autora, stanowiska obu autorów nie zostały zestawione poprawnie (lub wcale), i stanowi logiczną całość (ew. z usterkami w spójności). Ponadto, notatka jest poprawna językowo, ortograficznie i interpunkcyjnie (dopuszczalne maksymalnie dwa błędy łącznie) i jej długość mieści się w zakresie 60–90 wyrazów.\n3. Notatka spełnia kryteria treści (A, B, C) określone dla 2 punktów oraz jest poprawna językowo, ortograficznie i interpunkcyjnie (dopuszczalne maksymalnie dwa błędy łącznie), ale jej długość NIE mieści się w zakresie 60–90 wyrazów.\n4. Notatka spełnia wszystkie kryteria treści (A, B, C) określone dla 3 punktów, ale poprawność językowa, ortograficzna i interpunkcyjna jest niewystarczająca (trzy i więcej błędów łącznie) ORAZ jej długość NIE mieści się w zakresie 60–90 wyrazów.",
+          "1": "Notatka otrzymuje 1 punkt, jeżeli spełnia jeden z poniższych warunków:\n1. Notatka spełnia kryteria treści (A, B, C) określone dla 1 punktu oraz jej długość mieści się w zakresie 60–90 wyrazów, ale poprawność językowa, ortograficzna i interpunkcyjna jest niewystarczająca (trzy i więcej błędów łącznie).\n2. Notatka spełnia kryteria treści (A, B, C) określone dla 1 punktu oraz jest poprawna językowo, ortograficznie i interpunkcyjnie (dopuszczalne maksymalnie dwa błędy łącznie), ale jej długość NIE mieści się w zakresie 60–90 wyrazów.\n3. Notatka spełnia kryteria treści (A, B, C) określone dla 2 punktów, ale poprawność językowa, ortograficzna i interpunkcyjna jest niewystarczająca (trzy i więcej błędów łącznie) ORAZ jej długość NIE mieści się w zakresie 60–90 wyrazów.",
+          "0": "Notatka otrzymuje 0 punktów, jeżeli nie spełnia żadnego z kryteriów treści określonego dla 1 punktu. W takim przypadku nie przyznaje się również punktów za poprawność językową, ortograficzną i interpunkcyjną."
+        },
+        "exemplary_answers": "Autorzy obydwu tekstów podejmują temat postaw i zachowań człowieka wobec czasu i jego upływu. Richard Luecke opisuje pośpiech człowieka i jego chęć zaoszczędzenia czasu. Hanna Gadomska podkreśla, że na postrzeganie czasu wpływa wiek człowieka oraz doświadczenia, z którymi przychodzi mu się zmierzyć. Autorzy obu tekstów podkreślają, że czas, który nam pozostał, należy wykorzystać w pełni. Twórcy mają odmienne zdanie w kwestii kontroli czasu. Luecke twierdzi, że niezależnie od naszych starań czas jest poza naszą kontrolą. Natomiast Gadomska uważa, że człowiek jest w stanie w pewnym stopniu zarządzać czasem. [88 wyrazów]\n\nAutorzy obu tekstów podkreślają, że ludzie różnie radzą sobie z upływem czasu. Luecke zauważa, że człowiek podejmuje próby zaoszczędzenia czasu. W tym celu wynajduje urządzenia techniczne, lecz im więcej tych narzędzi ma do dyspozycji, tym coraz bardziej odczuwa brak czasu. Z kolei Gadomska uważa, że człowiek może spowolnić odczuwanie upływu czasu dzięki nowym aktywnościom i uważności. Luecke zwraca uwagę na bezradność ludzi wobec upływu czasu, natomiast Gadomska pokazuje, że w pewnym sensie człowiek może kontrolować czas. [76 wyrazów]",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania […] tekstów kultury, a także ich wzajemnej korespondencji.\n8. Kształcenie umiejętności świadomego odbioru […] tekstów kultury na różnych poziomach […].\nII. Kształcenie językowe.\n1. Pogłębianie funkcjonalnej wiedzy z zakresu nauki o języku.\nIII. Tworzenie wypowiedzi.\n2. Wykorzystanie kompetencji językowych […] w wypowiedziach […] pisemnych.",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Zdający:\n1) przetwarza […] informacje z tekstów […];\n3) […] odczytuje informacje i przekazy jawne i ukryte […].\nSP\nI. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Uczeń:\n3) wyszukuje w tekście potrzebne informacje […].\n4) odróżnia zawarte w tekście informacje ważne od informacji drugorzędnych;\n5) wyszukuje w tekście informacje wyrażone wprost i pośrednio (ukryte).\nII. Kształcenie językowe.\n1. Gramatyka języka polskiego. Zdający:\n1) wykorzystuje wiedzę z dziedziny fleksji, słowotwórstwa, frazeologii i składni w […] tworzeniu własnych wypowiedzi.\n4. Ortografia i interpunkcja. Zdający:\n1) stosuje zasady ortografii i interpunkcji […].\nIII. Tworzenie wypowiedzi.\n2. Mówienie i pisanie. Zdający:\n2) buduje wypowiedź w sposób świadomy, za znajomością jej funkcji językowej […];\n4) tworzy spójne wypowiedzi w następujących formach gatunkowych: […] notatka syntetyzująca."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2405-7",
+      "type": "P-TEXT",
+      "number": "7",
+      "question": "Czy powyższy obraz jest zgodny z wymową Księgi Koheleta? Uzasadnij odpowiedź.",
+      "reference_data": [
+        {
+          "id": "image-1",
+          "type": "image",
+          "name": "In ictu oculi",
+          "author": "Juan de Valdés Leal",
+          "title": "In ictu oculi",
+          "content": "7_In_ictu_oculi.jpg",
+          "path": "img-x86-p009.jpeg",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Napis nad świecą: In ictu oculi (łac.), oznacza W mgnieniu oka."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "rozstrzygnięcie i poprawne uzasadnienie zgodności obrazu z wymową Księgi Koheleta.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "• Obraz jest zgodny z wymową Księgi Koheleta, ponieważ ukazano motyw marności i przemijania. Wskazują na to porozrzucane przedmioty oraz szkielet człowieka.\n• Obraz już samym tytułem jest zgodny z Księgą Koheleta. Tytuł tłumaczony z łaciny odzwierciedla motyw przemijania oraz to, że wszystko się kończy. Pokazują nam to przewrócone rzeczy oraz szkielet, który gasi świecę.\n• Tak, ponieważ na obrazie jest przedstawiony szkielet, który wprowadza motyw przemijania, o którym mówił Kohelet.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury światowej […] oraz umiejętność mówienia o nich z wykorzystaniem potrzebnej terminologii.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury oraz innych tekstów kultury, a także ich wzajemnej korespondencji.\n8. Kształcenie umiejętności świadomego odbioru utworów literackich i tekstów kultury na różnych poziomach: dosłownym, metaforycznym, symbolicznym […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n8) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe;\n9) rozpoznaje tematykę i problematykę poznanych tekstów […].\n2. Odbiór tekstów kultury. Zdający:\n6) odczytuje pozaliterackie teksty kultury, stosując kod właściwy w danej dziedzinie sztuki."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2405-8",
+      "type": "P-TEXT",
+      "number": "8",
+      "question": "Czy postawa podmiotu lirycznego w Trenie X Jana Kochanowskiego jest podobna do postawy Demeter? W uzasadnieniu odpowiedzi odwołaj się do Trenu X oraz do zacytowanego fragmentu Mitologii Jana Parandowskiego.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Jan Parandowski",
+          "title": "Mitologia",
+          "content": "W poszarpanej szacie, z rozwiązanymi włosami, pełnymi prochu i popiołu, idzie […] Demeter. […] Przymglone oczy, w których już łez nie ma, wloką się z przedmiotu na przedmiot, zawiedzione i bezradne. Matka szuka zaginionej córki.  \nOto zostawiła ją na łące, nad brzegiem Oceanu, bawiącą się z nimfami. Odchodząc, zabroniła jej zbierać narcyzów, kwiatów zwodniczych, poświęconych bóstwom podziemnym. […]  \nPersefona obejrzała się wokoło, czy jej nikt nie widzi, i prędko zerwała kwiat. Upiła się jego zapachem, oczy jej zaszły mgłą i ciemność ogarnęła duszę. Wtedy rozwarła się ziemia i Hades, bóg piekieł, porwał Persefonę na wozie zaprzężonym w czarne rumaki. Gdy się ocknęła, wołała, krzyczała. Żaden bóg nie słyszał jej głosu, żadna z nimf, z którymi bawiła się na łące, nie nadbiegła z pomocą. […]  \nNa próżno matka pytała o nią każdego przechodnia. Ani bóg, ani człowiek, ani ptak żaden nie podał jej wieści o córce.\n\nJan Parandowski, Mitologia, Warszawa 1979."
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "",
+          "author": "Jan Kochanowski",
+          "title": "Tren X",
+          "content": "Orszulo moja wdzięczna, gdzieś mi sie podziała?\nW którą stronę, w którąś sie krainę udała?\nCzyś ty nad wszystki nieba wysoko wzniesiona\nI tam w liczbę aniołków małych policzona?\nCzyliś do raju wzięta? Czyś na szcześliwe  \nWyspy1 zaprowadzona? Czy cię przez teskliwe\nCharon jeziora2 wiezie i napawa zdrojem\nNiepomnym, że ty nie wiesz nic o płaczu mojem?\nCzy, człowieka zrzuciwszy3 i myśli dziewicze,\nWzięłaś na sie postawę4 i piórka słowicze?\nCzyli sie w czyścu czyścisz, jesli z strony ciała\nJakakolwiek zmazeczka na tobie została?\nCzyś po śmierci tam poszła, kędyś pierwej była,\nNiżeś sie na mą ciężką żałość urodziła?\nGdzieśkolwiek jest, jesliś jest, lituj mej żałości.\nA nie możesz li w onej dawnej swej całości5,\nPociesz mię, jako możesz, a staw sie przede mną\nLubo snem, lubo cieniem, lub marą nikczemną6.\n\nJan Kochanowski, Tren X, [w:] tegoż, Treny, Wrocław 2019.",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Na szcześliwe wyspy – mityczne wyspy, na których panowała wieczna radość."
+            },
+            {
+              "n": 2,
+              "text": "Teskliwe […] jeziora – smutne jeziora, właściwie wszelkie wody, bagna i rzeki podziemne."
+            },
+            {
+              "n": 3,
+              "text": "Człowieka zrzuciwszy – pozbywszy się ludzkiej postaci."
+            },
+            {
+              "n": 4,
+              "text": "Postawa – tu: postać."
+            },
+            {
+              "n": 5,
+              "text": "W onej dawnej swej całości – z duszą i z ciałem."
+            },
+            {
+              "n": 6,
+              "text": "Mara nikczemna – złudne widziadło, zjawa."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 2,
+        "scoring_criteria": {
+          "2": "rozstrzygnięcie oraz poprawne uzasadnienie stanowiska w odniesieniu do obu tekstów.",
+          "1": "rozstrzygnięcie oraz poprawne uzasadnienie stanowiska w odniesieniu do jednego tekstu.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "1) Rozstrzygnięcie: Jest podobna.\nUzasadnienie, np.:\nPostawa podmiotu litycznego w Trenie X jest podobna do postawy Demeter. Zarówno\nDemeter, jak i podmiot liryczny z trenu szukają z utęsknieniem swych córek. Obydwoje\nrozpaczają nad stratą swoich pociech, z którą nie potrafią sobie poradzić. Towarzyszy im\nsmutek, osamotnienie oraz niepewność.\n\n2) Rozstrzygnięcie: Nie jest podobna.\nUzasadnienie, np.:\nMatka Persefony podejmuje działania, by odnaleźć córkę. Tymczasem podmiot liryczny\nwyraża tylko żal wynikający z nieobecności dziecka.\n\n3) Rozstrzygnięcie: Jest częściowo podobna.\nUzasadnienie, np.:\nObie osoby okazują rozpacz po stracie córek. Jednak matka Persefony podejmuje działania,\nby odnaleźć córkę, podmiot liryczny wyraża żal wynikający z nieobecności dziecka i oczekuje\npocieszenia.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów\nz literatury polskiej i światowej […].\n7. Kształcenie umiejętności czytania,\nanaliżowania i interpretowania literatury\noraz innych tekstów kultury, a także ich\nwzajemnej korespondencji.",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n8) wykazuje się znajomością\ni zrozumieniem treści utworów wskazanych\nw podstawie programowej jako lektury\nobowiązkowe.\n9) rozpoznaje tematykę i problematykę\npoznanych tekstów […];\n13) porównuje utwory literackie lub ich\nfragmenty, […] określa cechy wspólne\ni różne."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2405-9",
+      "type": "P-TF",
+      "number": "9",
+      "question": "Oceń prawdziwość podanych stwierdzeń odnoszących się do fragmentu Pieśni o Rolandzie. Zaznacz P, jeśli stwierdzenie jest prawdziwe, albo F – jeśli jest fałszywe.",
+      "tf_questions": [
+        {
+          "id": "tf-1",
+          "question": "W podanym fragmencie zachowanie Rolanda przedstawiono zgodnie ze średniowiecznym wzorcem ascety."
+        },
+        {
+          "id": "tf-2",
+          "question": "W opisie śmierci Rolanda widoczne są elementy symboliki religijnej."
+        }
+      ],
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "Pieśń o Rolandzie",
+          "author": "",
+          "title": "",
+          "content": "CLXXIV\nRoland czuje, że śmierć go bierze całego; z głowy zstępuje do serca. Biegnie […] pędem\nna szczyt góry, położył się na zielonej murawie, twarzą do ziemi. Pod siebie kładzie swój\nmiecz i róg. Obrócił głowę ku zgrai pogan; tak czyni, chcąc, aby Karol powiedział i wszyscy\njego ludzie, że umarł jako zwycięzca i jako zacny hrabia. Raz po raz słabnącą ręką uderza\nsię w piersi. Za grzechy swoje wyciąga ku niebu swoją rękawicę.\n\nCLXXV\nRoland czuje, że dobiegł już kresu. Leży na stromym pagórku twarzą ku Hiszpanii.\nJedną ręką bije się w pierś: „Boże, przez twoją łaskę, mea culpa1; za moje grzechy, wielkie\ni małe, jakie popełniłem od godziny urodzenia aż do dnia, w którym oto poległem!”.\nWyciągnął do Boga prawą rękawicę. Aniołowie z nieba zstępują ku niemu.\n\nPieśń o Rolandzie, [w:] Arcydzieła francuskiego średniowiecza, red. nauk. Zygmunt Czerny,\ntłum. Tadeusz Żeleński (Boy), Anna Tatarkiewicz, Warszawa 1968.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Mea culpa (łac.) – moja wina."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "dwie poprawne odpowiedzi.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "",
+        "correct_answers": "FP"
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury […] światowej […].\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […].\n8. Kształcenie umiejętności świadomego odbioru utworów literackich […] na różnych poziomach: dosłownym, metaforycznym, symbolicznym [...].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający: 8) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe; 9) rozpoznaje tematykę i problematykę poznanych tekstów oraz jej związek z programami epoki literackiej […]."
+      },
+      "user_answer": {
+        "tf-1": "",
+        "tf-2": ""
+      }
+    },
+    {
+      "id": "MPOP-P1-100-2405-10",
+      "type": "P-TEXT",
+      "number": "10",
+      "question": "Wyjaśnij, na czym polega koncept w wierszu Niestatek Jana Andrzeja Morsztyna.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "red. Janusz Sławiński",
+          "title": "Podręczny słownik terminów literackich",
+          "content": "Koncept – wyszukany pomysł rządzący konstrukcją całości lub części utworu poetyckiego, zrealizowany w postaci zaskakujących i kunsztownych sposobów rozumowania, obrazowania i wysłowienia.",
+          "path": ""
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "",
+          "author": "Jan Andrzej Morsztyn",
+          "title": "Niestatek",
+          "content": "Oczy są ogień, czoło jest zwierciadłem,\nWłos złotem, perłą ząb, płeć mlekiem zsiadłem,\nUsta koralem, purpurą jagody2,\nPóki mi, panno, dotrzymujesz zgody.\nJak się zwadzimy3 – jagody są trądem,\nUsta czeluścią, płeć blejwasem bladem4,\nZąb szkapią kością, włosy pajęczyną,\nCzoło maglownią5, a oczy perzyną6.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Niestatek – tu: niestałość, zmienność."
+            },
+            {
+              "n": 2,
+              "text": "Jagody – policzki."
+            },
+            {
+              "n": 3,
+              "text": "Zwadzić się – pokłócić się."
+            },
+            {
+              "n": 4,
+              "text": "Blejwas blady – martwa biel ołowianej białej farby."
+            },
+            {
+              "n": 5,
+              "text": "Czoło maglownią – pomarszczone jak pokryta rowkami deska do maglowania."
+            },
+            {
+              "n": 6,
+              "text": "Perzyna – popiół."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "trafne wyjaśnienie w odniesieniu do zawartości myślowej utworu albo do budowy utworu.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi.\nJeżeli zdający w odpowiedzi tylko wymienia środki stylistyczne zawarte w utworze, to za rozwiązanie zadania otrzymuje 0 pkt."
+        },
+        "exemplary_answers": "• Na tym, że kobieta jest inaczej postrzegana przez ukochanego, kiedy są zgodni, a inaczej – kiedy się pokłócą.\n• Koncept polega na zobrazowaniu zmienności postrzegania kobiety pod wpływem emocji towarzyszących życiu w zgodzie oraz niezgodzie.\n• Koncept w wierszu Niestatek polega na zastosowaniu kontrastu. Na początku ukazano wyidealizowany wizerunek panny, gdy zakochani są w zgodzie ze sobą. Z kolei po kłótni dziewczyna staje się szpetna w oczach ukochanego.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe. \n5. Znajomość wybranych utworów z literatury polskiej […]. \n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […]. \n8. Kształcenie umiejętności świadomego odbioru utworów literackich […] na różnych poziomach [...].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe. \n1. Czytanie utworów literackich. Zdający: \n9) rozpoznaje tematykę i problematykę poznanych tekstów oraz jej związek […] ze zjawiskami […] estetycznymi […]; \n10) rozpoznaje w utworze sposoby kreowania: […] sytuacji lirycznej […]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2405-11.1",
+      "type": "P-TEXT",
+      "number": "11.1",
+      "question": "Wykaż, że Dziady cz. III to utwór o charakterze profetycznym.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Bogusław Dopart",
+          "title": "Adam Mickiewicz – Dziady, [w:] Lektury polonistyczne. Oświecenie – romantyzm, t. I, red. Andrzej Borowski, Janusz S. Gruchała, Kraków 1997.",
+          "content": "Po klęsce powstania listopadowego, w zmienionej atmosferze duchowej, Mickiewicz zainicjował dwa nowe kierunki romantycznej poezji narodowej. Pierwszy – profetyczny1 – wybiegał w przyszłość; drugi – neosarmacki2 – sięgał w przeszłość.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Profetyczny – proroczy."
+            },
+            {
+              "n": 2,
+              "text": "Neosarmacki – nawiązujący do sarmatyzmu."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne wykazanie, że Dziady cz. III to utwór o charakterze profetycznym.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "• Dziady to utwór o charakterze profetycznym, ponieważ w utworze występuje widzenie księdza Piotra, któremu dane jest ujrzeć przyszłe losy Polski.\n• Dziady cz. III to utwór o charakterze profetycznym ze względu na liczne sceny o charakterze proroczym. Przykładem sceny może być sen Ewy, który zmienia się w widzenie. Bohaterce ukazuje się Chrystus, który rzuca na nią kwiaty, w tym różę, symbolizującą tajemniczego poetę.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej […].\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n9) rozpoznaje tematykę i problematykę poznanych tekstów […].\n2. Odbiór tekstów kultury. Zdający:\n1) przetwarza i hierarchizuje informacje z tekstów […] naukowych."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2405-11.2",
+      "type": "P-TF",
+      "number": "11.2",
+      "question": "Oceń prawdziwość podanych stwierdzeń odnoszących się do fragmentu Pana Tadeusza Adama Mickiewicza. Zaznacz P, jeśli stwierdzenie jest prawdziwe, albo F – jeśli jest fałszywe.",
+      "tf_questions": [
+        {
+          "id": "tf-1",
+          "question": "Porównania zastosowane w powyższym fragmencie wpływają na plastyczność opisu."
+        },
+        {
+          "id": "tf-2",
+          "question": "Hiperbole użyte w powyższym fragmencie dynamizują tekst."
+        }
+      ],
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "Pan Tadeusz",
+          "author": "Adam Mickiewicz",
+          "title": "",
+          "content": "Tam derkacz1 wrzasnął z łąki, szukać go daremnie,\nBo on szybuje w trawie jako szczupak w Niemnie;\nTam ozwał się nad głową ranny wiosny dzwonek:\nRównież głęboko w niebie schowany skowronek;\nÓwdzie orzeł szerokiem skrzydłem przez obszary\nZaszumiał, strasząc wróble jak kometa cary2;\nZaś jastrząb, pod jasnemi wiszący błękity,\nTrzepie skrzydłem jak motyl na szpilce przybity.\nAż ujrzawszy wśród łąki ptaka lub zająca,\nRunie nań z góry jako gwiazda spadająca.\n\nAdam Mickiewicz, Pan Tadeusz, Wrocław 2015.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Derkacz – ptak brodzący, szybki w biegu."
+            },
+            {
+              "n": 2,
+              "text": "Jak kometa cary – według przekonania ludu kometa zapowiada wojnę i przewroty, jest zatem złowroga dla panujących."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "dwie poprawne odpowiedzi.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "",
+        "correct_answers": "PP"
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury [...].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający: 4) rozpoznaje w tekście literackim środki wyrazu artystycznego poznane w szkole podstawowej oraz środki znaczeniowe: [...] hiperbolę [...]; określa ich funkcje.\n\nSP\nI. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający: 11) rozpoznaje w tekście literackim: porównanie [...] i określa [...] [jego] funkcję."
+      },
+      "user_answer": {
+        "tf-1": "",
+        "tf-2": ""
+      }
+    },
+    {
+      "id": "MPOP-P1-100-2405-12",
+      "type": "P-TEXT",
+      "number": "12",
+      "question": "Na plakacie za pomocą różnych elementów graficznych przedstawiono interpretację utworu Juliusza Słowackiego. Wybierz dwa elementy graficzne i wyjaśnij ich sens w kontekście dramatu Kordian.",
+      "reference_data": [
+        {
+          "id": "image-1",
+          "type": "image",
+          "name": "Plakat do przedstawienia Kordian",
+          "author": "fot. Maciej Landsberg, projekt: Elipsy",
+          "title": "Kordian",
+          "content": "Plakat do przedstawienia Kordian – fot. Maciej Landsberg, projekt: Elipsy, Archiwum Artystyczne Teatru Narodowego, www.narodowy.pl",
+          "path": "12-Plakat do przedstawienia Kordian – fot. Maciej Landsberg, projekt: Elipsy, Archiwum Artystyczne Teatru Narodowego, www.narodowy.pl.jpg"
+        }
+      ],
+      "scoring": {
+        "max_points": 2,
+        "scoring_criteria": {
+          "2": "poprawne wyjaśnienie sensu dwóch elementów graficznych w kontekście dramatu Kordian.",
+          "1": "poprawne wyjaśnienie sensu jednego elementu graficznego w kontekście dramatu Kordian.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "Poświęcenie w imię idei niepodległościowej zostało odzwierciedlone na plakacie poprzez kolory biel i czerwień.\nKolor czerwony symbolizuje zbrodnię, którą Kordian ma popełnić na carze.\nMapa Europy może symbolizować Grand Tour, którą odbył Kordian, by odkryć sens życia.\nWyraz twarzy mężczyzny oznacza wysiłek Kordiana w zmaganiu się z samym sobą i ze światem.\nDźwiganie Ziemi może oznaczać trud Kordiana w walce ze sobą, kiedy próbował zabić cara. Ostatecznie mu się nie udało.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej […] oraz umiejętność mówienia o nich z wykorzystaniem potrzebnej terminologii.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury oraz innych tekstów kultury, a także ich wzajemnej korespondencji.\n8. Kształcenie umiejętności świadomego odbioru utworów literackich i tekstów kultury na różnych poziomach […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n8) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe;\n9) rozpoznaje tematykę i problematykę poznanych tekstów […].\n2. Odbiór tekstów kultury. Zdający:\n6) odczytuje pozaliterackie teksty kultury, stosując kod właściwy w danej dziedzinie sztuki.\nSP\n2. Odbiór tekstów kultury. Uczeń:\n11) interpretuje dzieła sztuki ([…] grafika […]);\n15) znajduje w tekstach współczesnej kultury […] nawiązania do tradycyjnych wątków literackich i kulturowych."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "answer-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2405-13",
+      "type": "P-TF",
+      "number": "13",
+      "question": "Oceń prawdziwość podanych stwierdzeń odnoszących się do fragmentu Potopu Henryka Sienkiewicza. Zaznacz P, jeśli stwierdzenie jest prawdziwe, albo F – jeśli jest fałszywe.",
+      "tf_questions": [
+        {
+          "id": "tf-1",
+          "question": "Wyszarpywanie poduszki spod głowy konającego jest metaforą patriotycznej postawy tych, którzy chcą sprzeciwić się szwedzkim najeźdźcom."
+        },
+        {
+          "id": "tf-2",
+          "question": "Rozdzieranie czerwonego sukna to metafora dążeń magnatów oraz zewnętrznych wrogów, którzy chcą wykorzystać sytuację Rzeczypospolitej dla własnych korzyści."
+        }
+      ],
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Henryk Sienkiewicz",
+          "title": "Potop",
+          "content": "Kmicic coraz był bledszy i resztkami sił trzymał na wodzy wybuch szaleństwa; ale książę […], nie zważając na słuchacza, tak dalej mówił:\n– Jest, panie kawalerze, zwyczaj w tym kraju, iż gdy kto kona, to mu krewni w ostatniej chwili poduszkę spod głowy wyszarpują, ażeby się zaś dłużej nie męczył. Ja i książę wojewoda wileński postanowiliśmy tę właśnie przysługę oddać Rzeczypospolitej. Ale że siła drapieżników czyha na spadek i wszystkiego zagarnąć nie zdołamy, przeto chcemy, aby choć część, i to nie lada jaka, dla nas przypadła. Jako krewni, mamy do tego prawo. Jeśli zaś nie przemówiłem ci tym porównaniem do głowy i nie zdołałem w sedno utrafić, tedy powiem inaczej. Rzeczpospolita to postaw czerwonego sukna1, za które ciągną Szwedzi, Chmielnicki, Hiperborejczykowie, Tatarzy, elektor i kto żyw naokoło. A my z księciem wojewodą wileńskim powiedzieliśmy sobie, że z tego sukna musi się i nam tyle zostać w ręku, aby na płaszcz wystarczyło; dlatego nie tylko nie przeszkadzamy ciągnąć, ale i sami ciągniemy. Niechaj Chmielnicki przy Ukrainie się ostaje, niech Szwedzi z Brandenburczykiem o Prusy i wielkopolskie kraje się rozprawiają, niech Małopolskę bierze Rakoczy czy kto bliższy. Litwa musi być dla księcia Janusza, a z jego córką – dla mnie!\n\nHenryk Sienkiewicz, Potop, t. I, Warszawa 1977.",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Postaw […] sukna – tu: kawałek tkaniny."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "dwie poprawne odpowiedzi.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "",
+        "correct_answers": "FP"
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej […].\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […].\n8. Kształcenie umiejętności świadomego odbioru utworów literackich i tekstów kultury na różnych poziomach: dosłownym, metaforycznym, symbolicznym […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n8) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe;\n9) rozpoznaje tematykę i problematykę poznanych tekstów […]."
+      },
+      "user_answer": {
+        "tf-1": "",
+        "tf-2": ""
+      }
+    },
+    {
+      "id": "MPOP-P1-100-2405-14",
+      "type": "P-TEXT",
+      "number": "14",
+      "question": "Wyjaśnij symbolikę złotego rogu w Weselu Stanisława Wyspiańskiego.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Stanisław Wyspiański",
+          "title": "Wesele",
+          "content": "AKT II\n\nSCENA 24\n\n[…] \nWERNYHORA \nWszystko święte, wszystko żywo;\nz daleka, a miałem blisko;\nwybrałem twój dom, zagrodę \ni wybrałem Weselisko.\nWaszmość rękę miej szczęśliwą:\nDaję Waści złoty róg.\n[…] \nNa jego rycerny głos \nspotężni się Duch,\npodejmie Los.\nDaję w twoje ręce róg.\n\nStanisław Wyspiański, Wesele, Wrocław 1977."
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne wyjaśnienie.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "- Złoty róg jest symbolem jedności narodowej, dzięki której Polacy mają szansę na zwycięską walkę o niepodległość.\n- Złoty róg jest symbolem siły, którą Polacy zyskają dzięki zjednoczeniu się w walce o niepodległość.\n- Złoty róg to symbol wezwania do walki narodowowyzwoleńczej / do powstania przeciwko zaborcom.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej […].\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […].\n8. Kształcenie umiejętności świadomego odbioru utworów literackich i tekstów kultury na różnych poziomach: […] symbolicznym […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n5) interpretuje treści […] symboliczne utworu literackiego;\n8) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe;\n9) rozpoznaje tematykę i problematykę poznanych tekstów […]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2405-15",
+      "type": "P-TEXT",
+      "number": "15",
+      "question": "Czy ocena sytuacji Polski tuż po odzyskaniu niepodległości zawarta w podanym fragmencie utworu Na probostwie w Wyszkowie znajduje potwierdzenie w Przedwiośniu Stefana Żeromskiego? W uzasadnieniu odpowiedzi przywołaj sytuację z Przedwiośnia.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Stefan Żeromski",
+          "title": "Na probostwie w Wyszkowie",
+          "content": "Wszystka wzniosłość poczęta w duchu za dni niewoli zamarła w tym pierwszym dniu wolności. Walka o władzę, istniejąca niewątpliwie wszędzie na świecie jako wyraz siły potęg społecznych, partii, obozów i stronnictw, w Polsce przybrała kształty monstrualne. […]\nWewnątrz kraju, gdzie tylko spojrzeć, wszystko popsute, obniżone, znędzniałe.\n[1920]\nStefan Żeromski, Na probostwie w Wyszkowie, [w:] Katarzyna Sobolewska (red.), Stefan Żeromski wobec niepodległości, „Zeszyty Stowarzyszenia im. Stefana Żeromskiego”, Warszawa 2010.",
+          "path": ""
+        }
+      ],
+      "scoring": {
+        "max_points": 2,
+        "scoring_criteria": {
+          "2": "rozstrzygnięcie i poprawne uzasadnienie odnoszące się do przytoczonego fragmentu i do Przedwiośnia ORAZ uwzględniające sytuację z Przedwiośnia.",
+          "1": "rozstrzygnięcie i poprawne uzasadnienie odnoszące się do przytoczonego fragmentu i do Przedwiośnia ALBO rozstrzygnięcie i przywołanie adekwatnej sytuacji z Przedwiośnia.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "•\tTak. W obu tekstach jest mowa o bardzo trudnej sytuacji społecznej\nw II Rzeczypospolitej. W utworze Na probostwie w Wyszkowie Żeromski pisze, że\nwszystko było znędzniałe. W Przedwiośniu Cezary Baryka obserwuje nędzę po\nprzyjeździe do Polski – widzi bosych chłopów brodzących w błocie.\n•\tOcena sytuacji Polski tuż po odzyskaniu niepodległości zawarta w podanym fragmencie\nznajduje potwierdzenie w Przedwiośniu. W powieści dostrzegamy komunistów,\nktórzy pragną rewolucji, co jest zgodne ze wspomnianą we fragmencie monstrualną\nwalką o władzę.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej […].\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […].\n8. Kształcenie umiejętności świadomego odbioru utworów literackich […] na różnych poziomach [...].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n8) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe;\n9) rozpoznaje tematykę i problematykę poznanych tekstów […];\n13) porównuje utwory literackie lub ich fragmenty, […] określa cechy wspólne i różne."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2405-16",
+      "type": "P-TEXT",
+      "number": "16",
+      "question": "Na podstawie podanego fragmentu Zdążyć przed Panem Bogiem oraz całego reportażu Hanny Krall wyjaśnij, jaką rolę w powojennym życiu Marka Edelmana odgrywała pamięć o wydarzeniach na Umschlagplatzu. W odpowiedzi uwzględnij sens tytułu reportażu.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Hanna Krall",
+          "title": "Zdążyć przed Panem Bogiem",
+          "content": "– W klinice, w której potem pracowałem, była wielka palma. Stawałem czasem pod nią – i widziałem sale, na których leżeli moi pacjenci. To były dawne czasy, kiedy nie mieliśmy dzisiejszych lekarstw ani zabiegów, ani aparatów, i większość ludzi w owych salach skazana była na śmierć. Moje zadanie polegało na tym, żeby możliwie najwięcej spośród nich ocalić – i uprzytomniłem sobie kiedyś pod palmą, że właściwie to jest to samo zadanie, co tam. Na Umschlagplatzu. Wtedy też stałem przy bramie i wyciągałem jednostki z tłumu skazanych.\n– I tak stoisz przy tej bramie przez całe życie?\n– Właściwie tak. A kiedy nic już nie mogę zrobić, pozostaje mi jedno: zapewnić im komfortową śmierć. Żeby nie wiedzieli, nie cierpieli, nie bali się. Żeby się nie poniżali.\n\nHanna Krall, Zdążyć przed Panem Bogiem, Kraków 2020.",
+          "path": ""
+        }
+      ],
+      "scoring": {
+        "max_points": 2,
+        "scoring_criteria": {
+          "2": "poprawne wyjaśnienie roli pamięci z uwzględnieniem sensu tytułu.",
+          "1": "poprawne wyjaśnienie roli pamięci.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "• Marek Edelman przy bramie na Umschlagplatzu ratował ludzi przed śmiercią. Dzięki pamięci o tych wydarzeniach pojął po wojnie, że jako lekarz może nadal ratować ludzkie życie. Tytuł oznacza, że starał się ratować pacjentów przed śmiercią – zanim Bóg ich zabierze do siebie.\n• Edelman od czasu swojego udziału w powstaniu i tragedii drugiej wojny światowej obrał sobie za cel ratowanie życia. Wcześniej walczył o to na Umschlagplatzu, ratując życie niektórym więźniom, po wojnie zaś w szpitalu jako kardiochirurg. M. Edelman mówi, że chce „Zdążyć przed Panem Bogiem”, a dokładniej podjąć działanie, zanim Bóg zgasi czyjąś świecę – czyli życie.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej […].\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n8) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe;\n9) rozpoznaje tematykę i problematykę poznanych tekstów […]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    }
+  ]
+}

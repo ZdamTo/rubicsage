@@ -1,6 +1,7 @@
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import CkeExamPicker from "@/components/cke/CkeExamPicker";
 
 export const dynamic = "force-dynamic";
 
@@ -27,9 +28,9 @@ export default async function SubjectPage({
   if (!subject) notFound();
 
   const supabase = await createServerSupabaseClient();
-  const { data: quizzes, error } = await supabase
+  const { data: allQuizzes, error } = await supabase
     .from("quizzes")
-    .select("id, title, description, updated_at, quiz_versions(id, version, is_active)")
+    .select("*, quiz_versions(id, version, is_active)")
     .eq("subject", subject)
     .eq("status", "published")
     .order("updated_at", { ascending: false });
@@ -37,6 +38,12 @@ export default async function SubjectPage({
   if (error) {
     console.error("Error fetching quizzes:", error);
   }
+
+  // CKE exam sheets (Język polski) have their own picker; everything else is
+  // the regular quiz list. Filtered here rather than in SQL so this page keeps
+  // working even before migration 004 adds the `format` column.
+  const quizzes = (allQuizzes ?? []).filter((q) => (q as { format?: string }).format !== "cke_exam");
+  const isPolish = subject === "polish";
 
   return (
     <div>
@@ -46,11 +53,28 @@ export default async function SubjectPage({
         <p className="text-gray-500 mt-1">{meta.description}</p>
       </div>
 
-      {!quizzes || quizzes.length === 0 ? (
+      {isPolish && (
+        <section className="mb-10">
+          <h2 className="text-lg font-semibold text-gray-800 mb-1">Arkusze maturalne CKE</h2>
+          <p className="text-sm text-gray-500 mb-4">
+            Pełne arkusze z oficjalnymi zasadami oceniania. Kliknij kartę, aby ćwiczyć (tryb nauki), albo ⏱, aby
+            rozwiązać arkusz z zegarem jak na egzaminie.
+          </p>
+          <CkeExamPicker />
+        </section>
+      )}
+
+      {isPolish && quizzes.length > 0 && (
+        <h2 className="text-lg font-semibold text-gray-800 mb-3">Inne testy</h2>
+      )}
+
+      {quizzes.length === 0 ? (
+        isPolish ? null : (
         <div className="text-center py-12 text-gray-400">
           <p>No quizzes published yet for this subject.</p>
           <p className="text-sm mt-1">Check back soon!</p>
         </div>
+        )
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {quizzes.map((quiz) => {

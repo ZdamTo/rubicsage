@@ -1,0 +1,1134 @@
+{
+  "id": "MPOP-P1-100-2305",
+  "name": "Matura z języka polskiego",
+  "questions": [
+    {
+      "id": "MPOP-P1-100-2305-1",
+      "type": "P-TEXT",
+      "number": "1",
+      "question": "Na podstawie tekstu Agnieszki Krzemińskiej rozstrzygnij, czy turystyka zmienia podróżującego człowieka. Uzasadnij odpowiedź.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "Po co człowiekowi czasowa zmiana miejsca",
+          "author": "Agnieszka Krzemińska",
+          "title": "Podróż jak prozak. Po co człowiekowi czasowa zmiana miejsca",
+          "content": "Wraz z rozwojem cywilizacji pojawili się turyści. Dobrowolne podróżowanie, napędzane ciekawością, potrzebą podreperowania zdrowia czy rekreacji, istniało już w antyku, ale spopularyzowali je w XVII w. europejscy arystokraci, którzy – aby poszerzyć horyzonty – odbywali Grand Tour1 po Europie. Coraz doskonalsze środki transportu przełożyły się na coraz niższe koszty podróży i przyczyniły się do mody na wyjazdy rekreacyjne wśród zamożnych mieszkańców brudnych miast. Dziś turystyka to zjawisko masowe, którego wpływ na jednostki, społeczeństwa i globalne procesy ekonomiczno-ekologiczne badają naukowcy.\nMotywy napędzające masową turystykę są różne. Podczas gdy jedni szukają kontaktu z przyrodą, rekreacji i odpoczynku, inni cenią sobie spotkania z ludźmi i kulturami. Turystyka może być ucieczką od codzienności, sposobem na podkreślenie statusu, poszukiwaniem tożsamości, formą dowartościowania i samospełnienia. Jest też środkiem konsumpcji duchowej i materialnej. Pewne jednak jest, że dla wielu osób podróżowanie, które ma estetyczny, edukacyjny i społeczny wymiar, jest ważne w dążeniu do harmonijnego rozwoju i poczucia szczęścia.\nLeszek Kołakowski2 sformułował najkrótszą definicję turystyki: stwierdził, że jest ona typowo ludzką formą bezinteresownej aktywności poznawczej. Najwięcej na podróżach zyskują ci, którzy chcą poznawać nowe dźwięki, języki, zapachy, smaki i widoki, bo to ożywia umysł.\nBo podróże to stan umysłu, tym bardziej że poza domem stajesz się kimś innym – prowadzisz inne życie, używasz obcego języka, poznajesz nowych ludzi i miejsca. Antropolodzy3 porównują podróż do pielgrzymki albo rytuału. Coś w tym jest, bo miejsca kultu (świątynie, grobowce, kościoły) to często odwiedzane atrakcje, w których zachwyt nad sztuką lub pięknem natury może wywoływać silne emocje. Podróżnik odbywa rodzaj rytuału przejścia4 z typowym dla niego zawieszeniem poza czasem, dlatego może robić rzeczy wyjątkowe: szastać pieniędzmi, jeść i pić bez umiaru lub robić co innego niż zazwyczaj, mało (lub ciągle) spać, inaczej wyglądać, nosząc bikini czy narciarski kombinezon.\nPodróże pozwalają skupić się na sobie, swoich potrzebach i przyjemnościach – nowej kuchni, muzyce, zabytkach, co skutecznie obniża poziom stresu, jest sposobem na chwilowe zapewnienie sobie celu i docenienie piękna życia. Po powrocie wspomnienia z podróży pomagają utrzymać dystans i równowagę. Niestety, u kolekcjonerów wrażeń podróżniczych łatwo o snobizm i współzawodnictwo, czemu usługi turystyczne wychodzą naprzeciw: uciekają się też do inscenizowania rzeczywistości (np. w zorganizowanych dla turystów wioskach Papuasów czy Masajów). Zwiedzanie takich miejsc również może być ciekawe – przecież to od naszych potrzeb i oczekiwań zależy, jaki wybierzemy sobie program podróży. Turystyfikacja5 świata umożliwia jego bezpieczne zwiedzanie i daje zarobek ludziom z branży, ale jednocześnie wymaga przelotów samolotowych, gigantycznej infrastruktury i łączy się z zadeptywaniem zabytków, parków krajobrazowych, umasowieniem rodzimych kultur. Jost Krippendorf, szwajcarski socjolog, symbolem turystyki masowej uczynił uroborosa, czyli węża zjadającego własny ogon: turysta masowy przyjeżdża do atrakcyjnego miejsca, niszczy jego kulturowe i naturalne środowisko, a tym samym – jego niepowtarzalność i atrakcyjność.\nNa podstawie: Agnieszka Krzemińska, Podróż jak prozak. Po co człowiekowi czasowa zmiana miejsca, „Ja. My. Oni. Poradnik Psychologiczny «Polityki»”, t. 33, 01/2019.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Grand Tour – wielka podróż."
+            },
+            {
+              "n": 2,
+              "text": "Leszek Kołakowski (1927–2009) – polski filozof, eseista, publicysta, prozaik."
+            },
+            {
+              "n": 3,
+              "text": "Antropolog – badacz zajmujący się nauką o pochodzeniu człowieka i jego rozwoju kulturowym."
+            },
+            {
+              "n": 4,
+              "text": "Rytuał przejścia – w różnych kulturach obrzęd towarzyszący określonej zmianie w życiu człowieka, najczęściej związanej z dorastaniem."
+            },
+            {
+              "n": 5,
+              "text": "Turystyfikacja – zmiany w przestrzeni publicznej spowodowane obecnością i potrzebami dużej liczby turystów."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "rozstrzygnięcie i poprawne uzasadnienie.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "• Zmienia, ponieważ w czasie podróży człowiek wygląda i zachowuje się inaczej niż zazwyczaj.\n• Tak. Doświadczenia podróżnicze powracające we wspomnieniach pomagają mu po powrocie zachować życiową równowagę.\n• W tekście mowa o tym, że zmiany wyglądu i zachowania podróżującego są czasowe, chwilowe – wyłącznie na czas podróży.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania […] tekstów kultury […].\n8. Kształcenie umiejętności świadomego odbioru […] tekstów kultury na różnych poziomach […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Zdający:\n1) przetwarza i hierarchizuje informacje z tekstów, np. publicystycznych […];\n3) […] odczytuje informacje i przekazy jawne i ukryte […].\nSP\nI. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Uczeń:\n3) wyszukuje w tekście potrzebne informacje [...];\n5) wyszukuje w tekście informacje wyrażone wprost i pośrednio (ukryte);\n7) wyciąga wnioski wynikające z przesłanek zawartych w tekście […]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2305-2",
+      "type": "P-TEXT",
+      "number": "2",
+      "question": "Na podstawie tekstu Olgi Stanisławskiej wyjaśnij, jaka korzyść i jakie ryzyko wynikają dla turysty z przekroczenia ścian „bańki turystycznej”.",
+      "reference_data": [
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "Sens podróżowania",
+          "author": "Olga Stanisławska",
+          "title": "Sens podróżowania. Przestroga, „Tygodnik Powszechny”, wydanie specjalne, nr 3–4/2020.",
+          "content": "Zwiedzanie jest obrzędem zawłaszczania. Kawałek po kawałku symbolicznie bierzemy w posiadanie ten świat, do którego przecież mamy prawo – czujemy to instynktownie i powtarzają nam to foldery biur podróży. Przemieszczamy się po kuli ziemskiej, jakbyśmy się przechadzali z koszykiem alejkami planetarnego supermarketu.\nŚwiat ten zamieszkują jednak również inni i podróż jest nieuchronnie spotkaniem z drugim człowiekiem – lub też świadomym unikaniem spotkania.\nMasowa turystyka otworzyła milionom z nas – mieszkańców państw na tyle zasobnych, byśmy mogli podróżować lub choćby o podróżach rozmyślać – drogę do dalekich krajów. Jednocześnie za jej przyczyną rozrasta się nowy, fascynujący świat – ersatz1, niezwykłe uniwersum tworzone, by miło potwierdzać stereotypy przyjezdnych. Czy to nie Stendhal2 zauważył, że mieszkańcy Szwajcarii cały rok ubierają się normalnie, poza latem, kiedy to wkładają skórzane spodnie, jakie spodziewają się zobaczyć angielscy kuracjusze?\nKonsumujemy odmienność sprowadzoną do banału. Oto cudowny świat, świat uproszczony. Zredukowany do listy paru punktów, które możemy przyswoić podczas dwutygodniowego pobytu – plaża, piramida, wielbłąd, feluka3 na Nilu. „Bańka turystyczna” – tak socjolodzy nazywają tę szklaną kulę, zaklętą przestrzeń iluzji, magiczny plac zabaw o niewidzialnych granicach, w którym turyści izolują się od lokalnej rzeczywistości.\nSą turyści, którzy z naturalną gracją przebywają w bańce stworzonej na ich potrzeby. Są też tacy, którzy za żadne skarby nie przyznają, że są turystami, pogarda dla turystów jest wszakże tak stara, jak sama turystyka.\nPrzebić się poza ściany „bańki turystycznej” nie zawsze jest jednak łatwo. Nie zawsze też jest to słuszne. Bańka jest przecież potrzebna nie tylko turystom, którym pozwala uniknąć zaskoczeń, konieczności zrozumienia lokalnych obyczajów, wyjścia poza strefę komfortu. Chroni też lokalną społeczność przed nadmiarem turystów. Miejscowi również bronią się przed traumą: wykształcają własny stereotyp turysty. Oczekują od przyjezdnych określonych zachowań i próbują zatrzymać ich na określonej przestrzeni. I czasem po prostu muszą od nas odpocząć.\nCo jednak począć, jeśli – jak Monteskiusz4 – wierzymy, że kontakt z inną kulturą jest niezbędny, by wyostrzyć spojrzenie, i pozwala lepiej zrozumieć świat? Jeśli właśnie spotkanie z drugim człowiekiem jest dla nas największą radością? Jeśli chcemy dać szansę podróży, żeby nas odmieniła, jak mówił Bouvier5, choć – jak zauważał – nie wiemy, czy nas wtedy nie zniszczy?\nMożemy szukać dziur w „bańce turystycznej”. Naszej własnej, prywatnej chwili prawdy. Nawet jeśli wiemy, że możemy się rozczarować, gdy przyjdzie nam pożegnać się z egzotyką – odkryć, że Szwajcarzy zwykle noszą dżinsy, Masajowie oszczędzają na dom z pustaków, balijskie kobiety po pracy, zamiast oddawać się tradycyjnym tańcom, oglądają amerykańskie seriale. Możemy w ogóle unikać eleganckich hoteli, rajskich plaż, słynnych świątyń, malowniczych miast.\nJednak jakkolwiek byśmy podróżowali, rowerem przez Transylwanię czy z biurem podróży na tunezyjską plażę, klucz jest jeden – inny człowiek powinien być dla nas podmiotem.",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Ersatz – zamiennik, podróbka, namiastka."
+            },
+            {
+              "n": 2,
+              "text": "Stendhal (1783–1842) – francuski pisarz."
+            },
+            {
+              "n": 3,
+              "text": "Feluka – niewielka łódź z żaglami."
+            },
+            {
+              "n": 4,
+              "text": "Monteskiusz (1689–1755) – francuski prawnik, myśliciel i pisarz polityczny."
+            },
+            {
+              "n": 5,
+              "text": "Nicolas Bouvier (1929–1998) – szwajcarski pisarz, fotograf i podróżnik."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne wyjaśnienie, jaka korzyść i jakie ryzyko wynikają dla turysty z przekroczenia ścian „bańki turystycznej”.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "Korzyść:  \n• Turysta zobaczy świat taki, jaki jest, a nie taki, jaki jest kreowany dla podróżnych. \n• Turysta pozna miejscowych ludzi takimi, jacy są naprawdę.  \nRyzyko:  \nTurysta może się rozczarować tym, że świat jest niezgodny / może być niezgodny z jego wyobrażeniami o tym świecie.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania […] tekstów kultury […].\n8. Kształcenie umiejętności świadomego odbioru […] tekstów kultury na różnych poziomach […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Zdający:\n1) przetwarza i hierarchizuje informacje z tekstów, np. publicystycznych […];\n3) […] odczytuje informacje i przekazy jawne i ukryte […].\nSP\nI. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Uczeń:\n3) wyszukuje w tekście potrzebne informacje [...];\n5) wyszukuje w tekście informacje wyrażone wprost i pośrednio (ukryte)."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "Korzyść: ",
+          "answer": ""
+        },
+        {
+          "input-field-id": "input-field-id-2",
+          "input-field-prefix": "Ryzyko: ",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2305-3",
+      "type": "P-TEXT",
+      "number": "3",
+      "question": "Czy przekonanie, że zwiedzanie jest zawłaszczaniem, wyrażone w tekście Olgi Stanisławskiej, znajduje potwierdzenie w tekście Agnieszki Krzemińskiej? Uzasadnij odpowiedź, odwołując się do obu tekstów.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "Po co człowiekowi czasowa zmiana miejsca",
+          "author": "Agnieszka Krzemińska",
+          "title": "Podróż jak prozak. Po co człowiekowi czasowa zmiana miejsca",
+          "content": "Wraz z rozwojem cywilizacji pojawili się turyści. Dobrowolne podróżowanie, napędzane ciekawością, potrzebą podreperowania zdrowia czy rekreacji, istniało już w antyku, ale spopularyzowali je w XVII w. europejscy arystokraci, którzy – aby poszerzyć horyzonty – odbywali Grand Tour1 po Europie. Coraz doskonalsze środki transportu przełożyły się na coraz niższe koszty podróży i przyczyniły się do mody na wyjazdy rekreacyjne wśród zamożnych mieszkańców brudnych miast. Dziś turystyka to zjawisko masowe, którego wpływ na jednostki, społeczeństwa i globalne procesy ekonomiczno-ekologiczne badają naukowcy.\nMotywy napędzające masową turystykę są różne. Podczas gdy jedni szukają kontaktu z przyrodą, rekreacji i odpoczynku, inni cenią sobie spotkania z ludźmi i kulturami. Turystyka może być ucieczką od codzienności, sposobem na podkreślenie statusu, poszukiwaniem tożsamości, formą dowartościowania i samospełnienia. Jest też środkiem konsumpcji duchowej i materialnej. Pewne jednak jest, że dla wielu osób podróżowanie, które ma estetyczny, edukacyjny i społeczny wymiar, jest ważne w dążeniu do harmonijnego rozwoju i poczucia szczęścia.\nLeszek Kołakowski2 sformułował najkrótszą definicję turystyki: stwierdził, że jest ona typowo ludzką formą bezinteresownej aktywności poznawczej. Najwięcej na podróżach zyskują ci, którzy chcą poznawać nowe dźwięki, języki, zapachy, smaki i widoki, bo to ożywia umysł.\nBo podróże to stan umysłu, tym bardziej że poza domem stajesz się kimś innym – prowadzisz inne życie, używasz obcego języka, poznajesz nowych ludzi i miejsca. Antropolodzy3 porównują podróż do pielgrzymki albo rytuału. Coś w tym jest, bo miejsca kultu (świątynie, grobowce, kościoły) to często odwiedzane atrakcje, w których zachwyt nad sztuką lub pięknem natury może wywoływać silne emocje. Podróżnik odbywa rodzaj rytuału przejścia4 z typowym dla niego zawieszeniem poza czasem, dlatego może robić rzeczy wyjątkowe: szastać pieniędzmi, jeść i pić bez umiaru lub robić co innego niż zazwyczaj, mało (lub ciągle) spać, inaczej wyglądać, nosząc bikini czy narciarski kombinezon.\nPodróże pozwalają skupić się na sobie, swoich potrzebach i przyjemnościach – nowej kuchni, muzyce, zabytkach, co skutecznie obniża poziom stresu, jest sposobem na chwilowe zapewnienie sobie celu i docenienie piękna życia. Po powrocie wspomnienia z podróży pomagają utrzymać dystans i równowagę. Niestety, u kolekcjonerów wrażeń podróżniczych łatwo o snobizm i współzawodnictwo, czemu usługi turystyczne wychodzą naprzeciw: uciekają się też do inscenizowania rzeczywistości (np. w zorganizowanych dla turystów wioskach Papuasów czy Masajów). Zwiedzanie takich miejsc również może być ciekawe – przecież to od naszych potrzeb i oczekiwań zależy, jaki wybierzemy sobie program podróży. Turystyfikacja5 świata umożliwia jego bezpieczne zwiedzanie i daje zarobek ludziom z branży, ale jednocześnie wymaga przelotów samolotowych, gigantycznej infrastruktury i łączy się z zadeptywaniem zabytków, parków krajobrazowych, umasowieniem rodzimych kultur. Jost Krippendorf, szwajcarski socjolog, symbolem turystyki masowej uczynił uroborosa, czyli węża zjadającego własny ogon: turysta masowy przyjeżdża do atrakcyjnego miejsca, niszczy jego kulturowe i naturalne środowisko, a tym samym – jego niepowtarzalność i atrakcyjność.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Grand Tour – wielka podróż."
+            },
+            {
+              "n": 2,
+              "text": "Leszek Kołakowski (1927–2009) – polski filozof, eseista, publicysta, prozaik."
+            },
+            {
+              "n": 3,
+              "text": "Antropolog – badacz zajmujący się nauką o pochodzeniu człowieka i jego rozwoju kulturowym."
+            },
+            {
+              "n": 4,
+              "text": "Rytuał przejścia – w różnych kulturach obrzęd towarzyszący określonej zmianie w życiu człowieka, najczęściej związanej z dorastaniem."
+            },
+            {
+              "n": 5,
+              "text": "Turystyfikacja – zmiany w przestrzeni publicznej spowodowane obecnością i potrzebami dużej liczby turystów."
+            }
+          ]
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "Sens podróżowania",
+          "author": "Olga Stanisławska",
+          "title": "Sens podróżowania. Przestroga",
+          "content": "Zwiedzanie jest obrzędem zawłaszczania. Kawałek po kawałku symbolicznie bierzemy w posiadanie ten świat, do którego przecież mamy prawo – czujemy to instynktownie i powtarzają nam to foldery biur podróży. Przemieszczamy się po kuli ziemskiej, jakbyśmy się przechadzali z koszykiem alejkami planetarnego supermarketu.\nŚwiat ten zamieszkują jednak również inni i podróż jest nieuchronnie spotkaniem z drugim człowiekiem – lub też świadomym unikaniem spotkania.\nMasowa turystyka otworzyła milionom z nas – mieszkańców państw na tyle zasobnych, byśmy mogli podróżować lub choćby o podróżach rozmyślać – drogę do dalekich krajów. Jednocześnie za jej przyczyną rozrasta się nowy, fascynujący świat – ersatz1, niezwykłe uniwersum tworzone, by miło potwierdzać stereotypy przyjezdnych. Czy to nie Stendhal2 zauważył, że mieszkańcy Szwajcarii cały rok ubierają się normalnie, poza latem, kiedy to wkładają skórzane spodnie, jakie spodziewają się zobaczyć angielscy kuracjusze? Konsumujemy odmienność sprowadzoną do banału. Oto cudowny świat, świat uproszczony. Zredukowany do listy paru punktów, które możemy przyswoić podczas dwutygodniowego pobytu – plaża, piramida, wielbłąd, feluka3 na Nilu. „Bańka turystyczna” – tak socjolodzy nazywają tę szklaną kulę, zaklętą przestrzeń iluzji, magiczny plac zabaw o niewidzialnych granicach, w którym turyści izolują się od lokalnej rzeczywistości.\nSą turyści, którzy z naturalną gracją przebywają w bańce stworzonej na ich potrzeby. Są też tacy, którzy za żadne skarby nie przyznają, że są turystami, pogarda dla turystów jest wszakże tak stara, jak sama turystyka. Przebić się poza ściany „bańki turystycznej” nie zawsze jest jednak łatwo. Nie zawsze też jest to słuszne. Bańka jest przecież potrzebna nie tylko turystom, którym pozwala uniknąć zaskoczeń, konieczności zrozumienia lokalnych obyczajów, wyjścia poza strefę komfortu. Chroni też lokalną społeczność przed nadmiarem turystów. Miejscowi również bronią się przed traumą: wykształcają własny stereotyp turysty. Oczekują od przyjezdnych określonych zachowań i próbują zatrzymać ich na określonej przestrzeni. I czasem po prostu muszą od nas odpocząć.\nCo jednak począć, jeśli – jak Monteskiusz4 – wierzymy, że kontakt z inną kulturą jest niezbędny, by wyostrzyć spojrzenie, i pozwala lepiej zrozumieć świat? Jeśli właśnie spotkanie z drugim człowiekiem jest dla nas największą radością? Jeśli chcemy dać szansę podróży, żeby nas odmieniła, jak mówił Bouvier5, choć – jak zauważał – nie wiemy, czy nas wtedy nie zniszczy? Możemy szukać dziur w „bańce turystycznej”. Naszej własnej, prywatnej chwili prawdy. Nawet jeśli wiemy, że możemy się rozczarować, gdy przyjdzie nam pożegnać się z egzotyką – odkryć, że Szwajcarzy zwykle noszą dżinsy, Masajowie oszczędzają na dom z pustaków, balijskie kobiety po pracy, zamiast oddawać się tradycyjnym tańcom, oglądają amerykańskie seriale. Możemy w ogóle unikać eleganckich hoteli, rajskich plaż, słynnych świątyń, malowniczych miast. Jednak jakkolwiek byśmy podróżowali, rowerem przez Transylwanię czy z biurem podróży na tunezyjską plażę, klucz jest jeden – inny człowiek powinien być dla nas podmiotem.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Ersatz – zamiennik, podróbka, namiastka."
+            },
+            {
+              "n": 2,
+              "text": "Stendhal (1783–1842) – francuski pisarz."
+            },
+            {
+              "n": 3,
+              "text": "Feluka – niewielka łódź z żaglami."
+            },
+            {
+              "n": 4,
+              "text": "Monteskiusz (1689–1755) – francuski prawnik, myśliciel i pisarz polityczny."
+            },
+            {
+              "n": 5,
+              "text": "Nicolas Bouvier (1929–1998) – szwajcarski pisarz, fotograf i podróżnik."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 2,
+        "scoring_criteria": {
+          "2": "rozstrzygnięcie i poprawne uzasadnienie w odniesieniu do obu tekstów.",
+          "1": "rozstrzygnięcie i poprawne uzasadnienie w odniesieniu do jednego tekstu.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "• Tak. W tekście Stanisławskiej podkreślono, że zwiedzanie jest zawłaszczaniem, ponieważ duża liczba turystów może naruszać prywatność miejscowej ludności. Z kolei w tekście Krzemińskiej wspomina się, że turystyka pozwala zwiedzającym na zaspokajanie ich zachcianek poprzez zbudowanie odpowiedniej infrastruktury, co może prowadzić do zniszczenia środowiska naturalnego.\n• W tekście A. Krzemińskiej nie znajdujemy potwierdzenia przekonania, że zwiedzanie jest zawłaszczaniem. Według autorki tekstu 1. zwiedzanie to forma poznania świata i samego siebie. Podczas podróży ludzie nie przypisują sobie miejsc, w których się znajdują, ale czerpią z nich inspiracje. W tekście O. Stanisławskiej jasno przedstawiono problem zawłaszczania. Autorka stwierdza, że ludzie zwiedzający beztrosko przechadzają się przez świat – jakby był ich własnością.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania […] tekstów kultury […].\n8. Kształcenie umiejętności świadomego odbioru […] tekstów kultury na różnych poziomach […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Zdający:\n1) przetwarza i hierarchizuje informacje z tekstów, np. publicystycznych […];\n3) […] odczytuje informacje i przekazy jawne i ukryte […].\n\nSP\nI. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Uczeń:\n3) wyszukuje w tekście potrzebne informacje [...];\n5) wyszukuje w tekście informacje wyrażone wprost i pośrednio (ukryte);\n7) wyciąga wnioski wynikające z przesłanek zawartych w tekście […]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2305-4",
+      "type": "P-TF",
+      "number": "4",
+      "question": "Oceń prawdziwość podanych stwierdzeń odnoszących się do tekstu Agnieszki Krzemińskiej i tekstu Olgi Stanisławskiej. Zaznacz P, jeśli stwierdzenie jest prawdziwe, albo F – jeśli jest fałszywe.",
+      "tf_questions": [
+        {
+          "id": "tf-1",
+          "question": "W obu tekstach użyto wyliczeń."
+        },
+        {
+          "id": "tf-2",
+          "question": "W obu tekstach zastosowano słownictwo wartościujące."
+        }
+      ],
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Agnieszka Krzemińska",
+          "title": "Po co człowiekowi czasowa zmiana miejsca",
+          "content": "Wraz z rozwojem cywilizacji pojawili się turyści. Dobrowolne podróżowanie, napędzane ciekawością, potrzebą podreperowania zdrowia czy rekreacji, istniało już w antyku, ale spopularyzowali je w XVII w. europejscy arystokraci, którzy – aby poszerzyć horyzonty – odbywali Grand Tour1 po Europie. Coraz doskonalsze środki transportu przełożyły się na coraz niższe koszty podróży i przyczyniły się do mody na wyjazdy rekreacyjne wśród zamożnych mieszkańców brudnych miast. Dziś turystyka to zjawisko masowe, którego wpływ na jednostki, społeczeństwa i globalne procesy ekonomiczno-ekologiczne badają naukowcy.\nMotywy napędzające masową turystykę są różne. Podczas gdy jedni szukają kontaktu z przyrodą, rekreacji i odpoczynku, inni cenią sobie spotkania z ludźmi i kulturami. Turystyka może być ucieczką od codzienności, sposobem na podkreślenie statusu, poszukiwaniem tożsamości, formą dowartościowania i samospełnienia. Jest też środkiem konsumpcji duchowej i materialnej. Pewne jednak jest, że dla wielu osób podróżowanie, które ma estetyczny, edukacyjny i społeczny wymiar, jest ważne w dążeniu do harmonijnego rozwoju i poczucia szczęścia.\nLeszek Kołakowski2 sformułował najkrótszą definicję turystyki: stwierdził, że jest ona typowo ludzką formą bezinteresownej aktywności poznawczej. Najwięcej na podróżach zyskują ci, którzy chcą poznawać nowe dźwięki, języki, zapachy, smaki i widoki, bo to ożywia umysł.\nBo podróże to stan umysłu, tym bardziej że poza domem stajesz się kimś innym – prowadzisz inne życie, używasz obcego języka, poznajesz nowych ludzi i miejsca. Antropolodzy3 porównują podróż do pielgrzymki albo rytuału. Coś w tym jest, bo miejsca kultu (świątynie, grobowce, kościoły) to często odwiedzane atrakcje, w których zachwyt nad sztuką lub pięknem natury może wywoływać silne emocje. Podróżnik odbywa rodzaj rytuału przejścia4 z typowym dla niego zawieszeniem poza czasem, dlatego może robić rzeczy wyjątkowe: szastać pieniędzmi, jeść i pić bez umiaru lub robić co innego niż zazwyczaj, mało (lub ciągle) spać, inaczej wyglądać, nosząc bikini czy narciarski kombinezon.\nPodróże pozwalają skupić się na sobie, swoich potrzebach i przyjemnościach – nowej kuchni, muzyce, zabytkach, co skutecznie obniża poziom stresu, jest sposobem na chwilowe zapewnienie sobie celu i docenienie piękna życia. Po powrocie wspomnienia z podróży pomagają utrzymać dystans i równowagę. Niestety, u kolekcjonerów wrażeń podróżniczych łatwo o snobizm i współzawodnictwo, czemu usługi turystyczne wychodzą naprzeciw: uciekają się też do inscenizowania rzeczywistości (np. w zorganizowanych dla turystów wioskach Papuasów czy Masajów). Zwiedzanie takich miejsc również może być ciekawe – przecież to od naszych potrzeb i oczekiwań zależy, jaki wybierzemy sobie program podróży. Turystyfikacja5 świata umożliwia jego bezpieczne zwiedzanie i daje zarobek ludziom z branży, ale jednocześnie wymaga przelotów samolotowych, gigantycznej infrastruktury i łączy się z zadeptywaniem zabytków, parków krajobrazowych, umasowieniem rodzimych kultur. Jost Krippendorf, szwajcarski socjolog, symbolem turystyki masowej uczynił uroborosa, czyli węża zjadającego własny ogon: turysta masowy przyjeżdża do atrakcyjnego miejsca, niszczy jego kulturowe i naturalne środowisko, a tym samym – jego niepowtarzalność i atrakcyjność.\nNa podstawie: Agnieszka Krzemińska, Podróż jak prozak. Po co człowiekowi czasowa zmiana miejsca, „Ja. My. Oni. Poradnik Psychologiczny «Polityki»”, t. 33, 01/2019.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Grand Tour – wielka podróż."
+            },
+            {
+              "n": 2,
+              "text": "Leszek Kołakowski (1927–2009) – polski filozof, eseista, publicysta, prozaik."
+            },
+            {
+              "n": 3,
+              "text": "Antropolog – badacz zajmujący się nauką o pochodzeniu człowieka i jego rozwoju kulturowym."
+            },
+            {
+              "n": 4,
+              "text": "Rytuał przejścia – w różnych kulturach obrzęd towarzyszący określonej zmianie w życiu człowieka, najczęściej związanej z dorastaniem."
+            },
+            {
+              "n": 5,
+              "text": "Turystyfikacja – zmiany w przestrzeni publicznej spowodowane obecnością i potrzebami dużej liczby turystów."
+            }
+          ]
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "",
+          "author": "Olga Stanisławska",
+          "title": "Sens podróżowania",
+          "content": "Zwiedzanie jest obrzędem zawłaszczania. Kawałek po kawałku symbolicznie bierzemy w posiadanie ten świat, do którego przecież mamy prawo – czujemy to instynktownie i powtarzają nam to foldery biur podróży. Przemieszczamy się po kuli ziemskiej, jakbyśmy się przechadzali z koszykiem alejkami planetarnego supermarketu.\nŚwiat ten zamieszkują jednak również inni i podróż jest nieuchronnie spotkaniem z drugim człowiekiem – lub też świadomym unikaniem spotkania.\nMasowa turystyka otworzyła milionom z nas – mieszkańców państw na tyle zasobnych, byśmy mogli podróżować lub choćby o podróżach rozmyślać – drogę do dalekich krajów. Jednocześnie za jej przyczyną rozrasta się nowy, fascynujący świat – ersatz1, niezwykłe uniwersum tworzone, by miło potwierdzać stereotypy przyjezdnych. Czy to nie Stendhal2 zauważył, że mieszkańcy Szwajcarii cały rok ubierają się normalnie, poza latem, kiedy to wkładają skórzane spodnie, jakie spodziewają się zobaczyć angielscy kuracjusze?\nKonsumujemy odmienność sprowadzoną do banału. Oto cudowny świat, świat uproszczony. Zredukowany do listy paru punktów, które możemy przyswoić podczas dwutygodniowego pobytu – plaża, piramida, wielbłąd, feluka3 na Nilu. „Bańka turystyczna” – tak socjolodzy nazywają tę szklaną kulę, zaklętą przestrzeń iluzji, magiczny plac zabaw o niewidzialnych granicach, w którym turyści izolują się od lokalnej rzeczywistości.\nSą turyści, którzy z naturalną gracją przebywają w bańce stworzonej na ich potrzeby. Są też tacy, którzy za żadne skarby nie przyznają, że są turystami, pogarda dla turystów jest wszakże tak stara, jak sama turystyka.\nPrzebić się poza ściany „bańki turystycznej” nie zawsze jest jednak łatwo. Nie zawsze też jest to słuszne. Bańka jest przecież potrzebna nie tylko turystom, którym pozwala uniknąć zaskoczeń, konieczności zrozumienia lokalnych obyczajów, wyjścia poza strefę komfortu. Chroni też lokalną społeczność przed nadmiarem turystów. Miejscowi również bronią się przed traumą: wykształcają własny stereotyp turysty. Oczekują od przyjezdnych określonych zachowań i próbują zatrzymać ich na określonej przestrzeni. I czasem po prostu muszą od nas odpocząć.\nCo jednak począć, jeśli – jak Monteskiusz4 – wierzymy, że kontakt z inną kulturą jest niezbędny, by wyostrzyć spojrzenie, i pozwala lepiej zrozumieć świat? Jeśli właśnie spotkanie z drugim człowiekiem jest dla nas największą radością? Jeśli chcemy dać szansę podróży, żeby nas odmieniła, jak mówił Bouvier5, choć – jak zauważał – nie wiemy, czy nas wtedy nie zniszczy?\nMożemy szukać dziur w „bańce turystycznej”. Naszej własnej, prywatnej chwili prawdy. Nawet jeśli wiemy, że możemy się rozczarować, gdy przyjdzie nam pożegnać się z egzotyką – odkryć, że Szwajcarzy zwykle noszą dżinsy, Masajowie oszczędzają na dom z pustaków, balijskie kobiety po pracy, zamiast oddawać się tradycyjnym tańcom, oglądają amerykańskie seriale. Możemy w ogóle unikać eleganckich hoteli, rajskich plaż, słynnych świątyń, malowniczych miast.\nJednak jakkolwiek byśmy podróżowali, rowerem przez Transylwanię czy z biurem podróży na tunezyjską plażę, klucz jest jeden – inny człowiek powinien być dla nas podmiotem.\nNa podstawie: Olga Stanisławska, Sens podróżowania. Przestroga, „Tygodnik Powszechny”, wydanie specjalne, nr 3–4/2020.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Ersatz – zamiennik, podróbka, namiastka."
+            },
+            {
+              "n": 2,
+              "text": "Stendhal (1783–1842) – francuski pisarz."
+            },
+            {
+              "n": 3,
+              "text": "Feluka – niewielka łódź z żaglami."
+            },
+            {
+              "n": 4,
+              "text": "Monteskiusz (1689–1755) – francuski prawnik, myśliciel i pisarz polityczny."
+            },
+            {
+              "n": 5,
+              "text": "Nicolas Bouvier (1929–1998) – szwajcarski pisarz, fotograf i podróżnik."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "zaznaczenie odpowiedzi PP.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "",
+        "correct_answers": "PP"
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n8. Kształcenie umiejętności świadomego odbioru […] tekstów kultury na różnych poziomach […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n4) rozpoznaje w tekście […] wyliczenie […].\n2. Odbiór tekstów kultury. Zdający:\n3) rozpoznaje środki językowe […] zastosowane w tekstach […].\nII. Kształcenie językowe.\n2. Zróżnicowanie języka. Zdający:\n6) rozpoznaje słownictwo o charakterze wartościującym […]."
+      },
+      "user_answer": {
+        "tf-1": "",
+        "tf-2": ""
+      }
+    },
+    {
+      "id": "MPOP-P1-100-2305-5",
+      "type": "P-TEXT",
+      "number": "5",
+      "question": "Wyjaśnij, na czym polega ironia zastosowana w 4. akapicie tekstu Olgi Stanisławskiej.",
+      "reference_data": [
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "Sens podróżowania",
+          "author": "Olga Stanisławska",
+          "title": "Sens podróżowania. Przestroga",
+          "content": "Zwiedzanie jest obrzędem zawłaszczania. Kawałek po kawałku symbolicznie bierzemy\nw posiadanie ten świat, do którego przecież mamy prawo – czujemy to instynktownie\ni powtarzają nam to foldery biur podróży. Przemieszczamy się po kuli ziemskiej, jakbyśmy\nsię przechadzali z koszykiem alejkami planetarnego supermarketu.\nŚwiat ten zamieszkują jednak również inni i podróż jest nieuchronnie spotkaniem\nz drugim człowiekiem – lub też świadomym unikaniem spotkania.\nMasowa turystyka otworzyła milionom z nas – mieszkańców państw na tyle zasobnych,\nbyśmy mogli podróżować lub choćby o podróżach rozmyślać – drogę do dalekich krajów.\nJednocześnie za jej przyczyną rozrasta się nowy, fascynujący świat – ersatz1, niezwykłe\nuniwersum tworzone, by miło potwierdzać stereotypy przyjezdnych. Czy to nie Stendhal2\nzauważył, że mieszkańcy Szwajcarii cały rok ubierają się normalnie, poza latem, kiedy to\nwkładają skórzane spodnie, jakie spodziewają się zobaczyć angielscy kuracjusze?\nKonsumujemy odmienność sprowadzoną do banału. Oto cudowny świat, świat\nuproszczony. Zredukowany do listy paru punktów, które możemy przyswoić podczas\ndwutygodniowego pobytu – plaża, piramida, wielbłąd, feluka3 na Nilu. „Bańka turystyczna” –\ntak socjolodzy nazywają tę szklaną kulę, zaklętą przestrzeń iluzji, magiczny plac zabaw\no niewidzialnych granicach, w którym turyści izolują się od lokalnej rzeczywistości.\nSą turyści, którzy z naturalną gracją przebywają w bańce stworzonej na ich potrzeby. Są\nteż tacy, którzy za żadne skarby nie przyznają, że są turystami, pogarda dla turystów jest\nwszakże tak stara, jak sama turystyka.\nPrzebić się poza ściany „bańki turystycznej” nie zawsze jest jednak łatwo. Nie zawsze\nteż jest to słuszne. Bańka jest przecież potrzebna nie tylko turystom, którym pozwala uniknąć\nzaskoczeń, konieczności zrozumienia lokalnych obyczajów, wyjścia poza strefę komfortu.\nChroni też lokalną społeczność przed nadmiarem turystów. Miejscowi również bronią się\nprzed traumą: wykształcają własny stereotyp turysty. Oczekują od przyjezdnych określonych\nzachowań i próbują zatrzymać ich na określonej przestrzeni. I czasem po prostu muszą od\nnas odpocząć.\nCo jednak począć, jeśli – jak Monteskiusz4 – wierzymy, że kontakt z inną kulturą jest\nniezbędny, by wyostrzyć spojrzenie, i pozwala lepiej zrozumieć świat? Jeśli właśnie\nspotkanie z drugim człowiekiem jest dla nas największą radością? Jeśli chcemy dać szansę\npodróży, żeby nas odmieniła, jak mówił Bouvier5, choć – jak zauważał – nie wiemy, czy nas\nwtedy nie zniszczy?\nMożemy szukać dziur w „bańce turystycznej”. Naszej własnej, prywatnej chwili prawdy.\nNawet jeśli wiemy, że możemy się rozczarować, gdy przyjdzie nam pożegnać się\nz egzotyką – odkryć, że Szwajcarzy zwykle noszą dżinsy, Masajowie oszczędzają na dom\nz pustaków, balijskie kobiety po pracy, zamiast oddawać się tradycyjnym tańcom, oglądają\namerykańskie seriale. Możemy w ogóle unikać eleganckich hoteli, rajskich plaż, słynnych\nświątyń, malowniczych miast.\nJednak jakkolwiek byśmy podróżowali, rowerem przez Transylwanię czy z biurem\npodróży na tunezyjską plażę, klucz jest jeden – inny człowiek powinien być dla nas\npodmiotem.\n\nNa podstawie: Olga Stanisławska, Sens podróżowania. Przestroga, „Tygodnik Powszechny”, wydanie \nspecjalne, nr 3–4/2020.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Ersatz – zamiennik, podróbka, namiastka."
+            },
+            {
+              "n": 2,
+              "text": "Stendhal (1783–1842) – francuski pisarz."
+            },
+            {
+              "n": 3,
+              "text": "Feluka – niewielka łódź z żaglami."
+            },
+            {
+              "n": 4,
+              "text": "Monteskiusz (1689–1755) – francuski prawnik, myśliciel i pisarz polityczny."
+            },
+            {
+              "n": 5,
+              "text": "Nicolas Bouvier (1929–1998) – szwajcarski pisarz, fotograf i podróżnik."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne wyjaśnienie.",
+          "0": "odpowiedź niepoprawna lub brak odpowiedzi."
+        },
+        "exemplary_answers": "• Ironia w tekście polega na nagromadzeniu podniosłych określeń użytych do opisu stworzonej dla turystów sztucznej rzeczywistości.\n• Polega na skontrastowaniu/zestawieniu określeń podniosłych w odniesieniu do zwyczajnych zjawisk.\n• Ironia polega na podkreśleniu, że turyści ulegają złudzeniu – wydaje im się, że „bańka turystyczna” to prawdziwy świat.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n8. Kształcenie umiejętności świadomego odbioru […] tekstów kultury na różnych poziomach […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający: \n6) rozpoznaje w tekstach […]: ironię [...]. \n2. Odbiór tekstów kultury. Zdający:\n3) [...] rozpoznaje środki językowe […] zastosowane w tekstach; odczytuje informacje i przekazy jawne i ukryte […]. \n\nSP\nI. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Uczeń \n14) zna pojęcie ironii, rozpoznaje ją \nw tekstach […]. \n2. Odbiór tekstów kultury. Uczeń: \n5) wyszukuje w tekście informacje \nwyrażone wprost i pośrednio (ukryte)."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2305-6",
+      "type": "P-TEXT",
+      "number": "6",
+      "question": "Na podstawie obu tekstów napisz notatkę syntetyzującą na temat: skutki masowej turystyki. Twoja wypowiedź powinna liczyć 60–90 wyrazów.\n\nUwaga: w ocenie wypowiedzi będzie brana pod uwagę poprawność językowa, ortograficzna i interpunkcyjna.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Agnieszka Krzemińska",
+          "title": "Po co człowiekowi czasowa zmiana miejsca",
+          "content": "Wraz z rozwojem cywilizacji pojawili się turyści. Dobrowolne podróżowanie, napędzane ciekawością, potrzebą podreperowania zdrowia czy rekreacji, istniało już w antyku, ale spopularyzowali je w XVII w. europejscy arystokraci, którzy – aby poszerzyć horyzonty – odbywali Grand Tour1 po Europie. Coraz doskonalsze środki transportu przełożyły się na coraz niższe koszty podróży i przyczyniły się do mody na wyjazdy rekreacyjne wśród zamożnych mieszkańców brudnych miast. Dziś turystyka to zjawisko masowe, którego wpływ na jednostki, społeczeństwa i globalne procesy ekonomiczno-ekologiczne badają naukowcy.\nMotywy napędzające masową turystykę są różne. Podczas gdy jedni szukają kontaktu z przyrodą, rekreacji i odpoczynku, inni cenią sobie spotkania z ludźmi i kulturami. Turystyka może być ucieczką od codzienności, sposobem na podkreślenie statusu, poszukiwaniem tożsamości, formą dowartościowania i samospełnienia. Jest też środkiem konsumpcji duchowej i materialnej. Pewne jednak jest, że dla wielu osób podróżowanie, które ma estetyczny, edukacyjny i społeczny wymiar, jest ważne w dążeniu do harmonijnego rozwoju i poczucia szczęścia.\nLeszek Kołakowski2 sformułował najkrótszą definicję turystyki: stwierdził, że jest ona typowo ludzką formą bezinteresownej aktywności poznawczej. Najwięcej na podróżach zyskują ci, którzy chcą poznawać nowe dźwięki, języki, zapachy, smaki i widoki, bo to ożywia umysł.\nBo podróże to stan umysłu, tym bardziej że poza domem stajesz się kimś innym – prowadzisz inne życie, używasz obcego języka, poznajesz nowych ludzi i miejsca. Antropolodzy3 porównują podróż do pielgrzymki albo rytuału. Coś w tym jest, bo miejsca kultu (świątynie, grobowce, kościoły) to często odwiedzane atrakcje, w których zachwyt nad sztuką lub pięknem natury może wywoływać silne emocje. Podróżnik odbywa rodzaj rytuału przejścia4 z typowym dla niego zawieszeniem poza czasem, dlatego może robić rzeczy wyjątkowe: szastać pieniędzmi, jeść i pić bez umiaru lub robić co innego niż zazwyczaj, mało (lub ciągle) spać, inaczej wyglądać, nosząc bikini czy narciarski kombinezon.\nPodróże pozwalają skupić się na sobie, swoich potrzebach i przyjemnościach – nowej kuchni, muzyce, zabytkach, co skutecznie obniża poziom stresu, jest sposobem na chwilowe zapewnienie sobie celu i docenienie piękna życia. Po powrocie wspomnienia z podróży pomagają utrzymać dystans i równowagę. Niestety, u kolekcjonerów wrażeń podróżniczych łatwo o snobizm i współzawodnictwo, czemu usługi turystyczne wychodzą naprzeciw: uciekają się też do inscenizowania rzeczywistości (np. w zorganizowanych dla turystów wioskach Papuasów czy Masajów). Zwiedzanie takich miejsc również może być ciekawe – przecież to od naszych potrzeb i oczekiwań zależy, jaki wybierzemy sobie program podróży.\nTurystyfikacja5 świata umożliwia jego bezpieczne zwiedzanie i daje zarobek ludziom z branży, ale jednocześnie wymaga przelotów samolotowych, gigantycznej infrastruktury\ni łączy się z zadeptywaniem zabytków, parków krajobrazowych, umasowieniem rodzimych kultur. Jost Krippendorf, szwajcarski socjolog, symbolem turystyki masowej uczynił uroborosa, czyli węża zjadającego własny ogon: turysta masowy przyjeżdża do atrakcyjnego miejsca, niszczy jego kulturowe i naturalne środowisko, a tym samym – jego niepowtarzalność i atrakcyjność.\n\nNa podstawie: Agnieszka Krzemińska, Podróż jak prozak. Po co człowiekowi czasowa zmiana miejsca, „Ja. My. Oni. Poradnik Psychologiczny «Polityki»”, t. 33, 01/2019.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Grand Tour – wielka podróż."
+            },
+            {
+              "n": 2,
+              "text": "Leszek Kołakowski (1927–2009) – polski filozof, eseista, publicysta, prozaik."
+            },
+            {
+              "n": 3,
+              "text": "Antropolog – badacz zajmujący się nauką o pochodzeniu człowieka i jego rozwoju kulturowym."
+            },
+            {
+              "n": 4,
+              "text": "Rytuał przejścia – w różnych kulturach obrzęd towarzyszący określonej zmianie w życiu człowieka, najczęściej związanej z dorastaniem."
+            },
+            {
+              "n": 5,
+              "text": "Turystyfikacja – zmiany w przestrzeni publicznej spowodowane obecnością i potrzebami dużej liczby turystów."
+            }
+          ]
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "",
+          "author": "Olga Stanisławska",
+          "title": "Sens podróżowania",
+          "content": "Zwiedzanie jest obrzędem zawłaszczania. Kawałek po kawałku symbolicznie bierzemy w posiadanie ten świat, do którego przecież mamy prawo – czujemy to instynktownie i powtarzają nam to foldery biur podróży. Przemieszczamy się po kuli ziemskiej, jakbyśmy się przechadzali z koszykiem alejkami planetarnego supermarketu.\nŚwiat ten zamieszkują jednak również inni i podróż jest nieuchronnie spotkaniem z drugim człowiekiem – lub też świadomym unikaniem spotkania.\nMasowa turystyka otworzyła milionom z nas – mieszkańców państw na tyle zasobnych, byśmy mogli podróżować lub choćby o podróżach rozmyślać – drogę do dalekich krajów. Jednocześnie za jej przyczyną rozrasta się nowy, fascynujący świat – ersatz1, niezwykłe uniwersum tworzone, by miło potwierdzać stereotypy przyjezdnych. Czy to nie Stendhal2 zauważył, że mieszkańcy Szwajcarii cały rok ubierają się normalnie, poza latem, kiedy to wkładają skórzane spodnie, jakie spodziewają się zobaczyć angielscy kuracjusze?\nKonsumujemy odmienność sprowadzoną do banału. Oto cudowny świat, świat uproszczony. Zredukowany do listy paru punktów, które możemy przyswoić podczas dwutygodniowego pobytu – plaża, piramida, wielbłąd, feluka3 na Nilu. „Bańka turystyczna” – tak socjolodzy nazywają tę szklaną kulę, zaklętą przestrzeń iluzji, magiczny plac zabaw o niewidzialnych granicach, w którym turyści izolują się od lokalnej rzeczywistości.\nSą turyści, którzy z naturalną gracją przebywają w bańce stworzonej na ich potrzeby. Są też tacy, którzy za żadne skarby nie przyznają, że są turystami, pogarda dla turystów jest wszakże tak stara, jak sama turystyka.\nPrzebić się poza ściany „bańki turystycznej” nie zawsze jest jednak łatwo. Nie zawsze też jest to słuszne. Bańka jest przecież potrzebna nie tylko turystom, którym pozwala uniknąć zaskoczeń, konieczności zrozumienia lokalnych obyczajów, wyjścia poza strefę komfortu. Chroni też lokalną społeczność przed nadmiarem turystów. Miejscowi również bronią się przed traumą: wykształcają własny stereotyp turysty. Oczekują od przyjezdnych określonych zachowań i próbują zatrzymać ich na określonej przestrzeni. I czasem po prostu muszą od nas odpocząć.\nCo jednak począć, jeśli – jak Monteskiusz4 – wierzymy, że kontakt z inną kulturą jest niezbędny, by wyostrzyć spojrzenie, i pozwala lepiej zrozumieć świat? Jeśli właśnie\nspotkanie z drugim człowiekiem jest dla nas największą radością? Jeśli chcemy dać szansę podróży, żeby nas odmieniła, jak mówił Bouvier5, choć – jak zauważał – nie wiemy, czy nas wtedy nie zniszczy?\nMożemy szukać dziur w „bańce turystycznej”. Naszej własnej, prywatnej chwili prawdy. Nawet jeśli wiemy, że możemy się rozczarować, gdy przyjdzie nam pożegnać się z egzotyką – odkryć, że Szwajcarzy zwykle noszą dżinsy, Masajowie oszczędzają na dom z pustaków, balijskie kobiety po pracy, zamiast oddawać się tradycyjnym tańcom, oglądają amerykańskie seriale. Możemy w ogóle unikać eleganckich hoteli, rajskich plaż, słynnych świątyń, malowniczych miast.\nJednak jakkolwiek byśmy podróżowali, rowerem przez Transylwanię czy z biurem podróży na tunezyjską plażę, klucz jest jeden – inny człowiek powinien być dla nas podmiotem.\n\nNa podstawie: Olga Stanisławska, Sens podróżowania. Przestroga, „Tygodnik Powszechny”, wydanie specjalne, nr 3–4/2020.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Ersatz – zamiennik, podróbka, namiastka."
+            },
+            {
+              "n": 2,
+              "text": "Stendhal (1783–1842) – francuski pisarz."
+            },
+            {
+              "n": 3,
+              "text": "Feluka – niewielka łódź z żaglami."
+            },
+            {
+              "n": 4,
+              "text": "Monteskiusz (1689–1755) – francuski prawnik, myśliciel i pisarz polityczny."
+            },
+            {
+              "n": 5,
+              "text": "Nicolas Bouvier (1929–1998) – szwajcarski pisarz, fotograf i podróżnik."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 4,
+        "scoring_criteria": {
+          "4": "Za notatkę syntetyzującą przyznaje się 4 punkty, jeśli spełnione są warunki uzyskania 3 punktów za treść oraz 1 punktu za poprawność językową, ortograficzną i interpunkcyjną. \nTreść (3 pkt): Notatka przedstawia stanowisko każdego autora na odpowiednim poziomie uogólnienia; zestawiono stanowiska obu autorów z poprawnym wskazaniem punktów wspólnych/rozbieżnych lub różnorodności aspektów; notatka stanowi logiczną i zorganizowaną całość; długość notatki 60–90 wyrazów.\nPoprawność językowa (1 pkt): Zapis poprawny, dopuszczalne dwa błędy (językowe, ortograficzne lub interpunkcyjne).",
+          "3": "Za notatkę syntetyzującą przyznaje się 3 punkty, jeśli spełniony jest jeden z poniższych warunków:\n1. Spełnione są warunki uzyskania 3 punktów za treść ORAZ 0 punktów za poprawność językową.\n2. Spełnione są warunki uzyskania 2 punktów za treść ORAZ 1 punktu za poprawność językową.\nTreść (2 pkt): Notatka spełnia kryteria A, B i C dla 3 pkt, ale nie zachowano dozwolonej liczby wyrazów LUB przedstawia stanowisko każdego autora z zaburzonym poziomem uogólnienia; zestawiono stanowiska obu autorów; notatka stanowi logiczną i zorganizowaną całość ALBO w notatce występują usterki w spójności; długość notatki 60–90 wyrazów.",
+          "2": "Za notatkę syntetyzującą przyznaje się 2 punkty, jeśli spełniony jest jeden z poniższych warunków:\n1. Spełnione są warunki uzyskania 2 punktów za treść ORAZ 0 punktów za poprawność językową.\n2. Spełnione są warunki uzyskania 1 punktu za treść ORAZ 1 punktu za poprawność językową.\nTreść (1 pkt): Notatka spełnia kryteria A, B i C dla 2 pkt, ale nie zachowano dozwolonej liczby wyrazów LUB przedstawia stanowisko każdego autora; stanowisk obu autorów nie zestawiono albo zestawiono je niepoprawnie; notatka stanowi logiczną i zorganizowaną całość ALBO w notatce występują usterki w spójności; długość notatki 60–90 wyrazów LUB notatka spełnia kryteria A i C dla 1 pkt, ale nie zachowano dozwolonej liczby wyrazów.",
+          "1": "Za notatkę syntetyzującą przyznaje się 1 punkt, jeśli spełniony jest jeden z poniższych warunków:\n1. Spełnione są warunki uzyskania 1 punktu za treść ORAZ 0 punktów za poprawność językową.\n2. Spełnione są warunki uzyskania 0 punktów za treść ORAZ 1 punktu za poprawność językową.\nTreść (0 pkt): Notatka nie spełnia żadnego z kryteriów określonych dla 1 pkt.\nPoprawność językowa (1 pkt dla zdających ze specyficznymi trudnościami w uczeniu się): Zapis poprawny językowo, dopuszczalne trzy błędy językowe.",
+          "0": "Za notatkę syntetyzującą przyznaje się 0 punktów, jeśli za treść przyznano 0 punktów ORAZ za poprawność językową, ortograficzną i interpunkcyjną przyznano 0 punktów.\nUwaga: Jeżeli w kryterium Treść przyznano 0 pkt, wówczas nie przyznaje się punktów w kryterium Poprawność językowa, ortograficzna i interpunkcyjna.\nPoprawność językowa (0 pkt dla zdających ze specyficznymi trudnościami w uczeniu się): Cztery i więcej błędów językowych."
+        },
+        "exemplary_answers": "Autorki rozważają pozytywne i negatywne skutki masowej turystyki. Krzemińska podkreśla, że masowa turystyka pozytywnie – duchowo i materialnie – wpływa na człowieka i otaczający go świat. Zarazem dostrzega, że może ona stać się przyczyną m.in. degradacji rodzimych kultur. Z kolei Stanisławska akcentuje negatywne skutki umasowienia turystyki, zwracając uwagę, że stać się ona może przyczyną uprzedmiotowienia turysty oraz członków lokalnych społeczności („bańka turystyczna”). Zauważa jednak przy tym, że turystyka umożliwia kontakt z inną kulturą, co może pozytywnie wpłynąć na człowieka. Obie autorki widzą zatem, że masowa turystyka jest zjawiskiem korzystnym i niekorzystnym równocześnie. [90 wyrazów]\nObie autorki dostrzegają pozytywne i negatywne skutki masowej turystyki. Zauważają, że podróżowanie stało się dostępne dla większości ludzi, ale też to, że konsekwencją masowej turystyki jest m.in. zjawisko zafałszowywania rzeczywistości w odpowiedzi na wyobrażenia turystów o zwiedzanych miejscach. Stanisławska podkreśla, że tzw. „bańka turystyczna” utrudnia turyście poznanie prawdy o lokalnych społecznościach. Krzemińska z kolei stwierdza, że podróżowanie może przynieść mu wiele korzyści emocjonalnych i poznawczych, nawet jeśli oznacza zwiedzanie inscenizowanych miejsc. [71 wyrazów]",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe. 7. Kształcenie umiejętności czytania, analizowania i interpretowania […] tekstów kultury, a także ich wzajemnej korespondencji.\n8. Kształcenie umiejętności świadomego odbioru […] tekstów kultury na różnych poziomach […].\nII. Kształcenie językowe. 1. Pogłębianie funkcjonalnej wiedzy z zakresu nauki o języku.\nIII. Tworzenie wypowiedzi. 2. Wykorzystanie kompetencji językowych […] w wypowiedziach […] pisemnych.",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe. 2. Odbiór tekstów kultury. Zdający: 1) przetwarza […] informacje z tekstów, np. publicystycznych […]; 3) […] odczytuje informacje i przekazy jawne i ukryte […].\nSP\nI. Kształcenie literackie i kulturowe. 2. Odbiór tekstów kultury. Uczeń: 3) wyszukuje w tekście potrzebne informacje […]. 4) odróżnia zawarte w tekście informacje ważne od informacji drugorzędnych; 5) wyszukuje w tekście informacje wyrażone wprost i pośrednio (ukryte).\nII. Kształcenie językowe. 1. Gramatyka języka polskiego. Zdający: 1) wykorzystuje wiedzę z dziedziny fleksji, słowotwórstwa, frazeologii i składni w […] tworzeniu własnych wypowiedzi.\n4. Ortografia i interpunkcja. Zdający: 1) stosuje zasady ortografii i interpunkcji […].\nIII. Tworzenie wypowiedzi. 2. Mówienie i pisanie. Zdający: 2) buduje wypowiedź w sposób świadomy, za znajomością jej funkcji językowej […]; 4) tworzy spójne wypowiedzi w następujących formach gatunkowych: […] notatka syntetyzująca."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2305-7",
+      "type": "P-TEXT",
+      "number": "7",
+      "question": "Odwołując się do mitu o wojnie trojańskiej, uzasadnij trafność nazwy wirusa komputerowego, którego opis podano wyżej.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "",
+          "title": "Konie trojańskie – o sposobach działania wirusów i ich usuwaniu",
+          "content": "Trojan jest fragmentem kodu dołączonym do innego programu, zwykle wartościowego dla nas. Zdarza się, że zostaje ukryty w skryptach powłoki. Łatwo jest go także ukryć w plikach udających nowe i popularne gry komputerowe. To więc nic innego jak oprogramowanie, które podszywa się pod znane aplikacje. Koń trojański zwykle przez dłuższy czas nie zdradza swoich destrukcyjnych zapędów, co nie oznacza, że pozostaje bierny. Ten z pozoru użyteczny program, wykonujący przydatne funkcje, potajemnie uszkadza system użytkownika lub inne komputery działające w sieci.\n\nNa podstawie: Konie trojańskie – o sposobach działania wirusów i ich usuwaniu, www.3giga.pl",
+          "path": ""
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne uzasadnienie trafności nazwy wirusa w odwołaniu do mitu.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "",
+        "correct_answers": "- Wirus jest ukryty – wojownicy byli ukryci w koniu trojańskim.\n- Pliki z wirusem udają nowe gry – koń trojański udawał podarunek.\n- Wirus ma fazę uśpienia – koń trojański wprowadzony do Troi dopiero pod osłoną nocy ukazał swoje wnętrze.\n- Zarówno wirus, jak i mityczny koń trojański są pozornie niegroźne. Jednak w obu przypadkach prowadzą do tragicznych wręcz skutków. W przypadku mitu był to upadek Troi, zaś w przypadku wirusa jest to uszkodzenie systemu komputerowego danego użytkownika lub innych komputerów działających w tej sieci."
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury oraz innych tekstów kultury, a także ich wzajemnej korespondencji.\n8. Kształcenie umiejętności świadomego odbioru utworów literackich i tekstów kultury na różnych poziomach [...].\nII. Kształcenie językowe.\n3. Funkcjonalne wykorzystanie wiedzy o języku w odczytaniu sensów tekstów […] nieliterackich.",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n8) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe.\n2. Odbiór tekstów kultury. Zdający:\n1) przetwarza […] informacje z tekstów […].\nII. Kształcenie językowe.\n2. Zróżnicowanie języka. Zdający:\n4) zna, rozumie […] mitologizmy […]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2305-8",
+      "type": "P-TEXT",
+      "number": "8",
+      "question": "Czy wizja końca świata zaprezentowana we fragmencie wiersza Czesława Miłosza Piosenka o końcu świata jest zgodna z wizją końca świata ukazaną we fragmencie Apokalipsy św. Jana? W uzasadnieniu odpowiedzi sformułuj dwa argumenty – każdy w odniesieniu do obu tekstów.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "Piosenka o końcu świata",
+          "author": "Czesław Miłosz",
+          "title": "Piosenka o końcu świata",
+          "content": "W dzień końca świata\nPszczoła krąży nad kwiatem nasturcji,\nRybak naprawia błyszczącą sieć.\nSkaczą w morzu wesołe delfiny,\nMłode wróble czepiają się rynny\nI wąż ma złotą skórę, jak powinien mieć.\n\n[…] \nNikt nie wierzy, że staje się już.\n\nTylko siwy staruszek, który byłby prorokiem,\nAle nie jest prorokiem, bo ma inne zajęcie,\nPowiada, przewiązując pomidory:\nInnego końca świata nie będzie,\nInnego końca świata nie będzie.",
+          "path": ""
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "Apokalipsa św. Jana",
+          "author": "",
+          "title": "",
+          "content": "8 6 Siedmiu aniołów, którzy mieli siedem trąb, przygotowywało się do trąbienia.\n7 Zatrąbił pierwszy. Na ziemię spadł grad i ogień zmieszany z krwią.\nTrzecia część ziemi została spalona, trzecia część drzew została spalona\ni wszelka trawa zielona została spalona.\n8 Zatrąbił drugi anioł. Do morza wrzucono jakby wielką górę płonącego ognia\ni trzecia część morza stała się krwią.\n9 Jedna trzecia stworzeń morskich zginęła i jedna trzecia statków uległa zniszczeniu.\n10 Zatrąbił trzeci anioł. Z nieba spadła wielka gwiazda świecąca jak\npochodnia, która upadła na trzecią część rzek i na źródła wód.\n11 Gwiazdę nazwano „Piołun”1 i jedna trzecia wód zmieniła się w piołun,\na wielu ludzi zmarło z powodu wód, które stały się gorzkie.\n12 Zatrąbił czwarty anioł. Zdruzgotano jedną trzecią słońca, jedną trzecią\nksiężyca i jedną trzecią gwiazd, tak że trzecia ich część się zaćmiła,\na dzień – podobnie jak noc – utracił jedną trzecią swego światła.\n13 Zobaczyłem też i usłyszałem orła lecącego środkiem nieba, który wołał\npotężnym głosem: „Biada! Biada! Biada mieszkańcom ziemi z powodu\ngłosów trąby pozostałych trzech aniołów, którzy wkrótce zatrąbią!”.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Piołun – roślina o bardzo gorzkim smaku."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 2,
+        "scoring_criteria": {
+          "2": "poprawne rozstrzygnięcie i sformułowanie dwóch argumentów w odniesieniu do obu tekstów.",
+          "1": "poprawne rozstrzygnięcie i sformułowanie jednego argumentu w odniesieniu do obu tekstów.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "1) Rozstrzygnięcie: Nie jest zgodna.\nArgumenty, np.:\n•\nW wierszu Miłosza tylko siwy staruszek zauważa koniec świata. W Apokalipsie… koniec\nświata obejmuje wszystko i wszystkich.\n•\nStaruszek z wiersza Miłosza jest pogodzony z losem, w wizji apokaliptycznej pojawia się\ngroza potęgowana przez zapowiedź dalszych zniszczeń.\n•\nKońcowi świata w wierszu Czesława Miłosza towarzyszy spokój, a wizja końca świata\nw Apokalipsie św. Jana to gwałtowny kataklizm.\n•\nZawarta w tytule utworu Miłosza „piosenka” i sielankowy opis są opozycją do poważnej\nmrocznej wizji apokaliptycznej.\n\n2) Rozstrzygnięcie: Jest zgodna.\nArgumenty, np.:\n•\nKoniec świata w obu tekstach dzieje się niezależnie od woli ludzi.\n\n•\nW obu tekstach wizje są przerażające. W wierszu Miłosza przeraża to, że każdy dzień\nmoże być końcem świata / że koniec świata jest dla większości niezauważalny,\na w Apokalipsie św. Jana przerażający jest obraz końca świata.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów\nz literatury polskiej i światowej […].\n7. Kształcenie umiejętności czytania,\nanalizowania i interpretowania literatury\n[…].\n8. Kształcenie umiejętności świadomego\nodbioru utworów literackich […] na różnych\npoziomach [...].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n8) wykazuje się znajomością\ni zrozumieniem treści utworów wskazanych\nw podstawie programowej jako lektury\nobowiązkowe;\n13) porównuje utwory literackie lub ich\nfragmenty, dostrzega kontynuacje\ni nawiązania w porównywanych utworach,\nokreśla cechy wspólne i różne."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "resolution",
+          "input-field-prefix": "Rozstrzygnięcie: ",
+          "answer": ""
+        },
+        {
+          "input-field-id": "argument-1",
+          "input-field-prefix": "Argument 1.: ",
+          "answer": ""
+        },
+        {
+          "input-field-id": "argument-2",
+          "input-field-prefix": "Argument 2.: ",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2305-9",
+      "type": "P-TEXT",
+      "number": "9",
+      "question": "Jaką postawę życiową zaleca podmiot liryczny Pieśni IX Jana Kochanowskiego? Uzasadnij odpowiedź.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Jan Kochanowski",
+          "title": "Pieśń IX (Księgi wtóre)",
+          "content": "Nie porzucaj nadzieje,\nJakoć sie1 kolwiek dzieje:\nBo nie już2 słońce ostatnie3 zachodzi,\nA po złej chwili piękny dzień przychodzi. […]\nNic wiecznego na świecie:\nRadość sie z troską plecie,\nA kiedy jedna weźmie moc nawiętszą4,\nW ten czas masz ujźrzeć odmianę naprędszą. […]\nLecz na szczęście wszelakie\nSerce ma być jednakie;\nBo z nas Fortuna5 w żywe oczy szydzi,\nTo da, to weźmie, jako sie jej widzi.\nTy nie miej za stracone,\nCo może być wrócone:\nSiła6 Bóg może wywrócić w godzinie;\nA kto mu kolwiek ufa, nie zaginie.\n\nJan Kochanowski, Pieśń IX, [w:] tegoż, Poezje, Warszawa 1988.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Sie (starop.) – się."
+            },
+            {
+              "n": 2,
+              "text": "Nie już (starop.) – jeszcze nie."
+            },
+            {
+              "n": 3,
+              "text": "Ostatnie (starop.) – po raz ostatni."
+            },
+            {
+              "n": 4,
+              "text": "Nawiętszą (starop.) – największą."
+            },
+            {
+              "n": 5,
+              "text": "Fortuna – w mitologii rzymskiej bogini kierująca ludzkim losem."
+            },
+            {
+              "n": 6,
+              "text": "Siła (starop.) – wiele."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "trafne określenie postawy i poprawne uzasadnienie.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "Postawa pełna nadziei – nieszczęścia nie trwają wiecznie.\nZaleca człowiekowi zaufanie Bogu niezależnie od tego, co przynosi los, ponieważ Bóg może go odmienić.\nPodmiot liryczny zaleca postawę stoicką, czyli niewzruszoną wobec tego, co nie zależy od człowieka, ale od losu, który przynosi zarówno niepowodzenia, jak i sukcesy.\nPodmiot liryczny zaleca przyjęcie postawy wewnętrznego spokoju. W pieśni występuje również nawiązanie do toposu Fortuny – człowiek powinien mieć świadomość, że los jest zmienny i na wiele wydarzeń, których doświadczamy w życiu, nie mamy wpływu.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe. \n5. Znajomość wybranych utworów z literatury polskiej […]. \n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […]. \n8. Kształcenie umiejętności świadomego odbioru utworów literackich […] na różnych poziomach [...].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe. \n1. Czytanie utworów literackich. Zdający: \n9) rozpoznaje tematykę i problematykę poznanych tekstów […]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2305-10",
+      "type": "P-TEXT",
+      "number": "10",
+      "question": "Napisz, jaki motyw łączy przedstawiony obraz Fransa Halsa i wiersz Daniela Naborowskiego. Uzasadnij swoją odpowiedź, odwołując się do obu tekstów.",
+      "reference_data": [
+        {
+          "id": "image-1",
+          "type": "image",
+          "name": "Young Man holding a Skull",
+          "author": "Frans Hals",
+          "title": "",
+          "content": "Young_Man_holding_a_Skull.jpg",
+          "path": "10-Young_Man_holding_a_Skull.jpg",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Young Man holding a Skull […] (ang.) – młodzieniec trzymający czaszkę."
+            }
+          ]
+        },
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Daniel Naborowski",
+          "title": "",
+          "content": "Świat hołduje marności \nI wszytkie1 ziemskie włości2;\nTo na wieki nie minie,\nŻe marna marność słynie.\nMiłujmy i żartujmy,\nŻartujmy i miłujmy,\nLecz pobożnie, uczciwie,\nA co czyste właściwie.\nNad wszytko bać się Boga –\nTak fraszką3 śmierć i trwoga.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Wszytkie – wszystkie."
+            },
+            {
+              "n": 2,
+              "text": "Włość – posiadłość ziemska, majątek ziemski."
+            },
+            {
+              "n": 3,
+              "text": "Fraszka – drobiazg, coś mało znaczącego."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "podanie motywu wspólnego dla obu tekstów i poprawne uzasadnienie uwzględniające symbolikę obrazu i wymowę wiersza.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "Motyw: vanitas/przemijania/marności i nietrwałości rzeczy doczesnych. \nUzasadnienie: \nNa obrazie młodzieniec trzyma czaszkę, która jest symbolem przemijania. Gestem ręki wskazuje na widza, co oznacza, że życie każdego z nas (sportretowanego i oglądającego) kończy się śmiercią. W wierszu Naborowskiego mowa wprost o marności świata/życia. \n• Motyw: śmierci / memento mori \nUzasadnienie: \nMłodzieniec na obrazie trzyma ludzką czaszkę, która symbolizuje śmierć. Z kolei podmiot liryczny wiersza też mówi o śmierci, podkreślając, że wszystko przemija i kończy się śmiercią.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej […].\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury oraz innych tekstów kultury, a także ich wzajemnej korespondencji.",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający: \n9) rozpoznaje tematykę i problematykę poznanych tekstów […]; \n11) rozumie pojęcie motywu literackiego […], rozpoznaje podstawowe motywy […].\n2. Odbiór tekstów kultury. Zdający: \n6) odczytuje pozaliterackie teksty kultury, stosując kod właściwy w danej dziedzinie sztuki."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "motyw",
+          "input-field-prefix": "Motyw:",
+          "answer": ""
+        },
+        {
+          "input-field-id": "uzasadnienie",
+          "input-field-prefix": "Uzasadnienie:",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2305-11",
+      "type": "P-TF",
+      "number": "11",
+      "question": "Oceń prawdziwość podanych stwierdzeń odnoszących się do przytoczonego fragmentu Ody do młodości Adama Mickiewicza. Zaznacz P, jeśli stwierdzenie jest prawdziwe, albo F – jeśli jest fałszywe.",
+      "tf_questions": [
+        {
+          "id": "tf-1",
+          "question": "Motyw lotu, wykorzystany we fragmencie, jest symbolem ludzkiego dążenia do pokonywania ograniczeń."
+        },
+        {
+          "id": "tf-2",
+          "question": "Wizja rajskiej przestrzeni, wykreowana we fragmencie, podkreśla kontrast między rzeczywistością a marzeniami."
+        }
+      ],
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Adam Mickiewicz",
+          "title": "Oda do młodości",
+          "content": "Bez serc, bez ducha, to szkieletów ludy;\nMłodości! dodaj mi skrzydła!\nNiech nad martwym wzlecę światem\nW rajską dziedzinę ułudy:\nKędy zapał tworzy cudy,\nNowości potrząsa kwiatem\nI obleka w nadziei złote malowidła."
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "zaznaczenie odpowiedzi PP.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "",
+        "correct_answers": "PP"
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów\nz literatury polskiej […].\n7. Kształcenie umiejętności czytania,\nanalizowania i interpretowania literatury\n[…].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n5) interpretuje treści […] symboliczne\nutworu literackiego;\n9) rozpoznaje tematykę i problematykę\npoznanych tekstów […];\n11) rozumie pojęcie motywu literackiego\n[…], rozpoznaje podstawowe motywy […]."
+      },
+      "user_answer": {
+        "tf-1": "",
+        "tf-2": ""
+      }
+    },
+    {
+      "id": "MPOP-P1-100-2305-12.1",
+      "type": "P-TABLE-TEXT",
+      "number": "12.1",
+      "question": "Uzupełnij tabelę. Podaj tytuł utworu, z którego pochodzi fragment A, oraz tytuł utworu, z którego pochodzi fragment B.",
+      "table": {
+        "rows": [
+          {
+            "id": "row-id-1",
+            "label": "A",
+            "cells": {
+              "Fragment": "Tyran wstał – Herod! – Panie, cała Polska młoda\nWydana w ręce Heroda. […] \n\nAch, Panie, już widzę krzyż – ach, jak długo, długo\nMusi go nosić – Panie, zlituj się nad sługą.\nDaj mu siły, bo w drodze upadnie i skona – \nKrzyż ma długie na całą Europę ramiona,\nZ trzech wyschłych ludów, jak z trzech twardych drzew ukuty. –\nJuż wleką; już mój Naród na tronie pokuty – \nRzekł: «Pragnę» – Rakus octem, Borus żółcią poi,\nA matka Wolność u nóg zapłakana stoi.",
+              "Tytuł": ""
+            }
+          },
+          {
+            "id": "row-id-2",
+            "label": "B",
+            "cells": {
+              "Fragment": "Nie – myśli wielkiej trzeba z ziemi, lub z błękitu.\nSpojrzałem ze skały szczytu,\nDuch rycerza powstał z lodów…\nWinkelried dzidy wrogów zebrał i w pierś włożył,\nLudy! Winkelried ożył!\nPolska Winkelriedem narodów!\nPoświęci się, choć padnie jak dawniej! jak nieraz! \nNieście mię, chmury! nieście, wiatry! nieście, ptacy!",
+              "Tytuł": ""
+            }
+          }
+        ]
+      },
+      "reference_data": [],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne podanie tytułu utworu, z którego pochodzi fragment A i tytułu utworu, z którego pochodzi fragment B.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "",
+        "correct_answers": "Fragment A: Dziady cz. III\nUwaga. Dopuszczalna odpowiedź: „Dziady”.\n\nFragment B: Kordian"
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów\nz literatury polskiej […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n8) wykazuje się znajomością […] treści\nutworów wskazanych w podstawie\nprogramowej jako lektury obowiązkowe."
+      },
+      "user_answer": {
+        "row-id-1": "",
+        "row-id-2": ""
+      }
+    },
+    {
+      "id": "MPOP-P1-100-2305-12.2",
+      "type": "P-TEXT",
+      "number": "12.2",
+      "question": "Wyjaśnij, czym różni się rola przypisana Polsce we fragmencie A od roli przypisanej Polsce we fragmencie B.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "Fragment A",
+          "author": "",
+          "title": "",
+          "content": "Tyran wstał – Herod! – Panie, cała Polska młoda\nWydana w ręce Heroda. […] \nAch, Panie, już widzę krzyż – ach, jak długo, długo \nMusi go nosić – Panie, zlituj się nad sługą. \nDaj mu siły, bo w drodze upadnie i skona –  \nKrzyż ma długie na całą Europę ramiona, \nZ trzech wyschłych ludów, jak z trzech twardych drzew ukuty. – \nJuż wleką; już mój Naród na tronie pokuty –  \nRzekł: «Pragnę» – Rakus octem, Borus żółcią poi, \nA matka Wolność u nóg zapłakana stoi.",
+          "path": ""
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "Fragment B",
+          "author": "",
+          "title": "",
+          "content": "Nie – myśli wielkiej trzeba z ziemi, lub z błękitu. \nSpojrzałem ze skały szczytu, \nDuch rycerza powstał z lodów… \nWinkelried dzidy wrogów zebrał i w pierś włożył, \nLudy! Winkelried ożył! \nPolska Winkelriedem narodów! \nPoświęci się, choć padnie jak dawniej! jak nieraz!  \nNieście mię, chmury! nieście, wiatry! nieście, ptacy!",
+          "path": ""
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne wyjaśnienie różnicy między rolami przypisanymi Polsce.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "Z fragmentu A wynika, że Polska powinna znosić cierpienie jak Chrystus. Natomiast \nz fragmentu B wynika, że Polska powołana była do czynnego oporu przeciwko złu.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej […].\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n8) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe;\n9) rozpoznaje tematykę i problematykę poznanych tekstów oraz jej związek […] ze zjawiskami historycznymi […]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "answer-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2305-13",
+      "type": "P-TABLE-MATCH",
+      "number": "13",
+      "question": "W poniższej tabeli przedstawiono wybrane założenia dwóch epok literackich: pozytywizmu i Młodej Polski. Do każdej epoki dobierz odpowiedni cytat z utworu poetyckiego, wybrany spośród cytatów 1–3, ilustrujący założenia danej epoki. Wpisz właściwy numer cytatu w odpowiednie miejsce w tabeli.",
+      "options": [
+        {
+          "id": "option-id-1",
+          "number": "1",
+          "content": "Nieście więc wiedzy pochodnię na czele\nI nowy udział bierzcie w wieków dziele,\nPrzyszłości podnoście gmach!"
+        },
+        {
+          "id": "option-id-2",
+          "number": "2",
+          "content": "A gawiedź wierzy głęboko;\nCzucie i wiara silniej mówi do mnie\nNiż mędrca szkiełko i oko."
+        },
+        {
+          "id": "option-id-3",
+          "number": "3",
+          "content": "Jutro?... Nie wierzę, aby lepiej było,\ni nie zazdroszczę już tej wiary – dzieciom…\nPo co się łudzić?"
+        }
+      ],
+      "table": {
+        "rows": [
+          {
+            "id": "row-id-1",
+            "label": "A.",
+            "cells": {
+              "Epoka literacka – założenia": {
+                "type": "static",
+                "content": "Pozytywizm\nZałożenia filozofii pozytywizmu […] dostosowywano do szczególnych polskich warunków, wyciągając z niej przede wszystkim konsekwencje praktyczne: konieczność upowszechnienia oświaty, popularyzacji nauki i laickiego światopoglądu.\nNa podstawie: Słownik terminów literackich, red. Janusz Sławiński, Wrocław 2002."
+              },
+              "Numer cytatu": {
+                "type": "input",
+                "content": "",
+                "input_type": "text"
+              }
+            }
+          },
+          {
+            "id": "row-id-2",
+            "label": "B.",
+            "cells": {
+              "Epoka literacka – założenia": {
+                "type": "static",
+                "content": "Młoda Polska\nW pierwszej fazie swego rozwoju [ta epoka] skłaniała się ku tendencjom dekadenckim […], zwłaszcza w liryce kreowała bohatera biernie przeżywającego świat i przekonanego o schyłkowym charakterze kultury, w której żyje.\nNa podstawie: Słownik terminów literackich, red. Janusz Sławiński, Wrocław 2002."
+              },
+              "Numer cytatu": {
+                "type": "input",
+                "content": "",
+                "input_type": "text"
+              }
+            }
+          }
+        ]
+      },
+      "reference_data": [],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne wpisanie do tabeli numerów cytatów.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "",
+        "correct_answers": "A1, B3"
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n2. Rozumienie historii literatury i dziejów kultury jako procesu […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n1) […] sytuuje utwory literackie w poszczególnych okresach: […] pozytywizm, Młoda Polska […];\n9) rozpoznaje tematykę i problematykę poznanych tekstów oraz jej związek z programami epoki literackiej, zjawiskami społecznymi, historycznymi, egzystencjalnymi […]."
+      },
+      "user_answer": {
+        "row-id-1": "",
+        "row-id-2": ""
+      }
+    },
+    {
+      "id": "MPOP-P1-100-2305-14",
+      "type": "P-TEXT",
+      "number": "14",
+      "question": "Czy na plakacie przedstawiono taką samą relację między inteligencją a chłopami, jaką ukazano w Weselu? Uzasadnij odpowiedź, odwołując się do plakatu i do podanego fragmentu Wesela albo do plakatu i do całego dramatu Stanisława Wyspiańskiego.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Stanisław Wyspiański",
+          "title": "Wesele",
+          "content": "AKT III\n\nSCENA 19\nPoprzedni, Gospodarz\n\n[…] \nCZEPIEC \nZbierajcie się, poki czas,\nbyśwa1 byli radzi z was,\na nie stojcie jak te ćmy\nalbo kpy2;\nco kto ma, do ręki brać,\nna podwórze wyjść i stać;\ntam już ludzie som3,\nco sie sami rwiom:\nchłopi, tak! A chłopi, tak!\n\nPOETA \n– Jakiś znak.\n\nGOSPODARZ \nJakiś znak!\n\nCZEPIEC \nPanowie, jakeście som,\njeźli nie pójdziecie z nami,\nto my na was – i z kosami!\n\nGOSPODARZ \nWy, a jako – ?\n\nPOETA \nWiecież, kto my!?\nCo wy o nas wiecie – nic.\n\nCZEPIEC \nO, pon, widno, niewidomy;\nwidać, że nie znacie nas.\n\nPAN MŁODY \nWidzę, żeście krwi łakomy;\njeno4 że na krew nie czas.\nStanisław Wyspiański, Wesele, Wrocław 1977.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Byśwa – byśmy."
+            },
+            {
+              "n": 2,
+              "text": "Kiep – człowiek głupi; dureń."
+            },
+            {
+              "n": 3,
+              "text": "Som (gw.) – są."
+            },
+            {
+              "n": 4,
+              "text": "Jeno – tylko."
+            }
+          ]
+        },
+        {
+          "id": "image-1",
+          "type": "image",
+          "name": "",
+          "author": "Piotr Kunce",
+          "title": "",
+          "content": "Piotr_Kunce_Wesele_poster.jpg",
+          "path": "14_Piotr_Kunce_Wesele_poster.jpg"
+        }
+      ],
+      "scoring": {
+        "max_points": 2,
+        "scoring_criteria": {
+          "2": "rozstrzygnięcie i trafne uzasadnienie, uwzględniające symbolikę plakatu ORAZ wymowę fragmentu Wesela ALBO symbolikę plakatu ORAZ wymowę całego dramatu Stanisława Wyspiańskiego.",
+          "1": "trafna interpretacja relacji między inteligencją a chłopami na plakacie ALBO we fragmencie Wesela Stanisława Wyspiańskiego, ALBO w całym dramacie Stanisława Wyspiańskiego.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "• Podobna. Na plakacie przedstawiono dwie nogi założone jedna na drugą. Ta na wierzchu jest w stroju inteligenta, a ta pod nią – w stroju chłopa. Oznacza to, że inteligencja stoi ponad chłopami i nimi dowodzi. We fragmencie Wesela chłopi domagają się od inteligencji dowodzenia akcją zbrojną – a więc uznają ich zwierzchność. Jednak inteligencja nie rozumie, o czym mówi Czepiec – z fragmentu wynika, że te dwie warstwy społeczne niczego o sobie nie wiedzą.  \n• Jest różna. Dwie różne nogi na plakacie można odczytać jako symbole inteligencji i chłopów. Ułożenie nóg sugeruje, że te dwie warstwy społeczne tworzą całość, rozumieją się. We fragmencie Wesela jest inaczej. Chłopi są gotowi do powstania, a inteligencja nie jest. Czepiec grozi, że chłopi zaatakują inteligentów, jeżeli ci nie staną z nimi ramię w ramię do walki.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej […] oraz umiejętność mówienia o nich z wykorzystaniem potrzebnej terminologii.  \n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury oraz innych tekstów kultury, a także ich wzajemnej korespondencji.\n8. Kształcenie umiejętności świadomego odbioru utworów literackich i tekstów kultury na różnych poziomach: dosłownym, metaforycznym, symbolicznym […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n8) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe;\n9) rozpoznaje tematykę i problematykę poznanych tekstów […].\n2. Odbiór tekstów kultury. Zdający:\n6) odczytuje pozaliterackie teksty kultury, stosując kod właściwy w danej dziedzinie sztuki.\n\nSP\n2. Odbiór tekstów kultury. Uczeń:\n11) interpretuje dzieła sztuki ([…] grafika […]);\n15) znajduje w tekstach współczesnej kultury […] nawiązania do tradycyjnych wątków literackich i kulturowych."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2305-15",
+      "type": "P-TEXT",
+      "number": "15",
+      "question": "Wybierz jeden z poniższych tytułów części Przedwiośnia: \n• Szklane domy \n• Wiatr od Wschodu. \nWyjaśnij sens wybranego tytułu na podstawie znajomości powieści Stefana \nŻeromskiego.",
+      "reference_data": [],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne wyjaśnienie sensu wybranego tytułu części Przedwiośnia.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "1) Tytuł części: Wiatr od Wschodu \nWyjaśnienie, np.: \n• Tytuł ma stanowić ostrzeżenie przed „wschodnią” ideologią komunistyczną, którą \npropaguje Lulek. \n• Ta część utworu jest próbą odpowiedzi na pytania o drogi rozwojowe Polski, o to, w jakim \nkierunku powinna zmierzać Polska. \n\n2) Tytuł części: Szklane domy \nWyjaśnienie, np.: \nTytuł jest symbolem nadziei, jaką ojciec tchnął w Cezarego, opowiadając mu o szklanych \ndomach. Cezary był przekonany, że ujrzy je w niepodległej Polsce.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe. \n5. Znajomość wybranych utworów \nz literatury polskiej […]. \n7. Kształcenie umiejętności czytania, \nanalizowania i interpretowania literatury […]. \n8. Kształcenie umiejętności świadomego \nodbioru utworów literackich i tekstów kultury \nna różnych poziomach […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe. \n1. Czytanie utworów literackich. Zdający: \n8) wykazuje się znajomością \ni zrozumieniem treści utworów wskazanych \nw podstawie programowej jako lektury \nobowiązkowe; \n9) rozpoznaje tematykę i problematykę \npoznanych tekstów […]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "Tytuł części:",
+          "answer": ""
+        },
+        {
+          "input-field-id": "input-field-id-2",
+          "input-field-prefix": "Wyjaśnienie sensu tytułu części:",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2305-16.1",
+      "type": "P-CHOICE",
+      "number": "16.1",
+      "question": "Spośród podanych określeń (A–D) wybierz to, które charakteryzuje nowomowę stworzoną w państwie opisanym w powieści Rok 1984 George’a Orwella. Zaznacz właściwą odpowiedź.",
+      "options": [
+        {
+          "id": "option-id-A",
+          "label": "A",
+          "content": "zwiększanie liczby wyrazów nacechowanych emocjonalnie"
+        },
+        {
+          "id": "option-id-B",
+          "label": "B",
+          "content": "ograniczanie liczby wyrazów bliskoznacznych"
+        },
+        {
+          "id": "option-id-C",
+          "label": "C",
+          "content": "stosowanie wyrazów metaforycznych"
+        },
+        {
+          "id": "option-id-D",
+          "label": "D",
+          "content": "nadużywanie czasowników"
+        }
+      ],
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "George Orwell",
+          "title": "Rok 1984",
+          "content": "– […] Najwięcej, oczywiście, wyrzucamy czasowników i przymiotników, ale setki rzeczowników też są zupełnie zbędne. Usuwamy nie tylko synonimy, lecz także wyrazy przeciwstawne. Bo jaką rację bytu mają słowa, których znaczenie jest po prostu przeciwieństwem innych? Każde słowo zawiera w sobie swoje przeciwieństwo. Weźmy na przykład przymiotnik „dobry”. Jeśli mamy „dobry”, po co nam taki przymiotnik jak „zły”? „Bezdobry” wystarczy w zupełności; jest nawet o tyle lepszy, że stanowi dokładne przeciwieństwo przymiotnika „dobry”, czego nie można powiedzieć o „zły”. A gdy z kolei chcemy coś wzmocnić, czy ma sens stosowanie mętnych i w sumie bezużytecznych określeń typu „wspaniały” lub „znakomity”? „Plusdobry” adekwatnie spełnia każdy wymóg, jeśli natomiast zachodzi potrzeba jeszcze większej emfazy, można użyć „dwaplusdobry”. […] Z czasem pojęcie dobra i zła ograniczy się do zaledwie sześciu słów, a naprawdę do jednego."
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "odpowiedź poprawna.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "",
+        "correct_answers": "B"
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury [...] światowej oraz umiejętność mówienia o nich z wykorzystaniem potrzebnej terminologii.\n7. Kształcenie umiejętności czytania, analizowania […] literatury […].\n8. Kształcenie umiejętności świadomego odbioru utworów literackich […] na różnych poziomach [...].\n\nII. Kształcenie językowe.\nFunkcjonalne wykorzystywanie wiedzy o języku w odczytaniu sensów […] tekstów literackich.\n\nIII. Tworzenie wypowiedzi.\n3. Kształcenie umiejętności […] uzasadniania sądów na temat dzieł literackich […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n8) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe.\n\nII. Kształcenie językowe.\n1. Gramatyka języka polskiego. Zdający:\n1) wykorzystuje wiedzę z dziedziny [...] słowotwórstwa [...] i składni w analizie i interpretacji tekstów […].\n2. Zróżnicowanie języka. Zdający:\n6) […] odróżnia słownictwo neutralne od słownictwa o zabarwieniu emocjonalnym […].\n\nIII. Tworzenie wypowiedzi.\n1. Elementy retoryki. Zdający:\n9) rozumie zjawisko nowomowy; określa jego cechy […]."
+      },
+      "user_answer": {
+        "selected_option_id": ""
+      }
+    },
+    {
+      "id": "MPOP-P1-100-2305-16.2",
+      "type": "P-TEXT",
+      "number": "16.2",
+      "question": "Na podstawie powieści Rok 1984 George’a Orwella wyjaśnij, czemu służyło stworzenie nowomowy.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "George Orwell",
+          "title": "Rok 1984",
+          "content": "– […] Najwięcej, oczywiście, wyrzucamy czasowników i przymiotników, ale setki rzeczowników też są zupełnie zbędne. Usuwamy nie tylko synonimy, lecz także wyrazy przeciwstawne. Bo jaką rację bytu mają słowa, których znaczenie jest po prostu przeciwieństwem innych? Każde słowo zawiera w sobie swoje przeciwieństwo. Weźmy na przykład przymiotnik „dobry”. Jeśli mamy „dobry”, po co nam taki przymiotnik jak „zły”? „Bezdobry” wystarczy w zupełności; jest nawet o tyle lepszy, że stanowi dokładne przeciwieństwo przymiotnika „dobry”, czego nie można powiedzieć o „zły”. A gdy z kolei chcemy coś wzmocnić, czy ma sens stosowanie mętnych i w sumie bezużytecznych określeń typu „wspaniały” lub „znakomity”? „Plusdobry” adekwatnie spełnia każdy wymóg, jeśli natomiast zachodzi potrzeba jeszcze większej emfazy, można użyć „dwaplusdobry”. […] Z czasem pojęcie dobra i zła ograniczy się do zaledwie sześciu słów, a naprawdę do jednego.",
+          "path": ""
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne wyjaśnienie.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "Język to sfera wolności i inwencji – synonimiczność i możliwość interpretacji daje \nwolność; a celem twórców nowomowy było ograniczenie wolności.\nTwórcy nowomowy byli przekonani, że zniszczenie bogactwa języka pomoże im \nw lepszym sprawowaniu władzy nad obywatelami, którzy pozbawieni broni, jaką jest \njęzyk, będą łatwiejszym celem.\nTwórcy nowomowy zdawali sobie sprawę z tego, że język jest jedną z najważniejszych \nzdobyczy cywilizacji, dlatego upraszczali go, aby zabić w obywatelach to, co ludzkie \ni postępowe.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów \nz literatury [...] światowej oraz umiejętność \nmówienia o nich z wykorzystaniem \npotrzebnej terminologii.\n7. Kształcenie umiejętności czytania, \nanalizowania i interpretowania literatury […].\n8. Kształcenie umiejętności świadomego \nodbioru utworów literackich […] na różnych \npoziomach [...].\nIII. Tworzenie wypowiedzi.\n3. Kształcenie umiejętności […] \nuzasadniania sądów na temat dzieł \nliterackich […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n8) wykazuje się znajomością \ni zrozumieniem treści utworów wskazanych \nw podstawie programowej jako lektury \nobowiązkowe;\n9) rozpoznaje tematykę i problematykę \npoznanych tekstów […].\nIII. Tworzenie wypowiedzi.\n1. Elementy retoryki. Zdający:\n9) rozumie zjawisko nowomowy; określa \njego […] funkcje w tekście."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2305-17",
+      "type": "P-TEXT",
+      "number": "17",
+      "question": "Jaką postawę – typową dla bohatera romantycznego – przejawia Artur w zacytowanym fragmencie Tanga Sławomira Mrożka? W uzasadnieniu odpowiedzi odnieś się zarówno do postawy Artura, jak i do postawy wybranego bohatera dramatu romantycznego.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Sławomir Mrożek",
+          "title": "Tango",
+          "content": "AKT III\n\nARTUR\nCzy już rozumiecie, jaki jest wniosek ostateczny? Ach, wy nie rozumiecie, wy, cielesne \nstworzenia, zajęte swoimi gruczołami, drżące o nieśmiertelność swoją. Ale ja rozumiem, ja! \nJa jestem waszym odkupicielem, wy, bydło bezmyślne. Ja wznoszę się ponad doczesność, \nja ogarniam was wszystkich, bo ja mam mózg, który wyzwolił się od wnętrzności. Ja!\n[…] \nSTOMIL\nBredzi. Nie zwracajcie na niego uwagi.\n[…] \nARTUR\nTrzeba tylko być silnym i zdecydowanym. Ja jestem silny. Spójrzcie na mnie, jam jest \nkoroną waszych marzeń! Wuju, będzie porządek! Ojcze, ty zawsze się buntowałeś, ale twój \nbunt prowadził tylko do chaosu, aż sam siebie strawił. A spójrz na mnie! Czy władza nie jest \ntakże buntem? Buntem w formie porządku, buntem góry przeciwko dołom, wyższości \nprzeciwko niższości? […] Siłą jestem! Znajduję się ponad, wewnątrz i obok wszystkiego. \nDziękujcie mi, ja spełniłem waszą młodość. To dla was! A dla siebie też mam coś \nw podarunku: formę, jaką tylko zechcę, nie jedną, ale tysiąc możliwych, mogę stworzyć \ni zburzyć, co zechcę. […] Wszystko jest we mnie, tu!\nuderza się w pierś. Zebrani patrzą na niego z przerażeniem \n\nSławomir Mrożek, Tango, Kraków 1973."
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "określenie postawy wspólnej dla Artura i bohatera wybranego dramatu romantycznego ORAZ uzasadnienie odpowiedzi.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "•\nBunt. Artur sprzeciwia się zasadom obowiązującym w jego rodzinnym domu. Podobną\npostawę przyjmuje Konrad z Dziadów cz. III, który buntuje się przeciwko\nniesprawiedliwości świata oraz przeciwko Bogu.\n•\nDuma. Artur czuje się lepszy (mądrzejszy i silniejszy) od domowników. Podobną postawę\nprzyjmuje Konrad z Dziadów cz. III – jest przekonany o wspaniałości swojej poezji,\nnazywa siebie mistrzem.\n•\nArtur wywyższa się ponad innych i kreuje się na zbawcę świata. Podobną postawę\nprzyjmuje Konrad z Dziadów cz. III. Jest gotów cierpieć za ojczyznę i jest przekonany, że\nwie, co jest dobre dla jego narodu.\n•\nAutor przedstawia postawę indywidualisty, który jest przekonany o własnej inności i sile.\nW powyższym fragmencie Artur nazywa siebie odkupicielem, podkreśla swą wyższość\nnad resztą ludzi i wierzy w swoją siłę. Podobną postawę reprezentuje Kordian, który na\ngórze Mont Blanc postanawia się poświęcić dla dobra narodu. Jako indywidualista\nwierzy, że sam może pokonać cara. Obaj – Artur oraz Kordian – są gotowi poświęcić się\ndla wyższego dobra.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów\nz literatury polskiej [...] oraz umiejętność\nmówienia o nich z wykorzystaniem\npotrzebnej terminologii.\n7. Kształcenie umiejętności czytania,\nanalizowania i interpretowania literatury […].\n8. Kształcenie umiejętności świadomego\nodbioru utworów literackich […] na różnych\npoziomach [...].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n8) wykazuje się znajomością\ni zrozumieniem treści utworów wskazanych\nw podstawie programowej jako lektury\nobowiązkowe;\n9) rozpoznaje tematykę i problematykę\npoznanych tekstów […];\n13) porównuje utwory literackie lub ich\nfragmenty, dostrzega kontynuacje\ni nawiązania w porównywanych utworach,\nokreśla cechy wspólne […]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    }
+  ]
+}

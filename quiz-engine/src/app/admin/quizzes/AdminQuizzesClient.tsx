@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { CkeImportPanel, CkeAssetManager } from "./CkeAdmin";
 
 interface QuizVersion {
   id: string;
@@ -19,6 +20,8 @@ interface Quiz {
   status: string;
   created_at: string;
   quiz_versions: QuizVersion[];
+  format?: string;
+  exam_code?: string | null;
 }
 
 interface Props {
@@ -136,6 +139,9 @@ export default function AdminQuizzesClient({ initialQuizzes }: Props) {
 
   return (
     <div className="space-y-6">
+      {/* Język polski: CKE exam sheets */}
+      <CkeImportPanel />
+
       {/* Create form */}
       <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
         <h2 className="font-semibold text-gray-800 mb-4">Create new quiz</h2>
@@ -192,6 +198,11 @@ export default function AdminQuizzesClient({ initialQuizzes }: Props) {
                 {quiz.status}
               </span>
               <span className="text-xs text-gray-400 uppercase">{quiz.subject}</span>
+              {quiz.format === "cke_exam" && (
+                <span className="ml-2 text-[10px] font-mono bg-purple-50 text-purple-700 px-1.5 py-0.5 rounded">
+                  CKE {quiz.exam_code}
+                </span>
+              )}
               <h3 className="font-semibold text-gray-900 mt-1">{quiz.title}</h3>
               <p className="text-xs text-gray-400 mt-0.5">
                 {quiz.quiz_versions.length} version(s)
@@ -241,6 +252,17 @@ export default function AdminQuizzesClient({ initialQuizzes }: Props) {
               </button>
             </div>
           </div>
+
+          {quiz.format === "cke_exam" && (
+            <div className="border-t border-gray-100 px-5 py-3">
+              <CkeAssetManager quizId={quiz.id} />
+              {quiz.status === "draft" && (
+                <a href={`/quiz/${quiz.id}`} className="ml-3 text-xs text-blue-600 hover:underline">
+                  Podgląd arkusza (tylko admin) →
+                </a>
+              )}
+            </div>
+          )}
 
           {/* Version editor */}
           {editingVersionQuizId === quiz.id && (

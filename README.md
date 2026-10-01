@@ -67,6 +67,8 @@ Open the [Supabase SQL Editor](https://supabase.com/dashboard) for your project 
 ```
 supabase/migrations/001_initial_schema.sql
 supabase/migrations/002_seed_demo_quiz.sql   (optional demo stubs)
+supabase/migrations/003_grading_criteria.sql
+supabase/migrations/004_polish_cke_exams.sql (Język polski CKE sheets + security hardening)
 ```
 
 Or with the Supabase CLI:
@@ -204,6 +206,13 @@ Quiz content must conform to the schema in `src/lib/quiz/schemas.ts`. Example:
 ```
 
 Supported question types: `single_choice`, `multi_choice`, `short_text`, `numeric`, `math_open_with_work`, `polish_essay`, `code_python`.
+
+### Język polski — CKE exam sheets
+
+Polish uses the full CKE arkusz format from the zdamto.io prototype (`P-TEXT`, `P-TABLE-TEXT`,
+`P-TABLE-MATCH`, `P-TF`, `P-CHOICE`, `P-ESSAY`), imported with **Import arkuszy CKE** on
+`/admin/quizzes`. Setup (migration `004_polish_cke_exams.sql`, env vars, importing the JSON files
+and images, publishing): see [`docs/polski-cke-setup.md`](docs/polski-cke-setup.md).
 
 ---
 

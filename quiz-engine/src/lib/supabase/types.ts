@@ -54,6 +54,11 @@ export interface Database {
           created_by: string | null;
           created_at: string;
           updated_at: string;
+          format: "quiz" | "cke_exam";
+          exam_code: string | null;
+          level: "podstawowy" | "rozszerzony" | null;
+          session: string | null;
+          meta: Json;
         };
         Insert: {
           id?: string;
@@ -64,6 +69,11 @@ export interface Database {
           created_by?: string | null;
           created_at?: string;
           updated_at?: string;
+          format?: "quiz" | "cke_exam";
+          exam_code?: string | null;
+          level?: "podstawowy" | "rozszerzony" | null;
+          session?: string | null;
+          meta?: Json;
         };
         Update: {
           id?: string;
@@ -73,6 +83,11 @@ export interface Database {
           status?: "draft" | "published" | "archived";
           created_by?: string | null;
           updated_at?: string;
+          format?: "quiz" | "cke_exam";
+          exam_code?: string | null;
+          level?: "podstawowy" | "rozszerzony" | null;
+          session?: string | null;
+          meta?: Json;
         };
         Relationships: [
           {
@@ -132,6 +147,10 @@ export interface Database {
           submitted_at: string | null;
           score: number;
           max_score: number;
+          mode: "practice" | "exam";
+          deadline: string | null;
+          progress: Json;
+          updated_at: string;
         };
         Insert: {
           id?: string;
@@ -143,6 +162,10 @@ export interface Database {
           submitted_at?: string | null;
           score?: number;
           max_score?: number;
+          mode?: "practice" | "exam";
+          deadline?: string | null;
+          progress?: Json;
+          updated_at?: string;
         };
         Update: {
           id?: string;
@@ -154,6 +177,10 @@ export interface Database {
           submitted_at?: string | null;
           score?: number;
           max_score?: number;
+          mode?: "practice" | "exam";
+          deadline?: string | null;
+          progress?: Json;
+          updated_at?: string;
         };
         Relationships: [
           {
@@ -184,6 +211,7 @@ export interface Database {
           feedback: Json | null;
           graded_by_model: string | null;
           created_at: string;
+          updated_at: string;
         };
         Insert: {
           id?: string;
@@ -196,6 +224,7 @@ export interface Database {
           feedback?: Json | null;
           graded_by_model?: string | null;
           created_at?: string;
+          updated_at?: string;
         };
         Update: {
           id?: string;
@@ -207,6 +236,7 @@ export interface Database {
           max_score?: number | null;
           feedback?: Json | null;
           graded_by_model?: string | null;
+          updated_at?: string;
         };
         Relationships: [
           {
@@ -322,6 +352,27 @@ export interface Database {
         };
         Relationships: [];
       };
+      ai_usage: {
+        Row: {
+          user_id: string;
+          usage_date: string;
+          calls: number;
+          updated_at: string;
+        };
+        Insert: {
+          user_id: string;
+          usage_date: string;
+          calls?: number;
+          updated_at?: string;
+        };
+        Update: {
+          user_id?: string;
+          usage_date?: string;
+          calls?: number;
+          updated_at?: string;
+        };
+        Relationships: [];
+      };
       admin_audit_log: {
         Row: {
           id: string;
@@ -371,6 +422,10 @@ export interface Database {
       log_practice_and_update_streak: {
         Args: { p_user_id: string; p_source: string };
         Returns: undefined;
+      };
+      consume_ai_calls: {
+        Args: { p_user_id: string; p_calls: number; p_daily_limit: number };
+        Returns: boolean;
       };
     };
     Enums: {

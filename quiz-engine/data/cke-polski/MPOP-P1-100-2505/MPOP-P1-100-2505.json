@@ -1,0 +1,1073 @@
+{
+  "id": "MPOP-P1-100-2505",
+  "name": "Matura z języka polskiego",
+  "questions": [
+    {
+      "id": "MPOP-P1-100-2505-1",
+      "type": "P-TEXT",
+      "number": "1",
+      "question": "Na podstawie tekstu Carla Sagana wyjaśnij sens zdania: Rozpoczęliśmy wędrówkę pośród „wędrowców”.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "Błękitna kropka",
+          "author": "Carl Sagan",
+          "title": "Błękitna kropka",
+          "content": "Nasi dalecy przodkowie, gdy obserwowali „gwiazdy”, zauważyli, że pięć z nich zachowuje się odmiennie niż pozostałe. W odróżnieniu od tak zwanych gwiazd stałych, wschodzących i zachodzących w niewzruszonym porządku, ruch tamtej piątki był dziwnie skomplikowany. Z upływem miesięcy „gwiazdy” wędrowały powoli wśród innych, niekiedy nawet zataczały pętle. Dzisiaj te ciała nazywamy planetami, od greckiego słowa planetes, które oznacza „wędrujący”. Wyobrażam sobie, że naszym przodkom taka cecha musiała się wydać bardzo bliska.\nDziś wiemy, że planety są nie gwiazdami, lecz ciałami niebieskimi, które – tak jak Ziemia – krążą wokół Słońca, utrzymywane siłą jego grawitacji.\nStany Zjednoczone i nieistniejący już Związek Radziecki dokonały czegoś zadziwiającego: badały z bliska owe świetlne plamki – od Merkurego do Saturna – które wprawiały naszych przodków w podziw i skłaniały do uprawiania nauki. Od pierwszych pomyślnych wypraw w kosmos statki kosmiczne z Ziemi przelatywały, okrążały lub lądowały na ponad siedemdziesięciu ciałach niebieskich. Rozpoczęliśmy wędrówkę pośród „wędrowców”. Znaleźliśmy rozległe wulkaniczne wzniesienia, przy których najwyższe góry na Ziemi wydają się karłami.\nOdkryliśmy cuda, o jakich naszym przodkom nawet się nie śniło, gdy zastanawiali się oni nad naturą światełek błądzących po nocnym niebie. Badamy początki naszej planety i początki nas samych. Dzięki temu, że odkryliśmy inne możliwości, to znaczy zmierzyliśmy się z odmiennymi losami globów mniej lub bardziej podobnych do naszego, zaczęliśmy lepiej rozumieć Ziemię. Każdy z tych światów jest na swój sposób piękny i pouczający. Niemniej, o ile nam wiadomo, są one zarazem, wszystkie bez wyjątku, puste i jałowe. Nigdzie nie czeka na nas „lepsze miejsce”, przynajmniej na razie.\nObecnie przekroczyliśmy nieznacznie granice Układu Słonecznego, wysłaliśmy cztery statki kosmiczne ku gwiazdom. Neptun znajduje się milion razy dalej od Ziemi niż Nowy Jork od brzegów Bugu. W tych odległych światach, do których dotarliśmy, nie czekają jednak na nas dalecy krewni; nie ma tam ani istot ludzkich, ani – jak wiele na to wskazuje – śladów życia. Nie dysponujemy żadnymi listami od emigrantów, które mogłyby nam dopomóc w poznaniu nowych światów, a jedynie cieszymy się cyfrowymi danymi, przesłanymi nam z szybkością światła przez naszych precyzyjnych, automatycznych emisariuszy2. Z tych informacji wynika, że te światy znacznie różnią się od naszego. Mimo to nadal poszukujemy ich mieszkańców – taka już nasza natura. Życie szuka innego życia.\nNikogo na Ziemi, nawet najbogatszych ludzi, nie stać na razie na taką podróż. Nie możemy po prostu spakować się i wyruszyć na Marsa lub na Tytana. Nie widać też żadnych krótkoterminowych zysków, które mogłyby stanowić motywację dla prywatnych przedsiębiorców. Jeśli ludzie kiedykolwiek wyruszą ku tym światom, to dlatego, że jakieś państwo lub grupa państw uzna to za korzystne dla siebie lub dla całego rodzaju ludzkiego.\nW chwili obecnej istnieje wiele innych, pilnych spraw do załatwienia za pieniądze, które wydano by na wysyłanie ludzi w kosmos.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Tekst dotyczy stanu wiedzy o kosmosie z 1994 r. Tytuł stanowi nawiązanie do zdjęcia Ziemi wykonanego przez sondę kosmiczną w 1990 r. Na tym zdjęciu Ziemia wygląda jak błękitna kropka."
+            },
+            {
+              "n": 2,
+              "text": "Emisariusz – wysłannik."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne wyjaśnienie sensu zdania na podstawie tekstu 1.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "• Nazwa „planeta” pochodzi od greckiego słowa „wędrujący”. Dlatego też podróże kosmiczne pomiędzy planetami zostały nazwane wędrówką pomiędzy wędrowcami.\n• Autor tekstu zauważa, że w naturze człowieka jest wędrowanie i poznawanie nowych miejsc, również kosmosu. Wędrowcami są także planety, które podlegają nieustannemu ruchowi. To zdanie oznacza zatem rozpoczęcie przez człowieka lotów kosmicznych.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania […] tekstów kultury […].\n8. Kształcenie umiejętności świadomego odbioru […] tekstów kultury na różnych poziomach […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Zdający:\n1) przetwarza i hierarchizuje informacje z tekstów […];\n3) […] odczytuje informacje i przekazy jawne i ukryte […].\n\nSP, klasy VII i VIII\nI. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Uczeń:\n1) wyszukuje w tekście potrzebne informacje [...]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2505-2",
+      "type": "P-TEXT",
+      "number": "2",
+      "question": "Rozstrzygnij, czy w tekście Carla Sagana i w tekście Marty Trepczyńskiej jest mowa o takiej samej przyczynie zainteresowania kosmosem. W uzasadnieniu odpowiedzi odwołaj się do obu tekstów.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Carl Sagan",
+          "title": "Błękitna kropka",
+          "content": "Nasi dalecy przodkowie, gdy obserwowali „gwiazdy”, zauważyli, że pięć z nich zachowuje się odmiennie niż pozostałe. W odróżnieniu od tak zwanych gwiazd stałych, wschodzących i zachodzących w niewzruszonym porządku, ruch tamtej piątki był dziwnie skomplikowany. Z upływem miesięcy „gwiazdy” wędrowały powoli wśród innych, niekiedy nawet zataczały pętle. Dzisiaj te ciała nazywamy planetami, od greckiego słowa planetes, które oznacza „wędrujący”. Wyobrażam sobie, że naszym przodkom taka cecha musiała się wydać bardzo bliska.\nDziś wiemy, że planety są nie gwiazdami, lecz ciałami niebieskimi, które – tak jak Ziemia – krążą wokół Słońca, utrzymywane siłą jego grawitacji.\nStany Zjednoczone i nieistniejący już Związek Radziecki dokonały czegoś zadziwiającego: badały z bliska owe świetlne plamki – od Merkurego do Saturna – które wprawiały naszych przodków w podziw i skłaniały do uprawiania nauki. Od pierwszych pomyślnych wypraw w kosmos statki kosmiczne z Ziemi przelatywały, okrążały lub lądowały na ponad siedemdziesięciu ciałach niebieskich. Rozpoczęliśmy wędrówkę pośród „wędrowców”. Znaleźliśmy rozległe wulkaniczne wzniesienia, przy których najwyższe góry na Ziemi wydają się karłami.\nOdkryliśmy cuda, o jakich naszym przodkom nawet się nie śniło, gdy zastanawiali się oni nad naturą światełek błądzących po nocnym niebie. Badamy początki naszej planety i początki nas samych. Dzięki temu, że odkryliśmy inne możliwości, to znaczy zmierzyliśmy się z odmiennymi losami globów mniej lub bardziej podobnych do naszego, zaczęliśmy lepiej rozumieć Ziemię. Każdy z tych światów jest na swój sposób piękny i pouczający. Niemniej, o ile nam wiadomo, są one zarazem, wszystkie bez wyjątku, puste i jałowe. Nigdzie nie czeka na nas „lepsze miejsce”, przynajmniej na razie.\nObecnie przekroczyliśmy nieznacznie granice Układu Słonecznego, wysłaliśmy cztery statki kosmiczne ku gwiazdom. Neptun znajduje się milion razy dalej od Ziemi niż Nowy Jork od brzegów Bugu. W tych odległych światach, do których dotarliśmy, nie czekają jednak na nas dalecy krewni; nie ma tam ani istot ludzkich, ani – jak wiele na to wskazuje – śladów życia. Nie dysponujemy żadnymi listami od emigrantów, które mogłyby nam dopomóc w poznaniu nowych światów, a jedynie cieszymy się cyfrowymi danymi, przesłanymi nam z szybkością światła przez naszych precyzyjnych, automatycznych emisariuszy2. Z tych informacji wynika, że te światy znacznie różnią się od naszego. Mimo to nadal poszukujemy ich mieszkańców – taka już nasza natura. Życie szuka innego życia.\nNikogo na Ziemi, nawet najbogatszych ludzi, nie stać na razie na taką podróż. Nie możemy po prostu spakować się i wyruszyć na Marsa lub na Tytana. Nie widać też żadnych krótkoterminowych zysków, które mogłyby stanowić motywację dla prywatnych przedsiębiorców. Jeśli ludzie kiedykolwiek wyruszą ku tym światom, to dlatego, że jakieś państwo lub grupa państw uzna to za korzystne dla siebie lub dla całego rodzaju ludzkiego.\nW chwili obecnej istnieje wiele innych, pilnych spraw do załatwienia za pieniądze, które wydano by na wysyłanie ludzi w kosmos.\nNa podstawie: Carl Sagan, Błękitna kropka. Człowiek i jego przyszłość w kosmosie, tłum. Marek Krośniak, Poznań 2018.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Tekst dotyczy stanu wiedzy o kosmosie z 1994 r. Tytuł stanowi nawiązanie do zdjęcia Ziemi wykonanego przez sondę kosmiczną w 1990 r. Na tym zdjęciu Ziemia wygląda jak błękitna kropka."
+            },
+            {
+              "n": 2,
+              "text": "Emisariusz – wysłannik."
+            }
+          ]
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "",
+          "author": "Marta Trepczyńska",
+          "title": "Ziemia 2.0 – poszukiwania nadal trwają",
+          "content": "Czy ludzie mogą żyć na innej planecie niż Ziemia? W NASA1 od kilkudziesięciu lat trwają intensywne badania, mające na celu coraz głębszą eksplorację kosmosu i znalezienie odpowiedzi na pytanie, czy na jakiejkolwiek innej planecie mogły w przeszłości bądź mogą w przyszłości istnieć warunki dla przetrwania roślin i ludzi. O planach kolonizacji Marsa słyszeliśmy już niejeden raz. Teraz naukowcy idą o krok dalej. Czy możliwe jest, aby ludzie zamieszkali kiedykolwiek planetę Wenus? Ich nowe ustalenia nie wykluczają tego! Jest jednak kilka „ale”.\nPlanetą najlepiej zbadaną przez człowieka jest oczywiście Mars, a o planach jego kolonizacji poważnie wypowiadali się wybitni naukowcy, np. Stephen Hawking. Badania potwierdzają istnienie na Marsie wody oraz prawdopodobnie innych substancji chemicznych niezbędnych do życia. W dalekiej przeszłości powierzchnię Marsa miał pokrywać ocean. Doba trwa tam niemal tyle samo, ile doba na Ziemi. Przeszkody dla pojawienia się tam ludzi to m.in. niebezpieczne promieniowanie kosmiczne oraz zbyt niskie temperatury dochodzące do nawet −140 stopni Celsjusza. Jednak naukowcy nieustępliwie badają możliwość zasiedlenia Marsa. Ale to nie jest jedyna opcja na przyszłość.\nJak twierdzą naukowcy, przyjazną planetą dla człowieka może być też Wenus, która jest drugą pod względem odległości od Słońca planetą Układu Słonecznego. Pod wieloma względami jest podobna do Ziemi, czasem jest nawet nazywana jej siostrzaną planetą. Ma podobną masę oraz rozmiar zbliżony do Ziemi. Jest też pokryta podobną skalistą strukturą. Tu podobieństwa się jednak kończą. Na powierzchni Wenus panuje piekielnie wysoka temperatura: 462 stopnie Celsjusza, a ciśnienie jest prawie sto razy wyższe od tego na Ziemi, czyli mniej więcej takie, jak kilometr pod powierzchnią oceanu. Jak więc mielibyśmy zasiedlić Wenus w takich warunkach? Planetę pokrywa gruba warstwa chmur i to właśnie w nich, około 50 km nad powierzchnią Wenus, naukowcy dopatrzyli się podobnych warunków jak na Ziemi. Zarówno temperatura, jak i ciśnienie są tam zbliżone do ziemskich. Naukowcy uważają, że można by stworzyć specjalną skorupę, która oddzieliłaby chmury od piekielnie gorącej powierzchni Wenus. Wtedy ludzie mogliby nawet wyjść z kapsuły kosmicznej. Oczywiście, potrzebowaliby specjalnych aparatów do oddychania, ponieważ planetę pokrywa w głównej mierze nie tlen, ale dwutlenek węgla.\nWedług naukowców, możliwa byłaby też kolonizacja Księżyca. Ogromnym plusem jest jego odległość od Ziemi, co pozwoliłoby na szybkie i stosunkowo tanie przeloty ludzi oraz dostawy paliwa. Są również przeszkody. Dzień na Księżycu trwa dwa ziemskie tygodnie, podobnie – noc, a wówczas nie można korzystać z energii słonecznej.\nBadania przeprowadzone w latach 2015–2016 na Międzynarodowej Stacji Kosmicznej dowiodły, że człowiek nie może na razie na stałe mieszkać w kosmosie. W tym eksperymencie wzięli udział dwaj bracia Scottowie – pierwszy poleciał w kosmos, a drugi został na Ziemi, by można było porównywać ich stan zdrowia. To doświadczenie dowiodło, że przeszkodą do zamieszkania w kosmosie jest m.in. za bardzo pomniejszające się serce – po blisko roku trwania eksperymentu zmalało u pierwszego z braci o 27 procent, pomimo intensywnych ćwiczeń fizycznych.\nJedno jest pewne: przy obecnym stanie wiedzy, a przede wszystkim przez warunki w kosmosie niesprzyjające ludziom, z planami kolonizacji planet musimy na razie „zejść na Ziemię”. Nauka robi jednak wszystko, aby pozwolić nam na przezwyciężenie fizycznych niedoskonałości i „odblokować” możliwość życia poza Ziemią. Od tego zależy w końcu przyszłość ludzkości.\nNa podstawie: Marta Trepczyńska, Ziemia 2.0 – poszukiwania nadal trwają, www.komputerswiat.pl",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "NASA (ang. National Aeronautics and Space Administration) – instytucja rządowa Stanów Zjednoczonych odpowiedzialna za planowanie, koordynację, realizację i finansowanie programu badań kosmicznych oraz rozwoju astronautyki i lotnictwa cywilnego."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 2,
+        "scoring_criteria": {
+          "2": "rozstrzygnięcie wraz z uzasadnieniem zawierającym odwołanie do obu tekstów.",
+          "1": "rozstrzygnięcie ORAZ podanie przyczyny zainteresowania kosmosem na podstawie jednego tekstu.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "• Nie. W tekście Carla Sagana motywacją główną do odkrywania kosmosu jest ciekawość, ale także szukanie jakichkolwiek znaków życia na planetach, natomiast w tekście Marty Trepczyńskiej głównym impulsem do odkrywania kosmosu jest znalezienie warunków do życia na innych planetach.\n• Tak, w obu tekstach jest mowa o potrzebie zdobycia wiedzy o warunkach panujących w kosmosie.",
+        "correct_answers": "• Nie. W tekście Carla Sagana motywacją główną do odkrywania kosmosu jest ciekawość, ale także szukanie jakichkolwiek znaków życia na planetach, natomiast w tekście Marty Trepczyńskiej głównym impulsem do odkrywania kosmosu jest znalezienie warunków do życia na innych planetach.\n• Tak, w obu tekstach jest mowa o potrzebie zdobycia wiedzy o warunkach panujących w kosmosie."
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania […] tekstów kultury […].\n8. Kształcenie umiejętności świadomego odbioru […] tekstów kultury na różnych poziomach […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Zdający:\n1) przetwarza i hierarchizuje informacje z tekstów […];\n3) […] odczytuje informacje i przekazy jawne […].\n\nSP, klasy VII i VIII\nI. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Uczeń:\n1) wyszukuje w tekście potrzebne informacje [...]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "Rozstrzygnięcie:",
+          "answer": ""
+        },
+        {
+          "input-field-id": "input-field-id-2",
+          "input-field-prefix": "Uzasadnienie:",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2505-3",
+      "type": "P-TEXT",
+      "number": "3",
+      "question": "Wyjaśnij, dlaczego zgodnie z tekstem Carla Sagana nie możemy po prostu spakować się i wyruszyć na Marsa. Czy o takim samym ograniczeniu w eksplorowaniu kosmosu jest mowa w tekście Marty Trepczyńskiej? Uzasadnij odpowiedź.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Carl Sagan",
+          "title": "Błękitna kropka",
+          "content": "Nasi dalecy przodkowie, gdy obserwowali „gwiazdy”, zauważyli, że pięć z nich zachowuje się odmiennie niż pozostałe. W odróżnieniu od tak zwanych gwiazd stałych, wschodzących i zachodzących w niewzruszonym porządku, ruch tamtej piątki był dziwnie skomplikowany. Z upływem miesięcy „gwiazdy” wędrowały powoli wśród innych, niekiedy nawet zataczały pętle. Dzisiaj te ciała nazywamy planetami, od greckiego słowa planetes, które oznacza „wędrujący”. Wyobrażam sobie, że naszym przodkom taka cecha musiała się wydać bardzo bliska.\nDziś wiemy, że planety są nie gwiazdami, lecz ciałami niebieskimi, które – tak jak Ziemia – krążą wokół Słońca, utrzymywane siłą jego grawitacji.\nStany Zjednoczone i nieistniejący już Związek Radziecki dokonały czegoś zadziwiającego: badały z bliska owe świetlne plamki – od Merkurego do Saturna – które wprawiały naszych przodków w podziw i skłaniały do uprawiania nauki. Od pierwszych pomyślnych wypraw w kosmos statki kosmiczne z Ziemi przelatywały, okrążały lub lądowały na ponad siedemdziesięciu ciałach niebieskich. Rozpoczęliśmy wędrówkę pośród „wędrowców”. Znaleźliśmy rozległe wulkaniczne wzniesienia, przy których najwyższe góry na Ziemi wydają się karłami.\nOdkryliśmy cuda, o jakich naszym przodkom nawet się nie śniło, gdy zastanawiali się oni nad naturą światełek błądzących po nocnym niebie. Badamy początki naszej planety i początki nas samych. Dzięki temu, że odkryliśmy inne możliwości, to znaczy zmierzyliśmy się z odmiennymi losami globów mniej lub bardziej podobnych do naszego, zaczęliśmy lepiej rozumieć Ziemię. Każdy z tych światów jest na swój sposób piękny i pouczający. Niemniej, o ile nam wiadomo, są one zarazem, wszystkie bez wyjątku, puste i jałowe. Nigdzie nie czeka na nas „lepsze miejsce”, przynajmniej na razie.\nObecnie przekroczyliśmy nieznacznie granice Układu Słonecznego, wysłaliśmy cztery statki kosmiczne ku gwiazdom. Neptun znajduje się milion razy dalej od Ziemi niż Nowy Jork od brzegów Bugu. W tych odległych światach, do których dotarliśmy, nie czekają jednak na nas dalecy krewni; nie ma tam ani istot ludzkich, ani – jak wiele na to wskazuje – śladów życia. Nie dysponujemy żadnymi listami od emigrantów, które mogłyby nam dopomóc w poznaniu nowych światów, a jedynie cieszymy się cyfrowymi danymi, przesłanymi nam z szybkością światła przez naszych precyzyjnych, automatycznych emisariuszy2. Z tych informacji wynika, że te światy znacznie różnią się od naszego. Mimo to nadal poszukujemy ich mieszkańców – taka już nasza natura. Życie szuka innego życia.\nNikogo na Ziemi, nawet najbogatszych ludzi, nie stać na razie na taką podróż. Nie możemy po prostu spakować się i wyruszyć na Marsa lub na Tytana. Nie widać też żadnych krótkoterminowych zysków, które mogłyby stanowić motywację dla prywatnych przedsiębiorców. Jeśli ludzie kiedykolwiek wyruszą ku tym światom, to dlatego, że jakieś państwo lub grupa państw uzna to za korzystne dla siebie lub dla całego rodzaju ludzkiego.\nW chwili obecnej istnieje wiele innych, pilnych spraw do załatwienia za pieniądze, które wydano by na wysyłanie ludzi w kosmos.\nNa podstawie: Carl Sagan, Błękitna kropka. Człowiek i jego przyszłość w kosmosie, tłum. Marek Krośniak, Poznań 2018.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Tekst dotyczy stanu wiedzy o kosmosie z 1994 r. Tytuł stanowi nawiązanie do zdjęcia Ziemi wykonanego przez sondę kosmiczną w 1990 r. Na tym zdjęciu Ziemia wygląda jak błękitna kropka."
+            },
+            {
+              "n": 2,
+              "text": "Emisariusz – wysłannik."
+            }
+          ]
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "",
+          "author": "Marta Trepczyńska",
+          "title": "Ziemia 2.0 – poszukiwania nadal trwają",
+          "content": "Czy ludzie mogą żyć na innej planecie niż Ziemia? W NASA1 od kilkudziesięciu lat trwają intensywne badania, mające na celu coraz głębszą eksplorację kosmosu i znalezienie odpowiedzi na pytanie, czy na jakiejkolwiek innej planecie mogły w przeszłości bądź mogą w przyszłości istnieć warunki dla przetrwania roślin i ludzi. O planach kolonizacji Marsa słyszeliśmy już niejeden raz. Teraz naukowcy idą o krok dalej. Czy możliwe jest, aby ludzie zamieszkali kiedykolwiek planetę Wenus? Ich nowe ustalenia nie wykluczają tego! Jest jednak kilka „ale”.\nPlanetą najlepiej zbadaną przez człowieka jest oczywiście Mars, a o planach jego kolonizacji poważnie wypowiadali się wybitni naukowcy, np. Stephen Hawking. Badania potwierdzają istnienie na Marsie wody oraz prawdopodobnie innych substancji chemicznych niezbędnych do życia. W dalekiej przeszłości powierzchnię Marsa miał pokrywać ocean. Doba trwa tam niemal tyle samo, ile doba na Ziemi. Przeszkody dla pojawienia się tam ludzi to m.in. niebezpieczne promieniowanie kosmiczne oraz zbyt niskie temperatury dochodzące do nawet −140 stopni Celsjusza. Jednak naukowcy nieustępliwie badają możliwość zasiedlenia Marsa. Ale to nie jest jedyna opcja na przyszłość.\nJak twierdzą naukowcy, przyjazną planetą dla człowieka może być też Wenus, która jest drugą pod względem odległości od Słońca planetą Układu Słonecznego. Pod wieloma względami jest podobna do Ziemi, czasem jest nawet nazywana jej siostrzaną planetą. Ma podobną masę oraz rozmiar zbliżony do Ziemi. Jest też pokryta podobną skalistą strukturą. Tu podobieństwa się jednak kończą. Na powierzchni Wenus panuje piekielnie wysoka temperatura: 462 stopnie Celsjusza, a ciśnienie jest prawie sto razy wyższe od tego na Ziemi, czyli mniej więcej takie, jak kilometr pod powierzchnią oceanu. Jak więc mielibyśmy zasiedlić Wenus w takich warunkach? Planetę pokrywa gruba warstwa chmur i to właśnie w nich, około 50 km nad powierzchnią Wenus, naukowcy dopatrzyli się podobnych warunków jak na Ziemi. Zarówno temperatura, jak i ciśnienie są tam zbliżone do ziemskich. Naukowcy uważają, że można by stworzyć specjalną skorupę, która oddzieliłaby chmury od piekielnie gorącej powierzchni Wenus. Wtedy ludzie mogliby nawet wyjść z kapsuły kosmicznej. Oczywiście, potrzebowaliby specjalnych aparatów do oddychania, ponieważ planetę pokrywa w głównej mierze nie tlen, ale dwutlenek węgla.\nWedług naukowców, możliwa byłaby też kolonizacja Księżyca. Ogromnym plusem jest jego odległość od Ziemi, co pozwoliłoby na szybkie i stosunkowo tanie przeloty ludzi oraz dostawy paliwa. Są również przeszkody. Dzień na Księżycu trwa dwa ziemskie tygodnie, podobnie – noc, a wówczas nie można korzystać z energii słonecznej.\nBadania przeprowadzone w latach 2015–2016 na Międzynarodowej Stacji Kosmicznej dowiodły, że człowiek nie może na razie na stałe mieszkać w kosmosie. W tym eksperymencie wzięli udział dwaj bracia Scottowie – pierwszy poleciał w kosmos, a drugi został na Ziemi, by można było porównywać ich stan zdrowia. To doświadczenie dowiodło, że przeszkodą do zamieszkania w kosmosie jest m.in. za bardzo pomniejszające się serce – po blisko roku trwania eksperymentu zmalało u pierwszego z braci o 27 procent, pomimo intensywnych ćwiczeń fizycznych.\nJedno jest pewne: przy obecnym stanie wiedzy, a przede wszystkim przez warunki w kosmosie niesprzyjające ludziom, z planami kolonizacji planet musimy na razie „zejść na Ziemię”. Nauka robi jednak wszystko, aby pozwolić nam na przezwyciężenie fizycznych niedoskonałości i „odblokować” możliwość życia poza Ziemią. Od tego zależy w końcu przyszłość ludzkości.\nNa podstawie: Marta Trepczyńska, Ziemia 2.0 – poszukiwania nadal trwają, www.komputerswiat.pl",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "NASA (ang. National Aeronautics and Space Administration) – instytucja rządowa Stanów Zjednoczonych odpowiedzialna za planowanie, koordynację, realizację i finansowanie programu badań kosmicznych oraz rozwoju astronautyki i lotnictwa cywilnego."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 2,
+        "scoring_criteria": {
+          "2": "poprawne wyjaśnienie zgodne z tekstem 1. ORAZ rozstrzygnięcie i trafne uzasadnienie w odniesieniu do tekstu 2.",
+          "1": "poprawne wyjaśnienie zgodne z tekstem 1.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "Według Carla Sagana nie możemy podróżować w kosmos, ponieważ ograniczają nas koszty. Trepczyńska nie mówi o takim samym ograniczeniu, bo wskazuje, że przeszkodą są warunki panujące w kosmosie.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania [...] tekstów kultury [...].\n8. Kształcenie umiejętności świadomego odbioru [...] tekstów kultury na różnych poziomach [...].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Zdający:\n1) przetwarza i hierarchizuje informacje z tekstów [...];\n3) [...] odczytuje informacje i przekazy jawne i ukryte [...].\n\nSP, klasy VII i VIII\nI. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Uczeń:\n1) wyszukuje w tekście potrzebne informacje [...]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2505-4",
+      "type": "P-TF",
+      "number": "4",
+      "question": "Oceń prawdziwość podanych stwierdzeń odnoszących się do tekstu Carla Sagana albo do tekstu Marty Trepczyńskiej. Zaznacz P, jeśli stwierdzenie jest prawdziwe, albo F – jeśli jest fałszywe.",
+      "tf_questions": [
+        {
+          "id": "tf-1",
+          "question": "Czasowniki w pierwszej osobie liczby mnogiej, obecne w tekście Carla Sagana, służą zmniejszeniu dystansu między autorem a czytelnikami."
+        },
+        {
+          "id": "tf-2",
+          "question": "W sformułowaniu z tekstu Marty Trepczyńskiej dzień na Księżycu trwa dwa ziemskie tygodnie zastosowano przymiotnik wartościujący."
+        }
+      ],
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Carl Sagan",
+          "title": "Błękitna kropka",
+          "content": "Nasi dalecy przodkowie, gdy obserwowali „gwiazdy”, zauważyli, że pięć z nich zachowuje się odmiennie niż pozostałe. W odróżnieniu od tak zwanych gwiazd stałych, wschodzących i zachodzących w niewzruszonym porządku, ruch tamtej piątki był dziwnie skomplikowany. Z upływem miesięcy „gwiazdy” wędrowały powoli wśród innych, niekiedy nawet zataczały pętle. Dzisiaj te ciała nazywamy planetami, od greckiego słowa planetes, które oznacza „wędrujący”. Wyobrażam sobie, że naszym przodkom taka cecha musiała się wydać bardzo bliska.\nDziś wiemy, że planety są nie gwiazdami, lecz ciałami niebieskimi, które – tak jak Ziemia – krążą wokół Słońca, utrzymywane siłą jego grawitacji.\nStany Zjednoczone i nieistniejący już Związek Radziecki dokonały czegoś zadziwiającego: badały z bliska owe świetlne plamki – od Merkurego do Saturna – które wprawiały naszych przodków w podziw i skłaniały do uprawiania nauki. Od pierwszych pomyślnych wypraw w kosmos statki kosmiczne z Ziemi przelatywały, okrążały lub lądowały na ponad siedemdziesięciu ciałach niebieskich. Rozpoczęliśmy wędrówkę pośród „wędrowców”. Znaleźliśmy rozległe wulkaniczne wzniesienia, przy których najwyższe góry na Ziemi wydają się karłami.\nOdkryliśmy cuda, o jakich naszym przodkom nawet się nie śniło, gdy zastanawiali się oni nad naturą światełek błądzących po nocnym niebie. Badamy początki naszej planety i początki nas samych. Dzięki temu, że odkryliśmy inne możliwości, to znaczy zmierzyliśmy się z odmiennymi losami globów mniej lub bardziej podobnych do naszego, zaczęliśmy lepiej rozumieć Ziemię. Każdy z tych światów jest na swój sposób piękny i pouczający. Niemniej, o ile nam wiadomo, są one zarazem, wszystkie bez wyjątku, puste i jałowe. Nigdzie nie czeka na nas „lepsze miejsce”, przynajmniej na razie.\nObecnie przekroczyliśmy nieznacznie granice Układu Słonecznego, wysłaliśmy cztery statki kosmiczne ku gwiazdom. Neptun znajduje się milion razy dalej od Ziemi niż Nowy Jork od brzegów Bugu. W tych odległych światach, do których dotarliśmy, nie czekają jednak na nas dalecy krewni; nie ma tam ani istot ludzkich, ani – jak wiele na to wskazuje – śladów życia. Nie dysponujemy żadnymi listami od emigrantów, które mogłyby nam dopomóc w poznaniu nowych światów, a jedynie cieszymy się cyfrowymi danymi, przesłanymi nam z szybkością światła przez naszych precyzyjnych, automatycznych emisariuszy2. Z tych informacji wynika, że te światy znacznie różnią się od naszego. Mimo to nadal poszukujemy ich mieszkańców – taka już nasza natura. Życie szuka innego życia.\nNikogo na Ziemi, nawet najbogatszych ludzi, nie stać na razie na taką podróż. Nie możemy po prostu spakować się i wyruszyć na Marsa lub na Tytana. Nie widać też żadnych krótkoterminowych zysków, które mogłyby stanowić motywację dla prywatnych przedsiębiorców. Jeśli ludzie kiedykolwiek wyruszą ku tym światom, to dlatego, że jakieś państwo lub grupa państw uzna to za korzystne dla siebie lub dla całego rodzaju ludzkiego.\nW chwili obecnej istnieje wiele innych, pilnych spraw do załatwienia za pieniądze, które wydano by na wysyłanie ludzi w kosmos.\n\nNa podstawie: Carl Sagan, Błękitna kropka. Człowiek i jego przyszłość w kosmosie, tłum. Marek Krośniak, Poznań 2018.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Tekst dotyczy stanu wiedzy o kosmosie z 1994 r. Tytuł stanowi nawiązanie do zdjęcia Ziemi wykonanego przez sondę kosmiczną w 1990 r. Na tym zdjęciu Ziemia wygląda jak błękitna kropka."
+            },
+            {
+              "n": 2,
+              "text": "Emisariusz – wysłannik."
+            }
+          ]
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "",
+          "author": "Marta Trepczyńska",
+          "title": "Ziemia 2.0 – poszukiwania nadal trwają",
+          "content": "Czy ludzie mogą żyć na innej planecie niż Ziemia? W NASA1 od kilkudziesięciu lat trwają intensywne badania, mające na celu coraz głębszą eksplorację kosmosu i znalezienie odpowiedzi na pytanie, czy na jakiejkolwiek innej planecie mogły w przeszłości bądź mogą w przyszłości istnieć warunki dla przetrwania roślin i ludzi. O planach kolonizacji Marsa słyszeliśmy już niejeden raz. Teraz naukowcy idą o krok dalej. Czy możliwe jest, aby ludzie zamieszkali kiedykolwiek planetę Wenus? Ich nowe ustalenia nie wykluczają tego! Jest jednak kilka „ale”.\nPlanetą najlepiej zbadaną przez człowieka jest oczywiście Mars, a o planach jego kolonizacji poważnie wypowiadali się wybitni naukowcy, np. Stephen Hawking. Badania potwierdzają istnienie na Marsie wody oraz prawdopodobnie innych substancji chemicznych niezbędnych do życia. W dalekiej przeszłości powierzchnię Marsa miał pokrywać ocean. Doba trwa tam niemal tyle samo, ile doba na Ziemi. Przeszkody dla pojawienia się tam ludzi to m.in. niebezpieczne promieniowanie kosmiczne oraz zbyt niskie temperatury dochodzące do nawet −140 stopni Celsjusza. Jednak naukowcy nieustępliwie badają możliwość zasiedlenia Marsa. Ale to nie jest jedyna opcja na przyszłość.\nJak twierdzą naukowcy, przyjazną planetą dla człowieka może być też Wenus, która jest drugą pod względem odległości od Słońca planetą Układu Słonecznego. Pod wieloma względami jest podobna do Ziemi, czasem jest nawet nazywana jej siostrzaną planetą. Ma podobną masę oraz rozmiar zbliżony do Ziemi. Jest też pokryta podobną skalistą strukturą. Tu podobieństwa się jednak kończą. Na powierzchni Wenus panuje piekielnie wysoka temperatura: 462 stopnie Celsjusza, a ciśnienie jest prawie sto razy wyższe od tego na Ziemi, czyli mniej więcej takie, jak kilometr pod powierzchnią oceanu. Jak więc mielibyśmy zasiedlić Wenus w takich warunkach? Planetę pokrywa gruba warstwa chmur i to właśnie w nich, około 50 km nad powierzchnią Wenus, naukowcy dopatrzyli się podobnych warunków jak na Ziemi. Zarówno temperatura, jak i ciśnienie są tam zbliżone do ziemskich. Naukowcy uważają, że można by stworzyć specjalną skorupę, która oddzieliłaby chmury od piekielnie gorącej powierzchni Wenus. Wtedy ludzie mogliby nawet wyjść z kapsuły kosmicznej. Oczywiście, potrzebowaliby specjalnych aparatów do oddychania, ponieważ planetę pokrywa w głównej mierze nie tlen, ale dwutlenek węgla.\nWedług naukowców, możliwa byłaby też kolonizacja Księżyca. Ogromnym plusem jest jego odległość od Ziemi, co pozwoliłoby na szybkie i stosunkowo tanie przeloty ludzi oraz dostawy paliwa. Są również przeszkody. Dzień na Księżycu trwa dwa ziemskie tygodnie, podobnie – noc, a wówczas nie można korzystać z energii słonecznej.\nBadania przeprowadzone w latach 2015–2016 na Międzynarodowej Stacji Kosmicznej dowiodły, że człowiek nie może na razie na stałe mieszkać w kosmosie. W tym eksperymencie wzięli udział dwaj bracia Scottowie – pierwszy poleciał w kosmos, a drugi został na Ziemi, by można było porównywać ich stan zdrowia. To doświadczenie dowiodło, że przeszkodą do zamieszkania w kosmosie jest m.in. za bardzo pomniejszające się serce – po blisko roku trwania eksperymentu zmalało u pierwszego z braci o 27 procent, pomimo intensywnych ćwiczeń fizycznych.\nJedno jest pewne: przy obecnym stanie wiedzy, a przede wszystkim przez warunki w kosmosie niesprzyjające ludziom, z planami kolonizacji planet musimy na razie „zejść na Ziemię”. Nauka robi jednak wszystko, aby pozwolić nam na przezwyciężenie fizycznych niedoskonałości i „odblokować” możliwość życia poza Ziemią. Od tego zależy w końcu przyszłość ludzkości.\n\nNa podstawie: Marta Trepczyńska, Ziemia 2.0 – poszukiwania nadal trwają, www.komputerswiat.pl",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "NASA (ang. National Aeronautics and Space Administration) – instytucja rządowa Stanów Zjednoczonych odpowiedzialna za planowanie, koordynację, realizację i finansowanie programu badań kosmicznych oraz rozwoju astronautyki i lotnictwa cywilnego."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawna odpowiedź.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "",
+        "correct_answers": "PF"
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n8. Kształcenie umiejętności świadomego odbioru […] tekstów kultury na różnych poziomach […].\nII. Kształcenie językowe.\n3. Funkcjonalne wykorzystanie wiedzy o języku w odczytaniu sensów zawartych w strukturze głębokiej tekstów […] nieliterackich.\nSP, kl. IV–VI\nII. Kształcenie językowe.\n1. Gramatyka języka polskiego. Uczeń:\n1) rozpoznaje w wypowiedziach części mowy (czasownik, […] przymiotnik […]) i określa ich funkcje w tekście.\n4) rozpoznaje […] liczby, osoby […] czasownika […] oraz określa ich funkcje w wypowiedzi.",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Zdający:\n3) […] rozpoznaje środki językowe i ich funkcje zastosowane w tekstach […].\nII. Kształcenie językowe.\n1. Gramatyka języka polskiego. Zdający:\n1) wykorzystuje wiedzę z dziedziny fleksji […] w analizie i interpretacji tekstów […].\n2. Zróżnicowanie języka. Zdający:\n7) rozpoznaje słownictwo o charakterze wartościującym […]."
+      },
+      "user_answer": {
+        "tf-1": "",
+        "tf-2": ""
+      }
+    },
+    {
+      "id": "MPOP-P1-100-2505-5",
+      "type": "P-TEXT",
+      "number": "5",
+      "question": "Na podstawie obu tekstów napisz notatkę syntetyzującą na temat: odkrywanie kosmosu jako potrzeba człowieka. Twoja wypowiedź powinna liczyć 60–90 wyrazów. Uwaga: w ocenie wypowiedzi będzie brana pod uwagę poprawność językowa, ortograficzna i interpunkcyjna.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Carl Sagan",
+          "title": "Błękitna kropka",
+          "content": "Nasi dalecy przodkowie, gdy obserwowali „gwiazdy”, zauważyli, że pięć z nich zachowuje się odmiennie niż pozostałe. W odróżnieniu od tak zwanych gwiazd stałych, wschodzących i zachodzących w niewzruszonym porządku, ruch tamtej piątki był dziwnie skomplikowany. Z upływem miesięcy „gwiazdy” wędrowały powoli wśród innych, niekiedy nawet zataczały pętle. Dzisiaj te ciała nazywamy planetami, od greckiego słowa planetes, które oznacza „wędrujący”. Wyobrażam sobie, że naszym przodkom taka cecha musiała się wydać bardzo bliska.\nDziś wiemy, że planety są nie gwiazdami, lecz ciałami niebieskimi, które – tak jak Ziemia – krążą wokół Słońca, utrzymywane siłą jego grawitacji.\nStany Zjednoczone i nieistniejący już Związek Radziecki dokonały czegoś zadziwiającego: badały z bliska owe świetlne plamki – od Merkurego do Saturna – które wprawiały naszych przodków w podziw i skłaniały do uprawiania nauki. Od pierwszych pomyślnych wypraw w kosmos statki kosmiczne z Ziemi przelatywały, okrążały lub lądowały na ponad siedemdziesięciu ciałach niebieskich. Rozpoczęliśmy wędrówkę pośród „wędrowców”. Znaleźliśmy rozległe wulkaniczne wzniesienia, przy których najwyższe góry na Ziemi wydają się karłami.\nOdkryliśmy cuda, o jakich naszym przodkom nawet się nie śniło, gdy zastanawiali się oni nad naturą światełek błądzących po nocnym niebie. Badamy początki naszej planety i początki nas samych. Dzięki temu, że odkryliśmy inne możliwości, to znaczy zmierzyliśmy się z odmiennymi losami globów mniej lub bardziej podobnych do naszego, zaczęliśmy lepiej rozumieć Ziemię. Każdy z tych światów jest na swój sposób piękny i pouczający. Niemniej, o ile nam wiadomo, są one zarazem, wszystkie bez wyjątku, puste i jałowe. Nigdzie nie czeka na nas „lepsze miejsce”, przynajmniej na razie.\nObecnie przekroczyliśmy nieznacznie granice Układu Słonecznego, wysłaliśmy cztery statki kosmiczne ku gwiazdom. Neptun znajduje się milion razy dalej od Ziemi niż Nowy Jork od brzegów Bugu. W tych odległych światach, do których dotarliśmy, nie czekają jednak na nas dalecy krewni; nie ma tam ani istot ludzkich, ani – jak wiele na to wskazuje – śladów życia. Nie dysponujemy żadnymi listami od emigrantów, które mogłyby nam dopomóc w poznaniu nowych światów, a jedynie cieszymy się cyfrowymi danymi, przesłanymi nam z szybkością światła przez naszych precyzyjnych, automatycznych emisariuszy2. Z tych informacji wynika, że te światy znacznie różnią się od naszego. Mimo to nadal poszukujemy ich mieszkańców – taka już nasza natura. Życie szuka innego życia.\nNikogo na Ziemi, nawet najbogatszych ludzi, nie stać na razie na taką podróż. Nie możemy po prostu spakować się i wyruszyć na Marsa lub na Tytana. Nie widać też żadnych krótkoterminowych zysków, które mogłyby stanowić motywację dla prywatnych przedsiębiorców. Jeśli ludzie kiedykolwiek wyruszą ku tym światom, to dlatego, że jakieś państwo lub grupa państw uzna to za korzystne dla siebie lub dla całego rodzaju ludzkiego.\nW chwili obecnej istnieje wiele innych, pilnych spraw do załatwienia za pieniądze, które wydano by na wysyłanie ludzi w kosmos.\nNa podstawie: Carl Sagan, Błękitna kropka. Człowiek i jego przyszłość w kosmosie, tłum. Marek Krośniak, Poznań 2018.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Tekst dotyczy stanu wiedzy o kosmosie z 1994 r. Tytuł stanowi nawiązanie do zdjęcia Ziemi wykonanego przez sondę kosmiczną w 1990 r. Na tym zdjęciu Ziemia wygląda jak błękitna kropka."
+            },
+            {
+              "n": 2,
+              "text": "Emisariusz – wysłannik."
+            }
+          ]
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "",
+          "author": "Marta Trepczyńska",
+          "title": "Ziemia 2.0 – poszukiwania nadal trwają",
+          "content": "Czy ludzie mogą żyć na innej planecie niż Ziemia? W NASA1 od kilkudziesięciu lat trwają intensywne badania, mające na celu coraz głębszą eksplorację kosmosu i znalezienie odpowiedzi na pytanie, czy na jakiejkolwiek innej planecie mogły w przeszłości bądź mogą w przyszłości istnieć warunki dla przetrwania roślin i ludzi. O planach kolonizacji Marsa słyszeliśmy już niejeden raz. Teraz naukowcy idą o krok dalej. Czy możliwe jest, aby ludzie zamieszkali kiedykolwiek planetę Wenus? Ich nowe ustalenia nie wykluczają tego! Jest jednak kilka „ale”.\nPlanetą najlepiej zbadaną przez człowieka jest oczywiście Mars, a o planach jego kolonizacji poważnie wypowiadali się wybitni naukowcy, np. Stephen Hawking. Badania potwierdzają istnienie na Marsie wody oraz prawdopodobnie innych substancji chemicznych niezbędnych do życia. W dalekiej przeszłości powierzchnię Marsa miał pokrywać ocean. Doba trwa tam niemal tyle samo, ile doba na Ziemi. Przeszkody dla pojawienia się tam ludzi to m.in. niebezpieczne promieniowanie kosmiczne oraz zbyt niskie temperatury dochodzące do nawet −140 stopni Celsjusza. Jednak naukowcy nieustępliwie badają możliwość zasiedlenia Marsa. Ale to nie jest jedyna opcja na przyszłość.\nJak twierdzą naukowcy, przyjazną planetą dla człowieka może być też Wenus, która jest drugą pod względem odległości od Słońca planetą Układu Słonecznego. Pod wieloma względami jest podobna do Ziemi, czasem jest nawet nazywana jej siostrzaną planetą. Ma podobną masę oraz rozmiar zbliżony do Ziemi. Jest też pokryta podobną skalistą strukturą. Tu podobieństwa się jednak kończą. Na powierzchni Wenus panuje piekielnie wysoka temperatura: 462 stopnie Celsjusza, a ciśnienie jest prawie sto razy wyższe od tego na Ziemi, czyli mniej więcej takie, jak kilometr pod powierzchnią oceanu. Jak więc mielibyśmy zasiedlić Wenus w takich warunkach? Planetę pokrywa gruba warstwa chmur i to właśnie w nich, około 50 km nad powierzchnią Wenus, naukowcy dopatrzyli się podobnych warunków jak na Ziemi. Zarówno temperatura, jak i ciśnienie są tam zbliżone do ziemskich. Naukowcy uważają, że można by stworzyć specjalną skorupę, która oddzieliłaby chmury od piekielnie gorącej powierzchni Wenus. Wtedy ludzie mogliby nawet wyjść z kapsuły kosmicznej. Oczywiście, potrzebowaliby specjalnych aparatów do oddychania, ponieważ planetę pokrywa w głównej mierze nie tlen, ale dwutlenek węgla.\nWedług naukowców, możliwa byłaby też kolonizacja Księżyca. Ogromnym plusem jest jego odległość od Ziemi, co pozwoliłoby na szybkie i stosunkowo tanie przeloty ludzi oraz dostawy paliwa. Są również przeszkody. Dzień na Księżycu trwa dwa ziemskie tygodnie, podobnie – noc, a wówczas nie można korzystać z energii słonecznej.\nBadania przeprowadzone w latach 2015–2016 na Międzynarodowej Stacji Kosmicznej dowiodły, że człowiek nie może na razie na stałe mieszkać w kosmosie. W tym eksperymencie wzięli udział dwaj bracia Scottowie – pierwszy poleciał w kosmos, a drugi został na Ziemi, by można było porównywać ich stan zdrowia. To doświadczenie dowiodło, że przeszkodą do zamieszkania w kosmosie jest m.in. za bardzo pomniejszające się serce – po blisko roku trwania eksperymentu zmalało u pierwszego z braci o 27 procent, pomimo intensywnych ćwiczeń fizycznych.\nJedno jest pewne: przy obecnym stanie wiedzy, a przede wszystkim przez warunki w kosmosie niesprzyjające ludziom, z planami kolonizacji planet musimy na razie „zejść na Ziemię”. Nauka robi jednak wszystko, aby pozwolić nam na przezwyciężenie fizycznych niedoskonałości i „odblokować” możliwość życia poza Ziemią. Od tego zależy w końcu przyszłość ludzkości.\nNa podstawie: Marta Trepczyńska, Ziemia 2.0 – poszukiwania nadal trwają, www.komputerswiat.pl",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "NASA (ang. National Aeronautics and Space Administration) – instytucja rządowa Stanów Zjednoczonych odpowiedzialna za planowanie, koordynację, realizację i finansowanie programu badań kosmicznych oraz rozwoju astronautyki i lotnictwa cywilnego."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 4,
+        "scoring_criteria": {
+          "4": "Notatka syntetyzująca uzyskała 3 punkty za treść ORAZ 1 punkt za poprawność językową, ortograficzną i interpunkcyjną. (3 punkty za treść: notatka przedstawia – oparte na kluczowych dla tematu informacjach – stanowisko każdego autora względem zagadnienia określonego w temacie notatki, odtworzone na podstawie informacji zawartych w tekście, na odpowiednim poziomie uogólnienia ORAZ w notatce zestawiono stanowiska obu autorów; poprawnie wskazano np. punkty wspólne/rozbieżne albo różnorodność aspektów zagadnienia określonego w temacie notatki ujętych w tekstach obu autorów ORAZ notatka stanowi logiczną i zorganizowaną całość ORAZ 60–90 wyrazów. 1 punkt za język: poprawny zapis, dopuszczalne dwa błędy (językowe, ortograficzne lub interpunkcyjne).)",
+          "3": "Notatka syntetyzująca uzyskała (3 punkty za treść ORAZ 0 punktów za poprawność językową, ortograficzną i interpunkcyjną) LUB (2 punkty za treść ORAZ 1 punkt za poprawność językową, ortograficzną i interpunkcyjną). (0 punktów za język: trzy i więcej błędów. 2 punkty za treść: (notatka spełnia kryteria A, B i C określone dla 3 pkt, ALE nie została zachowana dozwolona liczba wyrazów) ALBO (notatka przedstawia – oparte na kluczowych dla tematu informacjach – stanowisko każdego autora względem zagadnienia określonego w temacie notatki, odtworzone na podstawie informacji zawartych w tekście, ale poziom uogólnienia jest zaburzony ORAZ w notatce zestawiono stanowiska obu autorów; poprawnie wskazano np. punkty wspólne/rozbieżne albo różnorodność aspektów zagadnienia określonego w temacie notatki ujętych w tekstach obu autorów ORAZ notatka stanowi logiczną i zorganizowaną całość ORAZ 60–90 wyrazów)).",
+          "2": "Notatka syntetyzująca uzyskała (2 punkty za treść ORAZ 0 punktów za poprawność językową, ortograficzną i interpunkcyjną) LUB (1 punkt za treść ORAZ 1 punkt za poprawność językową, ortograficzną i interpunkcyjną). (1 punkt za treść: (notatka spełnia kryteria A, B i C określone dla 2 pkt, ALE nie została zachowana dozwolona liczba wyrazów) ALBO (notatka przedstawia stanowisko każdego autora względem zagadnienia określonego w temacie notatki, odtworzone na podstawie informacji zawartych w tekście ALBO notatka przedstawia niepełne stanowisko każdego autora względem zagadnienia określonego w temacie notatki, odtworzone na podstawie informacji zawartych w tekście ORAZ stanowisk obu autorów nie zestawiono albo zestawiono je niepoprawnie; nie wskazano np. punktów wspólnych/rozbieżnych albo różnych aspektów zagadnienia określonego w temacie notatki ujętych w tekstach obu autorów ORAZ notatka stanowi logiczną i zorganizowaną całość ALBO w notatce występują usterki w spójności ORAZ 60–90 wyrazów)).",
+          "1": "Notatka syntetyzująca uzyskała 1 punkt za treść ORAZ 0 punktów za poprawność językową, ortograficzną i interpunkcyjną.",
+          "0": "Notatka syntetyzująca nie spełnia żadnego z kryteriów określonego dla 1 punktu za treść. (Jeżeli w kryterium Treść przyznano 0 pkt, wówczas nie przyznaje się punktów w kryterium Poprawność językowa, ortograficzna i interpunkcyjna)."
+        },
+        "exemplary_answers": "W obu tekstach wyrażono przekonanie, że odkrywanie kosmosu jest ważną potrzebą człowieka związaną z poszukiwaniem wiedzy o warunkach w nim panujących. Carl Sagan sądzi, że ta potrzeba wynika z naturalnej ciekawości ludzkiej. Według niego wiedza o kosmosie pomaga człowiekowi lepiej zrozumieć Ziemię. Natomiast Trepczyńska akcentuje konieczność poszukiwania planety, na której rodzaj ludzki byłby w stanie przeżyć. Zauważa, że dotychczasowe badania kosmosu nie potwierdzają istnienia innych miejsc gwarantujących ludzkości przyszłość, jednak wciąż trwają badania nad możliwością egzystencji człowieka w niesprzyjających warunkach. [80 wyrazów]\nOba teksty dotyczą eksploracji kosmosu i zagadnienia, dlaczego ludzkość się tym zajmuje. Sagan w swoim tekście wyraża pogląd, że ludzie odkrywają wszechświat z wrodzonej ciekawości i chęci poszukiwania życia poza Ziemią. Zwraca jednak uwagę na to, że koszt wypraw kosmicznych jest istotnym ograniczeniem. Autorka drugiego tekstu koncentruje się na zagadnieniu kolonizacji planet istotnym dla przetrwania ludzkości. Według niej realizację tego celu ograniczają warunki panujące na innych planetach. [67 wyrazów]",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania […] tekstów kultury, a także ich wzajemnej korespondencji.\n8. Kształcenie umiejętności świadomego odbioru […] tekstów kultury na różnych poziomach […].\nII. Kształcenie językowe.\n1. Pogłębianie funkcjonalnej wiedzy z zakresu nauki o języku.\nIII. Tworzenie wypowiedzi.\n2. Wykorzystanie kompetencji językowych […] w wypowiedziach […] pisemnych.",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Zdający:\n1) przetwarza […] informacje z tekstów […];\n3) […] odczytuje informacje i przekazy jawne i ukryte […].\nSP, kl. IV–VI\nI. Kształcenie literackie i kulturowe.\n2. Odbiór tekstów kultury. Uczeń:\n2) wyszukuje w tekście informacje wyrażone wprost i pośrednio;\n5) odróżnia zawarte w tekście informacje ważne od drugorzędnych.\nII. Kształcenie językowe.\n1. Gramatyka języka polskiego. Zdający:\n1) wykorzystuje wiedzę z dziedziny fleksji, słowotwórstwa, frazeologii i składni w […] tworzeniu własnych wypowiedzi.\n4. Ortografia i interpunkcja. Zdający:\n1) stosuje zasady ortografii i interpunkcji […].\nIII. Tworzenie wypowiedzi.\n2. Mówienie i pisanie. Zdający:\n2) buduje wypowiedź w sposób świadomy, ze znajomością jej funkcji językowej […];\n5) tworzy spójne wypowiedzi w następujących formach gatunkowych: […] notatka syntetyzująca."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2505-6",
+      "type": "P-TABLE-MATCH",
+      "number": "6",
+      "question": "Do których postaci mitologicznych nawiązują przytoczone fragmenty wierszy? Każdemu z fragmentów wierszy A–B przyporządkuj po jednej postaci mitologicznej wybranej spośród 1–4. Wpisz numer wybranej postaci mitologicznej w odpowiednie miejsce w tabeli.",
+      "options": [
+        {
+          "id": "option-id-1",
+          "label": "1",
+          "content": "Herakles"
+        },
+        {
+          "id": "option-id-2",
+          "label": "2",
+          "content": "Charon"
+        },
+        {
+          "id": "option-id-3",
+          "label": "3",
+          "content": "Syzyf"
+        },
+        {
+          "id": "option-id-4",
+          "label": "4",
+          "content": "Ikar"
+        }
+      ],
+      "table": {
+        "rows": [
+          {
+            "id": "row-id-1",
+            "label": "A.",
+            "cells": {
+              "Fragment wiersza": {
+                "type": "static",
+                "content": "Jest pracowity, silny i wytrwały,\nLwia skóra nagie barki mu pokrywa,\nLecz wobec pana swojego nieśmiały,\nŁańcuchów swoich sam kuje ogniwa\nAdam Asnyk"
+              },
+              "Postać mitologiczna": {
+                "type": "input",
+                "content": "",
+                "input_type": "text"
+              }
+            }
+          },
+          {
+            "id": "row-id-2",
+            "label": "B.",
+            "cells": {
+              "Fragment wiersza": {
+                "type": "static",
+                "content": "Był taki młody nie rozumiał że skrzydła są tylko przenośnią\ntrochę wosku piór i pogarda dla praw grawitacji\nnie mogą utrzymać ciała na wysokości wielu stóp\nZbigniew Herbert"
+              },
+              "Postać mitologiczna": {
+                "type": "input",
+                "content": "",
+                "input_type": "text"
+              }
+            }
+          }
+        ]
+      },
+      "reference_data": [],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne uzupełnienie obu wierszy tabeli.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "",
+        "correct_answers": "A1, B4"
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej […].\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […].\n8. Kształcenie umiejętności świadomego odbioru utworów literackich […] na różnych poziomach [...].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n7) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe;\n12) porównuje utwory literackie lub ich fragmenty, dostrzega kontynuacje i nawiązania w porównywanych utworach […]."
+      },
+      "user_answer": {
+        "row-id-1": "",
+        "row-id-2": ""
+      }
+    },
+    {
+      "id": "MPOP-P1-100-2505-7.1",
+      "type": "P-TEXT",
+      "number": "7.1",
+      "question": "Wyjaśnij, czym się różni postawa życiowa zalecana w przytoczonym fragmencie Rozmowy Mistrza Polikarpa ze Śmiercią od postawy życiowej zalecanej w przytoczonym fragmencie wiersza Wiosna Jana Andrzeja Morsztyna. W odpowiedzi odwołaj się do każdego z tekstów.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "Rozmowa Mistrza Polikarpa ze Śmiercią",
+          "author": "",
+          "title": "",
+          "content": "MORS DICIT1:\n[…] \nAle gdy przyjdzie dzień sądny,\nGdzie się nie skryje żadny,\nUźrzą2 mądrzy tego świata,\nIż dobra boska odpłata;\nChowali tu żywot swoj ciasno3,\nAlić jich sirca nad słońce jasno4;\nJidą5 w niebieskie radości,\nA nie w piekielne żałości.\nCo nam pomogło odzienie6\nAlbo obłudne jimienie7,\nCośmy się w niem kochali,\nA swe dusze za nie dali?\nPrzeminęło jak obłoki,\nA my jidzim przez otwłoki8.\n\nRozmowa Mistrza Polikarpa ze Śmiercią, [w:] […] poezja polska świecka, oprac. Stefan Vrtel-Wierczyński, Wrocław 1952.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Mors dicit (łac.) – Śmierć mówi."
+            },
+            {
+              "n": 2,
+              "text": "Uźrzą – ujrzą."
+            },
+            {
+              "n": 3,
+              "text": "Chowali tu żywot swoj ciasno – prowadzili tu (tj. na ziemi) surowy tryb życia."
+            },
+            {
+              "n": 4,
+              "text": "Alić jich sirca nad słońce jasno – i oto ich serca są jaśniejsze od słońca."
+            },
+            {
+              "n": 5,
+              "text": "Jidą – idą."
+            },
+            {
+              "n": 6,
+              "text": "Odzienie – tu: drogocenne ubranie."
+            },
+            {
+              "n": 7,
+              "text": "Obłudne jimienie – zwodnicze dobra materialne."
+            },
+            {
+              "n": 8,
+              "text": "A my jidzim przez otwłoki – a my odejdziemy bez zwłoki."
+            }
+          ]
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "Wiosna",
+          "author": "Jan Andrzej Morsztyn",
+          "title": "",
+          "content": "Spieszmy się, spieszmy, niż nas czas nadgoni\nI śmierć, której się dobra myśl nie schroni:\nTa niedyskretka tejże pchnięciem nogi\nOtwiera chaty i królewskie progi.\n\nŻyj w skok1, bo-ć zamknął do niezmiernej wrota\nNadzieje2 krótki kres dany żywota3;\nZarwij4, co możesz, dobrych dni pod miarą5,\nWnet będziesz bajką, nieboszczykiem, marą6.\n\nJan Andrzej Morsztyn, Wiosna, [w:] tegoż, Utwory zebrane, Warszawa 1971.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "W skok – szybko."
+            },
+            {
+              "n": 2,
+              "text": "Do niezmiernej […] nadzieje – do długotrwałej nadziei."
+            },
+            {
+              "n": 3,
+              "text": "Krótki kres dany żywota – szybki koniec życia."
+            },
+            {
+              "n": 4,
+              "text": "Zarwij – urwij, tj. skorzystaj."
+            },
+            {
+              "n": 5,
+              "text": "Pod miarą – z tych, które ci wymierzono."
+            },
+            {
+              "n": 6,
+              "text": "Mara – widzenie senne; duch zmarłego."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne wyjaśnienie różnicy między postawą życiową zalecaną w tekście 1. a postawą życiową zalecaną w tekście 2.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "• Postawa we fragmencie Rozmowy Mistrza Polikarpa ze Śmiercią to niezwracanie uwagi na dobra doczesne, ponieważ i tak przeminą, natomiast Jan Andrzej Morsztyn w wierszu Wiosna napisał, aby czerpać z życia pełnymi garściami, dopóki jest na to czas.\n• Wiersz Wiosna nawołuje do cieszenia się życiem, dopóki je mamy, do korzystania z dóbr ziemskich. W Rozmowie Mistrza Polikarpa ze Śmiercią natomiast zaleca się żyć skromnie, aby zapewnić sobie życie w raju.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej […].\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […].\n8. Kształcenie umiejętności świadomego odbioru utworów literackich […] na różnych poziomach […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n7) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe;\n8) rozpoznaje tematykę i problematykę poznanych tekstów […];\n12) porównuje utwory literackie lub ich fragmenty, […] określa cechy wspólne i różne."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2505-7.2",
+      "type": "P-TEXT",
+      "number": "7.2",
+      "question": "Podaj nazwę epoki, w której powstała Rozmowa Mistrza Polikarpa ze Śmiercią, a następnie wykaż zgodność postawy zalecanej w przytoczonym fragmencie tego utworu ze światopoglądem rozpoznanej epoki.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "",
+          "title": "Rozmowa Mistrza Polikarpa ze Śmiercią",
+          "content": "MORS DICIT1:\n[…] \nAle gdy przyjdzie dzień sądny,\nGdzie się nie skryje żadny,\nUźrzą2 mądrzy tego świata,\nIż dobra boska odpłata;\nChowali tu żywot swoj ciasno3,\nAlić jich sirca nad słońce jasno4;\nJidą5 w niebieskie radości,\nA nie w piekielne żałości.\n\nCo nam pomogło odzienie6\nAlbo obłudne jimienie7,\nCośmy się w niem kochali,\nA swe dusze za nie dali?\nPrzeminęło jak obłoki,\nA my jidzim przez otwłoki8.\n\nRozmowa Mistrza Polikarpa ze Śmiercią, [w:] […] poezja polska świecka, oprac. Stefan Vrtel-Wierczyński, Wrocław 1952.",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Mors dicit (łac.) – Śmierć mówi."
+            },
+            {
+              "n": 2,
+              "text": "Uźrzą – ujrzą."
+            },
+            {
+              "n": 3,
+              "text": "Chowali tu żywot swoj ciasno – prowadzili tu (tj. na ziemi) surowy tryb życia."
+            },
+            {
+              "n": 4,
+              "text": "Alić jich sirca nad słońce jasno – i oto ich serca są jaśniejsze od słońca."
+            },
+            {
+              "n": 5,
+              "text": "Jidą – idą."
+            },
+            {
+              "n": 6,
+              "text": "Odzienie – tu: drogocenne ubranie."
+            },
+            {
+              "n": 7,
+              "text": "Obłudne jimienie – zwodnicze dobra materialne."
+            },
+            {
+              "n": 8,
+              "text": "A my jidzim przez otwłoki – a my odejdziemy bez zwłoki."
+            }
+          ]
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "",
+          "author": "Jan Andrzej Morsztyn",
+          "title": "Wiosna",
+          "content": "Spieszmy się, spieszmy, niż nas czas nadgoni\nI śmierć, której się dobra myśl nie schroni:\nTa niedyskretka tejże pchnięciem nogi\nOtwiera chaty i królewskie progi.\n\nŻyj w skok1, bo-ć zamknął do niezmiernej wrota\nNadzieje2 krótki kres dany żywota3;\nZarwij4, co możesz, dobrych dni pod miarą5,\nWnet będziesz bajką, nieboszczykiem, marą6.\n\nJan Andrzej Morsztyn, Wiosna, [w:] tegoż, Utwory zebrane, Warszawa 1971.",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "W skok – szybko."
+            },
+            {
+              "n": 2,
+              "text": "Do niezmiernej […] nadzieje – do długotrwałej nadziei."
+            },
+            {
+              "n": 3,
+              "text": "Krótki kres dany żywota – szybki koniec życia."
+            },
+            {
+              "n": 4,
+              "text": "Zarwij – urwij, tj. skorzystaj."
+            },
+            {
+              "n": 5,
+              "text": "Pod miarą – z tych, które ci wymierzono."
+            },
+            {
+              "n": 6,
+              "text": "Mara – widzenie senne; duch zmarłego."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne podanie nazwy epoki oraz trafne wykazanie zgodności postawy zalecanej w tekście 1. ze światopoglądem tej epoki.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "Nazwa epoki: średniowiecze\nZgodność postawy ze światopoglądem epoki, np.:\n• Postawa zalecana w utworze jest zgodna ze światopoglądem średniowiecza, ponieważ podstawą światopoglądu tej epoki było przekonanie, że człowiek powinien pamiętać o czekającej go śmierci.\n• Średniowiecze zakładało całkowite oddanie się Bogu. Popularna była asceza polegająca na wyrzeczeniu się wszelkich dóbr i wygód życia, aby oddać się modlitwie i pielęgnować miłość do Boga. Taka postawa zaprezentowana jest w wypowiedzi Śmierci. Mówi ona o prowadzeniu surowego trybu życia, aby dostąpić zbawienia.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej […].\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […].\n8. Kształcenie umiejętności świadomego odbioru utworów literackich […] na różnych poziomach […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n1) […] sytuuje utwory literackie w poszczególnych okresach: […] średniowiecze […];\n7) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe;\n8) rozpoznaje tematykę i problematykę poznanych tekstów oraz ich związek z programami epoki literackiej, zjawiskami społecznymi, historycznymi, egzystencjalnymi i estetycznymi."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "Nazwa epoki:",
+          "answer": ""
+        },
+        {
+          "input-field-id": "input-field-id-2",
+          "input-field-prefix": "Zgodność postawy ze światopoglądem epoki:",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2505-8.1",
+      "type": "P-TEXT",
+      "number": "8.1",
+      "question": "Podaj argumenty, którymi podmiot liryczny w przytoczonym fragmencie Pieśni 14 Jana Kochanowskiego przekonuje rządzących, że ich obowiązkiem jest zawsze mieć na względzie dobro społeczeństwa.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "Pieśń 14 (Księgi wtóre)",
+          "author": "Jan Kochanowski",
+          "title": "",
+          "content": "Wy, którzy Pospolitą Rzeczą1 władacie,\nA ludzką sprawiedliwość2 w ręku trzymacie,\nWy, mówię, którym ludzi paść poruczono3\nI zwierzchności nad stadem Bożym zwierzono4,\nMiejcie to przed oczyma zawżdy5 swojemi,\nŻeście miejsce zasiedli Boże na ziemi,\nZ którego macie nie tak swe własne rzeczy6\nJako wszytek ludzki mieć rodzaj na pieczy7. […]\nWięc ja podobno8 z mniejszym niebezpieczeństwem\nGrzeszę: bo sam sie tracę swym wszeteczeństwem9.\nPrzełożonych występki miasta zgubiły\nI szerokie do gruntu carstwa10 zniszczyły.",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Pospolita Rzecz – państwo."
+            },
+            {
+              "n": 2,
+              "text": "Ludzka sprawiedliwość – tu: sprawiedliwość wobec ludzi."
+            },
+            {
+              "n": 3,
+              "text": "Poruczyć – powierzyć wykonanie czegoś komuś zaufanemu."
+            },
+            {
+              "n": 4,
+              "text": "Zwierzchności […] zwierzono – przekazano władzę."
+            },
+            {
+              "n": 5,
+              "text": "Zawżdy – zawsze."
+            },
+            {
+              "n": 6,
+              "text": "Rzeczy – sprawy."
+            },
+            {
+              "n": 7,
+              "text": "Mieć […] na pieczy – troszczyć się."
+            },
+            {
+              "n": 8,
+              "text": "Podobno – zapewne."
+            },
+            {
+              "n": 9,
+              "text": "Wszeteczeństwo – nieprzyzwoite, gorszące postępowanie."
+            },
+            {
+              "n": 10,
+              "text": "Carstwa – państwa."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne podanie dwóch argumentów.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "Argumenty, np.:\n• Rządzący zastępują na ziemi Boga, a zatem tak jak Bóg troszczy się o ludzkość, tak oni powinni troszczyć się o dobro wspólnoty.\n• Błędy rządzących prowadzą do upadku państwa.\n• Rządzącym powierzono dbałość o sprawiedliwość wobec ludzi.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […].\n8. Kształcenie umiejętności świadomego odbioru utworów literackich […] na różnych poziomach [...].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający: 8) rozpoznaje tematykę i problematykę poznanych tekstów […]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "Argument 1.:",
+          "answer": ""
+        },
+        {
+          "input-field-id": "input-field-id-2",
+          "input-field-prefix": "Argument 2.:",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2505-8.2",
+      "type": "P-TABLE-TEXT",
+      "number": "8.2",
+      "question": "Uzupełnij tabelę. Z przytoczonego fragmentu Pieśni 14 Jana Kochanowskiego wypisz przykład epitetu oraz podaj nazwę środka retorycznego, którego przykład zamieszczono w tabeli.",
+      "table": {
+        "rows": [
+          {
+            "id": "row-id-1",
+            "cells": {
+              "Nazwa środka retorycznego": "epitet",
+              "Przykład": ""
+            }
+          },
+          {
+            "id": "row-id-2",
+            "cells": {
+              "Nazwa środka retorycznego": "",
+              "Przykład": "Wy, mówię, którym ludzi paść poruczono"
+            }
+          }
+        ]
+      },
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Jan Kochanowski",
+          "title": "Pieśń 14 (Księgi wtóre)",
+          "content": "Wy, którzy Pospolitą Rzeczą1 władacie,\nA ludzką sprawiedliwość2 w ręku trzymacie,\nWy, mówię, którym ludzi paść poruczono3\nI zwierzchności nad stadem Bożym zwierzono4,\nMiejcie to przed oczyma zawżdy5 swojemi,\nŻeście miejsce zasiedli Boże na ziemi,\nZ którego macie nie tak swe własne rzeczy6\nJako wszytek ludzki mieć rodzaj na pieczy7. […]\nWięc ja podobno8 z mniejszym niebezpieczeństwem\nGrzeszę: bo sam sie tracę swym wszeteczeństwem9.\nPrzełożonych występki miasta zgubiły\nI szerokie do gruntu carstwa10 zniszczyły.",
+          "path": "",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Pospolita Rzecz – państwo."
+            },
+            {
+              "n": 2,
+              "text": "Ludzka sprawiedliwość – tu: sprawiedliwość wobec ludzi."
+            },
+            {
+              "n": 3,
+              "text": "Poruczyć – powierzyć wykonanie czegoś komuś zaufanemu."
+            },
+            {
+              "n": 4,
+              "text": "Zwierzchności […] zwierzono – przekazano władzę."
+            },
+            {
+              "n": 5,
+              "text": "Zawżdy – zawsze."
+            },
+            {
+              "n": 6,
+              "text": "Rzeczy – sprawy."
+            },
+            {
+              "n": 7,
+              "text": "Mieć […] na pieczy – troszczyć się."
+            },
+            {
+              "n": 8,
+              "text": "Podobno – zapewne."
+            },
+            {
+              "n": 9,
+              "text": "Wszeteczeństwo – nieprzyzwoite, gorszące postępowanie."
+            },
+            {
+              "n": 10,
+              "text": "Carstwa – państwa."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne uzupełnienie dwóch wierszy tabeli.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "epitet:\n• ludzką sprawiedliwość\n• stadem Bożym\n• miejsce Boże\n• przełożonych występki\n(Uwaga. Wystarczy podanie wyrazu określającego jako przykładu epitetu.)\n\nNazwa środka retorycznego dla 'Wy, mówię, którym ludzi paść poruczono':\n• apostrofa / zwrot do adresata\n• przenośnia/metafora\n• wtrącenie\n• inwersja",
+        "correct_answers": "epitet: ludzką sprawiedliwość\nNazwa środka retorycznego: apostrofa / zwrot do adresata"
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury [...].\n8. Kształcenie umiejętności świadomego odbioru utworów literackich [...] na różnych poziomach [...].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n4) rozpoznaje w tekście literackim środki wyrazu artystycznego [...]."
+      },
+      "user_answer": {
+        "row-id-1": "",
+        "row-id-2": ""
+      }
+    },
+    {
+      "id": "MPOP-P1-100-2505-9",
+      "type": "P-TEXT",
+      "number": "9",
+      "question": "Rozstrzygnij, czy obraz matki w przytoczonym fragmencie Dziadów cz. III Adama Mickiewicza jest podobny do obrazu matki w przytoczonym fragmencie wiersza Stabat Mater Józefa Wittlina. W uzasadnieniu odpowiedzi sformułuj dwa argumenty – każdy w odniesieniu do obu tekstów.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Adam Mickiewicz",
+          "title": "Dziady cz. III",
+          "content": "P. ROLLISONOWA\nPanie! litość – ja wdowa! Panie Senatorze!\nSłyszałam, że zabili – czyż można, mój Boże!\nMoje dziecko! – Ksiądz mówi, że on jeszcze żyje;\nAle go biją, Panie! ktoż dzieci tak bije! –\nJego zbito – zlituj się – po katowsku zbito.\n(płacze)\n[…] \nSiadłam tam na rogu,\nPod murem – mury grube – przyłożyłam ucho –\nTam siedziałam od rana. – W północ, w mieście głucho,\nSłucham – w północ, tam z muru – nie, nie zwodzę siebie:\nSłyszałam go, słyszałam, jak Pan Bóg na niebie,\nJa głos jego słyszałam uszami własnemi –\nCichy, jakby spod ziemi, jak ze środka ziemi.\nI mój słuch wszedł w głąb muru, daleko, głęboko;\nAch, dalej poszedł niźli najbystrzejsze oko.\nSłyszałam, męczono go –\n[…] \nNiema owca pozna głos swojego jagnięcia\nŚród najliczniejszej trzody – ach, to był głos taki! –\nAch, dobry Panie, żebyś słyszał raz głos taki,\nTy byś już nigdy w życiu spokojnie nie zasnął!\n\nAdam Mickiewicz, Dziady drezdeńskie (część III), Wrocław 2012."
+        },
+        {
+          "id": "text-2",
+          "type": "text",
+          "name": "",
+          "author": "Józef Wittlin",
+          "title": "Stabat Mater",
+          "content": "Stała matka boleściwa – na rynku,\nPrzy swym martwym powieszonym synku.\n\nStała w świata przeraźliwej pustce\nPolska matka w służącowskiej chustce.\n\nNie płakała i nic nie mówiła,\nZimne oczy w zimne zwłoki wbiła.\n\nWisiał martwy, z wszystkiego wyzuty,\nNiemcy przedtem zabrali mu buty.\n\nBędą w butach jej syna chodzili\nPo tej ziemi, którą pohańbili.\n\nPo tej ziemi, która umęczona\nStoi – patrzy – i milczy – jak ona.\n\n[1942]\n\nJózef Wittlin, Stabat Mater, [w:] tegoż, Poezje, Warszawa 1978.",
+          "footnotes": [
+            {
+              "n": 1,
+              "text": "Stabat Mater (łac.) – Stała Matka."
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "max_points": 2,
+        "scoring_criteria": {
+          "2": "rozstrzygnięcie i sformułowanie dwóch poprawnych argumentów w odniesieniu do obu tekstów.",
+          "1": "rozstrzygnięcie i sformułowanie jednego poprawnego argumentu w odniesieniu do obu tekstów.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "Przykładowe odpowiedzi ocenione na 2 pkt\n1) Rozstrzygnięcie: Jest podobny.\nArgumenty, np.:\n• W obu fragmentach przedstawiona jest matka cierpiąca. Rollisonowa cierpi, ponieważ jej syn jest męczony, natomiast matka z wiersza Wittlina cierpi z powodu śmierci syna – w wierszu określa się ją jako „boleściwą”.\n• W obu tekstach jest przedstawiona matka kochająca, o czym świadczy to, że obie matki starają się być jak najbliżej synów. Rollisonowa nasłuchuje pod murami, a matka z wiersza Wittlina stoi przy zwłokach syna.\n\n2) Rozstrzygnięcie: Nie jest podobny.\nArgumenty, np.:\n• Rollisonowa bardzo emocjonalnie opowiada o sytuacji katowanego syna oraz o swoim cierpieniu, zaś bohaterka wiersza Wittlina jest oniemiała z rozpaczy, nie okazuje emocji.\n• Matka z Dziadów cz. III ma nadzieję, że jej syn żyje – ta z utworu Wittlina nie ma wątpliwości co do śmierci syna, a więc straciła nadzieję.\n\n3) Rozstrzygnięcie: Częściowo jest podobny.\nArgument za, np.:\n• Obie matki są ukazane jako cierpiące. Rollisonowa boleje nad losem syna, a matka z wiersza Stabat Mater cierpi z powodu straty dziecka.\nArgument przeciw, np.:\n• Rollisonowa prezentuje czynną postawę – błaga Senatora o litość. Z kolei matka w wierszu Wittlina prezentuje postawę bierną – stoi zapatrzona w zwłoki syna.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury [...].\n8) Kształcenie umiejętności świadomego odbioru utworów literackich [...] na różnych poziomach [...].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n12) porównuje utwory literackie lub ich fragmenty, [...] określa cechy wspólne i różne;\n13) [...] wskazuje w tekście miejsca, które mogą stanowić argumenty na poparcie propozycji interpretacyjnej."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "resolution",
+          "input-field-prefix": "Rozstrzygnięcie:",
+          "answer": ""
+        },
+        {
+          "input-field-id": "argument-1",
+          "input-field-prefix": "Argument 1.:",
+          "answer": ""
+        },
+        {
+          "input-field-id": "argument-2",
+          "input-field-prefix": "Argument 2.:",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2505-10.1",
+      "type": "P-CHOICE",
+      "number": "10.1",
+      "question": "Spośród podanych postaci (A–D) z Wesela Stanisława Wyspiańskiego wybierz i zaznacz tę, której ukazuje się Rycerz.",
+      "options": [
+        {
+          "id": "option-id-A",
+          "label": "A",
+          "content": "Poeta."
+        },
+        {
+          "id": "option-id-B",
+          "label": "B",
+          "content": "Dziad."
+        },
+        {
+          "id": "option-id-C",
+          "label": "C",
+          "content": "Gospodarz."
+        },
+        {
+          "id": "option-id-D",
+          "label": "D",
+          "content": "Dziennikarz."
+        }
+      ],
+      "reference_data": [],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawna odpowiedź.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "",
+        "correct_answers": "A"
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n7) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe."
+      },
+      "user_answer": {
+        "selected_option_id": ""
+      }
+    },
+    {
+      "id": "MPOP-P1-100-2505-10.2",
+      "type": "P-TEXT",
+      "number": "10.2",
+      "question": "Wyjaśnij, czego symbolem jest Rycerz w Weselu Stanisława Wyspiańskiego.",
+      "reference_data": [],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne wyjaśnienie, czego symbolem jest Rycerz w Weselu.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "Rycerz jest symbolem mocy, tzn. odwagi i wiary w zwycięstwo. \nRycerz jest symbolem siły, potęgi i męstwa. Ma natchnąć Poetę do odrzucenia dekadenckich postaw oraz odpędzić poczucie słabości. \nRycerz symbolizuje czasy świetności Polski, gdyż brał udział w słynnej bitwie pod Grunwaldem.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej […].\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […].\n8. Kształcenie umiejętności świadomego odbioru utworów literackich […] na różnych poziomach: dosłownym, metaforycznym, symbolicznym […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n5) interpretuje treści […] symboliczne utworu literackiego;\n7) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe;\n8) rozpoznaje tematykę i problematykę poznanych tekstów […]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2505-11",
+      "type": "P-TEXT",
+      "number": "11",
+      "question": "W kontekście przytoczonego fragmentu wiersza Ten czas Krzysztofa Kamila Baczyńskiego wyjaśnij sens sformułowania przejdziem w mit.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "Ten czas",
+          "author": "Krzysztof Kamil Baczyński",
+          "title": "Wybór poezji",
+          "content": "Miła moja, kochana. Taki to mroczny czas.\nCiemna noc, tak już dawno ciemna noc, a bez gwiazd,\npo której drzew upiory wydarte ziemi – drżą.\nSmutne nieba nad nami jak krzyż złamanych rąk.\nGłowy dudnią po ziemi, noce schodzą do dnia,\ndni do nocy odchodzą, nie łodzie – trumny rodzą,\nw świat grobami odchodzą, odchodzi czas we snach.\n\nA serca – tak ich mało, a usta – tyle ich.\nMy sami – tacy mali, krok jeszcze – przejdziem w mit.\nMy sami – takie chmurki u skrzyżowania dróg,\ngdzie armaty stuleci i krzyż, a na nim Bóg.\n\n10 września 1942 r.\n\nKrzysztof Kamil Baczyński, Ten czas, [w:] tegoż, Wybór poezji, Wrocław 1989.",
+          "path": ""
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne wyjaśnienie sensu sformułowania.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "Sformułowanie przejdziem w mit oznacza, że osoba mówiąca w wierszu ma świadomość tego, że jest uczestnikiem ważnych zdarzeń o znaczeniu historycznym, które nigdy nie zostaną zapomniane.\nTen fragment wiersza można interpretować jako wyraz bezradności człowieka wobec okrucieństwa dziejów. Walczący przestaną istnieć, zginą, staną się fantazją/iluzją/opowieścią.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej […].\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […].\n8. Kształcenie umiejętności świadomego odbioru utworów literackich […] na różnych poziomach: dosłownym, metaforycznym, symbolicznym […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n5) interpretuje treści […] symboliczne utworu literackiego;\n8) rozpoznaje tematykę i problematykę poznanych tekstów […]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2505-12",
+      "type": "P-TEXT",
+      "number": "12",
+      "question": "Na okładce książki za pomocą różnych elementów graficznych przedstawiono interpretację powieści George’a Orwella. Wybierz dwa elementy graficzne i wyjaśnij ich sens w kontekście problematyki utworu Rok 1984.",
+      "reference_data": [
+        {
+          "id": "image-1",
+          "type": "image",
+          "name": "Okładka książki Rok 1984 George’a Orwella",
+          "author": "",
+          "title": "Rok 1984",
+          "content": "okladka_ksiazki_rok_1984.jpg",
+          "path": "12_okladka_ksiazki_rok_1984.jpg"
+        }
+      ],
+      "scoring": {
+        "max_points": 2,
+        "scoring_criteria": {
+          "2": "poprawne wyjaśnienie sensu dwóch elementów graficznych w kontekście problematyki powieści Rok 1984.",
+          "1": "poprawne wyjaśnienie sensu jednego elementu graficznego w kontekście problematyki powieści Rok 1984.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "Oko przedstawione na plakacie to oko Wielkiego Brata, który cały czas inwigilował mieszkańców, nie mogli więc czuć się wolni, nie mogli uciec od terroru.\nKolor czerwony może być symbolem zła (czewień to kolor komunizmu), a powieść Rok 1984 to projekcja życia w reżimie totalitarnym.\nSkontrastowanie ogromnego oka z małą postacią człowieka może symbolizować Smitha uwięzionego w Oceanii i bezsilnego – tak jak w powieści był nieustannie kontrolowany przez system totalitarny, przed którym nie udało mu się ani ukryć, ani którego nie udało mu się pokonać.\nDrut kolczasty okalający człowieka – symbol ograniczenia wolności jednostki w państwie totalitarnym.\nCzłowiek pozbawiony twarzy, bez konkretnych cech indywidualnych, symbolizuje mieszkańców Oceanii, którzy nie mają prawa głosu, muszą podporządkować się Partii.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury […] światowej oraz umiejętność mówienia o nich z wykorzystaniem potrzebnej terminologii.\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury oraz innych tekstów kultury, a także ich wzajemnej korespondencji.\n8. Kształcenie umiejętności świadomego odbioru utworów literackich i tekstów kultury na różnych poziomach […].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n7) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe;\n8) rozpoznaje tematykę i problematykę poznanych tekstów […].\n2. Odbiór tekstów kultury. Zdający:\n5) odczytuje pozaliterackie teksty kultury, stosując kod właściwy w danej dziedzinie sztuki.\nSP, kl. VII–VIII\n2. Odbiór tekstów kultury. Uczeń:\n3) interpretuje dzieła sztuki ([…] grafika […])."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2505-13",
+      "type": "P-TEXT",
+      "number": "13",
+      "question": "Wyjaśnij, na czym polega groteskowy charakter sytuacji przedstawionej w przytoczonym fragmencie Tanga Sławomira Mrożka. Odpowiedź zilustruj przykładem z tego fragmentu.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "",
+          "author": "Sławomir Mrożek",
+          "title": "Tango",
+          "content": "AKT III\n[…] \nEUGENIA:\nPomóż mi. (Eleonora machinalnie podaje jej rękę. Eugenia \nwchodzi na katafalk)\nELEONORA:\nNiechże mama nie dziwaczy, przecież dzisiaj dzień ślubu. \nChce mama wszystko zepsuć przez jakąś śmierć?\nSTOMIL:\nJaka śmierć, co za śmierć?! Nigdy nie brałem tego \npod uwagę...\nARTUR (do siebie):\nŚmierć? Dobra myśl...\nEUGENIUSZ:\nTo szaleństwo, Eugenio, bądź rozsądna, kto to \nwidział umierać?!\nALA:\nBabciu, przecież to nienormalne! \n\nEUGENIA:\nNie rozumiem was. Jesteście tacy inteligentni, a jak \ntylko człowiek chce zrobić coś tak zwyczajnego jak \nzgon, to wszyscy się dziwią. Co za ludzie! (kładzie się \nna wznak, splata ręce na piersi)\nELEONORA: \nWidzicie? Zróbcie coś... Może ona naprawdę... \nEUGENIUSZ:\nGeńka, dosyć tych ekstrawagancji! Co za umieranie!\nTego nigdy nie było w naszej rodzinie! […] \nARTUR:\nŚmierć... wspaniała forma. \nSTOMIL:\nTylko trochę nieżyciowa. […] \nARTUR:\nDziękuję, babciu, ja ten pomysł wykorzystam. \nSTOMIL (chowając lusterko):\nE, głupstwo. Najważniejsze, żeby nie nosić \nkrępującej odzieży. \n\nEugenia umiera. \nELEONORA:\nMamo, spróbuj jeszcze raz! \nARTUR:\nUmarła! A jednak to dziwne. Była taka niepoważna... \n\nSławomir Mrożek, Tango, Warszawa 2023.",
+          "path": ""
+        }
+      ],
+      "scoring": {
+        "max_points": 1,
+        "scoring_criteria": {
+          "1": "poprawne wyjaśnienie, na czym polega groteskowy charakter sytuacji przedstawionej w przytoczonym fragmencie Tanga ORAZ zilustrowanie odpowiedzi trafnym przykładem z tego fragmentu.",
+          "0": "odpowiedź niepoprawna lub niepełna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "• \nGroteskowy charakter sceny polega na nieadekwatności zachowania bohaterów do \nsytuacji. Babcia zapowiada swoją śmierć, wchodzi na katafalk i umiera, a domownicy \nw podniosłej sytuacji zarzucają jej niestosowność zachowania. \n• \nGroteskowość polega na absurdalności zachowania babci i domowników. Babcia \nogłasza, że umiera i rzeczywiście to robi, chociaż śmierć nie przychodzi na zawołanie. \nZ kolei domownicy próbują wpłynąć na babcię, by nie umierała – tak jakby człowiek mógł \nswobodnie przerwać ten proces. \n• \nGroteskowy charakter polega na tym, że wypowiedzi Artura nie pasują do poważnej \ni smutnej sytuacji, jaką jest śmierć bliskiej osoby. Artur używa pozytywnych określeń \nw odniesieniu do śmierci babci, np. „dobra myśl”.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej […] oraz umiejętność mówienia o nich z wykorzystaniem potrzebnej terminologii. \n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […].\n8. Kształcenie umiejętności świadomego odbioru utworów literackich […] na różnych poziomach [...].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n6) rozpoznaje w tekstach literackich: […] groteskę […];\n7) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe;\n8) rozpoznaje tematykę i problematykę poznanych tekstów […]."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "input-field-id-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    },
+    {
+      "id": "MPOP-P1-100-2505-14",
+      "type": "P-TEXT",
+      "number": "14",
+      "question": "Czy postawa starego Prometeusza przedstawiona w utworze Zbigniewa Herberta jest zgodna z mitologicznym pierwowzorem? W uzasadnieniu odpowiedzi odwołaj się do przytoczonego utworu oraz do mitu o Prometeuszu z Mitologii Jana Parandowskiego.",
+      "reference_data": [
+        {
+          "id": "text-1",
+          "type": "text",
+          "name": "Stary Prometeusz",
+          "author": "Zbigniew Herbert",
+          "title": "Wybór poezji",
+          "content": "Pisze pamiętniki. Próbuje w nich wyjaśnić miejsce bohatera w systemie konieczności,\npogodzić sprzeczne ze sobą pojęcie bytu i losu.\nOgień buzuje wesoło na kominku, w kuchni krząta się żona – egzaltowana dziewczyna,\nktóra nie mogła urodzić mu syna, ale pociesza się, że i tak przejdzie do historii.\nPrzygotowanie do kolacji, na którą ma przyjść miejscowy proboszcz i aptekarz, najbliższy\nteraz przyjaciel Prometeusza.\nOgień buzuje na kominku. Na ścianie wypchany orzeł i list dziękczynny tyrana Kaukazu,\nktóremu dzięki wynalazkowi Prometeusza udało się spalić zbuntowane miasto.\nPrometeusz śmieje się cicho. Jest to teraz jedyny sposób wyrażenia niezgody na świat.\n\n[Pierwodruk 1973]",
+          "path": ""
+        }
+      ],
+      "scoring": {
+        "max_points": 2,
+        "scoring_criteria": {
+          "2": "rozstrzygnięcie ORAZ trafne uzasadnienie w odniesieniu do utworu Stary Prometeusz i mitu o Prometeuszu.",
+          "1": "poprawne określenie postawy starego Prometeusza z utworu Zbigniewa Herberta.",
+          "0": "odpowiedź niepoprawna albo brak odpowiedzi."
+        },
+        "exemplary_answers": "1) Jest zgodna.\nUzasadnienie, np.:\n•\nTak, ponieważ w micie Prometeusz, aby wyrazić niezgodę na świat i na cierpienie, które\nprzeżywają jego ukochani ludzie, wykrada z Olimpu ogień. Prometeusz z wiersza\nHerberta również wykazuje niezgodę na świat, którą ze względu na swój wiek wyraża\ntylko poprzez cichy śmiech.\n\n2) Nie jest zgodna.\nUzasadnienie, np.:\n•\nBohater Herberta to zwykły bezsilny człowiek, który nie walczy. Natomiast mityczny\nPrometeusz buntował się, przeciwstawiał boskim rozkazom.\n•\nMitologiczny Prometeusz sprzeciwia się Zeusowi i jest gotowy na poświęcenie oraz na\ncierpienie w imię idei, a Prometeusz Herberta jest konformistą, przyjmuje bierną postawę,\nprowadzi spokojne życie – jego postawa nie jest zatem zgodna z pierwowzorem.",
+        "correct_answers": ""
+      },
+      "exam_requirements": {
+        "general_requirement": "I. Kształcenie literackie i kulturowe.\n5. Znajomość wybranych utworów z literatury polskiej [...].\n7. Kształcenie umiejętności czytania, analizowania i interpretowania literatury […].\n8. Kształcenie umiejętności świadomego odbioru utworów literackich […] na różnych poziomach [...].",
+        "specific_requirement": "I. Kształcenie literackie i kulturowe.\n1. Czytanie utworów literackich. Zdający:\n7) wykazuje się znajomością i zrozumieniem treści utworów wskazanych w podstawie programowej jako lektury obowiązkowe;\n8) rozpoznaje tematykę i problematykę poznanych tekstów […];\n12) porównuje utwory literackie lub ich fragmenty, dostrzega kontynuacje i nawiązania w porównywanych utworach, określa cechy wspólne i różne."
+      },
+      "user_answer": [
+        {
+          "input-field-id": "answer-1",
+          "input-field-prefix": "",
+          "answer": ""
+        }
+      ]
+    }
+  ]
+}
