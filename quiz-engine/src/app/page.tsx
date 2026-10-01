@@ -8,7 +8,7 @@ const MATURA_SUBJECTS = [
   {
     slug: "polish",
     name: "Język Polski",
-    description: "Matura z języka polskiego — poziom podstawowy.",
+    description: "Matura z języka polskiego — arkusze CKE, poziom podstawowy i rozszerzony.",
     icon: "📖",
   },
   {

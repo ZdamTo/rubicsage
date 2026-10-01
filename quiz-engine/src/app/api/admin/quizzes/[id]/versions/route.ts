@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { createServiceRoleClient } from "@/lib/supabase/server";
 import { requireSuperAdmin, writeAuditLog } from "@/lib/auth";
 import { Quiz } from "@/lib/quiz/schemas";
+import { CkeExamContentSchema, formatZodIssues } from "@/lib/cke/schema";
+import { quizRowFor } from "@/lib/cke/import";
+import type { CkeExamContent } from "@/lib/cke/types";
+import type { Json } from "@/lib/supabase/types";
 
 // POST /api/admin/quizzes/[id]/versions – create a new version
 export async function POST(
@@ -11,16 +15,38 @@ export async function POST(
   const admin = await requireSuperAdmin();
   const body = await req.json();
 
-  // Validate quiz content against the canonical Quiz schema
-  const contentParsed = Quiz.safeParse(body.content);
-  if (!contentParsed.success) {
-    return NextResponse.json(
-      { error: "Quiz content validation failed", details: contentParsed.error.flatten() },
-      { status: 400 }
-    );
-  }
-
   const service = createServiceRoleClient();
+  const { data: quizRow } = await service.from("quizzes").select("format, exam_code").eq("id", params.id).single();
+  if (!quizRow) return NextResponse.json({ error: "Quiz not found" }, { status: 404 });
+
+  // CKE exam sheets (Język polski) have their own content format. Normally they
+  // arrive through "Import arkuszy CKE"; this path is for hand edits.
+  let validContent: unknown;
+  if (quizRow.format === "cke_exam") {
+    const ckeParsed = CkeExamContentSchema.safeParse(body.content);
+    if (!ckeParsed.success) {
+      return NextResponse.json(
+        { error: "CKE exam content validation failed", details: formatZodIssues(ckeParsed.error) },
+        { status: 400 }
+      );
+    }
+    if (quizRow.exam_code && ckeParsed.data.id !== quizRow.exam_code) {
+      return NextResponse.json({ error: `content.id must stay ${quizRow.exam_code}` }, { status: 400 });
+    }
+    validContent = ckeParsed.data;
+    const row = quizRowFor(ckeParsed.data as unknown as CkeExamContent);
+    await service.from("quizzes").update({ meta: row.meta as unknown as Json }).eq("id", params.id);
+  } else {
+    // Validate quiz content against the canonical Quiz schema
+    const contentParsed = Quiz.safeParse(body.content);
+    if (!contentParsed.success) {
+      return NextResponse.json(
+        { error: "Quiz content validation failed", details: contentParsed.error.flatten() },
+        { status: 400 }
+      );
+    }
+    validContent = contentParsed.data;
+  }
 
   // Determine next version number
   const { data: versions } = await service
@@ -44,7 +70,7 @@ export async function POST(
     .insert({
       quiz_id: params.id,
       version: nextVersion,
-      content: JSON.parse(JSON.stringify(contentParsed.data)),
+      content: JSON.parse(JSON.stringify(validContent)),
       change_note: body.change_note ?? null,
       is_active: true,
     })
