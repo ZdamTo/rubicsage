@@ -2,6 +2,7 @@ import { createServerSupabaseClient } from "@/lib/supabase/server";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import CkeExamPicker from "@/components/cke/CkeExamPicker";
+import { ThemedCard, SUBJECT_ACCENT } from "@/components/ThemedCard";
 
 export const dynamic = "force-dynamic";
 
@@ -47,10 +48,12 @@ export default async function SubjectPage({
 
   return (
     <div>
-      <div className="mb-8">
-        <div className="text-4xl mb-2">{meta.icon}</div>
-        <h1 className="text-2xl font-bold text-gray-900">{meta.name}</h1>
-        <p className="text-gray-500 mt-1">{meta.description}</p>
+      <div className="mb-8 flex items-center gap-4">
+        <div className="text-4xl" aria-hidden="true">{meta.icon}</div>
+        <div>
+          <h1 className="text-2xl font-bold text-slate-900">{meta.name}</h1>
+          <p className="text-slate-500 mt-0.5">{meta.description}</p>
+        </div>
       </div>
 
       {isPolish && (
@@ -71,30 +74,26 @@ export default async function SubjectPage({
       {quizzes.length === 0 ? (
         isPolish ? null : (
         <div className="text-center py-12 text-gray-400">
-          <p>No quizzes published yet for this subject.</p>
-          <p className="text-sm mt-1">Check back soon!</p>
+          <p>Nie ma jeszcze opublikowanych testów z tego przedmiotu.</p>
+          <p className="text-sm mt-1">Zajrzyj wkrótce!</p>
         </div>
         )
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {quizzes.map((quiz) => {
             const activeVersion = (quiz.quiz_versions as Array<{ id: string; version: number; is_active: boolean }>)
               ?.find((v) => v.is_active);
             return (
-              <Link
+              <ThemedCard
                 key={quiz.id}
                 href={`/quiz/${quiz.id}${activeVersion ? `?versionId=${activeVersion.id}` : ""}`}
-                className="block bg-white border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md hover:border-blue-300 transition-all"
-              >
-                <h2 className="font-semibold text-gray-900 mb-1">{quiz.title}</h2>
-                {quiz.description && (
-                  <p className="text-sm text-gray-500 mb-2">{quiz.description}</p>
-                )}
-                <div className="text-xs text-blue-600 font-medium">
-                  {activeVersion ? `v${activeVersion.version}` : ""}
-                  {" "}Start quiz →
-                </div>
-              </Link>
+                accent={SUBJECT_ACCENT[subject] ?? "indigo"}
+                badge={meta.name}
+                icon={meta.icon}
+                title={quiz.title}
+                subtitle={quiz.description ?? undefined}
+                chip={activeVersion ? `v${activeVersion.version}` : undefined}
+              />
             );
           })}
         </div>

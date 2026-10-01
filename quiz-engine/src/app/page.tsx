@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { getAllTools } from "@/lib/tools/registry";
+import { ThemedCard, SUBJECT_ACCENT } from "@/components/ThemedCard";
 
 export const dynamic = "force-dynamic";
 
@@ -64,18 +65,17 @@ export default async function HomePage() {
           {MATURA_SUBJECTS.map((subject) => {
             const count = countBySubject[subject.slug] ?? 0;
             return (
-              <Link
+              <ThemedCard
                 key={subject.slug}
                 href={`/subjects/${subject.slug}`}
-                className="block bg-white rounded-xl border border-gray-200 p-6 shadow-sm hover:shadow-md hover:border-blue-300 transition-all"
-              >
-                <div className="text-4xl mb-3">{subject.icon}</div>
-                <h2 className="text-xl font-semibold text-gray-900 mb-1">{subject.name}</h2>
-                <p className="text-gray-600 text-sm mb-3">{subject.description}</p>
-                <div className="text-sm text-blue-600 font-medium">
-                  {count} {count === 1 ? "test" : "testów"} dostępnych
-                </div>
-              </Link>
+                accent={SUBJECT_ACCENT[subject.slug] ?? "indigo"}
+                badge="Matura"
+                icon={subject.icon}
+                title={subject.name}
+                subtitle={subject.description}
+                facts={[`☰ ${count} ${count === 1 ? "arkusz / test" : "arkuszy / testów"} dostępnych`]}
+                cta="Wybierz →"
+              />
             );
           })}
         </div>

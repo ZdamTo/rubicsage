@@ -1,7 +1,6 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import "@/app/cke-exam.css";
 import type { ClientExam, ClientQuestion } from "@/lib/cke/sanitize";
 import { isAnswered, stableStringify } from "@/lib/cke/answers";
 import { describeContents, plural } from "@/lib/cke/exam-code";

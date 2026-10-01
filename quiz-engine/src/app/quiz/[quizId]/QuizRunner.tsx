@@ -48,6 +48,21 @@ interface QuestionState {
   submitted?: boolean;
 }
 
+const TYPE_LABELS: Record<string, string> = {
+  single_choice: "jednokrotny wybór",
+  multi_choice: "wielokrotny wybór",
+  short_text: "krótka odpowiedź",
+  numeric: "liczba",
+  math_open_with_work: "zadanie otwarte",
+  polish_essay: "wypracowanie",
+  code_python: "Python",
+  sql_query: "SQL",
+  spreadsheet_task: "arkusz kalkulacyjny",
+  cloze_text: "uzupełnij luki",
+  table_fill: "uzupełnij tabelę",
+  true_false_group: "prawda / fałsz",
+};
+
 interface Props {
   quiz: Quiz;
   quizId: string;
@@ -172,75 +187,127 @@ export default function QuizRunner({ quiz, quizId, attemptId }: Props) {
     }
   };
 
+  const typeLabel = TYPE_LABELS[question.type] ?? question.type.replace(/_/g, " ");
+  const graded = !!state.gradeResult && !state.grading;
+  const scoreRange =
+    question.maxScore > 5 ? `0–${question.maxScore}` : Array.from({ length: question.maxScore + 1 }, (_, i) => i).join("–");
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      {/* Left: Question */}
+      {/* Left: Question, laid out like a CKE arkusz (same theme as Język polski) */}
       <div>
-        <div className="flex items-center justify-between mb-4">
-          <span className="text-sm font-medium text-gray-600">
-            Q {currentIdx + 1} / {quiz.questions.length}
-          </span>
-          <span className="text-sm text-gray-500">{quiz.title}</span>
-        </div>
-        <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4">
-          <div
-            className="bg-blue-600 h-1.5 rounded-full transition-all"
-            style={{ width: `${((currentIdx + 1) / quiz.questions.length) * 100}%` }}
-          />
-        </div>
-
-        <div className="bg-white border border-gray-200 rounded-lg p-5 mb-4 shadow-sm">
-          <div className="flex items-center gap-2 mb-3">
-            <span className="text-xs font-semibold px-2 py-0.5 bg-gray-100 text-gray-600 rounded">
-              {question.type.replace(/_/g, " ")}
-            </span>
-            <span className="text-xs text-gray-500">
-              max {question.maxScore} pt{question.maxScore !== 1 ? "s" : ""}
-            </span>
+        <div className="flex items-end justify-between mb-3 gap-3">
+          <div>
+            <h1 className="text-xl font-bold text-slate-800">{quiz.title}</h1>
+            <p className="text-xs text-slate-500">
+              Zadanie {currentIdx + 1} z {quiz.questions.length}
+            </p>
           </div>
-          <MarkdownRenderer content={question.promptMarkdown} />
         </div>
 
-        <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm">
-          <QuestionInput
-            question={question}
-            state={state}
-            onUpdate={(update) => updateState(question.id, update)}
-          />
+        {/* Question navigator: one box per zadanie, filled once it is checked */}
+        <div className="flex flex-wrap gap-1.5 mb-4" role="tablist" aria-label="Zadania">
+          {quiz.questions.map((q, i) => {
+            const done = !!states[q.id]?.submitted;
+            const current = i === currentIdx;
+            return (
+              <button
+                key={q.id}
+                type="button"
+                role="tab"
+                aria-selected={current}
+                onClick={() => setCurrentIdx(i)}
+                className={`w-8 h-8 text-xs font-bold rounded-sm border-[1.5px] transition-colors ${
+                  done ? "bg-[#7030a0] border-[#7030a0] text-white" : "bg-white border-[#7030a0] text-[#7030a0] hover:bg-[#e7ddf3]"
+                } ${current ? "ring-2 ring-offset-1 ring-[#b984de]" : ""}`}
+                title={`Zadanie ${i + 1}${done ? " — sprawdzone" : ""}`}
+              >
+                {i + 1}
+              </button>
+            );
+          })}
         </div>
 
-        <div className="flex items-center justify-between mt-4">
+        <div className="exam-sheet bg-white rounded-xl overflow-hidden border border-slate-200 mb-4">
+          <section className="q-card">
+            <header className="q-header">
+              <div className="q-head-bar">
+                Zadanie {currentIdx + 1}. (0–{question.maxScore})
+                <span className="q-type">{typeLabel}</span>
+              </div>
+              <div className="q-score-stack">
+                <div className="q-score-num" aria-hidden="true">{currentIdx + 1}.</div>
+                <div className="q-score-range" aria-hidden="true">{scoreRange}</div>
+                <button
+                  type="button"
+                  className={`q-score-box ${graded ? "q-score-box-filled" : ""} ${state.grading ? "q-score-box-busy" : ""}`}
+                  onClick={handleGrade}
+                  disabled={state.grading || state.submitted}
+                  title={graded ? `Wynik: ${state.gradeResult!.score} pkt` : "Sprawdź odpowiedź"}
+                  aria-label={graded ? `Wynik: ${state.gradeResult!.score} pkt` : "Sprawdź odpowiedź"}
+                >
+                  {graded ? (
+                    String(state.gradeResult!.score)
+                  ) : state.grading ? (
+                    "…"
+                  ) : (
+                    <span className="q-mark" aria-hidden="true">
+                      <span className="q-mark-top">sprawdź</span>
+                      <span className="q-mark-bot">teraz</span>
+                    </span>
+                  )}
+                </button>
+              </div>
+            </header>
+            <div className="q-prompt">
+              <MarkdownRenderer content={question.promptMarkdown} />
+            </div>
+            <div className="q-answer">
+              <QuestionInput
+                question={question}
+                state={state}
+                onUpdate={(update) => updateState(question.id, update)}
+              />
+            </div>
+          </section>
+        </div>
+
+        <div className="q-sheet-foot !mt-0 !pt-4 justify-between">
           <button
+            type="button"
             onClick={() => setCurrentIdx((i) => Math.max(0, i - 1))}
             disabled={currentIdx === 0}
-            className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-300 disabled:opacity-40 transition-colors"
+            className="!bg-white !text-[#7030a0] disabled:opacity-40"
           >
-            Previous
+            ← Poprzednie
           </button>
 
           <div className="flex items-center gap-2">
             <button
+              type="button"
               onClick={handleGrade}
               disabled={state.grading || state.submitted}
-              className="px-6 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 disabled:opacity-50 transition-colors"
+              className="!bg-[#7030a0] !text-white disabled:opacity-50"
             >
-              {state.grading ? "Grading…" : state.submitted ? "Submitted" : "Submit"}
+              {state.grading ? "Sprawdzanie…" : state.submitted ? "Sprawdzone" : "Sprawdź"}
             </button>
             <button
+              type="button"
               onClick={() => setAskAIOpen(true)}
-              className="px-4 py-2 bg-purple-100 text-purple-700 rounded-lg text-sm font-medium hover:bg-purple-200 transition-colors flex items-center gap-1.5"
+              className="!bg-white !text-[#7030a0]"
               title="Zapytaj AI o to zadanie"
             >
-              🤖 Ask AI
+              🤖 Zapytaj AI
             </button>
           </div>
 
           <button
+            type="button"
             onClick={() => setCurrentIdx((i) => Math.min(quiz.questions.length - 1, i + 1))}
             disabled={currentIdx === quiz.questions.length - 1}
-            className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-300 disabled:opacity-40 transition-colors"
+            className="!bg-white !text-[#7030a0] disabled:opacity-40"
           >
-            Next
+            Następne →
           </button>
         </div>
 
@@ -249,27 +316,27 @@ export default function QuizRunner({ quiz, quizId, attemptId }: Props) {
           <div className="mt-6 text-center">
             <button
               onClick={handleSubmitAttempt}
-              className="px-8 py-3 bg-green-600 text-white rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors"
+              className="px-8 py-3 bg-[#7030a0] text-white rounded-md text-sm font-semibold hover:bg-[#4c2168] transition-colors"
             >
-              Finish Quiz & Save Results
+              Zakończ i zapisz wyniki
             </button>
           </div>
         )}
         {attemptSubmitted && (
           <div className="mt-6 text-center text-sm text-green-700 font-medium bg-green-50 border border-green-200 rounded-lg py-3">
-            Quiz completed! Results saved. Keep up the streak!
+            Test zakończony, wyniki zapisane. Tak trzymaj!
           </div>
         )}
       </div>
 
       {/* Right: Feedback */}
       <div>
-        <h3 className="text-sm font-semibold text-gray-500 uppercase mb-3">AI Feedback</h3>
+        <h3 className="text-sm font-semibold text-[#4c2168] uppercase tracking-wide mb-3">Ocena i wskazówki</h3>
         {state.submitted ? (
           <FeedbackPanel result={state.gradeResult || null} loading={!!state.grading} />
         ) : (
           <div className="bg-gray-50 border border-gray-200 border-dashed rounded-lg p-8 text-center text-gray-400">
-            Submit your answer to receive AI feedback
+            Kliknij „Sprawdź”, aby otrzymać ocenę i wskazówki
           </div>
         )}
       </div>
